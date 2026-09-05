@@ -1,0 +1,59 @@
+name: Monitor de vagas
+
+on:
+  schedule:
+    # 08:00 de Brasília (11:00 UTC), todo dia. O script só executa de fato
+    # quando passaram 5 dias da última rodada (state/seen.json).
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rodar agora, mesmo antes dos 5 dias"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Executar rodada
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPORT_URL: https://github.com/${{ github.repository }}/blob/main/reports/LATEST.md
+        run: python -m vagas_monitor run ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
+
+      - name: Publicar relatórios no repositório
+        run: |
+          git config user.name "vagas-monitor[bot]"
+          git config user.email "vagas-monitor@users.noreply.github.com"
+          git add reports docs state
+          if git diff --cached --quiet; then
+            echo "nada a commitar"
+          else
+            git commit -m "relatório $(date -u +%Y-%m-%d)"
+            git push
+          fi
