@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-05T19:49:30",
+ "last_run": "2026-09-05T20:06:05",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -2588,6 +2588,136 @@
    "url": "https://br.indeed.com/viewjob?jk=2d438bb0c5410887",
    "source": "indeed",
    "score": 12,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "a9f8ddf875ad0ea3": {
+   "key": "programador jr|sensum sistemas de informatica ltda",
+   "title": "Programador Jr",
+   "company": "Sensum Sistemas de Informática Ltda",
+   "url": "https://br.indeed.com/viewjob?jk=96766c699da0f85d",
+   "source": "indeed",
+   "score": 81,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "7fd58ab6bcc2396f": {
+   "key": "analytics engineer (remote - brazil)|loadsmart",
+   "title": "Analytics Engineer (Remote - Brazil)",
+   "company": "Loadsmart",
+   "url": "https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401",
+   "source": "linkedin",
+   "score": 67,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "76233dfd4e8e4301": {
+   "key": "desenvolvedor back end|sensum sistemas de informatica ltda",
+   "title": "Desenvolvedor Back End",
+   "company": "Sensum Sistemas de Informática Ltda",
+   "url": "https://br.indeed.com/viewjob?jk=d04f8be7c9073815",
+   "source": "indeed",
+   "score": 64,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "8e008effc254c35d": {
+   "key": "software developer iii - java|senior sistemas",
+   "title": "Software Developer III - Java",
+   "company": "Senior Sistemas",
+   "url": "https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452",
+   "source": "linkedin",
+   "score": 64,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "295762e64d9c581d": {
+   "key": "desenvolvedor back-end|jobbol",
+   "title": "Desenvolvedor Back-End",
+   "company": "Jobbol",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010",
+   "source": "linkedin",
+   "score": 61,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "5cad1eaf9e2f63d1": {
+   "key": "pessoa arquiteta de ciberseguranca senior - ia|ey",
+   "title": "Pessoa Arquiteta de Cibersegurança Sênior - IA",
+   "company": "EY",
+   "url": "https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541",
+   "source": "linkedin",
+   "score": 48,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "52d722c47f3b9872": {
+   "key": "analista de dados sr|multilog s/a",
+   "title": "Analista de Dados SR",
+   "company": "multilog s/a",
+   "url": "https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e",
+   "source": "indeed",
+   "score": 46,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "04b7cacb6da905a3": {
+   "key": "desenvolvedor senior|ambev tech",
+   "title": "Desenvolvedor Senior",
+   "company": "Ambev Tech",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273",
+   "source": "linkedin",
+   "score": 35,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "ae8e7f5bc8f05d29": {
+   "key": "analista de negocios pleno/senior (gestao de dados)|becomex",
+   "title": "Analista de Negócios Pleno/Sênior (Gestão de Dados)",
+   "company": "BecomeX",
+   "url": "https://br.indeed.com/viewjob?jk=6e006e05e2104aa9",
+   "source": "indeed",
+   "score": 32,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "268e3da655ebc267": {
+   "key": "desenvolvedor(a) flutter senior|paytrack",
+   "title": "Desenvolvedor(a) Flutter Sênior",
+   "company": "Paytrack",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-flutter-s%C3%AAnior-at-paytrack-4462324507",
+   "source": "linkedin",
+   "score": 29,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "223a1272809c16b6": {
+   "key": "[tech] especialista em engenharia de software backend - progress|totvs",
+   "title": "[Tech] Especialista em Engenharia de Software Backend - Progress",
+   "company": "TOTVS",
+   "url": "https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4459211960",
+   "source": "linkedin",
+   "score": 26,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "334da61107567819": {
+   "key": "estagio em controle de dados | rh|tupy",
+   "title": "Estágio em Controle de Dados | RH",
+   "company": "TUPY",
+   "url": "https://br.indeed.com/viewjob?jk=8b0d4d8eb479cb2e",
+   "source": "indeed",
+   "score": 92,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "ff668968634b3f33": {
+   "key": "desenvolvedor(a) fullstack pleno|paytrack",
+   "title": "Desenvolvedor(a) Fullstack Pleno",
+   "company": "Paytrack",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-fullstack-pleno-at-paytrack-4459423160",
+   "source": "linkedin",
+   "score": 64,
    "first_seen": "2026-09-05",
    "last_seen": "2026-09-05"
   }
