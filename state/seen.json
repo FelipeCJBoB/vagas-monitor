@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-05T20:06:05",
+ "last_run": "2026-09-05T20:19:54",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -2718,6 +2718,26 @@
    "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-fullstack-pleno-at-paytrack-4459423160",
    "source": "linkedin",
    "score": 64,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "cdb18d4e564b3668": {
+   "key": "react + typescript developer - remote work|bairesdev",
+   "title": "React + TypeScript Developer - Remote Work",
+   "company": "BairesDev",
+   "url": "https://br.linkedin.com/jobs/view/react-%2B-typescript-developer-remote-work-at-bairesdev-4460012847",
+   "source": "linkedin",
+   "score": 56,
+   "first_seen": "2026-09-05",
+   "last_seen": "2026-09-05"
+  },
+  "f3e6d2f37e227757": {
+   "key": "[tech] especialista em engenharia de software backend - progress|totvs",
+   "title": "[Tech] Especialista em Engenharia de Software Backend - Progress",
+   "company": "TOTVS",
+   "url": "https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4460732582",
+   "source": "linkedin",
+   "score": 26,
    "first_seen": "2026-09-05",
    "last_seen": "2026-09-05"
   }

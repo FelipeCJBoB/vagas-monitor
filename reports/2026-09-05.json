@@ -1,378 +1,41 @@
 {
  "run_date": "2026-09-05",
  "run_date_br": "05/09/2026",
- "run_time": "20:06",
+ "run_time": "20:19",
  "lookback_days": 7,
  "jobs": [
   {
-   "source": "indeed",
-   "title": "Programador Jr",
-   "company": "Sensum Sistemas de Informática Ltda",
-   "url": "https://br.indeed.com/viewjob?jk=96766c699da0f85d",
-   "location": "Itajaí, SC, BR",
-   "city": "Itajaí",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-03",
-   "description": "***\\*\\*Se você ama tecnologia e quer fazer parte de um time inovador, venha crescer com a gente na Sensum Sistemas!!!***\n\n***Função:***\n\nAuxiliar nas tarefas de desenvolvimento e depuração de software.\n\n***Requisito Profissional:***  \nConhecimento básico em programação orientada a objetos e banco de dados.  \n.\\_ **Benefícios:**\\_\n\n· Faixa salarial: 3\\.800,00 / 5\\.000,00\n\n· Possibilidade real de crescimento profissional e pessoal, reconhecimento por meritocracia;\n\n· Vale transporte, Estacionamento, Almoço no local sem descontos, Unimed\\*, Seguro de vida, Convênio com farmácia, Convênio com o Sesc;\n\n· Ótimo ambiente de trabalho com sala de jogos, sala zen com puffs para descanso;\n\n· Eventos internos em datas comemorativas;\n\n· Café expresso free.\n\nTipo de vaga: Tempo Integral, Efetivo/CLT \\- Presencial \\- Itajaí\\-SC\n\nPara candidatar\\-se acesse nosso site através do link: https://vagas.sensum.inf.br/vagas/\n\nAproveite também para conhecer mais sobre nós, visitando nosso blog : )\n\nTipo de vaga: Tempo Integral\n\nPagamento: R$3\\.000,00 \\- R$3\\.800,00 por mês\n\nLocal do trabalho: Presencial",
-   "tags": [],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "junior",
-   "matched_city": "Itajaí",
-   "score": 81,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "júnior/estágio (+25)",
-    "Itajaí (+20)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "a9f8ddf875ad0ea3",
-   "age_days": 2
-  },
-  {
    "source": "linkedin",
-   "title": "Analytics Engineer (Remote - Brazil)",
-   "company": "Loadsmart",
-   "url": "https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401",
+   "title": "React + TypeScript Developer - Remote Work",
+   "company": "BairesDev",
+   "url": "https://br.linkedin.com/jobs/view/react-%2B-typescript-developer-remote-work-at-bairesdev-4460012847",
    "location": "Florianópolis, SC",
    "city": "Florianópolis",
    "state": "SC",
    "remote": false,
    "workplace": "remote",
-   "date_posted": "2026-09-01",
-   "description": "Nível de experiência (LinkedIn): Não aplicável. ARE YOU INTERESTED IN JOINING AN INNOVATIVE LOGISTICS TECHNOLOGY COMPANY? Loadsmart is a growth-stage technology company valued at over $1 billion (a true Tech Unicorn)! We are a collection of industry veterans and user-centered engineers using innovative technology to fearlessly reinvent the future of freight by helping shippers, brokers, warehouses and carriers to move more with less. With headquarters in Chicago and a globally distributed remote team, Loadsmart continues to attract top talent committed to driving meaningful change. We seek professionals who embody our core values: curiosity, clarity, results, commitment, and teamwork. We are looking for an AI focused Analytics Engineer to integrate our team and contribute to the expansion of AI features over data and analytics. The Analytics Engineer will design AI ready models and implement Analytics Solutions to our data/AI/metrics platform. You will be the go-to person for any data development for internal analytics as also interfacing Product teams and Data Science teams to assist and advise them in building data products. LOCATION: This position can be remote anywhere in Brazi",
+   "date_posted": "2026-08-31",
+   "description": "Nível de experiência (LinkedIn): Pleno-sênior. At BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley. Our diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide. When you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success. React + TypeScript Developer at BairesDev We are looking for a React + TypeScript Developer to join our frontend team. In this role, you'll be responsible for building responsive user interfaces, implementing interactive components, and collaborating with designers and backend developers to create engaging web applications. What You'll Do: - Develop modern web applications using React and TypeScript. - Build and maintain reusable component libraries. - Implement state management solutions using Redux or Context API. - Integrate with RESTful APIs and backend services. - Participate",
    "tags": [
-    "nivel:Não aplicável"
+    "nivel:Pleno-sênior"
    ],
-   "category": "dados",
-   "categories": [
-    "dados"
-   ],
-   "seniority": "unknown",
-   "matched_city": null,
-   "score": 67,
-   "reasons": [
-    "Dados (+30)",
-    "remoto (+12)",
-    "skills: python, sql, pandas, machine learning (+12)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "7fd58ab6bcc2396f",
-   "age_days": 4
-  },
-  {
-   "source": "indeed",
-   "title": "Desenvolvedor Back End",
-   "company": "Sensum Sistemas de Informática Ltda",
-   "url": "https://br.indeed.com/viewjob?jk=d04f8be7c9073815",
-   "location": "Itajaí, SC, BR",
-   "city": "Itajaí",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-03",
-   "description": "***\\*\\*Se você ama tecnologia e quer fazer parte de um time inovador, venha crescer com a gente na Sensum Sistemas!!!***\n\n***Função:***\n\nDesenvolvimento e manutenção de sistemas novos e legados;\n\nCriação e manutenção de regra de negócios, banco de dados, segurança da aplicação e integração de sistemas.\n\n***Pré Requisito:***\n\nSólido conhecimento em POO (C\\#, JAVA ou similares);\n\nCapacidade de compreensão e resolução de problemas complexos;\n\nConhecimento sobre SQL e/ou Entity Framwork;\n\nCodificação limpa e organizada.\n\n***Requisitos Pessoais:***\n\nGraduado ou cursando faculdade ligada à área de desenvolvimento de sistemas;\n\nExperiência comprovada em desenvolvimento de software.\n\nDurante o processo de seleção serão aplicados testes práticos.\n\n***Benefícios:***\n\n· Faixa salarial: 3\\.800,00 / 5\\.000,00\n\n· Possibilidade real de crescimento profissional e pessoal, reconhecimento por meritocracia;\n\n· Vale transporte, Estacionamento, Almoço no local sem descontos, Unimed\\*, Seguro de vida, Convênio com farmácia, Convênio com o Sesc;\n\n· Ótimo ambiente de trabalho com sala de jogos, sala zen com puffs para descanso;\n\n· Eventos internos em datas comemorativas;\n\n· Café expresso free.\n\nTipo de va",
-   "tags": [],
    "category": "fullstack",
    "categories": [
     "fullstack"
    ],
    "seniority": "unknown",
-   "matched_city": "Itajaí",
-   "score": 64,
+   "matched_city": null,
+   "score": 56,
    "reasons": [
     "Full Stack / Dev (+30)",
-    "Itajaí (+20)",
+    "remoto (+12)",
     "skills: sql (+3)",
     "publicada há ≤7 dias (+5)"
    ],
    "fit": null,
    "fit_note": "",
    "is_new": true,
-   "id": "76233dfd4e8e4301",
-   "age_days": 2
-  },
-  {
-   "source": "linkedin",
-   "title": "Software Developer III - Java",
-   "company": "Senior Sistemas",
-   "url": "https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452",
-   "location": "Blumenau, SC",
-   "city": "Blumenau",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-03",
-   "description": "Nível de experiência (LinkedIn): Pleno-sênior. SOBRE O DESAFIO: Nosso desafio é construir e evoluir uma plataforma de Banking que conecta ERPs a instituições financeiras via APIs, centralizando e automatizando operações como cobranças, pagamentos, Pix e crédito, reduzindo a complexidade e aumentando a eficiência dos processos financeiros das empresas. Estamos em busca de um(a) Software Developer Java para atuar no desenvolvimento dessas soluções tecnológicas que apoiam as necessidades da empresa. Essa é uma excelente oportunidade para profissionais que desejam trabalhar em um ambiente colaborativo e contribuir com projetos reais. O QUE ESPERAMOS DE VOCÊ: Conhecimentos em linguagens de programação como Java 17+; Conhecimento em arquitetura de software, padrões de projeto e melhores práticas; Familiaridade com frameworks e bibliotecas de desenvolvimento, como Spring; Habilidades em análise de dados, resolução de problemas e trabalho em equipe. O QUE PODE POTENCIALIZAR SUA CARREIRA: Experiência com arquitetura de microsserviços; Experiência com Angular 8+; Vivência em ambientes cloud native, preferencialmente AWS; Certificações como AWS Certified Solutions Architect; Experiência com a",
-   "tags": [
-    "nivel:Pleno-sênior"
-   ],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "unknown",
-   "matched_city": "Blumenau",
-   "score": 64,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "Blumenau (+20)",
-    "skills: análise de dados (+3)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "8e008effc254c35d",
-   "age_days": 2
-  },
-  {
-   "source": "linkedin",
-   "title": "Desenvolvedor Back-End",
-   "company": "Jobbol",
-   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010",
-   "location": "Itajaí, SC",
-   "city": "Itajaí",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-04",
-   "description": "Nível de experiência (LinkedIn): Pleno-sênior. Empresa de Software busca profissional Desenvolvedor Back-End em Itajaí. Responsabilidades Desenvolvimento e manutenção de sistemas novos e legados. Criação e manutenção de regra de negócios, banco de dados, segurança da aplicação e integração de sistemas. Para atuação na cidade de Itajaí / SC. Atuações anteriores em Engenheiro de Software Back-End, Programador Back-End, Desenvolvedor de Aplicações Back-End ou Arquiteto de Sistemas Back-End podem indicar afinidade com algumas das atividades desta posição. Requisitos Desejáveis Escolaridade: Ensino superior em andamento Experiência: Necessário experiência Remuneração e Benefícios Salário: Faixa salarial será informada na entrevista. Refeição no Local Estacionamento Vale Transporte Convênio Médico Seguro de Vida Banco de Horas Treinamentos Informações Adicionais Contrato: Efetivo. Presencial. Candidatos de Navegantes, Balneário Camboriú, Camboriú ou Penha também são considerados para esta vaga. Período: Tempo integral Jornada: Segunda a Sexta-feira. Das 08:00 às 18:00.",
-   "tags": [
-    "nivel:Pleno-sênior"
-   ],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "unknown",
-   "matched_city": "Itajaí",
-   "score": 61,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "Itajaí (+20)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "295762e64d9c581d",
-   "age_days": 1
-  },
-  {
-   "source": "linkedin",
-   "title": "Pessoa Arquiteta de Cibersegurança Sênior - IA",
-   "company": "EY",
-   "url": "https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541",
-   "location": "Blumenau, SC",
-   "city": "Blumenau",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-05",
-   "description": "Nível de experiência (LinkedIn): Pleno-sênior. Pessoa Arquiteta de Cibersegurança Sênior – IA (Híbrido – Múltiplos Escritórios) Na EY, estamos comprometidos em moldar seu futuro com confiança. Nós ajudaremos você a ter sucesso em um ambiente globalmente conectado, repleto de equipes diversas, e a levar sua carreira para onde você desejar. Venha para EY e ajude-nos a construir um mundo de negócios melhor. Sobre a oportunidade: Em Consultoria (Consulting), estamos construindo um mundo de negócios melhor ajudando organizações de diferentes setores econômicos em todo o mundo. Com equipes de diversas especialidades (tecnologia, supply chain, transformação digital, gestão de processos, etc), apoiamos nossos clientes em seus desafios e na geração de valor a longo prazo, realizando a transformação dos negócios por meio do poder das pessoas, da tecnologia e da inovação. #ConsultoriaEY Você assumirá as seguintes responsabilidades: Você será responsável por projetar e revisar arquiteturas seguras para aplicações de IA, incluindo GenAI, LLMs, RAG, agentes autônomos e copilots corporativos. Atuará na definição de padrões de security by design, privacy by design, responsible AI e secure AI adopt",
-   "tags": [
-    "nivel:Pleno-sênior"
-   ],
-   "category": "ia_llm",
-   "categories": [
-    "ia_llm",
-    "agentes_ia"
-   ],
-   "seniority": "senior",
-   "matched_city": "Blumenau",
-   "score": 48,
-   "reasons": [
-    "IA / LLMs (+30)",
-    "também: Agentes de IA (+3)",
-    "sênior/liderança (-30)",
-    "Blumenau (+20)",
-    "skills: python, machine learning, llm, agentes, langchain, ci/cd (+18)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "5cad1eaf9e2f63d1",
-   "age_days": 0
-  },
-  {
-   "source": "indeed",
-   "title": "Analista de Dados SR",
-   "company": "multilog s/a",
-   "url": "https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e",
-   "location": "Itajaí, SC, BR",
-   "city": "Itajaí",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-03",
-   "description": "**None:**  \n\nDescrição da vaga\n  \n  \n\nVocê já imaginou trabalhar em uma das melhores empresas de logística para se trabalhar?\n  \n  \n\nAqui valorizamos o respeito com as pessoas, a fim de estreitar a confiança nas relações e integridade nas práticas, sem perder a paixão por vencer!\n  \n  \n\nCOMO É TER O JEITO MULTILOG?!??\n  \n  \n\nÉ ser apaixonado pelo que faz e realiza, pensar constantemente “fora da caixa”. É inovar para crescer, aproveitando as oportunidades para fazer acontecer. O senso de dono faz parte do DNA Multilog!!\n  \n  \n\nNada como encantar e conectar\\-se ás pessoas, sendo um agente integrador e visando sempre o cuidado para consigo e com o outro ?\n  \n  \n\nResponsabilidades e atribuições\n  \n  \n\nResponsável por coletar dados, organizar e interpretar grandes volumes de informações, transformando dados brutos em insights estratégicos que apoiam a tomada de decisão da empresa. Atua no desenvolvimento de relatórios, dashboards e indicadores de desempenho, garantindo a qualidade, consistência e integridade das bases de dados. Colabora com áreas de negócio e tecnologia para identificar oportunidades de melhoria, automatizar processos e apoiar iniciativas de inovação orientadas por dad",
-   "tags": [],
-   "category": "dados",
-   "categories": [
-    "dados"
-   ],
-   "seniority": "senior",
-   "matched_city": "Itajaí",
-   "score": 46,
-   "reasons": [
-    "Dados (+30)",
-    "sênior/liderança (-30)",
-    "Itajaí (+20)",
-    "skills: python, sql, power bi, excel, pandas, análise de dados (+18)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "52d722c47f3b9872",
-   "age_days": 2
-  },
-  {
-   "source": "linkedin",
-   "title": "Desenvolvedor Senior",
-   "company": "Ambev Tech",
-   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273",
-   "location": "Blumenau, SC",
-   "city": "Blumenau",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-08-31",
-   "description": "Nível de experiência (LinkedIn): Não aplicável. Buscamos personas que sueñen en grande y con ganas de formar parte de proyectos desafiantes en una industria dinámica y divertida. Buscamos uma pessoa Desenvolvedora Back-end C# para atuar no desenvolvimento e evolução de produtos digitais de grande escala, contribuindo com soluções robustas, escaláveis e de alta qualidade. Procuramos alguém que tenha autonomia para conduzir entregas, participar ativamente de discussões técnicas e colaborar na evolução da arquitetura e das práticas de engenharia do time Responsabilidades Desenvolver e manter aplicações utilizando C# e .NET. Implementar soluções seguindo boas práticas de desenvolvimento, Clean Code e princípios SOLID. Participar ativamente de code reviews, contribuindo para a evolução técnica do time. Projetar e implementar APIs e integrações escaláveis. Trabalhar com bancos de dados relacionais e NoSQL, garantindo performance e qualidade das soluções. Realizar troubleshooting de aplicações e bancos de dados, utilizando logs, métricas e ferramentas de observabilidade. Identificar e remover débitos técnicos e código obsoleto, contribuindo para a sustentabilidade do produto. Discutir ris",
-   "tags": [
-    "nivel:Não aplicável"
-   ],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "senior",
-   "matched_city": "Blumenau",
-   "score": 35,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "sênior/liderança (-30)",
-    "Blumenau (+20)",
-    "skills: sql, git, ci/cd (+9)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "04b7cacb6da905a3",
-   "age_days": 5
-  },
-  {
-   "source": "indeed",
-   "title": "Analista de Negócios Pleno/Sênior (Gestão de Dados)",
-   "company": "BecomeX",
-   "url": "https://br.indeed.com/viewjob?jk=6e006e05e2104aa9",
-   "location": "Joinville, SC, BR",
-   "city": "Joinville",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-08-11",
-   "description": "Descrição da Vaga:\\- Conduzir a captação de dados em projetos de maior complexidade, definindo prioridades e garantindo o cumprimento dos prazos estabelecidos. \\- Validar as informações recebidas, garantindo que estejam completas e corretas antes de seguirem para análise. \\- Acompanhar os cronogramas de múltiplos projetos simultaneamente, identificando antecipadamente riscos de atraso e propondo soluções. \\- Atuar como ponto de contato entre as áreas de captação, análise técnica e execução, esclarecendo dúvidas e solucionando pendências que possam impactar o andamento dos projetos. \\- Propor e implementar melhorias nos processos e rotinas de coleta e análise de dados.\n  \nRequisitos do Cargo:\\- Conhecimento em processos industriais/análise de dados produtivos. \\- Experiência em gestão de prazos e projetos complexos simultâneos. \\- Domínio de Excel/ferramentas de análise de dados. \\- Perfil analítico, com visão sistêmica e capacidade de propor soluções. \\- Excelente comunicação e negociação com clientes em situações de maior criticidade. \\- Ensino superior completo em Administração, Ciências Contábeis, Economia, Comércio exterior ou Engenharia de Produção. Diferenciais: \\- Experiênci",
-   "tags": [],
-   "category": "dados",
-   "categories": [
-    "dados"
-   ],
-   "seniority": "senior",
-   "matched_city": "Joinville",
-   "score": 32,
-   "reasons": [
-    "Dados (+30)",
-    "sênior/liderança (-30)",
-    "Joinville (+20)",
-    "skills: sql, excel, análise de dados (+9)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "ae8e7f5bc8f05d29",
-   "age_days": 25
-  },
-  {
-   "source": "linkedin",
-   "title": "Desenvolvedor(a) Flutter Sênior",
-   "company": "Paytrack",
-   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-flutter-s%C3%AAnior-at-paytrack-4462324507",
-   "location": "Blumenau, SC",
-   "city": "Blumenau",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-09-05",
-   "description": "Nível de experiência (LinkedIn): Não aplicável. Transformar a gestão de viagens e despesas corporativas no Brasil exige tecnologia escalável e arquitetura sólida. Na Paytrack, uma TravelTech em aceleração com mais de 7.000 clientes corporativos, estamos construindo soluções que impactam diariamente a rotina de milhares de pessoas. Como Desenvolvedor(a) Flutter Sênior , seu papel vai além de escrever código: você será peça-chave na tomada de decisões técnicas, na evolução da arquitetura do nosso aplicativo e na garantia da excelência técnica da nossa engenharia mobile. Sobre a área e o time O time de Engenharia Mobile é a linha de frente da experiência do nosso usuário final. Inserida no coração da área de Produto & Tecnologia, a equipe trabalha orientada a criar soluções ágeis, intuitivas e de altíssima performance. Nossa missão é simplificar processos complexos por meio de código limpo e arquitetura sustentável, mantendo a proximidade com nossos clientes para transformar cada interação em uma experiência memorável e \"gerar fãs\" do nosso produto. O que você vai fazer (Responsabilidades) Arquitetura e Evolução Mobile: Desenhar, evoluir e sustentar a arquitetura do aplicativo em Dart",
-   "tags": [
-    "nivel:Não aplicável"
-   ],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "senior",
-   "matched_city": "Blumenau",
-   "score": 29,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "sênior/liderança (-30)",
-    "Blumenau (+20)",
-    "skills: ci/cd (+3)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "268e3da655ebc267",
-   "age_days": 0
-  },
-  {
-   "source": "linkedin",
-   "title": "[Tech] Especialista em Engenharia de Software Backend - Progress",
-   "company": "TOTVS",
-   "url": "https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4459211960",
-   "location": "Joinville, SC",
-   "city": "Joinville",
-   "state": "SC",
-   "remote": false,
-   "workplace": "unknown",
-   "date_posted": "2026-08-31",
-   "description": "Nível de experiência (LinkedIn): Não aplicável. Descrição Atuar como referência técnica e liderar a evolução arquitetural de soluções baseadas no ERP Datasul e linguagem Progress. A missão envolve garantir entregas de alta complexidade e qualidade, impulsionando os resultados de grandes clientes por meio de integrações eficientes, novos desenvolvimentos e excelência no atendimento técnico corporativo. Responsabilidades e atribuições Projetar, desenvolver e manter sistemas e customizações complexas utilizando a linguagem Progress (e todas as ferramentas do seu ecossistema). Atuar diretamente na arquitetura e no desenvolvimento de novas integrações entre o ERP Datasul e outras plataformas/sistemas de mercado (via APIs, WebServices, etc.). Realizar o levantamento de requisitos complexos e ser o responsável direto pela elaboração de estimativas e orçamentos técnicos. Conduzir reuniões técnicas, alinhamentos estratégicos e participar de eventos representando a área técnica da empresa. Garantir a viabilidade, escalabilidade e performance técnica de novos desenvolvimentos. Interagir de forma consultiva e técnica com contas estratégicas (grandes clientes), garantindo a satisfação e o suces",
-   "tags": [
-    "nivel:Não aplicável"
-   ],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "senior",
-   "matched_city": "Joinville",
-   "score": 26,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "sênior/liderança (-30)",
-    "Joinville (+20)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": true,
-   "id": "223a1272809c16b6",
+   "id": "cdb18d4e564b3668",
    "age_days": 5
   },
   {
@@ -514,17 +177,17 @@
    "age_days": 0
   },
   {
-   "source": "indeed",
+   "source": "gupy",
    "title": "Estágio em Controle de Dados | RH",
-   "company": "TUPY",
-   "url": "https://br.indeed.com/viewjob?jk=8b0d4d8eb479cb2e",
-   "location": "Joinville, SC, BR",
+   "company": "Tupy",
+   "url": "https://tupy.gupy.io/job/eyJqb2JJZCI6MTI0MTYwMDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "location": "Joinville, Santa Catarina",
    "city": "Joinville",
-   "state": "SC",
+   "state": "Santa Catarina",
    "remote": false,
-   "workplace": "unknown",
+   "workplace": "onsite",
    "date_posted": "2026-09-03",
-   "description": "A **Tupy** é uma multinacional brasileira com mais de 80 anos de história, presente em mais de 40 países e reconhecida pela tecnologia de ponta aplicada à produção de componentes estruturais em ferro fundido para setores como transporte, infraestrutura, agronegócio e energia.\n\n\n\n\nCom operações no Brasil, México e Portugal, a **Tupy** transforma engenharia, inovação e sustentabilidade em soluções que fazem diferença na vida de milhões de pessoas, levando mobilidade, saneamento, saúde e qualidade de vida para o mundo todo.\n\n\n\n\nE tem mais: A **MWM**, parte do grupo **Tupy**, é uma empresa que une tradição e inovação na fabricação de motores, geradores de energia, torres de iluminação e sistemas de bombeamento. Com mais de sete décadas de atuação no Brasil e presença em mais de 45 países, ela se destaca por oferecer soluções modernas voltadas à descarbonização no campo e na cidade.\n\n\n\n\nA empresa também conta com um amplo portfólio de peças de reposição e é referência em contratos de manufatura. Além disso, possui uma robusta rede de distribuição com mais de 1\\.300 pontos espalhados pelo Brasil e pelo mundo.\n\n\n\n\n**Se você quer trabalhar em um ambiente colaborativo, inovador, repleto de ",
+   "description": "A Tupy é uma multinacional brasileira com mais de 80 anos de história, presente em mais de 40 países e reconhecida pela tecnologia de ponta aplicada à produção de componentes estruturais em ferro fundido para setores como transporte, infraestrutura, agronegócio e energia.  Com operações no Brasil, México e Portugal, a Tupy transforma engenharia, inovação e sustentabilidade em soluções que fazem diferença na vida de milhões de pessoas, levando mobilidade, saneamento, saúde e qualidade de vida para o mundo todo.  E tem mais: A MWM, parte do grupo Tupy, é uma empresa que une tradição e inovação na fabricação de motores, geradores de energia, torres de iluminação e sistemas de bombeamento. Com mais de sete décadas de atuação no Brasil e presença em mais de 45 países, ela se destaca por oferecer soluções modernas voltadas à descarbonização no campo e na cidade.  A empresa também conta com um amplo portfólio de peças de reposição e é referência em contratos de manufatura. Além disso, possui uma robusta rede de distribuição com mais de 1.300 pontos espalhados pelo Brasil e pelo mundo.  🚀 Se você quer trabalhar em um ambiente colaborativo, inovador, repleto de desafios e oportunidades, o s",
    "tags": [
     "estagio"
    ],
@@ -545,7 +208,7 @@
    "fit": null,
    "fit_note": "",
    "is_new": false,
-   "id": "334da61107567819",
+   "id": "0c58109c25190d94",
    "age_days": 2
   },
   {
@@ -2169,6 +1832,68 @@
    "age_days": 3
   },
   {
+   "source": "linkedin",
+   "title": "Software Developer III - Java",
+   "company": "Senior Sistemas",
+   "url": "https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452",
+   "location": "Blumenau, SC",
+   "city": "Blumenau",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-09-03",
+   "description": "",
+   "tags": [],
+   "category": "fullstack",
+   "categories": [
+    "fullstack"
+   ],
+   "seniority": "unknown",
+   "matched_city": "Blumenau",
+   "score": 61,
+   "reasons": [
+    "Full Stack / Dev (+30)",
+    "Blumenau (+20)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "8e008effc254c35d",
+   "age_days": 2
+  },
+  {
+   "source": "linkedin",
+   "title": "Desenvolvedor Back-End",
+   "company": "Jobbol",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010",
+   "location": "Itajaí, SC",
+   "city": "Itajaí",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-09-04",
+   "description": "",
+   "tags": [],
+   "category": "fullstack",
+   "categories": [
+    "fullstack"
+   ],
+   "seniority": "unknown",
+   "matched_city": "Itajaí",
+   "score": 61,
+   "reasons": [
+    "Full Stack / Dev (+30)",
+    "Itajaí (+20)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "295762e64d9c581d",
+   "age_days": 1
+  },
+  {
    "source": "indeed",
    "title": "GenAI Consultant (SAP) - REMOTO",
    "company": "Verity",
@@ -2394,6 +2119,37 @@
   },
   {
    "source": "linkedin",
+   "title": "Analytics Engineer (Remote - Brazil)",
+   "company": "Loadsmart",
+   "url": "https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401",
+   "location": "Florianópolis, SC",
+   "city": "Florianópolis",
+   "state": "SC",
+   "remote": false,
+   "workplace": "remote",
+   "date_posted": "2026-09-01",
+   "description": "",
+   "tags": [],
+   "category": "dados",
+   "categories": [
+    "dados"
+   ],
+   "seniority": "unknown",
+   "matched_city": null,
+   "score": 55,
+   "reasons": [
+    "Dados (+30)",
+    "remoto (+12)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "7fd58ab6bcc2396f",
+   "age_days": 4
+  },
+  {
+   "source": "linkedin",
    "title": "Business Intelligence Analyst - Remote",
    "company": "INDI Staffing Services",
    "url": "https://br.linkedin.com/jobs/view/business-intelligence-analyst-remote-at-indi-staffing-services-4462188407",
@@ -2486,37 +2242,6 @@
    "is_new": false,
    "id": "25545f917e5de0bc",
    "age_days": 2
-  },
-  {
-   "source": "linkedin",
-   "title": "Desenvolvedor .NET Core - Trabalho Remoto",
-   "company": "BairesDev",
-   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-net-core-trabalho-remoto-at-bairesdev-4460021853",
-   "location": "Florianópolis, SC",
-   "city": "Florianópolis",
-   "state": "SC",
-   "remote": false,
-   "workplace": "remote",
-   "date_posted": "2026-08-31",
-   "description": "",
-   "tags": [],
-   "category": "fullstack",
-   "categories": [
-    "fullstack"
-   ],
-   "seniority": "unknown",
-   "matched_city": null,
-   "score": 53,
-   "reasons": [
-    "Full Stack / Dev (+30)",
-    "remoto (+12)",
-    "publicada há ≤7 dias (+5)"
-   ],
-   "fit": null,
-   "fit_note": "",
-   "is_new": false,
-   "id": "5c1d8badf7eaf699",
-   "age_days": 5
   },
   {
    "source": "linkedin",
@@ -2649,6 +2374,39 @@
    "is_new": false,
    "id": "11f99f388d5429ea",
    "age_days": 3
+  },
+  {
+   "source": "indeed",
+   "title": "Analista de Dados SR",
+   "company": "multilog s/a",
+   "url": "https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e",
+   "location": "Itajaí, SC, BR",
+   "city": "Itajaí",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-09-03",
+   "description": "**None:**  \n\nDescrição da vaga\n  \n  \n\nVocê já imaginou trabalhar em uma das melhores empresas de logística para se trabalhar?\n  \n  \n\nAqui valorizamos o respeito com as pessoas, a fim de estreitar a confiança nas relações e integridade nas práticas, sem perder a paixão por vencer!\n  \n  \n\nCOMO É TER O JEITO MULTILOG?!??\n  \n  \n\nÉ ser apaixonado pelo que faz e realiza, pensar constantemente “fora da caixa”. É inovar para crescer, aproveitando as oportunidades para fazer acontecer. O senso de dono faz parte do DNA Multilog!!\n  \n  \n\nNada como encantar e conectar\\-se ás pessoas, sendo um agente integrador e visando sempre o cuidado para consigo e com o outro ?\n  \n  \n\nResponsabilidades e atribuições\n  \n  \n\nResponsável por coletar dados, organizar e interpretar grandes volumes de informações, transformando dados brutos em insights estratégicos que apoiam a tomada de decisão da empresa. Atua no desenvolvimento de relatórios, dashboards e indicadores de desempenho, garantindo a qualidade, consistência e integridade das bases de dados. Colabora com áreas de negócio e tecnologia para identificar oportunidades de melhoria, automatizar processos e apoiar iniciativas de inovação orientadas por dad",
+   "tags": [],
+   "category": "dados",
+   "categories": [
+    "dados"
+   ],
+   "seniority": "senior",
+   "matched_city": "Itajaí",
+   "score": 46,
+   "reasons": [
+    "Dados (+30)",
+    "sênior/liderança (-30)",
+    "Itajaí (+20)",
+    "skills: python, sql, power bi, excel, pandas, análise de dados (+18)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "52d722c47f3b9872",
+   "age_days": 2
   },
   {
    "source": "indeed",
@@ -3729,6 +3487,38 @@
    "age_days": 2
   },
   {
+   "source": "linkedin",
+   "title": "Pessoa Arquiteta de Cibersegurança Sênior - IA",
+   "company": "EY",
+   "url": "https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541",
+   "location": "Blumenau, SC",
+   "city": "Blumenau",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-09-05",
+   "description": "",
+   "tags": [],
+   "category": "ia_llm",
+   "categories": [
+    "ia_llm"
+   ],
+   "seniority": "senior",
+   "matched_city": "Blumenau",
+   "score": 27,
+   "reasons": [
+    "IA / LLMs (+30)",
+    "sênior/liderança (-30)",
+    "Blumenau (+20)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "5cad1eaf9e2f63d1",
+   "age_days": 0
+  },
+  {
    "source": "gupy",
    "title": "22113-Gerente de Operações - Banco de Dados",
    "company": "Hitss Brasil",
@@ -3762,6 +3552,38 @@
    "age_days": 5
   },
   {
+   "source": "linkedin",
+   "title": "Desenvolvedor Senior",
+   "company": "Ambev Tech",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273",
+   "location": "Blumenau, SC",
+   "city": "Blumenau",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-08-31",
+   "description": "",
+   "tags": [],
+   "category": "fullstack",
+   "categories": [
+    "fullstack"
+   ],
+   "seniority": "senior",
+   "matched_city": "Blumenau",
+   "score": 26,
+   "reasons": [
+    "Full Stack / Dev (+30)",
+    "sênior/liderança (-30)",
+    "Blumenau (+20)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "04b7cacb6da905a3",
+   "age_days": 5
+  },
+  {
    "source": "gupy",
    "title": "Analista de TI Sênior – Administração de Banco de Dados",
    "company": "Conecte seu talento a projetos que impulsionam a pesquisa, a educação e a inovação no Brasil e no mundo. Vem para a RNP!",
@@ -3792,6 +3614,38 @@
    "fit_note": "",
    "is_new": false,
    "id": "6db6b1f07bd095f5",
+   "age_days": 2
+  },
+  {
+   "source": "linkedin",
+   "title": "[Tech] Especialista em Engenharia de Software Backend - Progress",
+   "company": "TOTVS",
+   "url": "https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4460732582",
+   "location": "Joinville, SC",
+   "city": "Joinville",
+   "state": "SC",
+   "remote": false,
+   "workplace": "unknown",
+   "date_posted": "2026-09-03",
+   "description": "",
+   "tags": [],
+   "category": "fullstack",
+   "categories": [
+    "fullstack"
+   ],
+   "seniority": "senior",
+   "matched_city": "Joinville",
+   "score": 26,
+   "reasons": [
+    "Full Stack / Dev (+30)",
+    "sênior/liderança (-30)",
+    "Joinville (+20)",
+    "publicada há ≤7 dias (+5)"
+   ],
+   "fit": null,
+   "fit_note": "",
+   "is_new": false,
+   "id": "f3e6d2f37e227757",
    "age_days": 2
   },
   {
@@ -4288,8 +4142,8 @@
    "age_days": 1
   }
  ],
- "total": 129,
- "new_count": 11,
+ "total": 125,
+ "new_count": 1,
  "categorias": {
   "agentes_ia": {
    "nome": "Agentes de IA",
@@ -4320,17 +4174,17 @@
  ],
  "by_category": {
   "agentes_ia": 8,
-  "dados": 60,
+  "dados": 59,
   "ia_llm": 17,
-  "fullstack": 44
+  "fullstack": 41
  },
  "by_city": {
-  "Itajaí": 5,
+  "Itajaí": 3,
   "Navegantes": 0,
   "Balneário Camboriú": 2,
   "Gaspar": 1,
-  "Blumenau": 17,
-  "Joinville": 22,
+  "Blumenau": 16,
+  "Joinville": 21,
   "Jaraguá do Sul": 0,
   "Brusque": 0,
   "Remoto": 82
@@ -4338,13 +4192,13 @@
  "source_counts": {
   "gupy": 834,
   "indeed": 572,
-  "linkedin": 720
+  "linkedin": 715
  },
  "errors": {},
  "top_n": 20,
  "report_url": "https://github.com/FelipeCJBoB/vagas-monitor/blob/main/reports/LATEST.md",
  "state_stats": {
-  "known_jobs": 259,
+  "known_jobs": 272,
   "first_run": false
  }
 }

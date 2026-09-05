@@ -1,26 +1,16 @@
 # Radar de Vagas — 05/09/2026
 
-**11 vagas novas** · 129 na janela de 7 dias · gerado 05/09/2026 20:06  
-Fontes (brutas): Gupy 834 · Indeed 572 · LinkedIn 720  
+**1 vagas novas** · 125 na janela de 7 dias · gerado 05/09/2026 20:19  
+Fontes (brutas): Gupy 834 · Indeed 572 · LinkedIn 715  
 Cidades: Itajaí, Navegantes, Balneário Camboriú, Gaspar, Blumenau, Joinville, Jaraguá do Sul, Brusque · Remoto (Brasil) incluído  
-Por categoria: Agentes de IA 8 · Dados 60 · IA / LLMs 17 · Full Stack / Dev 44  
-Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joinville 22 · Remoto 82
+Por categoria: Agentes de IA 8 · Dados 59 · IA / LLMs 17 · Full Stack / Dev 41  
+Por local: Itajaí 3 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 16 · Joinville 21 · Remoto 82
 
-## Destaques — top 11 novas
+## Destaques — top 1 novas
 
 | Score | Vaga | Empresa | Local | Nível | Categoria | Fonte | Publicada |
 |---:|---|---|---|---|---|---|---|
-| **81** | [Programador Jr](https://br.indeed.com/viewjob?jk=96766c699da0f85d) 🆕 | Sensum Sistemas de Informática Ltda | Itajaí | Júnior | Full Stack / Dev | Indeed | 03/09 (2d) |
-| **67** | [Analytics Engineer (Remote - Brazil)](https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401) 🆕 | Loadsmart | Remoto | — | Dados | LinkedIn | 01/09 (4d) |
-| **64** | [Desenvolvedor Back End](https://br.indeed.com/viewjob?jk=d04f8be7c9073815) 🆕 | Sensum Sistemas de Informática Ltda | Itajaí | — | Full Stack / Dev | Indeed | 03/09 (2d) |
-| **64** | [Software Developer III - Java](https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452) 🆕 | Senior Sistemas | Blumenau | — | Full Stack / Dev | LinkedIn | 03/09 (2d) |
-| **61** | [Desenvolvedor Back-End](https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010) 🆕 | Jobbol | Itajaí | — | Full Stack / Dev | LinkedIn | 04/09 (1d) |
-| **48** | [Pessoa Arquiteta de Cibersegurança Sênior - IA](https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541) 🆕 | EY | Blumenau | Sênior | IA / LLMs | LinkedIn | 05/09 (hoje) |
-| **46** | [Analista de Dados SR](https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e) 🆕 | multilog s/a | Itajaí | Sênior | Dados | Indeed | 03/09 (2d) |
-| **35** | [Desenvolvedor Senior](https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273) 🆕 | Ambev Tech | Blumenau | Sênior | Full Stack / Dev | LinkedIn | 31/08 (5d) |
-| **32** | [Analista de Negócios Pleno/Sênior (Gestão de Dados)](https://br.indeed.com/viewjob?jk=6e006e05e2104aa9) 🆕 | BecomeX | Joinville | Sênior | Dados | Indeed | 11/08 (25d) |
-| **29** | [Desenvolvedor(a) Flutter Sênior](https://br.linkedin.com/jobs/view/desenvolvedor-a-flutter-s%C3%AAnior-at-paytrack-4462324507) 🆕 | Paytrack | Blumenau | Sênior | Full Stack / Dev | LinkedIn | 05/09 (hoje) |
-| **26** | [[Tech] Especialista em Engenharia de Software Backend - Progress](https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4459211960) 🆕 | TOTVS | Joinville | Sênior | Full Stack / Dev | LinkedIn | 31/08 (5d) |
+| **56** | [React + TypeScript Developer - Remote Work](https://br.linkedin.com/jobs/view/react-%2B-typescript-developer-remote-work-at-bairesdev-4460012847) 🆕 | BairesDev | Remoto | — | Full Stack / Dev | LinkedIn | 31/08 (5d) |
 
 ## Agentes de IA (8)
 
@@ -42,16 +32,14 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **45** | [Desenvolvedor Operações Sênior - IA & Agentes Autônomos (Remoto)](https://zenvia.gupy.io/job/eyJqb2JJZCI6MTE3NTk3NjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Zenvia Jobs | Remoto | Sênior | Gupy | 02/09 (3d) |
 | **12** | [Arquiteto de Software](https://br.indeed.com/viewjob?jk=2d438bb0c5410887) | banco BV | Remoto | Sênior | Indeed | 04/09 (1d) |
 
-## Dados (60)
+## Dados (59)
 
-### Na região (21)
+### Na região (20)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **46** | [Analista de Dados SR](https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e) 🆕 | multilog s/a | Itajaí | Sênior | Indeed | 03/09 (2d) |
-| **32** | [Analista de Negócios Pleno/Sênior (Gestão de Dados)](https://br.indeed.com/viewjob?jk=6e006e05e2104aa9) 🆕 | BecomeX | Joinville | Sênior | Indeed | 11/08 (25d) |
 | **98** | [Analista de Dados Júnior (SQL) - Joinville/SC - Híbrido](https://br.indeed.com/viewjob?jk=165e9476846dcb9c) | Ultra LIMS | Joinville (híbrido) | Júnior | Indeed | 04/09 (1d) |
-| **92** | [Estágio em Controle de Dados / RH](https://br.indeed.com/viewjob?jk=8b0d4d8eb479cb2e) | TUPY | Joinville | Júnior | Indeed | 03/09 (2d) |
+| **92** | [Estágio em Controle de Dados / RH](https://tupy.gupy.io/job/eyJqb2JJZCI6MTI0MTYwMDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Tupy | Joinville (presencial) | Júnior | Gupy | 03/09 (2d) |
 | **86** | [Analista de Banco de Dados Júnior (DBA) - Joinville/SC - Híbrido](https://br.indeed.com/viewjob?jk=94548c63eafd32f1) | Ultra LIMS | Joinville (híbrido) | Júnior | Indeed | 04/09 (1d) |
 | **83** | [Assistente de Controladoria e BI](https://br.linkedin.com/jobs/view/assistente-de-controladoria-e-bi-at-jobbol-4462035653) | Jobbol | Balneário Camboriú | Júnior | LinkedIn | 01/09 (4d) |
 | **83** | [Engenheiro (a) de Dados Júnior (Vaga Exclusiva PCD) - Banco de Talentos](https://br.linkedin.com/jobs/view/engenheiro-a-de-dados-j%C3%BAnior-vaga-exclusiva-pcd-banco-de-talentos-at-ey-4406923320) | EY | Blumenau | Júnior | LinkedIn | 04/09 (1d) |
@@ -61,6 +49,7 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **57** | [Analista de Inteligência de Mercado B2B](https://br.indeed.com/viewjob?jk=9bc6833fb237e336) | Prospecta Global Solutions | Joinville | — | Indeed | 04/09 (1d) |
 | **54** | [Analista de Inteligência de Mercado](https://br.indeed.com/viewjob?jk=50e21b4bc1cd4eef) | CISER | Joinville | — | Indeed | 03/09 (2d) |
 | **46** | [Analista de TI Sr. - Ciência de Dados, IA e Desenvolvimento Full Stack](https://br.indeed.com/viewjob?jk=e55b9c73f8eada8c) | TUPY | Joinville | Sênior | Indeed | 02/09 (3d) |
+| **46** | [Analista de Dados SR](https://br.indeed.com/viewjob?jk=ffedd3018b12ae5e) | multilog s/a | Itajaí | Sênior | Indeed | 03/09 (2d) |
 | **43** | [Analista de TI SR. - Foco em Business Intelligence](https://br.indeed.com/viewjob?jk=83970781aca8de26) | TUPY | Joinville | Sênior | Indeed | 01/09 (4d) |
 | **40** | [Analista de TI SR. - Engenharia de Dados Cloud e SAP Datasphere](https://br.indeed.com/viewjob?jk=9e414352c4273e4c) | TUPY | Joinville | Sênior | Indeed | 01/09 (4d) |
 | **37** | [Analista de TI SR. - Integração de Dados e Pipelines](https://br.indeed.com/viewjob?jk=d33839e5a1e68468) | TUPY | Joinville | Sênior | Indeed | 01/09 (4d) |
@@ -74,7 +63,6 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **67** | [Analytics Engineer (Remote - Brazil)](https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401) 🆕 | Loadsmart | Remoto | — | LinkedIn | 01/09 (4d) |
 | **96** | [CIENTISTA DE DADOS JÚNIOR](https://bancorbras.gupy.io/job/eyJqb2JJZCI6MTI0MjQyMTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Oportunidades | Remoto | Júnior | Gupy | 04/09 (1d) |
 | **93** | [12417713 - ANALISTA DE DADOS E IA JR](https://br.indeed.com/viewjob?jk=70a91e1f8176b858) | Quality Digital | Remoto | Júnior | Indeed | 05/09 (hoje) |
 | **90** | [Estagiário(a) de Finanças / Dados e Automação](https://br.indeed.com/viewjob?jk=ab4c9fd8aefa6553) | CIX Citizen Experience | Remoto | Júnior | Indeed | 05/09 (hoje) |
@@ -93,6 +81,7 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **61** | [Data Engineer / Mid (Remote)](https://compass.gupy.io/job/eyJqb2JJZCI6MTI0MDc3MTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Compass UOL | Remoto | — | Gupy | 02/09 (3d) |
 | **61** | [Software Engineer, Data Infrastructure & Acquisition - Florianópolis, Brazil](https://br.indeed.com/viewjob?jk=b39ac81548bd7c31) | Speechify | Remoto | — | Indeed | 02/09 (3d) |
 | **58** | [22019-Administrador de Banco de Dados PL  (Teradata Vantage)](https://globalhitss.gupy.io/job/eyJqb2JJZCI6MTIwNzQ5MDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Hitss Brasil | Remoto | Pleno | Gupy | 03/09 (2d) |
+| **55** | [Analytics Engineer (Remote - Brazil)](https://br.linkedin.com/jobs/view/analytics-engineer-remote-brazil-at-loadsmart-4452761401) | Loadsmart | Remoto | — | LinkedIn | 01/09 (4d) |
 | **55** | [Business Intelligence Analyst - Remote](https://br.linkedin.com/jobs/view/business-intelligence-analyst-remote-at-indi-staffing-services-4462188407) | INDI Staffing Services | Remoto | — | LinkedIn | 02/09 (3d) |
 | **55** | [Analista de Planejamento III](https://br.indeed.com/viewjob?jk=bcd43e58f5a87daf) | Gupy | Remoto | — | Indeed | 04/09 (1d) |
 | **46** | [Analista de Controladoria / FP&M](https://br.indeed.com/viewjob?jk=c536486ef37f4f35) | Engetecnica Engenharia e Construção | Remoto | — | Indeed | 05/09 (hoje) |
@@ -120,11 +109,11 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **48** | [Pessoa Arquiteta de Cibersegurança Sênior - IA](https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541) 🆕 | EY | Blumenau | Sênior | LinkedIn | 05/09 (hoje) |
 | **80** | [Analista de TI PL. - Desenvolvimento Full Stack para Soluções de IA](https://br.indeed.com/viewjob?jk=66cc417212ef9220) | TUPY | Joinville | Pleno | Indeed | 01/09 (4d) |
 | **65** | [Consultor(a) de Soluções e Adoção de Inteligência Artificial](https://br.indeed.com/viewjob?jk=88563382fab152ad) | JOYn RH | Blumenau | — | Indeed | 01/09 (4d) |
 | **42** | [Analista de TI SR. - Foco em IA Generativa, Arquitetura de IA e Desenvolvimento Full Stack](https://br.indeed.com/viewjob?jk=0056e1d3788d7cda) | TUPY | Joinville | Sênior | Indeed | 02/09 (3d) |
 | **33** | [Analista de TI SR. - Arquitetura de Soluções em Inteligência Artificial](https://br.indeed.com/viewjob?jk=d26304af5999006b) | TUPY | Joinville | Sênior | Indeed | 02/09 (3d) |
+| **27** | [Pessoa Arquiteta de Cibersegurança Sênior - IA](https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541) | EY | Blumenau | Sênior | LinkedIn | 05/09 (hoje) |
 
 ### Remoto (12)
 
@@ -143,19 +132,12 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **31** | [Líder de Arquitetura IA (Arquitetura Corporativa Especialista) / Remota](https://br.indeed.com/viewjob?jk=2ca5d7912422d631) | GFT TECHNOLOGIES | Remoto | Sênior | Indeed | 04/09 (1d) |
 | **22** | [ESPECIALISTA INTELIGENCIA ARTIFICIAL](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTIzODM2NTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Sênior | Gupy | 03/09 (2d) |
 
-## Full Stack / Dev (44)
+## Full Stack / Dev (41)
 
-### Na região (19)
+### Na região (16)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **81** | [Programador Jr](https://br.indeed.com/viewjob?jk=96766c699da0f85d) 🆕 | Sensum Sistemas de Informática Ltda | Itajaí | Júnior | Indeed | 03/09 (2d) |
-| **64** | [Desenvolvedor Back End](https://br.indeed.com/viewjob?jk=d04f8be7c9073815) 🆕 | Sensum Sistemas de Informática Ltda | Itajaí | — | Indeed | 03/09 (2d) |
-| **64** | [Software Developer III - Java](https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452) 🆕 | Senior Sistemas | Blumenau | — | LinkedIn | 03/09 (2d) |
-| **61** | [Desenvolvedor Back-End](https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010) 🆕 | Jobbol | Itajaí | — | LinkedIn | 04/09 (1d) |
-| **35** | [Desenvolvedor Senior](https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273) 🆕 | Ambev Tech | Blumenau | Sênior | LinkedIn | 31/08 (5d) |
-| **29** | [Desenvolvedor(a) Flutter Sênior](https://br.linkedin.com/jobs/view/desenvolvedor-a-flutter-s%C3%AAnior-at-paytrack-4462324507) 🆕 | Paytrack | Blumenau | Sênior | LinkedIn | 05/09 (hoje) |
-| **26** | [[Tech] Especialista em Engenharia de Software Backend - Progress](https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4459211960) 🆕 | TOTVS | Joinville | Sênior | LinkedIn | 31/08 (5d) |
 | **96** | [Desenvolvedor Full Stack](https://br.indeed.com/viewjob?jk=fcdbd388116eab09) | — | Joinville | Júnior | Indeed | 03/09 (2d) |
 | **84** | [Python Junior Developer - Remote Work / REF#283517](https://br.linkedin.com/jobs/view/python-junior-developer-remote-work-ref%23283517-at-bairesdev-4192502474) | BairesDev | Joinville (remoto) | Júnior | LinkedIn | 01/09 (4d) |
 | **82** | [Desenvolvedor(a) de Software - TI](https://br.indeed.com/viewjob?jk=c8204c88fb227209) | FG EMPREENDIMENTOS | Balneário Camboriú | — | Indeed | 31/08 (5d) |
@@ -168,11 +150,16 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **61** | [System Developer](https://br.linkedin.com/jobs/view/system-developer-at-infios-4433435296) | Infios | Blumenau | — | LinkedIn | 31/08 (5d) |
 | **61** | [Desenvolvedor(a) de Sistemas](https://br.linkedin.com/jobs/view/desenvolvedor-a-de-sistemas-at-mobuss-constru%C3%A7%C3%A3o-4459532567) | Mobuss Construção | Blumenau | — | LinkedIn | 01/09 (4d) |
 | **61** | [Software Developer III Java/Angular (ERP) - 11728](https://br.linkedin.com/jobs/view/software-developer-iii-java-angular-erp-11728-at-senior-sistemas-4459556849) | Senior Sistemas | Blumenau | — | LinkedIn | 01/09 (4d) |
+| **61** | [Software Developer III - Java](https://br.linkedin.com/jobs/view/software-developer-iii-java-at-senior-sistemas-4462836452) | Senior Sistemas | Blumenau | — | LinkedIn | 03/09 (2d) |
+| **61** | [Desenvolvedor Back-End](https://br.linkedin.com/jobs/view/desenvolvedor-back-end-at-jobbol-4463378010) | Jobbol | Itajaí | — | LinkedIn | 04/09 (1d) |
+| **26** | [Desenvolvedor Senior](https://br.linkedin.com/jobs/view/desenvolvedor-senior-at-ambev-tech-4460065273) | Ambev Tech | Blumenau | Sênior | LinkedIn | 31/08 (5d) |
+| **26** | [[Tech] Especialista em Engenharia de Software Backend - Progress](https://br.linkedin.com/jobs/view/tech-especialista-em-engenharia-de-software-backend-progress-at-totvs-4460732582) | TOTVS | Joinville | Sênior | LinkedIn | 03/09 (2d) |
 
 ### Remoto (25)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
+| **56** | [React + TypeScript Developer - Remote Work](https://br.linkedin.com/jobs/view/react-%2B-typescript-developer-remote-work-at-bairesdev-4460012847) 🆕 | BairesDev | Remoto | — | LinkedIn | 31/08 (5d) |
 | **88** | [Pessoa Desenvolvedora Full Stack Júnior com foco em Front-End e Cloud Azure (REMOTO)](https://br.indeed.com/viewjob?jk=044a9e2937dd1ddc) | Viceri Seidor | Remoto | Júnior | Indeed | 05/09 (hoje) |
 | **73** | [Dev Full Stack Jr. - PHP/Symfony + Angular - Florianópolis -SC](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTIzOTgwMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Júnior | Gupy | 01/09 (4d) |
 | **71** | [Desenvolvedor Backend .NET - Pleno](https://br.indeed.com/viewjob?jk=28d826860fee6e92) | Blite | Remoto | Pleno | Indeed | 04/09 (1d) |
@@ -184,7 +171,6 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 1 · Blumenau 17 · Joi
 | **59** | [Full stack DEV N2 y N3](https://stefaninilatam.gupy.io/job/eyJqb2JJZCI6MTI0MTIxOTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Latam | Remoto | — | Gupy | 03/09 (2d) |
 | **59** | [Desenvolvedor(a) Full Stack - PJ](https://br.indeed.com/viewjob?jk=f69dce29a1f66568) | ATIVA GR | Remoto | — | Indeed | 04/09 (1d) |
 | **59** | [Chief Full Stack Developer](https://br.indeed.com/viewjob?jk=d18e87648f8affd2) | EPAM Systems | Remoto | — | Indeed | 04/09 (1d) |
-| **53** | [Desenvolvedor .NET Core - Trabalho Remoto](https://br.linkedin.com/jobs/view/desenvolvedor-net-core-trabalho-remoto-at-bairesdev-4460021853) | BairesDev | Remoto | — | LinkedIn | 31/08 (5d) |
 | **53** | [Golang Developer - Remote Work](https://br.linkedin.com/jobs/view/golang-developer-remote-work-at-bairesdev-4460617921) | BairesDev | Remoto | — | LinkedIn | 01/09 (4d) |
 | **53** | [DESENVOLVEDOR FULL STACK C# C++ (SODITECH Engineering & Technology)](https://br.indeed.com/viewjob?jk=c6cac2161e37baf9) | Jobbol | Remoto | — | Indeed | 04/09 (1d) |
 | **33** | [Pessoa Desenvolvedora Full Stack Sênior com foco em Front-End e Cloud Azure (REMOTO)](https://br.indeed.com/viewjob?jk=0e6113b3db4780ee) | Viceri Seidor | Remoto | Sênior | Indeed | 05/09 (hoje) |
