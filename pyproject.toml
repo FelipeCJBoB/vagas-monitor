@@ -1,0 +1,8 @@
+[project]
+name = "vagas-monitor"
+version = "1.0.0"
+description = "Monitor automático de vagas (Dados / IA / Agentes / Full Stack) no Vale do Itajaí e Norte de SC"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

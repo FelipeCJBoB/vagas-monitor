@@ -1,0 +1,152 @@
+# ============================================================
+#  Monitor de vagas — configuração
+#  Edite à vontade; o pipeline lê este arquivo a cada execução.
+# ============================================================
+
+perfil: perfil.md            # resumo profissional usado na pontuação e na avaliação por IA
+intervalo_dias: 5            # cadência: executa se passaram >= 5 dias da última execução
+lookback_days: 7             # janela de publicação buscada (sobreposição c/ a cadência de 5 dias)
+first_run_lookback_days: 30  # primeira execução: janela maior para popular o relatório
+
+cidades:                     # cidades-alvo (vagas presenciais/híbridas fora daqui são descartadas)
+  - Itajaí
+  - Navegantes
+  - Balneário Camboriú
+  - Gaspar
+  - Blumenau
+  - Joinville
+  - Jaraguá do Sul
+  - Brusque
+cidades_alias:               # nomes que contam como uma cidade-alvo
+  Camboriú: Balneário Camboriú
+incluir_remoto: true         # vagas 100% remotas (Brasil) entram em seção própria
+
+termos_busca:                # termos enviados às fontes (LinkedIn / Indeed / Gupy-remoto)
+  - dados
+  - data
+  - inteligência artificial
+  - machine learning
+  - LLM
+  - agentes de IA
+  - full stack
+  - python
+  - BI
+
+# Categorias na ordem de preferência (prioridade 1 = mais desejada).
+# `titulo`: termos que, no TÍTULO, classificam a vaga (30 pts).
+# `descricao`: precisa de >= 2 termos distintos na DESCRIÇÃO para classificar (12 pts).
+categorias:
+  agentes_ia:
+    nome: Agentes de IA
+    prioridade: 1
+    titulo: [agente, agentes, "ai agent", "ai agents", agentic, langchain, langgraph, crewai, autogen,
+             mcp, rag, "ai engineer", "engenheiro de ia", "engenheira de ia", "automação com ia"]
+    descricao: [langchain, langgraph, crewai, autogen, "agentes de ia", "ai agents", agentic,
+                "multi-agent", multiagente, rag, mcp, "function calling", "tool calling",
+                "orquestração de agentes", "agentes autônomos"]
+  dados:
+    nome: Dados
+    prioridade: 2
+    titulo: [dados, data, bi, "business intelligence", "power bi", analytics, etl, dba,
+             "banco de dados", "big data", "data lake", dataops, dbt, "data analyst",
+             "data engineer", "data scientist"]
+    descricao: ["análise de dados", "engenharia de dados", "ciência de dados", "power bi", sql, etl,
+                "pipeline de dados", "data warehouse", dashboards, looker, tableau, bigquery,
+                databricks, spark, airflow, "modelagem de dados", "banco de dados"]
+  ia_llm:
+    nome: IA / LLMs
+    prioridade: 3
+    titulo: ["inteligência artificial", ia, ai, "machine learning", ml, llm, llms, "ia generativa",
+             "generative ai", genai, nlp, "deep learning", "visão computacional", "computer vision",
+             "ml engineer", mlops, "cientista de ml"]
+    descricao: ["machine learning", llm, "inteligência artificial", "modelos de linguagem", openai,
+                anthropic, claude, gpt, gemini, "hugging face", pytorch, tensorflow, "scikit-learn",
+                sklearn, "ia generativa", "generative ai", nlp, "deep learning", mlops, "prompt engineering"]
+  fullstack:
+    nome: Full Stack / Dev
+    prioridade: 4
+    titulo: ["full stack", fullstack, "full-stack", "desenvolvedor web", "desenvolvedora web",
+             "web developer", backend, "back-end", "back end", frontend, "front-end", "front end",
+             python, node, react, django, fastapi, flask, "desenvolvedor de software",
+             "software developer", "software engineer", "engenheiro de software", desenvolvedor,
+             desenvolvedora, programador, programadora, developer]
+    descricao: ["full stack", fullstack, react, node, django, fastapi, flask, javascript, typescript,
+                "api rest", "rest api", html, css, "next.js", vue, angular]
+
+senioridade:                 # detectada no título (e em dicas da fonte)
+  junior: [júnior, junior, jr, "jr.", estágio, estagiário, estagiária, trainee, "entry level",
+           iniciante, aprendiz, "nível i", assistente]
+  pleno: [pleno, plena, pl, "pl.", "mid-level", "mid level", "nível ii"]
+  senior: [sênior, senior, sr, "sr.", especialista, specialist, lead, líder, gerente, manager,
+           coordenador, coordenadora, head, principal, staff, diretor, diretora, arquiteto,
+           arquiteta, "tech lead", supervisor, supervisora, "nível iii"]
+
+excluir_titulo: [vendedor, vendedora, motorista, porteiro, recepcionista, "auxiliar de produção", telemarketing]
+
+habilidades:                 # do currículo — cada acerto soma pontos (máx. +18)
+  - python
+  - sql
+  - power bi
+  - excel
+  - access
+  - sap
+  - pandas
+  - polars
+  - duckdb
+  - sqlite
+  - pytest
+  - git
+  - machine learning
+  - séries temporais
+  - optuna
+  - shap
+  - gradient boosting
+  - xgboost
+  - lightgbm
+  - llm
+  - agentes
+  - langchain
+  - javascript
+  - html
+  - css
+  - nicegui
+  - ci/cd
+  - github actions
+  - kpi
+  - análise de dados
+  - estatística
+  - power query
+  - dax
+  - fastapi
+
+fontes:
+  linkedin:
+    ativo: true
+    cidades_ancora: [Itajaí, Blumenau, Joinville]   # a busca do LinkedIn cobre ~40 km ao redor
+    paginas: 2                                       # 10 vagas por página
+    buscar_descricao: true                           # 1 requisição extra por vaga nova (para pontuar skills)
+    max_descricoes: 60
+  indeed:
+    ativo: true
+    resultados_por_busca: 40
+  gupy:
+    ativo: true
+
+relatorio:
+  pasta: reports
+  html: docs/index.html
+  top_n: 20                  # destaques no topo do relatório
+  url_publica: ""            # ex.: https://github.com/FelipeCJBoB/vagas-monitor/blob/main/reports/LATEST.md
+
+notificacoes:
+  telegram:
+    ativo: auto              # auto = envia se TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID existirem
+    top_n: 15
+  email:
+    ativo: auto              # auto = envia se SMTP_USER / SMTP_PASSWORD / EMAIL_TO existirem
+
+claude:                      # avaliação de compatibilidade por IA (opcional)
+  ativo: auto                # auto = usa se ANTHROPIC_API_KEY existir
+  modelo: claude-opus-5
+  esforco: low
+  max_vagas: 25              # avalia só as N melhores vagas novas de cada execução
