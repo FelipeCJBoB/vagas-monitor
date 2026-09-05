@@ -51,12 +51,17 @@ def test_classify_titulo_vale_30(cfg):
     assert p == "dados" and pts["dados"] == 30
 
 
-def test_classify_descricao_precisa_de_dois_termos(cfg):
+def test_classify_descricao_precisa_de_tres_termos(cfg):
     j = job(title="Analista de Sistemas", description="Trabalhará com SQL e Power BI em dashboards.")
     p, _, pts = filters.classify(j, cfg["categorias"])
     assert p == "dados" and pts["dados"] == 12
-    j2 = job(title="Analista de Sistemas", description="Conhecimento em SQL.")
+    j2 = job(title="Analista de Sistemas", description="Conhecimento em SQL e Power BI.")
     assert filters.classify(j2, cfg["categorias"])[0] is None
+
+
+def test_agente_de_negocios_nao_e_agente_de_ia(cfg):
+    assert filters.classify(job(title="Agente de Negócios II - Joinville"), cfg["categorias"])[0] is None
+    assert filters.classify(job(title="Engenheiro de Agentes de IA"), cfg["categorias"])[0] == "agentes_ia"
 
 
 def test_classify_prioridade_desempata(cfg):

@@ -25,6 +25,13 @@ def _fake_jobs():
     ]
 
 
+def test_id_distingue_vagas_do_indeed_pela_query_string():
+    a = Job(source="indeed", title="A", company="X", url="https://br.indeed.com/viewjob?jk=111")
+    b = Job(source="indeed", title="B", company="Y", url="https://br.indeed.com/viewjob?jk=222")
+    assert a.id != b.id
+    assert len(pipeline.dedupe([a, b])) == 2
+
+
 def test_dedupe_prefere_descricao_maior():
     out = pipeline.dedupe(_fake_jobs())
     titles = [j.title for j in out]

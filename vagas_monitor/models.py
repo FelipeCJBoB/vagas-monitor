@@ -35,7 +35,8 @@ class Job:
 
     @property
     def id(self) -> str:
-        key = f"{self.source}|{self.url.split('?')[0].rstrip('/')}".lower()
+        # URL completa: no Indeed a chave da vaga vive na query string (?jk=...)
+        key = f"{self.source}|{self.url.strip().rstrip('/')}".lower()
         return hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
 
     @property

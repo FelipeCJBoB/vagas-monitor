@@ -9,6 +9,7 @@ from .text import any_term, contains_term, normalize
 REMOTE_TERMS = ["remoto", "remota", "remote", "home office", "home-office", "work from home",
                 "teletrabalho", "anywhere", "100% remoto"]
 HYBRID_TERMS = ["hibrido", "hibrida", "hybrid"]
+DESC_MIN_HITS = 3  # termos distintos na descrição para classificar sem acerto no título
 
 
 def match_city(job: Job, cities: list[str], aliases: dict[str, str] | None = None) -> Optional[str]:
@@ -42,7 +43,7 @@ def detect_workplace(job: Job) -> str:
 
 
 def classify(job: Job, categories: dict) -> tuple[Optional[str], list[str], dict]:
-    """Pontos por categoria: 30 se bate no título; 12 se >=2 termos batem na descrição."""
+    """Pontos por categoria: 30 se bate no título; 12 se >= DESC_MIN_HITS termos batem na descrição."""
     t = normalize(job.title)
     d = normalize(job.description)[:8000]
     hits: dict[str, int] = {}
@@ -52,7 +53,7 @@ def classify(job: Job, categories: dict) -> tuple[Optional[str], list[str], dict
             pts = 30
         else:
             desc_hits = any_term(d, cat.get("descricao", []))
-            if len(set(desc_hits)) >= 2:
+            if len(set(desc_hits)) >= DESC_MIN_HITS:
                 pts = 12
         if pts:
             hits[key] = pts

@@ -39,8 +39,10 @@ categorias:
   agentes_ia:
     nome: Agentes de IA
     prioridade: 1
-    titulo: [agente, agentes, "ai agent", "ai agents", agentic, langchain, langgraph, crewai, autogen,
-             mcp, rag, "ai engineer", "engenheiro de ia", "engenheira de ia", "automação com ia"]
+    titulo: ["agente de ia", "agentes de ia", "agente ia", "agentes ia", "agente de inteligência artificial",
+             "agentes inteligentes", "agentes autônomos", "agentes llm", "ai agent", "ai agents", "agent ai",
+             agentic, langchain, langgraph, crewai, autogen, mcp, rag, "ai engineer", "engenheiro de ia",
+             "engenheira de ia", "automação com ia"]
     descricao: [langchain, langgraph, crewai, autogen, "agentes de ia", "ai agents", agentic,
                 "multi-agent", multiagente, rag, mcp, "function calling", "tool calling",
                 "orquestração de agentes", "agentes autônomos"]
