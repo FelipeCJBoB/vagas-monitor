@@ -68,8 +68,8 @@ gh secret set ANTHROPIC_API_KEY      # opcional
 
 Rodar manualmente: aba **Actions → Monitor de vagas → Run workflow**.
 
-**Painel público:** com o repositório público, ative *Settings → Pages → Branch `main` / pasta `/docs`*.
-O painel ficará em `https://felipecjbob.github.io/vagas-monitor/`.
+**Painel público:** <https://felipecjbob.github.io/vagas-monitor/> (GitHub Pages, branch `main`, pasta `/docs`;
+atualizado automaticamente a cada rodada).
 
 ### Alternativa: Agendador de Tarefas do Windows
 

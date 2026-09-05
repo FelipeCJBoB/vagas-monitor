@@ -138,7 +138,7 @@ relatorio:
   pasta: reports
   html: docs/index.html
   top_n: 20                  # destaques no topo do relatório
-  url_publica: ""            # ex.: https://github.com/FelipeCJBoB/vagas-monitor/blob/main/reports/LATEST.md
+  url_publica: https://felipecjbob.github.io/vagas-monitor/   # link "Relatório completo" no Telegram/e-mail
 
 notificacoes:
   telegram:
