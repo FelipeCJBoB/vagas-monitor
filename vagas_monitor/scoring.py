@@ -16,8 +16,15 @@ def score_job(job: Job, cfg: dict, cat_points: dict, today: date) -> tuple[int, 
     if job.category:
         s += pts
         reasons.append(f"{cats[job.category]['nome']} (+{pts})")
+        # Bônus por categoria. Existe porque só "prioridade" não bastava: o acerto de
+        # título vale 30 para qualquer categoria, então uma vaga júnior de suporte na
+        # região passava à frente de uma vaga de dados, que é o alvo. O bônus pode ser
+        # negativo para categorias de reserva, que devem aparecer sem disputar o topo.
         prio = cats[job.category].get("prioridade", 4)
-        s += max(0, 5 - prio)
+        bonus = int(cats[job.category].get("bonus", max(0, 5 - prio)))
+        s += bonus
+        if bonus:
+            reasons.append(f"prioridade da categoria ({bonus:+d})")
     extras = [c for c in job.categories if c != job.category]
     if extras:
         s += 3 * len(extras)

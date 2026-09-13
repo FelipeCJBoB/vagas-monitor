@@ -1,0 +1,82 @@
+# ============================================================
+#  Taxonomia de habilidades procuradas nas descrições das vagas.
+#
+#  Cada entrada vira uma linha do mapa "presencial x remoto" do relatório.
+#  `termos` são buscados na descrição com fronteira de palavra e sem acento,
+#  então "power bi" casa com "Power BI" mas "bi" não casa dentro de "ambiente".
+#
+#  `tenho` declara o que já está no currículo (perfil.md). É isso que separa
+#  "o mercado pede" de "você precisa estudar" — sem essa marcação o relatório
+#  só repetiria que SQL é popular, o que não ajuda a decidir nada.
+#    sim     = domina, não é prioridade de estudo
+#    parcial = usou em projeto pessoal, falta profundidade ou uso profissional
+#    nao     = lacuna real
+# ============================================================
+
+habilidades:
+  # --- linguagens e fundamentos ------------------------------------------
+  python:       {nome: Python,            grupo: Linguagem,  tenho: sim,     termos: [python, pandas, numpy]}
+  sql:          {nome: SQL,               grupo: Dados,      tenho: sim,     termos: [sql, "t-sql", "pl/sql", ansi sql, consultas sql]}
+  javascript:   {nome: JavaScript/TS,     grupo: Linguagem,  tenho: parcial, termos: [javascript, typescript, node, nodejs, "node.js"]}
+  java:         {nome: Java,              grupo: Linguagem,  tenho: nao,     termos: [java, spring, spring boot, jpa, hibernate]}
+  csharp:       {nome: C#/.NET,           grupo: Linguagem,  tenho: nao,     termos: ["c#", ".net", dotnet, asp.net]}
+  php:          {nome: PHP,               grupo: Linguagem,  tenho: nao,     termos: [php, laravel, symfony]}
+  r_lang:       {nome: R,                 grupo: Dados,      tenho: nao,     termos: [linguagem r, rstudio]}
+
+  # --- dados e BI ---------------------------------------------------------
+  powerbi:      {nome: Power BI,          grupo: BI,         tenho: sim,     termos: [power bi, powerbi, dax, power query]}
+  excel:        {nome: Excel avançado,    grupo: BI,         tenho: sim,     termos: [excel, planilhas, vba, macros]}
+  tableau:      {nome: Tableau/Looker,    grupo: BI,         tenho: nao,     termos: [tableau, looker, qlik, qlikview, metabase, superset]}
+  etl:          {nome: ETL e pipelines,   grupo: Dados,      tenho: parcial, termos: [etl, elt, pipeline de dados, data pipeline, ingestao de dados, ingestão]}
+  modelagem:    {nome: Modelagem de dados,grupo: Dados,      tenho: parcial, termos: [modelagem de dados, modelagem dimensional, star schema, data modeling, normalizacao]}
+  warehouse:    {nome: Data warehouse,    grupo: Dados,      tenho: nao,     termos: [data warehouse, datawarehouse, data lake, lakehouse, data mart, delta lake]}
+  spark:        {nome: Spark/Databricks,  grupo: Dados,      tenho: nao,     termos: [spark, pyspark, databricks, hadoop]}
+  airflow:      {nome: Orquestração,      grupo: Dados,      tenho: nao,     termos: [airflow, dagster, prefect, luigi, orquestracao de pipelines]}
+  dbt:          {nome: dbt,               grupo: Dados,      tenho: nao,     termos: [dbt, data build tool]}
+  streaming:    {nome: Streaming,         grupo: Dados,      tenho: nao,     termos: [kafka, streaming de dados, pubsub, kinesis, event streaming]}
+  governanca:   {nome: Governança/LGPD,   grupo: Dados,      tenho: nao,     termos: [governanca de dados, data governance, lgpd, catalogo de dados, data quality, qualidade de dados]}
+  estatistica:  {nome: Estatística,       grupo: Dados,      tenho: parcial, termos: [estatistica, estatistico, teste de hipotese, testes estatisticos, inferencia, teste a/b, ab test]}
+
+  # --- IA e machine learning ---------------------------------------------
+  ml:           {nome: Machine Learning,  grupo: IA,         tenho: parcial, termos: [machine learning, aprendizado de maquina, "scikit-learn", sklearn, xgboost, lightgbm, gradient boosting, modelos preditivos, modelagem preditiva]}
+  deeplearning: {nome: Deep Learning,     grupo: IA,         tenho: nao,     termos: [deep learning, redes neurais, pytorch, tensorflow, keras]}
+  llm:          {nome: LLMs,              grupo: IA,         tenho: parcial, termos: [llm, llms, modelos de linguagem, gpt, openai, anthropic, claude, gemini, ia generativa, generative ai, genai, hugging face]}
+  agentes:      {nome: Agentes de IA,     grupo: IA,         tenho: parcial, termos: [agentes de ia, ai agents, agentic, langchain, langgraph, crewai, autogen, multi-agent, mcp, function calling, tool calling]}
+  rag:          {nome: RAG e busca vetorial, grupo: IA,      tenho: parcial, termos: [rag, retrieval augmented, banco vetorial, vector database, embeddings, pinecone, chroma, faiss, qdrant]}
+  mlops:        {nome: MLOps,             grupo: IA,         tenho: nao,     termos: [mlops, mlflow, model serving, feature store, monitoramento de modelos, deploy de modelos]}
+  nlp:          {nome: NLP,               grupo: IA,         tenho: nao,     termos: [nlp, processamento de linguagem natural, text mining]}
+  visao:        {nome: Visão computacional, grupo: IA,       tenho: nao,     termos: [visao computacional, computer vision, opencv, yolo, ocr]}
+  prompteng:    {nome: Prompt engineering,grupo: IA,         tenho: sim,     termos: [prompt engineering, engenharia de prompt, prompts]}
+
+  # --- nuvem e infraestrutura --------------------------------------------
+  aws:          {nome: AWS,               grupo: Nuvem,      tenho: nao,     termos: [aws, amazon web services, s3, redshift, lambda, ec2, glue]}
+  azure:        {nome: Azure,             grupo: Nuvem,      tenho: nao,     termos: [azure, azure data factory, synapse, fabric, adf]}
+  gcp:          {nome: Google Cloud,      grupo: Nuvem,      tenho: nao,     termos: [gcp, google cloud, bigquery, dataflow, looker studio]}
+  docker:       {nome: Docker/Kubernetes, grupo: Nuvem,      tenho: nao,     termos: [docker, kubernetes, k8s, containers, conteineres]}
+  cicd:         {nome: CI/CD,             grupo: Nuvem,      tenho: parcial, termos: ["ci/cd", integracao continua, github actions, gitlab ci, jenkins, pipeline de deploy]}
+  terraform:    {nome: IaC/Terraform,     grupo: Nuvem,      tenho: nao,     termos: [terraform, infraestrutura como codigo, ansible, pulumi]}
+  linux:        {nome: Linux,             grupo: Nuvem,      tenho: parcial, termos: [linux, shell script, bash, unix]}
+
+  # --- engenharia de software --------------------------------------------
+  git:          {nome: Git,               grupo: Software,   tenho: sim,     termos: [git, github, gitlab, bitbucket, versionamento]}
+  api:          {nome: APIs REST,         grupo: Software,   tenho: parcial, termos: [api rest, rest api, restful, graphql, webservice, web service, fastapi, integracao de sistemas]}
+  testes:       {nome: Testes automatizados, grupo: Software, tenho: sim,    termos: [testes automatizados, pytest, unit test, teste unitario, tdd, junit, jest]}
+  frontend:     {nome: Front-end,         grupo: Software,   tenho: parcial, termos: [react, angular, vue, html, css, "next.js", frontend, front-end]}
+  arquitetura:  {nome: Arquitetura,       grupo: Software,   tenho: nao,     termos: [microsservicos, microservices, arquitetura de software, design patterns, clean architecture, ddd]}
+  seguranca:    {nome: Segurança,         grupo: Software,   tenho: nao,     termos: [seguranca da informacao, cibersegurança, cibersegurancacybersecurity, owasp, pentest, iso 27001, soc]}
+
+  # --- corporativo e domínio ---------------------------------------------
+  sap:          {nome: SAP,               grupo: Corporativo, tenho: sim,    termos: [sap, sap ecc, sap ewm, "s/4hana", s4hana, abap, fiori, sap mm, sap sd, sap pp, sap wm]}
+  erp:          {nome: ERP (outros),      grupo: Corporativo, tenho: parcial, termos: [erp, totvs, protheus, senior sistemas, sankhya, datasul, oracle ebs]}
+  crm:          {nome: CRM,               grupo: Corporativo, tenho: nao,    termos: [crm, salesforce, hubspot, dynamics 365, rd station]}
+  rpa:          {nome: RPA/automação,     grupo: Corporativo, tenho: parcial, termos: [rpa, uipath, automation anywhere, power automate, blue prism, n8n, zapier, make.com, automacao de processos]}
+  processos:    {nome: Processos e KPIs,  grupo: Corporativo, tenho: sim,    termos: [kpi, kpis, indicadores, mapeamento de processos, melhoria continua, lean, six sigma, pdca]}
+  agil:         {nome: Métodos ágeis,     grupo: Gestão,      tenho: parcial, termos: [scrum, kanban, agil, agile, jira, azure devops, safe]}
+
+  # --- idioma -------------------------------------------------------------
+  ingles:       {nome: Inglês,            grupo: Idioma,      tenho: parcial, termos: [ingles, english, fluent english, ingles avancado, ingles fluente, ingles intermediario]}
+  espanhol:     {nome: Espanhol,          grupo: Idioma,      tenho: nao,     termos: [espanhol, spanish]}
+
+# Mínimo de vagas com a habilidade para ela entrar no mapa. Abaixo disso o
+# percentual é ruído: 1 em 3 vira "33% do mercado", o que não significa nada.
+min_ocorrencias: 4

@@ -8,6 +8,7 @@ from pathlib import Path
 
 from jinja2 import Environment, BaseLoader
 
+from . import skills
 from .config import ROOT, env
 from .models import Job
 
@@ -26,7 +27,8 @@ def _age(date_posted: str | None, today: date) -> int | None:
 
 
 def build_context(jobs: list[Job], cfg: dict, run_dt: datetime, lookback_days: int,
-                  source_counts: dict, errors: dict, state_stats: dict) -> dict:
+                  source_counts: dict, errors: dict, state_stats: dict,
+                  taxonomia: dict | None = None) -> dict:
     today = run_dt.date()
     jl = []
     for j in jobs:
@@ -54,6 +56,8 @@ def build_context(jobs: list[Job], cfg: dict, run_dt: datetime, lookback_days: i
         # quantas vagas realmente receberam nota da IA: a legenda da estrela só
         # aparece quando há estrela, e diz de quantas vagas ela fala
         "ai_count": sum(1 for j in jl if j.get("fit") is not None),
+        # mapa "o mercado presencial x o remoto cobram o quê"
+        "mercado": skills.analyze(jl, taxonomia or {}),
         "top_n": int(cfg.get("relatorio", {}).get("top_n", 20)),
         "report_url": cfg.get("relatorio", {}).get("url_publica") or env("REPORT_URL") or "",
         "state_stats": state_stats,
@@ -116,6 +120,131 @@ def _md_row(j: dict, cats: dict, with_cat: bool = True) -> str:
     return row
 
 
+TENHO_PT = {"sim": "já domina", "parcial": "usou em projeto", "nao": "lacuna"}
+ONDE_PT = {"presencial": "pesa no presencial", "remoto": "pesa no remoto",
+           "ambos": "cobrado nos dois", "indeterminado": "amostra insuficiente"}
+
+
+def _leitura_do_mercado(m: dict) -> list[str]:
+    """Converte os números do mapa em leitura acionável.
+
+    Tudo aqui é derivado da amostra da própria rodada. Se a amostra for pequena,
+    o texto diz isso em vez de afirmar tendência.
+    """
+    linhas, am = m.get("linhas") or [], m.get("amostra") or {}
+    if not linhas:
+        return []
+    reg, rem = am.get("regional", 0), am.get("remoto", 0)
+    out = []
+
+    if not am.get("comparavel", True):
+        menor = "regional" if reg <= rem else "remoto"
+        out.append(f"⚠️ **Comparação entre os dois mercados suspensa nesta rodada.** O lado "
+                   f"{menor} tem só {min(reg, rem)} vagas com descrição, abaixo do mínimo de "
+                   f"{am.get('min_segmento', 10)}. Com essa amostra, uma única menção viraria "
+                   f"vários pontos percentuais. Os números absolutos continuam válidos; a coluna "
+                   f"'onde pesa' foi neutralizada.")
+
+    grupos = m.get("grupos") or []
+    comparavel = am.get("comparavel", True)
+
+    # a família em que ele já é forte e que domina o mercado local
+    casa = next((g for g in grupos if g["dominado"] or not g["faltam"]), None)
+    if casa is None:
+        casa = max(grupos, key=lambda g: g["pct_regional"] - g["pct_remoto"], default=None)
+    if casa and comparavel and casa["pct_regional"] > casa["pct_remoto"]:
+        out.append(f"**Seu terreno já conquistado: {casa['grupo']}.** Aparece em "
+                   f"{casa['pct_regional']:.0f}% das vagas presenciais da região, contra "
+                   f"{casa['pct_remoto']:.0f}% das remotas. É o que você usa todo dia hoje. "
+                   "Não é para estudar, é para ocupar o topo do currículo e virar história "
+                   "de entrevista com número junto.")
+
+    # a família que mais separa os dois mercados e onde há lacuna
+    com_lacuna = [g for g in grupos if g["faltam"]]
+    if com_lacuna and comparavel:
+        pedagio = max(com_lacuna, key=lambda g: g["pct_remoto"] - g["pct_regional"])
+        if pedagio["pct_remoto"] > pedagio["pct_regional"] * 1.5:
+            out.append(f"**O pedágio do mercado remoto: {pedagio['grupo']}.** "
+                       f"{pedagio['pct_remoto']:.0f}% das vagas remotas pedem, contra "
+                       f"{pedagio['pct_regional']:.0f}% das regionais. É a maior distância entre "
+                       "os dois mercados nesta rodada, e é onde suas lacunas se concentram: "
+                       + ", ".join(pedagio["faltam"][:4]) + ".")
+
+    forca = [r for r in linhas if r["tenho"] == "sim"][:5]
+    if forca:
+        out.append("**O que já joga a seu favor, item a item.** " + ", ".join(
+            f"{r['nome']} ({r['pct_acessivel']:.0f}%)" for r in forca) +
+            ". Percentual é a fatia das vagas acessíveis em que cada um aparece.")
+
+    faltam = skills.prioridades(m, limite=3)
+    if faltam:
+        out.append("**Onde o estudo rende mais.** " + "; ".join(
+            f"{r['nome']} destrava {r['pct_acessivel']:.0f}% das vagas acessíveis e hoje é "
+            f"{TENHO_PT[r['tenho']]}" for r in faltam) + ".")
+
+    out.append("**Como ler a diferença entre os dois mercados.** Ela mistura duas causas. As vagas "
+               "remotas vêm de empresas de tecnologia e tendem a ser mais sêniores; as regionais "
+               "incluem cargos de ERP e suporte que pedem menos stack. Parte do contraste é o tipo "
+               "de empresa, não o regime de trabalho. Vale como direção, não como medida exata.")
+    return out
+
+
+def _secao_mercado(ctx: dict) -> list[str]:
+    m = ctx.get("mercado") or {}
+    linhas = m.get("linhas") or []
+    if not linhas:
+        return []
+    am = m["amostra"]
+    out = [
+        "## O que o mercado cobra",
+        "",
+        f"Base desta rodada: **{am['regional']} vagas presenciais ou híbridas na região** "
+        f"(de {am['regional_total']}) e **{am['remoto']} remotas** (de {am['remoto_total']}) "
+        f"com descrição legível, cobertura de {am['cobertura_pct']:.0f}%. "
+        f"Percentuais calculados só sobre vagas com descrição; habilidade com menos de "
+        f"{m['min_ocorrencias']} ocorrências fica de fora por ser ruído.",
+        "",
+    ]
+    out += [f"- {t}" for t in _leitura_do_mercado(m)] + [""]
+
+    grupos = m.get("grupos") or []
+    if grupos:
+        out += ["### Por família de tecnologia", "",
+                "Uma vaga conta uma vez por família, mesmo citando três tecnologias dela. Este corte "
+                "existe porque AWS, Azure e Google Cloud competem entre si na tabela item a item e "
+                "cada uma parece modesta, quando na verdade são a mesma lacuna.", "",
+                "| Família | Presencial região | Remoto nacional | Vagas acessíveis | O que falta em você |",
+                "|---|---:|---:|---:|---|"]
+        for g in grupos:
+            falta = "— domina" if g["dominado"] else ", ".join(g["faltam"][:4])
+            out.append(f"| **{g['grupo']}** | {g['pct_regional']:.0f}% | {g['pct_remoto']:.0f}% | "
+                       f"{g['pct_acessivel']:.0f}% | {falta} |")
+        out.append("")
+
+    faltam = skills.prioridades(m, limite=8)
+    if faltam:
+        out += ["### Prioridade de estudo", "",
+                "Ordem por quanto cada item destrava candidaturas que você pode realmente pegar "
+                "(júnior, pleno ou sem nível declarado), descontando o que já domina.", "",
+                "| # | Habilidade | Aparece em | Onde pesa | Situação |",
+                "|---:|---|---:|---|---|"]
+        for i, r in enumerate(faltam, 1):
+            out.append(f"| {i} | **{r['nome']}** | {r['pct_acessivel']:.0f}% das acessíveis | "
+                       f"{ONDE_PT[r['onde']]} | {TENHO_PT[r['tenho']]} |")
+        out.append("")
+
+    out += ["### Mapa completo", "",
+            "| Habilidade | Grupo | Presencial região | Remoto nacional | Onde pesa | Você |",
+            "|---|---|---:|---:|---|---|"]
+    for r in linhas:
+        out.append(f"| {r['nome']} | {r['grupo']} | {r['pct_regional']:.0f}% ({r['n_regional']}) | "
+                   f"{r['pct_remoto']:.0f}% ({r['n_remoto']}) | {ONDE_PT[r['onde']]} | "
+                   f"{TENHO_PT[r['tenho']]} |")
+    out += ["", "Marcação de domínio vem de `skills.yaml`, campo `tenho`. Ajuste lá conforme "
+                "for estudando e a prioridade se recalcula sozinha na próxima rodada.", ""]
+    return out
+
+
 def render_markdown(ctx: dict) -> str:
     cats = ctx["categorias"]
     jobs = ctx["jobs"]
@@ -142,6 +271,8 @@ def render_markdown(ctx: dict) -> str:
         out += [hdr] + [_md_row(j, cats) for j in new_jobs[: ctx["top_n"]]] + [""]
     else:
         out += ["_Nenhuma vaga nova nesta rodada._", ""]
+
+    out += _secao_mercado(ctx)
 
     hdr2 = "| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |\n|---:|---|---|---|---|---|---|"
     for key in sorted(cats, key=lambda k: cats[k]["prioridade"]):
@@ -237,6 +368,27 @@ ol.jobs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;ga
 details{margin-top:6px;font-size:13.5px;color:var(--muted)}summary{cursor:pointer}
 details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch}
 .empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:8px}
+.tabs{display:flex;gap:4px;margin:0 0 14px;border-bottom:1px solid var(--line)}
+.tab{border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);font:inherit;font-weight:600;padding:8px 14px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.nota{margin:0 0 10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--chip);border-radius:0 6px 6px 0;font-size:14px;max-width:80ch}
+.nota.alerta{border-left-color:var(--warn);background:var(--warn-soft);color:var(--warn)}
+.nota b{color:var(--ink)}.nota.alerta b{color:inherit}
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;margin:0 0 22px}
+.srow{display:grid;grid-template-columns:26px minmax(120px,1.4fr) minmax(90px,2fr) 108px;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:9px 12px}
+.srow .pos{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.srow .nm{font-weight:600;min-width:0}
+.srow .gp{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.bars{display:flex;flex-direction:column;gap:3px;min-width:0}
+.bar{display:grid;grid-template-columns:52px minmax(0,1fr) 40px;gap:7px;align-items:center;font-size:11.5px;color:var(--muted)}
+.bar .track{height:7px;border-radius:4px;background:var(--chip);overflow:hidden}
+.bar .fill{display:block;height:100%;border-radius:4px;background:var(--accent)}
+.bar.rem .fill{background:var(--good)}
+.bar .val{font-family:"JetBrains Mono",monospace;text-align:right;font-variant-numeric:tabular-nums}
+.tag{justify-self:end;font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--chip);white-space:nowrap}
+.tag.gap{background:var(--warn-soft);color:var(--warn)}
+.tag.tem{background:var(--good-soft);color:var(--good)}
+@media (max-width:700px){.srow{grid-template-columns:22px minmax(0,1fr);row-gap:8px}.srow .bars,.srow .tag{grid-column:1/-1;justify-self:start}}
 .errors{margin:0 0 14px;padding:10px 12px;border-radius:6px;background:var(--warn-soft);color:var(--warn);font-size:13.5px}
 .foot{margin:28px 0 0;color:var(--muted);font-size:13px;max-width:80ch}
 @media (max-width:820px){
@@ -278,8 +430,15 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
 
   <section aria-label="Vagas">
     {% if errors %}<div class="errors">Problemas nesta rodada: {% for k, v in errors.items() %}<b>{{ source_pt.get(k, k) }}</b> — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}
+    {% if mercado.get('linhas') %}
+    <div class="tabs" role="tablist">
+      <button class="tab" id="tabVagas" role="tab" aria-selected="true">Vagas</button>
+      <button class="tab" id="tabMercado" role="tab" aria-selected="false">O que estudar</button>
+    </div>
+    {% endif %}
     <div class="count"><span><b id="n">0</b> vagas</span><span id="hint"></span></div>
     <ol class="jobs" id="list"></ol>
+    <div id="mercado" hidden></div>
     <p class="foot">Pontuação por regras explícitas: categoria no título +30 · júnior/estágio +25 · cidade-alvo +20 · remoto +12 · skills do currículo até +18 · sênior/liderança −30.{% if ai_count %} ★ = avaliação do Claude (0–10) sobre a descrição completa, aplicada às {{ ai_count }} melhores vagas novas de um total de {{ new_count }}.{% endif %}</p>
   </section>
 </main>
@@ -368,6 +527,74 @@ function render(){
   $("#hint").textContent = st.onlyNew ? `de ${DATA.new_count} novas` : `de ${DATA.total} na janela`;
   $("#list").innerHTML = out.length ? out.map(row).join("") : `<li class="empty">Nenhuma vaga com esses filtros.</li>`;
 }
+// --- aba "O que estudar" ---------------------------------------------------
+const TENHO = {sim:["já domina","tem"], parcial:["usou em projeto","tem"], nao:["lacuna","gap"]};
+const ONDE = {presencial:"pesa no presencial", remoto:"pesa no remoto",
+              ambos:"cobrado nos dois", indeterminado:"amostra insuficiente"};
+function barra(rotulo, pct, n, classe){
+  return `<div class="bar ${classe}"><span>${rotulo}</span>
+    <span class="track"><i class="fill" style="width:${Math.min(100,pct)}%"></i></span>
+    <span class="val">${pct.toFixed(0)}%</span></div>`;
+}
+function linhaSkill(r, i){
+  const [rotulo, cls] = TENHO[r.tenho] || TENHO.nao;
+  return `<li class="srow">
+    <span class="pos">${i}</span>
+    <span class="nm">${esc(r.nome)}<span class="gp">${esc(r.grupo)} · ${ONDE[r.onde]||""}</span></span>
+    <span class="bars">${barra("região", r.pct_regional, r.n_regional, "reg")}${barra("remoto", r.pct_remoto, r.n_remoto, "rem")}</span>
+    <span class="tag ${cls}">${rotulo}</span>
+  </li>`;
+}
+function renderMercado(){
+  const m = DATA.mercado || {}, linhas = m.linhas || [];
+  if (!linhas.length) return;
+  const am = m.amostra || {};
+  const faltam = linhas.filter(r => r.prioridade > 0).slice(0, 8);
+  const notas = (DATA.leitura || []).map(t => {
+    const alerta = t.startsWith("⚠️");
+    // o texto vem em markdown leve: **negrito** vira <b>
+    const html = esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    return `<p class="nota${alerta ? " alerta" : ""}">${html}</p>`;
+  }).join("");
+  $("#mercado").innerHTML = `
+    ${notas}
+    <p class="foot" style="margin:0 0 16px">Base: <b>${am.regional}</b> vagas presenciais ou híbridas na região
+      (de ${am.regional_total}) e <b>${am.remoto}</b> remotas (de ${am.remoto_total}) com descrição legível.
+      Percentuais só sobre vagas com descrição; abaixo de ${m.min_ocorrencias} menções a habilidade fica de fora.</p>
+    ${(m.grupos||[]).length ? `<h3 style="font-family:Sora,sans-serif;font-size:15px;margin:0 0 8px">Por família de tecnologia</h3>
+    <p class="foot" style="margin:0 0 10px">Uma vaga conta uma vez por família. AWS, Azure e Google Cloud
+      competem entre si na lista item a item e cada uma parece modesta, quando são a mesma lacuna.</p>
+    <ol class="mgrid">${m.grupos.map((g,i)=>`<li class="srow">
+      <span class="pos">${i+1}</span>
+      <span class="nm">${esc(g.grupo)}<span class="gp">${g.dominado ? "você domina" : "falta: " + esc(g.faltam.slice(0,3).join(", "))}</span></span>
+      <span class="bars">${barra("região", g.pct_regional, 0, "reg")}${barra("remoto", g.pct_remoto, 0, "rem")}</span>
+      <span class="tag ${g.dominado ? "tem" : "gap"}">${g.pct_acessivel.toFixed(0)}% acessíveis</span>
+    </li>`).join("")}</ol>` : ""}
+    ${faltam.length ? `<h3 style="font-family:Sora,sans-serif;font-size:15px;margin:0 0 8px">Prioridade de estudo</h3>
+    <p class="foot" style="margin:0 0 10px">Ordem por quanto cada item destrava vagas que você pode pegar hoje
+      (júnior, pleno ou sem nível declarado), descontando o que já domina.</p>
+    <ol class="mgrid">${faltam.map((r,i)=>linhaSkill(r,i+1)).join("")}</ol>` : ""}
+    <h3 style="font-family:Sora,sans-serif;font-size:15px;margin:0 0 8px">Mapa completo</h3>
+    <ol class="mgrid">${linhas.map((r,i)=>linhaSkill(r,i+1)).join("")}</ol>
+    <p class="foot">A marcação "já domina / usou em projeto / lacuna" vem do arquivo <code>skills.yaml</code>.
+      Atualize conforme for estudando e a prioridade se recalcula na próxima rodada.</p>`;
+}
+function aba(mercado){
+  const tv = $("#tabVagas"), tm = $("#tabMercado");
+  if (!tv) return;
+  tv.setAttribute("aria-selected", String(!mercado));
+  tm.setAttribute("aria-selected", String(mercado));
+  $("#list").hidden = mercado;
+  $("#mercado").hidden = !mercado;
+  document.querySelector(".count").hidden = mercado;
+  document.querySelector(".filters").style.visibility = mercado ? "hidden" : "";
+}
+if ($("#tabVagas")){
+  $("#tabVagas").addEventListener("click", () => aba(false));
+  $("#tabMercado").addEventListener("click", () => aba(true));
+  renderMercado();
+}
+
 $("#q").addEventListener("input", e => { st.q = e.target.value; render(); });
 $("#place").addEventListener("change", e => { st.place = e.target.value; render(); });
 $("#sort").addEventListener("change", e => { st.sort = e.target.value; render(); });
@@ -381,6 +608,8 @@ def render_html(ctx: dict) -> str:
     env_ = Environment(loader=BaseLoader(), autoescape=True)
     tpl = env_.from_string(HTML_TEMPLATE)
     data = {k: ctx[k] for k in ("jobs", "total", "new_count", "categorias", "cidades", "run_date_br")}
+    data["mercado"] = ctx.get("mercado") or {}
+    data["leitura"] = _leitura_do_mercado(data["mercado"]) if data["mercado"].get("linhas") else []
     data_json = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c").replace("\u2028", "\\u2028")
     return tpl.render(**ctx, source_pt=SOURCE_PT, data_json=data_json)
 
@@ -415,6 +644,12 @@ def load_context(json_path: Path) -> dict:
     ctx.setdefault("total", len(jobs))
     ctx.setdefault("new_count", sum(1 for j in jobs if j.get("is_new")))
     ctx.setdefault("errors", {})
+    # o mapa de mercado é recalculado, e não lido do arquivo: as habilidades por vaga
+    # já estão gravadas, então `render` reflete a versão atual da análise sem precisar
+    # coletar tudo de novo. É o que permite iterar na metodologia sobre dados reais.
+    if any(j.get("skills") for j in jobs):
+        ctx["mercado"] = skills.analyze(jobs, skills.load_taxonomy(ROOT))
+    ctx.setdefault("mercado", {})
     ctx.setdefault("source_counts", {})
     ctx.setdefault("report_url", "")
     ctx.setdefault("top_n", 20)

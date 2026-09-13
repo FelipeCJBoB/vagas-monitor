@@ -52,11 +52,20 @@ def test_classify_titulo_vale_30(cfg):
 
 
 def test_classify_descricao_precisa_de_tres_termos(cfg):
-    j = job(title="Analista de Sistemas", description="Trabalhará com SQL e Power BI em dashboards.")
+    """Título neutro: quem classifica é a descrição, e ela precisa de 3 termos."""
+    j = job(title="Especialista em Operações", description="Trabalhará com SQL e Power BI em dashboards.")
     p, _, pts = filters.classify(j, cfg["categorias"])
     assert p == "dados" and pts["dados"] == 12
-    j2 = job(title="Analista de Sistemas", description="Conhecimento em SQL e Power BI.")
+    j2 = job(title="Especialista em Operações", description="Conhecimento em SQL e Power BI.")
     assert filters.classify(j2, cfg["categorias"])[0] is None
+
+
+def test_titulo_vence_descricao_mas_a_segunda_categoria_fica_registrada(cfg):
+    """"Analista de Sistemas" é o cargo; dados aparece como categoria secundária."""
+    j = job(title="Analista de Sistemas", description="Trabalhará com SQL e Power BI em dashboards.")
+    primary, ordered, pts = filters.classify(j, cfg["categorias"])
+    assert primary == "sistemas_negocio" and pts["sistemas_negocio"] == 30
+    assert "dados" in ordered
 
 
 def test_agente_de_negocios_nao_e_agente_de_ia(cfg):
@@ -105,3 +114,36 @@ def test_score_junior_na_regiao_supera_senior_remoto(cfg):
     assert sa > sb
     assert 0 <= sb <= 100 and sa <= 100
     assert any("Itajaí" in r for r in ra) and any("sênior" in r for r in rb)
+
+
+def test_bonus_de_categoria_mantem_o_alvo_no_topo(cfg):
+    """Sem o bônus, uma vaga júnior de ERP na região passava à frente de Dados.
+
+    O acerto de título vale 30 para qualquer categoria, então só a "prioridade"
+    (que valia no máximo 3 pontos) não expressava a preferência real.
+    """
+    from datetime import date
+    hoje = date(2026, 9, 13)
+
+    def pontua(titulo, categoria, cidade, senioridade):
+        j = job(title=titulo, description="Python e SQL")
+        j.matched_city, j.workplace = cidade, "hybrid"
+        j.category, j.categories, j.seniority = categoria, [categoria], senioridade
+        return scoring.score_job(j, cfg, {categoria: 30}, hoje)[0]
+
+    dados = pontua("Analista de Dados Júnior", "dados", "Itajaí", "junior")
+    erp = pontua("Analista de Sistemas Jr", "sistemas_negocio", "Itajaí", "junior")
+    assert dados > erp
+
+
+def test_suporte_tecnico_fica_fora_do_escopo(cfg):
+    """Atendimento ao usuário não usa o repertório dele nem leva a Dados."""
+    for titulo in ["[Suporte] Assistente de Suporte Técnico", "Analista de Suporte II (HCM)",
+                   "Service Desk N1", "Técnico de Help Desk"]:
+        assert filters.classify(job(title=titulo), cfg["categorias"])[0] is None, titulo
+
+
+def test_ponte_de_erp_e_implantacao_continua_dentro(cfg):
+    for titulo in ["Implantador de Sistemas", "ANALISTA SAP MM", "Analista de Sistemas Jr",
+                   "Analista Funcional de ERP", "Analista de Negócios de Integração"]:
+        assert filters.classify(job(title=titulo), cfg["categorias"])[0] == "sistemas_negocio", titulo

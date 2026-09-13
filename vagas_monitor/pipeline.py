@@ -5,7 +5,7 @@ import logging
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
-from . import filters, report, scoring
+from . import filters, report, scoring, skills
 from .config import ROOT, env, load_config, load_profile
 from .dedupe import SOURCE_PREF, merge_duplicates
 from .models import Job
@@ -137,6 +137,12 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
     jobs.sort(key=lambda j: (not j.is_new, -j.score, j.date_posted or ""))
     new_jobs = [j for j in jobs if j.is_new]
 
+    # extração de habilidades sobre a descrição completa, antes do truncamento
+    taxonomia = skills.load_taxonomy(ROOT)
+    if taxonomia:
+        com_desc = skills.annotate_jobs(jobs, taxonomia)
+        log.info("habilidades extraídas de %d/%d descrições", com_desc, len(jobs))
+
     # A avaliação por IA é um enfeite: nunca pode derrubar a rodada. Sem esta
     # proteção, qualquer falha do SDK descartaria a coleta inteira, o relatório,
     # o estado e a notificação.
@@ -152,7 +158,8 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
             errors["claude"] = ai_error
 
     ctx = report.build_context(jobs, cfg, now, lb, counts, errors,
-                               {"known_jobs": len(state.data["jobs"]), "first_run": state.first_run})
+                               {"known_jobs": len(state.data["jobs"]), "first_run": state.first_run},
+                               taxonomia=taxonomia)
     paths = report.write_all(ctx, cfg)
     log.info("relatórios: %s | %s", paths["md"].relative_to(ROOT), paths["html"].relative_to(ROOT))
 

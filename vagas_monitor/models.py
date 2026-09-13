@@ -37,6 +37,8 @@ class Job:
     is_new: bool = True
     # chaves de anúncios equivalentes fundidos nesta vaga (ver dedupe.merge_duplicates)
     aliases: list = field(default_factory=list)
+    # habilidades citadas na descrição COMPLETA, extraídas antes do truncamento
+    skills: list = field(default_factory=list)
 
     @property
     def id(self) -> str:

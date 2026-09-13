@@ -35,10 +35,41 @@ def build_html(ctx: dict, top_n: int = 40) -> str:
              "<th style='padding:8px'>Local</th><th style='padding:8px'>Nível</th><th style='padding:8px'>Categoria</th><th style='padding:8px'>IA</th></tr>"
              + "".join(rows) + "</table>") if rows else "<p>Nenhuma vaga nova nesta rodada.</p>"
     link = f"<p><a href='{html.escape(ctx['report_url'])}'>Relatório completo</a></p>" if ctx.get("report_url") else ""
+    mercado = build_mercado_html(ctx)
     return (f"<div style='font-family:Segoe UI,Arial,sans-serif;color:#17222B'>"
             f"<h2 style='margin:0 0 4px'>Radar de Vagas — {ctx['run_date_br']}</h2>"
             f"<p style='margin:0 0 16px;color:#5F6C77'>{ctx['new_count']} novas · {ctx['total']} na janela de {ctx['lookback_days']} dias</p>"
-            f"{table}{link}</div>")
+            f"{table}{mercado}{link}</div>")
+
+
+ONDE_PT = {"presencial": "pesa no presencial", "remoto": "pesa no remoto",
+           "ambos": "cobrado nos dois", "indeterminado": "amostra insuficiente"}
+TENHO_PT = {"sim": "já domina", "parcial": "usou em projeto", "nao": "lacuna"}
+
+
+def build_mercado_html(ctx: dict, top: int = 6) -> str:
+    """Prioridades de estudo derivadas das descrições desta rodada."""
+    m = ctx.get("mercado") or {}
+    faltam = [r for r in (m.get("linhas") or []) if r["prioridade"] > 0][:top]
+    if not faltam:
+        return ""
+    am = m.get("amostra", {})
+    linhas = "".join(
+        "<tr>"
+        f"<td style='padding:6px 8px;border-bottom:1px solid #D8E0E2'>{i}</td>"
+        f"<td style='padding:6px 8px;border-bottom:1px solid #D8E0E2'><b>{html.escape(r['nome'])}</b>"
+        f"<div style='color:#5F6C77;font-size:13px'>{html.escape(r['grupo'])} · {ONDE_PT.get(r['onde'], '')}</div></td>"
+        f"<td style='padding:6px 8px;border-bottom:1px solid #D8E0E2;text-align:right'>{r['pct_acessivel']:.0f}%</td>"
+        f"<td style='padding:6px 8px;border-bottom:1px solid #D8E0E2'>{TENHO_PT.get(r['tenho'], '')}</td>"
+        "</tr>" for i, r in enumerate(faltam, 1))
+    return ("<h3 style='margin:24px 0 4px;font-family:Segoe UI,Arial,sans-serif'>O que estudar primeiro</h3>"
+            f"<p style='margin:0 0 8px;color:#5F6C77;font-size:13px'>Das descrições desta rodada: "
+            f"{am.get('regional', 0)} vagas na região e {am.get('remoto', 0)} remotas. A coluna do meio é "
+            "a fatia das vagas que você pode pegar hoje em que a habilidade aparece.</p>"
+            "<table style='border-collapse:collapse;width:100%;font-family:Segoe UI,Arial,sans-serif;font-size:14px'>"
+            "<tr style='text-align:left;color:#5F6C77'><th style='padding:6px 8px'>#</th>"
+            "<th style='padding:6px 8px'>Habilidade</th><th style='padding:6px 8px;text-align:right'>Aparece em</th>"
+            "<th style='padding:6px 8px'>Situação</th></tr>" + linhas + "</table>")
 
 
 def send(host: str, port: int, user: str, password: str, to: str, ctx: dict, md_path: Path | None = None) -> bool:
