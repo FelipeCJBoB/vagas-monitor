@@ -91,6 +91,47 @@ def cmd_test_notify(a) -> int:
     return rc
 
 
+def cmd_check_ia(a) -> int:
+    """Faz UMA chamada real e mostra a nota, para validar a chave sem esperar a rodada."""
+    from .config import avaliacao_cfg, load_config
+    from .enrich import enrich, escolher_provedor
+    from .models import Job
+    from .providers import DISPONIVEIS
+
+    cfg = load_config(a.config)
+    aval = avaliacao_cfg(cfg)
+    print("Chaves encontradas no ambiente:")
+    for nome, mod in DISPONIVEIS.items():
+        from .config import env
+        print(f"  {mod.NOME:8s} ({mod.ENV_VAR}): {'sim' if env(mod.ENV_VAR) else 'não'}")
+    escolhido = escolher_provedor(aval)
+    print(f"Configuração: provedor={aval.get('provedor', 'auto')} -> usaria: {escolhido or 'nenhum'}")
+    if not escolhido:
+        print("\nNenhum provedor utilizável. Preencha GEMINI_API_KEY ou ANTHROPIC_API_KEY no .env.")
+        return 1
+
+    vaga = Job(source="teste", title="Analista de Dados Júnior", company="Empresa Exemplo",
+               url="https://exemplo/1", location="Itajaí, SC", workplace="hybrid",
+               description="Rotina com Python, SQL e Power BI. Desejável conhecimento em ETL. "
+                           "Vaga para início de carreira, formação em andamento é aceita.")
+    vaga.seniority = "junior"
+    print(f"\nEnviando 1 vaga de teste para {DISPONIVEIS[escolhido].NOME} …")
+    done, motivo = enrich([vaga], load_profile_safe(cfg), {**aval, "max_vagas": 1})
+    if done:
+        print(f"OK — nota {vaga.fit}/10\n     {vaga.fit_note}")
+        return 0
+    print(f"FALHOU — {motivo or 'sem resposta utilizável'}")
+    return 1
+
+
+def load_profile_safe(cfg) -> str:
+    from .config import load_profile
+    try:
+        return load_profile(cfg)
+    except OSError:
+        return ""
+
+
 def cmd_render(a) -> int:
     """Regera Markdown/HTML a partir do JSON de uma rodada (útil para ajustar o layout sem coletar)."""
     from . import report
@@ -124,6 +165,7 @@ def main(argv=None) -> int:
     sub.add_parser("status", help="mostra última execução e próxima rodada").set_defaults(fn=cmd_status)
     sub.add_parser("setup-telegram", help="descobre o chat_id do bot e grava no .env").set_defaults(fn=cmd_setup_telegram)
     sub.add_parser("test-notify", help="envia uma mensagem de teste nos canais configurados").set_defaults(fn=cmd_test_notify)
+    sub.add_parser("check-ia", help="valida a chave de IA com uma chamada real").set_defaults(fn=cmd_check_ia)
     rr = sub.add_parser("render", help="regera Markdown/HTML a partir do JSON da última rodada")
     rr.add_argument("json_path", nargs="?")
     rr.set_defaults(fn=cmd_render)

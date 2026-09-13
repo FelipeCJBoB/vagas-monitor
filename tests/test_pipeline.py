@@ -94,14 +94,14 @@ def test_falha_da_ia_nao_derruba_a_rodada(monkeypatch, tmp_path):
     monkeypatch.setattr(report, "ROOT", tmp_path)
     monkeypatch.setattr(pipeline, "collect_all", lambda cfg, lb, errors, skip=(): (_fake_jobs(), {"gupy": 6}))
     monkeypatch.setattr(pipeline.linkedin, "fetch_description", lambda j: False)
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-fake")
+    monkeypatch.setenv("GEMINI_API_KEY", "fake")
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
     monkeypatch.delenv("SMTP_USER", raising=False)
 
     def explode(*a, **k):
         raise TypeError("parâmetro inválido no SDK")
 
-    monkeypatch.setitem(sys.modules, "vagas_monitor.enrich_claude", types.SimpleNamespace(enrich=explode))
+    monkeypatch.setitem(sys.modules, "vagas_monitor.enrich", types.SimpleNamespace(enrich=explode))
 
     s = pipeline.run(force=True)
 
@@ -109,7 +109,7 @@ def test_falha_da_ia_nao_derruba_a_rodada(monkeypatch, tmp_path):
     assert s["in_scope"] == 3
     assert s["ai_evaluated"] == 0
     assert "TypeError" in s["ai_error"]
-    assert "claude" in s["errors"]
+    assert "ia" in s["errors"]
     # o que importa: relatório e estado sobreviveram
     assert (tmp_path / "reports" / "LATEST.md").exists()
     assert (tmp_path / "docs" / "index.html").exists()

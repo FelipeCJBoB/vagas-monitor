@@ -207,8 +207,25 @@ notificacoes:
   email:
     ativo: auto              # auto = envia se SMTP_USER / SMTP_PASSWORD / EMAIL_TO existirem
 
-claude:                      # avaliação de compatibilidade por IA (opcional)
-  ativo: auto                # auto = usa se ANTHROPIC_API_KEY existir
-  modelo: claude-opus-5
-  esforco: low
-  max_vagas: 25              # avalia só as N melhores vagas novas de cada execução
+# ------------------------------------------------------------------
+#  Avaliação por IA (opcional): nota de 0 a 10 e comentário por vaga.
+#
+#  `provedor: auto` usa o primeiro com chave configurada, na ordem
+#  Gemini -> Anthropic. O Gemini vem primeiro porque o nível gratuito
+#  do AI Studio cobre este volume (25 vagas a cada 5 dias) sem custo,
+#  enquanto a API da Anthropic é pré-paga.
+#
+#  Valores: auto | gemini | anthropic | nenhum
+# ------------------------------------------------------------------
+avaliacao:
+  provedor: auto
+  max_vagas: 25              # avalia só as N melhores vagas novas da rodada
+  gemini:
+    # Alias que o Google mantém apontando para o Flash atual. Fixar uma versão
+    # ("gemini-3.6-flash") evita surpresa de comportamento, mas quebra sozinho
+    # quando aquela versão sai do ar.
+    modelo: gemini-flash-latest
+    rpm: 10                  # nível gratuito do Flash; as chamadas são espaçadas
+  anthropic:
+    modelo: claude-opus-5
+    esforco: low
