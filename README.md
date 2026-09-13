@@ -71,14 +71,22 @@ Rodar manualmente: aba **Actions → Monitor de vagas → Run workflow**.
 **Painel público:** <https://felipecjbob.github.io/vagas-monitor/> (GitHub Pages, branch `main`, pasta `/docs`;
 atualizado automaticamente a cada rodada).
 
-### Alternativa: Agendador de Tarefas do Windows
+### Agendador único
+
+**O GitHub Actions é o único agendador.** Não registre `run_local.ps1` no Agendador de
+Tarefas do Windows. Os dois leem e gravam o mesmo `state/seen.json`, que trafega pelo
+repositório: numa rodada em que as janelas se cruzem, ambos enxergam a cadência vencida,
+executam a coleta inteira, mandam a mesma notificação duas vezes e disputam o `git push`.
+O perdedor fica com um commit local que ninguém envia, e o repositório diverge em silêncio.
+
+Para rodar sob demanda, use o script manualmente:
 
 ```powershell
-schtasks /Create /TN "Radar de Vagas" /SC DAILY /ST 08:30 /TR "powershell -NoProfile -ExecutionPolicy Bypass -File \"$PWD\run_local.ps1\"" /F
+.\run_local.ps1 --force
 ```
 
-(Roda todo dia; o script respeita a cadência de 5 dias. Se usar as duas formas ao mesmo
-tempo, o estado local e o do GitHub divergem — escolha uma.)
+Ele agora aborta se houver rebase pendente ou alteração não commitada em `reports`,
+`docs` ou `state`, e avisa em vez de engolir uma falha de `pull` ou `push`.
 
 ## Telegram em 2 minutos
 

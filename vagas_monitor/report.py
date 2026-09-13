@@ -13,7 +13,7 @@ from .models import Job
 
 LEVEL_PT = {"junior": "Júnior", "pleno": "Pleno", "senior": "Sênior", "unknown": "—"}
 WP_PT = {"remote": "Remoto", "hybrid": "Híbrido", "onsite": "Presencial", "unknown": ""}
-SOURCE_PT = {"linkedin": "LinkedIn", "indeed": "Indeed", "gupy": "Gupy"}
+SOURCE_PT = {"linkedin": "LinkedIn", "indeed": "Indeed", "gupy": "Gupy", "claude": "Avaliação por IA"}
 
 
 def _age(date_posted: str | None, today: date) -> int | None:
@@ -117,7 +117,7 @@ def render_markdown(ctx: dict) -> str:
         "",
     ]
     if ctx["errors"]:
-        out += ["> ⚠️ Fontes com problema nesta rodada: " +
+        out += ["> ⚠️ Problemas nesta rodada: " +
                 "; ".join(f"**{SOURCE_PT.get(k, k)}** — {v}" for k, v in ctx["errors"].items()), ""]
 
     hdr = "| Score | Vaga | Empresa | Local | Nível | Categoria | Fonte | Publicada |\n|---:|---|---|---|---|---|---|---|"
@@ -258,7 +258,7 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
   </aside>
 
   <section aria-label="Vagas">
-    {% if errors %}<div class="errors">Fontes com problema nesta rodada: {% for k, v in errors.items() %}<b>{{ source_pt.get(k, k) }}</b> — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}
+    {% if errors %}<div class="errors">Problemas nesta rodada: {% for k, v in errors.items() %}<b>{{ source_pt.get(k, k) }}</b> — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}
     <div class="count"><span><b id="n">0</b> vagas</span><span id="hint"></span></div>
     <ol class="jobs" id="list"></ol>
     <p class="foot">Pontuação por regras explícitas: categoria no título +30 · júnior/estágio +25 · cidade-alvo +20 · remoto +12 · skills do currículo até +18 · sênior/liderança −30. ★ = avaliação do Claude (0–10) sobre a descrição completa.</p>

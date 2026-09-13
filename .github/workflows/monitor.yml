@@ -53,7 +53,15 @@ jobs:
           git add reports docs state
           if git diff --cached --quiet; then
             echo "nada a commitar"
-          else
-            git commit -m "relatório $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          git commit -m "relatório $(date -u +%Y-%m-%d)"
+          # uma execução manual pode ter publicado enquanto esta rodava
+          for tentativa in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "push rejeitado (tentativa $tentativa); rebaseando sobre origin/main"
+            git pull --rebase origin main || { git rebase --abort || true; exit 1; }
+          done
+          exit 1
