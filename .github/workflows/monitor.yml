@@ -43,7 +43,8 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          REPORT_URL: https://github.com/${{ github.repository }}/blob/main/reports/LATEST.md
+          # o link do relatório vem de `relatorio.url_publica` no config.yaml;
+          # a variável REPORT_URL continua valendo como alternativa, se ele ficar vazio
         run: python -m vagas_monitor run ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
 
       - name: Publicar relatórios no repositório

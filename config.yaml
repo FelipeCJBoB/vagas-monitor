@@ -8,6 +8,11 @@ intervalo_dias: 5            # cadência: executa se passaram >= 5 dias da últi
 lookback_days: 7             # janela de publicação buscada (sobreposição c/ a cadência de 5 dias)
 first_run_lookback_days: 30  # primeira execução: janela maior para popular o relatório
 
+estado:                      # memória entre rodadas (state/seen.json)
+  key_ttl_days: 30           # o par título+empresa deixa de suprimir depois disso:
+                             # posição reaberta meses depois volta a ser anunciada
+  keep_days: 120             # tempo que o registro de uma vaga sobrevive no arquivo
+
 cidades:                     # cidades-alvo (vagas presenciais/híbridas fora daqui são descartadas)
   - Itajaí
   - Navegantes

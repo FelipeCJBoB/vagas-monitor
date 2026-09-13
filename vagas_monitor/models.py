@@ -22,6 +22,9 @@ class Job:
     date_posted: Optional[str] = None  # ISO YYYY-MM-DD
     description: str = ""
     tags: list = field(default_factory=list)  # dicas extras da fonte (ex.: "estagio")
+    # identidade da vaga no ATS de origem ("gupy:12373835"), quando recuperável.
+    # Casa a mesma vaga entre fontes sem heurística de texto. Ver vagas_monitor.ats.
+    external_id: Optional[str] = None
     # derivados pelo pipeline
     category: Optional[str] = None
     categories: list = field(default_factory=list)
@@ -53,8 +56,9 @@ class Job:
 
     @property
     def all_keys(self) -> list[str]:
-        """Chave própria mais as dos anúncios equivalentes já fundidos nesta vaga."""
-        return [self.dedup_key, *self.aliases]
+        """Identidade do ATS (se houver), chave própria e as dos anúncios fundidos."""
+        ext = [f"ext:{self.external_id}"] if self.external_id else []
+        return [*ext, self.dedup_key, *self.aliases]
 
     def to_dict(self) -> dict:
         d = asdict(self)

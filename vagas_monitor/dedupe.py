@@ -33,6 +33,12 @@ MIN_TOKEN_LEN_MARCA = 4  # "atento" conta como marca; "ia" ou "sr" não
 
 def same_job(a: Job, b: Job) -> bool:
     """True se `a` e `b` são o mesmo anúncio publicado de formas diferentes."""
+    # Identidade do ATS decide sozinha, nos dois sentidos: ids iguais são a mesma
+    # vaga ainda que os títulos divirjam, e ids diferentes são vagas diferentes
+    # ainda que os títulos coincidam.
+    if a.external_id and b.external_id:
+        return a.external_id == b.external_id
+
     ta, tb = title_tokens(a.title), title_tokens(b.title)
     if not ta or not tb:
         return False
@@ -82,6 +88,8 @@ def merge_duplicates(jobs: list[Job]) -> list[Job]:
             manter, descartar = _melhor(other, job)
             manter.aliases = sorted({*manter.aliases, *descartar.aliases, descartar.dedup_key})
             manter.is_new = manter.is_new and descartar.is_new
+            # a cópia descartada pode ser a única que trazia o link do ATS
+            manter.external_id = manter.external_id or descartar.external_id
             kept[i] = manter
             fundidas += 1
             break

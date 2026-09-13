@@ -96,7 +96,8 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
     now = datetime.now(TZ)
     now_naive = now.replace(tzinfo=None)
     today = now.date()
-    state = State(ROOT / "state" / "seen.json")
+    est = cfg.get("estado", {}) or {}
+    state = State(ROOT / "state" / "seen.json", key_ttl_days=int(est.get("key_ttl_days", 30)))
     interval = int(cfg.get("intervalo_dias", 5))
 
     if not force and not state.due(interval, now_naive):
@@ -117,7 +118,7 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
     # diferente, empresa ausente numa das fontes
     scoped = merge_duplicates(scoped)
     for j in scoped:
-        j.is_new = state.is_new(j)
+        j.is_new = state.is_new(j, today)
     log.info("%d vagas no escopo (%d novas)", len(scoped), sum(j.is_new for j in scoped))
 
     # descrições do LinkedIn só para vagas novas (1 requisição cada, limitado)
@@ -143,10 +144,11 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
     if _on(cfg.get("claude", {}).get("ativo", "auto"), "ANTHROPIC_API_KEY") and new_jobs:
         try:
             from .enrich_claude import enrich
-            ai_done = enrich(new_jobs, profile, cfg)
+            ai_done, ai_error = enrich(new_jobs, profile, cfg)
         except Exception as e:  # noqa: BLE001
             log.exception("avaliação por IA falhou; a rodada segue sem as notas")
             ai_error = f"{type(e).__name__}: {e}"[:200]
+        if ai_error:
             errors["claude"] = ai_error
 
     ctx = report.build_context(jobs, cfg, now, lb, counts, errors,
@@ -158,7 +160,7 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
         for j in jobs:
             state.mark(j, today)
         state.set_last_run(now_naive)
-        pruned = state.prune(today=today)
+        pruned = state.prune(keep_days=int(est.get("keep_days", 120)), today=today)
         state.save()
         log.info("estado salvo (%d vagas conhecidas, %d expiradas)", len(state.data["jobs"]), pruned)
 

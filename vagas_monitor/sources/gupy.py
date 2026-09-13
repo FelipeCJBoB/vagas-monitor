@@ -35,8 +35,11 @@ def _to_job(j: dict) -> Job:
     wp = WORKPLACE.get((j.get("workplaceType") or "").lower(), "unknown")
     city, state = j.get("city") or "", j.get("state") or ""
     remote = bool(j.get("isRemoteWork"))
+    # o `id` do portal é o mesmo jobId que o Indeed carrega no link de candidatura
+    ext = f"gupy:{j['id']}" if isinstance(j.get("id"), int) else None
     return Job(
         source="gupy",
+        external_id=ext,
         title=(j.get("name") or "").strip(),
         company=(j.get("careerPageName") or "").strip(),
         url=(j.get("jobUrl") or "").split("?")[0],

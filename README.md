@@ -22,7 +22,7 @@ completo mantém tudo que está na janela.
 termos_busca × (3 cidades-âncora LinkedIn | Santa Catarina Indeed | estado=SC Gupy) + remotas
         │
         ▼  coleta (sources/)              ~5–8 min por rodada, sem login
-   deduplica (mesma vaga em 2 fontes)
+   deduplica: id do ATS (exato) → chave título+empresa → tokens (dedupe.py)
         │
         ▼  filters.py
    cidade-alvo? remoto?  →  categoria (título/descrição)  →  senioridade
@@ -99,16 +99,43 @@ Ele agora aborta se houver rebase pendente ou alteração não commitada em `rep
 Ative a verificação em 2 etapas e gere uma **senha de app** em
 <https://myaccount.google.com/apppasswords>. Preencha `SMTP_USER`, `SMTP_PASSWORD` e `EMAIL_TO` no `.env`.
 
+## Avaliação por IA (opcional)
+
+Com `ANTHROPIC_API_KEY` no `.env` e nos segredos do repositório, as melhores vagas novas
+de cada rodada recebem nota de 0 a 10 e um comentário. Dois pontos que custam uma rodada
+se passarem despercebidos:
+
+- **A chave sozinha não basta: a conta precisa de crédito.** Sem saldo, a API responde 400
+  e nenhuma vaga é avaliada. O monitor desiste após 3 falhas seguidas, em vez de repetir o
+  erro 25 vezes, e o motivo aparece no topo do relatório e do painel.
+- O teto é `claude.max_vagas` (25 por padrão), aplicado às vagas novas de maior pontuação.
+  A legenda da estrela diz quantas foram avaliadas, e some quando não houve nenhuma.
+
+Custo aproximado com o padrão atual: cerca de US$ 0,30 por rodada. Trocar `claude.modelo`
+para `claude-sonnet-5` reduz para uns 20% disso.
+
 ## Ajustando o alvo
 
 Tudo em `config.yaml`: cidades, termos de busca, palavras que definem cada categoria,
 listas de senioridade, skills do currículo, `top_n`, canais. `perfil.md` alimenta a
 avaliação por IA. Nada disso exige mexer no código.
 
+A seção `estado` controla a memória entre rodadas:
+
+| Chave | Padrão | O que faz |
+|---|---:|---|
+| `key_ttl_days` | 30 | Tempo em que o par título+empresa ainda é tratado como a mesma vaga. Passado o prazo, uma posição reaberta volta a ser anunciada. |
+| `keep_days` | 120 | Tempo que o registro de uma vaga sobrevive em `state/seen.json`. |
+
 ## Fontes e limites conhecidos
 
 - **LinkedIn**: endpoint público de convidado (10 vagas/página). Em IPs de nuvem pode devolver
   429 ocasionalmente — o coletor espera e tenta de novo; a rodada segue com as outras fontes.
-- **Indeed**: via `python-jobspy`; traz descrição completa.
+- **Indeed**: via `python-jobspy`; traz descrição completa. Às vezes publica sem o nome da
+  empresa. Quando o link de candidatura aponta para o ATS dela (`empresa.gupy.io`,
+  `empresa.vagas.solides.com.br`), o nome é inferido do subdomínio e marcado como inferido;
+  quando não há de onde tirar, o card diz "Empresa não informada".
 - **Gupy**: API JSON do portal; traz descrição completa e é a mais usada por empresas de SC.
+  O `jobId` do link vale como identidade exata: a mesma vaga vinda pelo Indeed casa com a da
+  Gupy sem depender de comparar textos.
 - Glassdoor/Catho/Google Jobs não são cobertos (bloqueio ou sem localização por cidade).
