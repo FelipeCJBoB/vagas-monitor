@@ -5,6 +5,7 @@ import logging
 import math
 import warnings
 
+from ..ats import company_from_url, external_id
 from ..models import Job
 
 log = logging.getLogger("vagas.indeed")
@@ -38,10 +39,19 @@ def _rows_to_jobs(df) -> list[Job]:
         jt = _s(r.get("job_type")).lower()
         if "intern" in jt or "estag" in jt:
             tags.append("estagio")
+        # o link de candidatura aponta para o ATS da empresa: dele saem a
+        # identidade exata da vaga e, quando o Indeed omite, o nome do empregador
+        direto = _s(r.get("job_url_direct"))
+        company = _s(r.get("company")).strip()
+        if not company:
+            company = company_from_url(direto)
+            if company:
+                tags.append("empresa-inferida")
         out.append(Job(
             source="indeed",
+            external_id=external_id(direto),
             title=_s(r.get("title")),
-            company=_s(r.get("company")),
+            company=company,
             url=_s(r.get("job_url")),
             location=location,
             city=parts[0] if parts else "",

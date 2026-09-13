@@ -49,13 +49,24 @@ def _job_text(job: Job) -> str:
             f"Senioridade detectada por regra: {job.seniority}\n\nDescrição:\n{desc or '(sem descrição disponível)'}")
 
 
-def enrich(jobs: list[Job], profile: str, cfg: dict) -> int:
-    """Preenche job.fit / job.fit_note nas primeiras `max_vagas` vagas. Retorna quantas avaliou."""
+FALHAS_SEGUIDAS_ATE_DESISTIR = 3
+
+
+def enrich(jobs: list[Job], profile: str, cfg: dict) -> tuple[int, str | None]:
+    """Preenche job.fit / job.fit_note nas primeiras `max_vagas` vagas.
+
+    Devolve (quantas avaliou, motivo da falha). O motivo sobe para o relatório: uma
+    rodada em que a IA não respondeu precisa dizer isso ao leitor, senão a ausência
+    de estrelas fica indistinguível de "nenhuma vaga mereceu nota".
+
+    Desiste depois de algumas falhas seguidas. Erros como saldo insuficiente ou
+    chave revogada valem para todas as vagas; insistir só gasta tempo da rodada.
+    """
     try:
         import anthropic
     except ImportError:
         log.warning("pacote anthropic não instalado; pulando avaliação por IA")
-        return 0
+        return 0, "pacote anthropic não instalado"
 
     ccfg = cfg.get("claude", {})
     model = ccfg.get("modelo", "claude-opus-5")
@@ -64,7 +75,19 @@ def enrich(jobs: list[Job], profile: str, cfg: dict) -> int:
     client = anthropic.Anthropic()
     system = [{"type": "text", "text": SYSTEM + profile, "cache_control": {"type": "ephemeral"}}]
 
-    done = 0
+    done, seguidas, ultimo_erro = 0, 0, None
+
+    def falhou(motivo: str) -> bool:
+        """Registra a falha e diz se é hora de desistir da rodada."""
+        nonlocal seguidas, ultimo_erro
+        seguidas += 1
+        ultimo_erro = motivo[:200]
+        if seguidas >= FALHAS_SEGUIDAS_ATE_DESISTIR:
+            log.error("avaliação por IA abortada após %d falhas seguidas: %s",
+                      seguidas, ultimo_erro)
+            return True
+        return False
+
     for job in jobs[:limit]:
         try:
             resp = client.beta.messages.create(
@@ -78,31 +101,43 @@ def enrich(jobs: list[Job], profile: str, cfg: dict) -> int:
             )
         except anthropic.AuthenticationError:
             log.error("ANTHROPIC_API_KEY inválida; avaliação por IA desativada nesta rodada")
-            return done
+            return done, "chave inválida ou revogada"
         except anthropic.RateLimitError:
             log.warning("rate limit; aguardando 30s")
             time.sleep(30)
+            if falhou("limite de requisições da API"):
+                break
             continue
         except anthropic.APIStatusError as e:
             log.warning("claude %s: %s", e.status_code, e.message)
+            if falhou(f"HTTP {e.status_code}: {e.message}"):
+                break
             continue
         except anthropic.APIConnectionError as e:
             log.warning("claude rede: %s", e)
+            if falhou(f"falha de rede: {e}"):
+                break
             continue
 
         if resp.stop_reason == "refusal":
             log.warning("claude recusou avaliar '%s'", job.title)
-            continue
+            continue  # recusa é sobre esta vaga, não sobre a rodada
         text = next((b.text for b in resp.content if b.type == "text"), "")
         try:
             data = json.loads(text)
         except json.JSONDecodeError:
             log.warning("resposta não-JSON para '%s'", job.title)
             continue
-        job.fit = int(data.get("compatibilidade", 0))
+        try:
+            job.fit = max(0, min(10, int(data.get("compatibilidade", 0))))
+        except (TypeError, ValueError):
+            log.warning("nota fora do formato para '%s'", job.title)
+            continue
         note = (data.get("comentario") or "").strip()
         alerta = (data.get("alerta") or "").strip()
         job.fit_note = note + (f" ⚠ {alerta}" if alerta else "")
         done += 1
+        seguidas = 0  # a sequência de falhas foi quebrada
+
     log.info("claude: %d vagas avaliadas (modelo %s)", done, model)
-    return done
+    return done, (ultimo_erro if done == 0 else None)

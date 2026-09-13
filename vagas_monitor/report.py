@@ -51,6 +51,9 @@ def build_context(jobs: list[Job], cfg: dict, run_dt: datetime, lookback_days: i
         "by_city": by_city,
         "source_counts": source_counts,
         "errors": errors,
+        # quantas vagas realmente receberam nota da IA: a legenda da estrela só
+        # aparece quando há estrela, e diz de quantas vagas ela fala
+        "ai_count": sum(1 for j in jl if j.get("fit") is not None),
         "top_n": int(cfg.get("relatorio", {}).get("top_n", 20)),
         "report_url": cfg.get("relatorio", {}).get("url_publica") or env("REPORT_URL") or "",
         "state_stats": state_stats,
@@ -60,6 +63,19 @@ def build_context(jobs: list[Job], cfg: dict, run_dt: datetime, lookback_days: i
 # ----------------------------------------------------------------------------
 # Markdown
 # ----------------------------------------------------------------------------
+def _company(j: dict) -> str:
+    """Nome da empresa para exibição, explicitando quando a fonte não informou.
+
+    O Indeed às vezes publica sem o campo. Quando o link de candidatura aponta para
+    o ATS da empresa, o nome é inferido do subdomínio e marcado como tal; quando nem
+    isso existe, o card diz que não há empresa em vez de mostrar um traço mudo.
+    """
+    nome = (j.get("company") or "").strip()
+    if not nome:
+        return "Empresa não informada"
+    return nome + (" (inferida)" if "empresa-inferida" in (j.get("tags") or []) else "")
+
+
 def _md_place(j: dict) -> str:
     if j["matched_city"]:
         wp = WP_PT.get(j["workplace"], "")
@@ -86,7 +102,7 @@ def _md_row(j: dict, cats: dict, with_cat: bool = True) -> str:
     cells = [
         f"**{j['score']}**{fit}",
         f"[{title}]({j['url']})" + (" 🆕" if j["is_new"] else ""),
-        j["company"].replace("|", "/") or "—",
+        _company(j).replace("|", "/"),
         _md_place(j),
         LEVEL_PT.get(j["seniority"], "—"),
     ]
@@ -140,10 +156,13 @@ def render_markdown(ctx: dict) -> str:
         if remote:
             out += [f"### Remoto ({len(remote)})", "", hdr2] + [_md_row(j, cats, False) for j in remote] + [""]
 
-    out += ["---", "",
-            "Score = regras explícitas (categoria no título +30, júnior +25, cidade-alvo +20, remoto +12, "
-            "skills do currículo até +18, sênior −30). ★ = avaliação do Claude (0–10). 🆕 = não apareceu em rodadas anteriores.",
-            ""]
+    legenda = ("Score = regras explícitas (categoria no título +30, júnior +25, cidade-alvo +20, remoto +12, "
+               "skills do currículo até +18, sênior −30).")
+    if ctx["ai_count"]:
+        legenda += (f" ★ = avaliação do Claude (0–10), aplicada às {ctx['ai_count']} melhores vagas novas "
+                    f"de um total de {ctx['new_count']}.")
+    legenda += " 🆕 = não apareceu em rodadas anteriores."
+    out += ["---", "", legenda, ""]
     return "\n".join(out)
 
 
@@ -251,7 +270,7 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
       <select id="sort" aria-label="Ordenar">
         <option value="score">Maior pontuação</option>
         <option value="date">Mais recentes</option>
-        <option value="fit">Avaliação da IA</option>
+        {% if ai_count %}<option value="fit">Avaliação da IA</option>{% endif %}
       </select>
     </fieldset>
     <label class="toggle"><input type="checkbox" id="onlyNew"> Só vagas novas desta rodada</label>
@@ -261,7 +280,7 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
     {% if errors %}<div class="errors">Problemas nesta rodada: {% for k, v in errors.items() %}<b>{{ source_pt.get(k, k) }}</b> — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}
     <div class="count"><span><b id="n">0</b> vagas</span><span id="hint"></span></div>
     <ol class="jobs" id="list"></ol>
-    <p class="foot">Pontuação por regras explícitas: categoria no título +30 · júnior/estágio +25 · cidade-alvo +20 · remoto +12 · skills do currículo até +18 · sênior/liderança −30. ★ = avaliação do Claude (0–10) sobre a descrição completa.</p>
+    <p class="foot">Pontuação por regras explícitas: categoria no título +30 · júnior/estágio +25 · cidade-alvo +20 · remoto +12 · skills do currículo até +18 · sênior/liderança −30.{% if ai_count %} ★ = avaliação do Claude (0–10) sobre a descrição completa, aplicada às {{ ai_count }} melhores vagas novas de um total de {{ new_count }}.{% endif %}</p>
   </section>
 </main>
 
@@ -277,6 +296,8 @@ const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;"
 const norm = s => String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const age = d => d==null ? "data n/i" : d===0 ? "hoje" : d===1 ? "ontem" : `há ${d} dias`;
 const place = j => j.matched_city ? j.matched_city : (j.workplace==="remote" ? "Remoto" : (j.location||"local n/i"));
+// o Indeed às vezes publica sem o campo empresa; dizer isso é melhor que um traço mudo
+const company = j => (j.company||"").trim() || "Empresa não informada";
 
 function chip(container, key, label, count, set){
   const b = document.createElement("button");
@@ -327,7 +348,7 @@ function row(j){
     <div class="score"><span class="num">${j.score}</span><span class="lbl">match</span></div>
     <div>
       <div class="head"><a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>${j.is_new?'<span class="new">nova</span>':''}</div>
-      <div class="company">${esc(j.company||"—")}</div>
+      <div class="company">${esc(company(j))}${j.tags && j.tags.includes("empresa-inferida") ? ' <span class="pill">inferida do site da vaga</span>' : ""}</div>
       <div class="meta">
         <span class="pill ${j.matched_city?'city':''}">${esc(place(j))}</span>
         ${wp && j.matched_city ? `<span class="pill">${wp}</span>`:""}
@@ -381,4 +402,21 @@ def write_all(ctx: dict, cfg: dict) -> dict:
 
 
 def load_context(json_path: Path) -> dict:
-    return json.loads(Path(json_path).read_text(encoding="utf-8"))
+    """Lê o JSON de uma rodada, completando campos que versões anteriores não gravavam.
+
+    O comando `render` existe para refazer o Markdown e o painel de rodadas passadas.
+    Sem esse preenchimento, um relatório antigo derruba o render assim que a versão
+    nova passa a ler uma chave que não existia quando ele foi gerado.
+    """
+    ctx = json.loads(Path(json_path).read_text(encoding="utf-8"))
+    jobs = ctx.get("jobs") or []
+    ctx.setdefault("jobs", jobs)
+    ctx.setdefault("ai_count", sum(1 for j in jobs if j.get("fit") is not None))
+    ctx.setdefault("total", len(jobs))
+    ctx.setdefault("new_count", sum(1 for j in jobs if j.get("is_new")))
+    ctx.setdefault("errors", {})
+    ctx.setdefault("source_counts", {})
+    ctx.setdefault("report_url", "")
+    ctx.setdefault("top_n", 20)
+    ctx.setdefault("state_stats", {})
+    return ctx
