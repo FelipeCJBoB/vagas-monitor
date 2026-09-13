@@ -64,6 +64,10 @@ def avaliar(cliente, system: str, texto: str, cfg: dict) -> str:
             response_schema=SCHEMA,
             temperature=0,
             max_output_tokens=800,
+            # O SDK liga chamada automática de função por padrão e avisa no log a
+            # cada requisição. Aqui não há ferramenta nenhuma para chamar: desligar
+            # cala o aviso e elimina um caminho de execução que não queremos.
+            automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
         ),
     )
     return resp.text or ""
@@ -75,7 +79,7 @@ def classificar_erro(exc: Exception) -> tuple[str, bool]:
 
     if isinstance(exc, errors.ClientError):
         code = getattr(exc, "code", None) or getattr(exc, "status", "")
-        msg = str(getattr(exc, "message", exc))
+        msg = str(getattr(exc, "message", exc))[:160]
         if code == 429:
             return (f"limite de requisições do nível gratuito atingido: {msg}", False)
         if code in (401, 403):
@@ -84,8 +88,10 @@ def classificar_erro(exc: Exception) -> tuple[str, bool]:
             return (f"modelo não encontrado — ajuste `avaliacao.gemini.modelo`: {msg}", True)
         return (f"HTTP {code}: {msg}", False)
     if isinstance(exc, errors.ServerError):
-        return (f"instabilidade no serviço: {exc}", False)
-    return (f"{type(exc).__name__}: {exc}", False)
+        # 503 "high demand" é rotina no nível gratuito em horário de pico, e passa
+        # em poucos segundos. Vale retentar.
+        return (f"modelo sobrecarregado ({getattr(exc, 'code', '5xx')}), tente de novo", False)
+    return (f"{type(exc).__name__}: {exc}"[:160], False)
 
 
 def rpm(cfg: dict) -> int:

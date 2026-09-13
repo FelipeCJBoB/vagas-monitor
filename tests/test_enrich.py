@@ -52,7 +52,8 @@ def _instala(monkeypatch, prov):
     monkeypatch.setitem(DISPONIVEIS, "falso", prov)
     monkeypatch.setattr("vagas_monitor.enrich.ORDEM_AUTO", ("falso",))
     monkeypatch.setenv("FAKE_API_KEY", "x")
-    return {"provedor": "auto", "max_vagas": 25}
+    # sem espera entre tentativas: o teste não deve dormir de verdade
+    return {"provedor": "auto", "max_vagas": 25, "esperas_tentativa": []}
 
 
 # --- escolha de provedor ----------------------------------------------------
@@ -200,3 +201,101 @@ def test_config_antigo_desligado_continua_desligado():
 def test_config_novo_tem_precedencia():
     cfg = {"avaliacao": {"provedor": "gemini"}, "claude": {"ativo": "auto"}}
     assert avaliacao_cfg(cfg)["provedor"] == "gemini"
+
+
+# --- retentativa da mesma vaga ----------------------------------------------
+def test_erro_passageiro_e_retentado_antes_de_contar_falha(monkeypatch):
+    """O 503 "high demand" do nível gratuito passa em segundos.
+
+    Sem retentar, uma oscilação de meio minuto custaria a avaliação da rodada:
+    três vagas seguidas com 503 disparariam o disjuntor.
+    """
+    dormidas = []
+    monkeypatch.setattr("vagas_monitor.enrich.time.sleep", lambda s: dormidas.append(s))
+    prov = _Prov([RuntimeError("503 sobrecarregado"), RuntimeError("503 sobrecarregado"), OK])
+    cfg = _instala(monkeypatch, prov)
+    cfg["esperas_tentativa"] = [2.0, 6.0, 15.0]
+
+    done, motivo = enrich(_jobs(1), "perfil", cfg)
+
+    assert done == 1, "a terceira tentativa deu certo"
+    assert prov.chamadas == 3
+    assert dormidas == [2.0, 6.0]  # espera crescente, e nenhuma após o sucesso
+
+
+def test_tentativas_esgotadas_contam_uma_falha_so(monkeypatch):
+    """Quatro chamadas para a mesma vaga valem uma falha, não quatro."""
+    monkeypatch.setattr("vagas_monitor.enrich.time.sleep", lambda s: None)
+    prov = _Prov([RuntimeError("503")] * 99)
+    cfg = _instala(monkeypatch, prov)
+    cfg["esperas_tentativa"] = [1.0, 1.0, 1.0]
+
+    done, motivo = enrich(_jobs(10), "perfil", cfg)
+
+    assert done == 0
+    # 3 vagas até o disjuntor abrir, 4 tentativas cada
+    assert prov.chamadas == FALHAS_SEGUIDAS_ATE_DESISTIR * 4
+
+
+def test_erro_fatal_nao_e_retentado(monkeypatch):
+    """Chave inválida não melhora esperando."""
+    class ChaveRuim(Exception):
+        pass
+
+    dormidas = []
+    monkeypatch.setattr("vagas_monitor.enrich.time.sleep", lambda s: dormidas.append(s))
+    prov = _Prov([ChaveRuim("chave inválida")] * 9, fatais=(ChaveRuim,))
+    cfg = _instala(monkeypatch, prov)
+    cfg["esperas_tentativa"] = [2.0, 6.0]
+
+    done, motivo = enrich(_jobs(5), "perfil", cfg)
+
+    assert done == 0 and prov.chamadas == 1 and dormidas == []
+
+
+def test_sucesso_apos_falha_zera_o_disjuntor(monkeypatch):
+    monkeypatch.setattr("vagas_monitor.enrich.time.sleep", lambda s: None)
+    prov = _Prov([RuntimeError("x"), OK, RuntimeError("x"), OK, RuntimeError("x"), OK])
+    cfg = _instala(monkeypatch, prov)
+    cfg["esperas_tentativa"] = []  # sem retentativa: cada erro é uma vaga perdida
+
+    done, _ = enrich(_jobs(6), "perfil", cfg)
+    assert done == 3
+
+
+def test_gemini_desliga_chamada_automatica_de_funcao():
+    """O SDK liga AFC por padrão e avisa a cada requisição; aqui não há ferramenta."""
+    import inspect
+    assert "automatic_function_calling" in inspect.getsource(gemini.avaliar)
+
+
+def test_lista_de_esperas_vazia_desliga_a_retentativa(monkeypatch):
+    """Lista vazia é valor legítimo: com `or` ela cairia no padrão sem avisar."""
+    dormidas = []
+    monkeypatch.setattr("vagas_monitor.enrich.time.sleep", lambda s: dormidas.append(s))
+    prov = _Prov([RuntimeError("x")] * 9)
+    cfg = _instala(monkeypatch, prov)
+    cfg["esperas_tentativa"] = []
+    enrich(_jobs(5), "perfil", cfg)
+    assert dormidas == [] and prov.chamadas == FALHAS_SEGUIDAS_ATE_DESISTIR
+
+
+# --- proteção da própria suíte ----------------------------------------------
+def test_a_suite_nao_enxerga_nenhuma_chave_real():
+    """Regressão: a suíte já chegou a bater na API de verdade e gastar cota.
+
+    A `cfg` de escopo de módulo em test_filters.py é montada antes das fixtures
+    de função, então carregava o .env verdadeiro. Como GEMINI_API_KEY não estava
+    na lista de limpeza, ele sobrevivia e o pipeline avaliava vagas para valer.
+    """
+    from vagas_monitor.config import env
+    for mod in DISPONIVEIS.values():
+        assert env(mod.ENV_VAR) is None, f"{mod.ENV_VAR} vazou para os testes"
+    assert escolher_provedor({"provedor": "auto"}) is None
+
+
+def test_lista_de_limpeza_cobre_todo_provedor_registrado():
+    """Provedor novo não pode entrar sem que a conftest o neutralize."""
+    from conftest import EFEITOS_EXTERNOS
+    for mod in DISPONIVEIS.values():
+        assert mod.ENV_VAR in EFEITOS_EXTERNOS, mod.NOME

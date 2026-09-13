@@ -20,6 +20,10 @@ from .providers import DISPONIVEIS, ORDEM_AUTO
 log = logging.getLogger("vagas.ia")
 
 FALHAS_SEGUIDAS_ATE_DESISTIR = 3
+# Espera entre as tentativas da MESMA vaga. O 503 "high demand" do nível gratuito
+# do Gemini é rotina em horário de pico e passa em segundos; sem retentar, uma
+# oscilação de trinta segundos custaria a avaliação da rodada inteira.
+ESPERA_ENTRE_TENTATIVAS = (2.0, 6.0, 15.0)
 
 SYSTEM = """Você é um recrutador técnico experiente em Dados, IA e desenvolvimento de software no Brasil.
 Avalie a compatibilidade entre a VAGA e o CANDIDATO abaixo. O candidato busca uma posição júnior
@@ -100,26 +104,42 @@ def enrich(jobs: list[Job], profile: str, cfg: dict) -> tuple[int, str | None]:
     log.info("avaliando %d vaga(s) com %s%s", len(alvo), prov.NOME,
              f" (1 a cada {intervalo:.1f}s)" if intervalo else "")
 
-    done, seguidas, ultimo_erro = 0, 0, None
+    # `get(..., padrão)` e não `or`: lista vazia é um valor legítimo, significa
+    # "não retente", e com `or` ela cairia silenciosamente no padrão
+    esperas = list(cfg.get("esperas_tentativa", ESPERA_ENTRE_TENTATIVAS))
+    done, seguidas, ultimo_erro, desistir = 0, 0, None, False
+
     for i, job in enumerate(alvo):
+        if desistir:
+            break
         if intervalo and i:
             time.sleep(intervalo)
-        try:
-            bruto = prov.avaliar(cliente, system, _job_text(job), cfg)
-        except Exception as e:  # noqa: BLE001
-            motivo, fatal = prov.classificar_erro(e)
-            ultimo_erro = f"{prov.NOME}: {motivo}"[:200]
-            if fatal:
-                log.error("avaliação por IA interrompida: %s", ultimo_erro)
-                break
-            seguidas += 1
-            log.warning("%s (%d falha seguida[s])", ultimo_erro, seguidas)
-            if seguidas >= FALHAS_SEGUIDAS_ATE_DESISTIR:
-                log.error("avaliação por IA abortada após %d falhas seguidas", seguidas)
-                break
-            continue
 
-        if _aplicar(job, bruto):
+        bruto = None
+        for tentativa in range(len(esperas) + 1):
+            try:
+                bruto = prov.avaliar(cliente, system, _job_text(job), cfg)
+                break
+            except Exception as e:  # noqa: BLE001
+                motivo, fatal = prov.classificar_erro(e)
+                ultimo_erro = f"{prov.NOME}: {motivo}"[:200]
+                if fatal:
+                    log.error("avaliação por IA interrompida: %s", ultimo_erro)
+                    desistir = True
+                    break
+                if tentativa < len(esperas):
+                    espera = esperas[tentativa]
+                    log.warning("%s — nova tentativa em %.0fs", ultimo_erro, espera)
+                    time.sleep(espera)
+                    continue
+                # esgotou as tentativas desta vaga: agora sim conta para o disjuntor
+                seguidas += 1
+                log.warning("%s (%d vaga[s] seguida[s] sem resposta)", ultimo_erro, seguidas)
+                if seguidas >= FALHAS_SEGUIDAS_ATE_DESISTIR:
+                    log.error("avaliação por IA abortada após %d vagas seguidas sem resposta", seguidas)
+                    desistir = True
+
+        if bruto is not None and _aplicar(job, bruto):
             done += 1
             seguidas = 0
 
