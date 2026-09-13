@@ -7,13 +7,13 @@ from zoneinfo import ZoneInfo
 
 from . import filters, report, scoring
 from .config import ROOT, env, load_config, load_profile
+from .dedupe import SOURCE_PREF, merge_duplicates
 from .models import Job
 from .sources import gupy, indeed, linkedin
 from .state import State
 
 log = logging.getLogger("vagas")
 TZ = ZoneInfo("America/Sao_Paulo")
-SOURCE_PREF = {"gupy": 0, "indeed": 1, "linkedin": 2}  # desempate na deduplicação entre fontes
 
 
 def _on(flag, *envs: str) -> bool:
@@ -113,6 +113,9 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
 
     # 1ª passada: escopo + categoria pelo título (LinkedIn ainda sem descrição)
     scoped = [j for j in dedupe(raw) if annotate(j, cfg, today)]
+    # passe tolerante sobre o conjunto já triado: prefixo no título, razão social
+    # diferente, empresa ausente numa das fontes
+    scoped = merge_duplicates(scoped)
     for j in scoped:
         j.is_new = state.is_new(j)
     log.info("%d vagas no escopo (%d novas)", len(scoped), sum(j.is_new for j in scoped))
@@ -133,10 +136,18 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
     jobs.sort(key=lambda j: (not j.is_new, -j.score, j.date_posted or ""))
     new_jobs = [j for j in jobs if j.is_new]
 
-    ai_done = 0
+    # A avaliação por IA é um enfeite: nunca pode derrubar a rodada. Sem esta
+    # proteção, qualquer falha do SDK descartaria a coleta inteira, o relatório,
+    # o estado e a notificação.
+    ai_done, ai_error = 0, None
     if _on(cfg.get("claude", {}).get("ativo", "auto"), "ANTHROPIC_API_KEY") and new_jobs:
-        from .enrich_claude import enrich
-        ai_done = enrich(new_jobs, profile, cfg)
+        try:
+            from .enrich_claude import enrich
+            ai_done = enrich(new_jobs, profile, cfg)
+        except Exception as e:  # noqa: BLE001
+            log.exception("avaliação por IA falhou; a rodada segue sem as notas")
+            ai_error = f"{type(e).__name__}: {e}"[:200]
+            errors["claude"] = ai_error
 
     ctx = report.build_context(jobs, cfg, now, lb, counts, errors,
                                {"known_jobs": len(state.data["jobs"]), "first_run": state.first_run})
@@ -168,7 +179,7 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
 
     return {
         "skipped": False, "date": today.isoformat(), "lookback_days": lb, "raw": len(raw),
-        "in_scope": len(jobs), "new": len(new_jobs), "ai_evaluated": ai_done,
+        "in_scope": len(jobs), "new": len(new_jobs), "ai_evaluated": ai_done, "ai_error": ai_error,
         "sources": counts, "errors": errors, "sent": sent,
         "paths": {k: str(v) for k, v in paths.items()},
     }

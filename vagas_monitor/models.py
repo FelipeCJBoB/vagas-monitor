@@ -32,6 +32,8 @@ class Job:
     fit: Optional[int] = None  # 0-10, avaliação opcional via Claude
     fit_note: str = ""
     is_new: bool = True
+    # chaves de anúncios equivalentes fundidos nesta vaga (ver dedupe.merge_duplicates)
+    aliases: list = field(default_factory=list)
 
     @property
     def id(self) -> str:
@@ -41,8 +43,18 @@ class Job:
 
     @property
     def dedup_key(self) -> str:
-        """Chave para deduplicar a mesma vaga publicada em fontes diferentes."""
+        """Chave exata: título e empresa idênticos entre fontes.
+
+        Estrita de propósito. O casamento tolerante (prefixo no título, razão social
+        diferente) fica em `vagas_monitor.dedupe`, que registra as chaves fundidas em
+        `aliases`. Manter esta chave estrita preserva a precisão de `State.is_new`.
+        """
         return f"{normalize(self.title)}|{normalize(self.company)}"
+
+    @property
+    def all_keys(self) -> list[str]:
+        """Chave própria mais as dos anúncios equivalentes já fundidos nesta vaga."""
+        return [self.dedup_key, *self.aliases]
 
     def to_dict(self) -> dict:
         d = asdict(self)

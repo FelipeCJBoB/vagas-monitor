@@ -79,3 +79,40 @@ def test_run_end_to_end(monkeypatch, tmp_path):
     assert s3["new"] == 0 and s3["in_scope"] == 3
     state = json.loads((tmp_path / "state" / "seen.json").read_text(encoding="utf-8"))
     assert len(state["jobs"]) == 3
+
+
+def test_falha_da_ia_nao_derruba_a_rodada(monkeypatch, tmp_path):
+    """A avaliação por IA é opcional: uma exceção nela não pode custar a rodada inteira.
+
+    Antes desta proteção, qualquer erro do SDK descartava 8 minutos de coleta,
+    o relatório, o estado e a notificação.
+    """
+    import sys
+    import types
+
+    monkeypatch.setattr(pipeline, "ROOT", tmp_path)
+    monkeypatch.setattr(report, "ROOT", tmp_path)
+    monkeypatch.setattr(pipeline, "collect_all", lambda cfg, lb, errors, skip=(): (_fake_jobs(), {"gupy": 6}))
+    monkeypatch.setattr(pipeline.linkedin, "fetch_description", lambda j: False)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-fake")
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.delenv("SMTP_USER", raising=False)
+
+    def explode(*a, **k):
+        raise TypeError("parâmetro inválido no SDK")
+
+    monkeypatch.setitem(sys.modules, "vagas_monitor.enrich_claude", types.SimpleNamespace(enrich=explode))
+
+    s = pipeline.run(force=True)
+
+    assert not s["skipped"]
+    assert s["in_scope"] == 3
+    assert s["ai_evaluated"] == 0
+    assert "TypeError" in s["ai_error"]
+    assert "claude" in s["errors"]
+    # o que importa: relatório e estado sobreviveram
+    assert (tmp_path / "reports" / "LATEST.md").exists()
+    assert (tmp_path / "docs" / "index.html").exists()
+    assert (tmp_path / "state" / "seen.json").exists()
+    # e o leitor fica sabendo que faltou a nota da IA
+    assert "Avaliação por IA" in (tmp_path / "reports" / "LATEST.md").read_text(encoding="utf-8")

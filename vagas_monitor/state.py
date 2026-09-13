@@ -16,7 +16,16 @@ class State:
         else:
             self.data = {"last_run": None, "jobs": {}}
         self.data.setdefault("jobs", {})
-        self._keys = {v.get("key") for v in self.data["jobs"].values() if v.get("key")}
+        self._keys = self._collect_keys()
+
+    def _collect_keys(self) -> set[str]:
+        """Todas as chaves conhecidas: a própria de cada vaga mais as dos gêmeos fundidos."""
+        keys: set[str] = set()
+        for v in self.data["jobs"].values():
+            if v.get("key"):
+                keys.add(v["key"])
+            keys.update(v.get("aliases") or ())
+        return keys
 
     # --- agenda -----------------------------------------------------------
     @property
@@ -42,18 +51,25 @@ class State:
 
     # --- vagas ------------------------------------------------------------
     def is_new(self, job: Job) -> bool:
-        return job.id not in self.data["jobs"] and job.dedup_key not in self._keys
+        """Nova = id inédito e nenhuma das suas chaves (própria ou de anúncios fundidos) conhecida."""
+        if job.id in self.data["jobs"]:
+            return False
+        return not any(k in self._keys for k in job.all_keys)
 
     def mark(self, job: Job, today: date) -> None:
         if job.id in self.data["jobs"]:
-            self.data["jobs"][job.id]["last_seen"] = today.isoformat()
+            entry = self.data["jobs"][job.id]
+            entry["last_seen"] = today.isoformat()
+            if job.aliases:  # a rodada pode ter descoberto novos gêmeos
+                entry["aliases"] = sorted({*entry.get("aliases", []), *job.aliases})
+                self._keys.update(job.aliases)
             return
         self.data["jobs"][job.id] = {
-            "key": job.dedup_key, "title": job.title, "company": job.company,
-            "url": job.url, "source": job.source, "score": job.score,
+            "key": job.dedup_key, "aliases": list(job.aliases), "title": job.title,
+            "company": job.company, "url": job.url, "source": job.source, "score": job.score,
             "first_seen": today.isoformat(), "last_seen": today.isoformat(),
         }
-        self._keys.add(job.dedup_key)
+        self._keys.update(job.all_keys)
 
     def prune(self, keep_days: int = 120, today: date | None = None) -> int:
         today = today or date.today()
@@ -62,7 +78,7 @@ class State:
                if v.get("last_seen", v.get("first_seen", "")) < cutoff]
         for k in old:
             self.data["jobs"].pop(k, None)
-        self._keys = {v.get("key") for v in self.data["jobs"].values() if v.get("key")}
+        self._keys = self._collect_keys()
         return len(old)
 
     def save(self) -> None:
