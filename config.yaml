@@ -26,7 +26,12 @@ cidades_alias:               # nomes que contam como uma cidade-alvo
   Camboriú: Balneário Camboriú
 incluir_remoto: true         # vagas 100% remotas (Brasil) entram em seção própria
 
-termos_busca:                # termos enviados às fontes (LinkedIn / Indeed / Gupy-remoto)
+# Termos enviados às fontes. A Gupy varre SC inteiro independente destes termos;
+# eles valem para LinkedIn, Indeed e para as vagas remotas.
+# Cada termo custa tempo de rodada: são 3 buscas de cidade no LinkedIn mais 2 no
+# Indeed. Acrescente um só quando ele trouxer um perfil de vaga que os outros não
+# alcançam — foi o caso de "SAP" e "analista de sistemas", ausentes até 09/2026.
+termos_busca:
   - dados
   - data
   - inteligência artificial
@@ -36,6 +41,9 @@ termos_busca:                # termos enviados às fontes (LinkedIn / Indeed / G
   - full stack
   - python
   - BI
+  - SAP                      # ponte direta com a experiência na TKMS
+  - analista de sistemas     # como a indústria da região titula vaga técnica
+  - devops
 
 # Categorias na ordem de preferência (prioridade 1 = mais desejada).
 # `titulo`: termos que, no TÍTULO, classificam a vaga (30 pts).
@@ -44,6 +52,7 @@ categorias:
   agentes_ia:
     nome: Agentes de IA
     prioridade: 1
+    bonus: 12
     titulo: ["agente de ia", "agentes de ia", "agente ia", "agentes ia", "agente de inteligência artificial",
              "agentes inteligentes", "agentes autônomos", "agentes llm", "ai agent", "ai agents", "agent ai",
              agentic, langchain, langgraph, crewai, autogen, mcp, rag, "ai engineer", "engenheiro de ia",
@@ -54,6 +63,7 @@ categorias:
   dados:
     nome: Dados
     prioridade: 2
+    bonus: 10
     titulo: [dados, data, bi, "business intelligence", "power bi", analytics, etl, dba,
              "banco de dados", "big data", "data lake", dataops, dbt, "data analyst",
              "data engineer", "data scientist"]
@@ -63,6 +73,7 @@ categorias:
   ia_llm:
     nome: IA / LLMs
     prioridade: 3
+    bonus: 8
     titulo: ["inteligência artificial", ia, ai, "machine learning", ml, llm, llms, "ia generativa",
              "generative ai", genai, nlp, "deep learning", "visão computacional", "computer vision",
              "ml engineer", mlops, "cientista de ml"]
@@ -72,6 +83,7 @@ categorias:
   fullstack:
     nome: Full Stack / Dev
     prioridade: 4
+    bonus: 4
     titulo: ["full stack", fullstack, "full-stack", "desenvolvedor web", "desenvolvedora web",
              "web developer", backend, "back-end", "back end", frontend, "front-end", "front end",
              python, node, react, django, fastapi, flask, "desenvolvedor de software",
@@ -79,6 +91,44 @@ categorias:
              desenvolvedora, programador, programadora, developer]
     descricao: ["full stack", fullstack, react, node, django, fastapi, flask, javascript, typescript,
                 "api rest", "rest api", html, css, "next.js", vue, angular]
+  # As duas categorias abaixo nasceram da comparação entre o que o monitor
+  # capturava e as vagas em que o Felipe efetivamente se candidatou em 09/2026.
+  # "Implantador de Sistemas" (SENSUM, Itajaí) não era classificado por nenhuma
+  # regra, e os "Analista SAP SD/MM" de Jaraguá do Sul eram descartados — apesar
+  # de SAP ser o uso diário dele na TKMS e a maior ponte para a primeira vaga.
+  # Prioridade baixa de propósito: entram no radar sem disputar o topo com Dados e IA.
+  sistemas_negocio:
+    nome: Sistemas e ERP
+    prioridade: 5
+    bonus: -10
+    # Escopo colado na evidência: ERP, implantação e análise de sistemas, que é onde
+    # a experiência de SAP e processos da TKMS conta como diferencial.
+    # Suporte técnico, service desk e help desk ficaram DE FORA de propósito: numa
+    # medição de 13/09/2026 traziam 43 vagas de uma vez, quase todas atendimento ao
+    # usuário, que não usam nada do repertório dele nem levam a Dados. Se um dia
+    # quiser abrir o leque, é só acrescentar os termos aqui.
+    titulo: [sap, abap, erp, totvs, protheus, datasul, sankhya, "analista de sistemas",
+             "analista de ti", "analista de tecnologia", implantador, implantadora,
+             "implantação de sistemas", "consultor de sistemas", "consultora de sistemas",
+             "analista funcional", "analista de negócios", "business analyst",
+             "analista de processos", "analista de integração"]
+    descricao: [sap, "sap ecc", "sap ewm", "s/4hana", abap, erp, totvs, protheus, datasul,
+                "implantação de sistemas", "parametrização", "analista funcional",
+                "levantamento de requisitos", "mapeamento de processos", crm, salesforce]
+  devops_auto:
+    nome: DevOps e Automação
+    prioridade: 6
+    bonus: -6
+    titulo: [devops, sre, "site reliability", "engenheiro de infraestrutura", "analista de infraestrutura",
+             "cloud engineer", "engenheiro de nuvem", rpa, "automação de processos",
+             "analista de automação", "engenheiro de automação", "platform engineer",
+             # "analista de segurança" sozinho pegava "Segurança do Trabalho", que é
+             # saúde ocupacional. Só termos inequívocos de segurança da informação.
+             "segurança da informação", cibersegurança, "cyber security", cybersecurity,
+             "segurança cibernética", "security engineer", "security analyst", soc, pentest]
+    descricao: [devops, kubernetes, docker, terraform, ansible, "ci/cd", jenkins,
+                "github actions", "gitlab ci", rpa, uipath, "power automate", n8n,
+                "infraestrutura como código", observabilidade, "segurança da informação"]
 
 senioridade:                 # detectada no título (e em dicas da fonte)
   junior: [júnior, junior, jr, "jr.", estágio, estagiário, estagiária, trainee, "entry level",
@@ -88,7 +138,12 @@ senioridade:                 # detectada no título (e em dicas da fonte)
            coordenador, coordenadora, head, principal, staff, diretor, diretora, arquiteto,
            arquiteta, "tech lead", supervisor, supervisora, "nível iii"]
 
-excluir_titulo: [vendedor, vendedora, motorista, porteiro, recepcionista, "auxiliar de produção", telemarketing]
+excluir_titulo: [vendedor, vendedora, motorista, porteiro, recepcionista, "auxiliar de produção", telemarketing,
+                 # homônimos que caíam nas categorias novas: saúde ocupacional não é
+                 # segurança da informação, e agente/consultor comercial não é agente de IA
+                 "segurança do trabalho", "técnico de segurança", "engenheiro de segurança do trabalho",
+                 "agente de negócios", "agente comercial", "consultor de vendas", "consultora de vendas",
+                 "analista de segurança do trabalho"]
 
 habilidades:                 # do currículo — cada acerto soma pontos (máx. +18)
   - python

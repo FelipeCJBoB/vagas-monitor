@@ -99,6 +99,38 @@ Ele agora aborta se houver rebase pendente ou alteração não commitada em `rep
 Ative a verificação em 2 etapas e gere uma **senha de app** em
 <https://myaccount.google.com/apppasswords>. Preencha `SMTP_USER`, `SMTP_PASSWORD` e `EMAIL_TO` no `.env`.
 
+## O que o mercado cobra
+
+Cada rodada lê as descrições das vagas e monta um mapa de habilidades separando
+**presencial ou híbrido na região** de **remoto nacional**. Ele sai em todos os canais:
+tabela completa no Markdown e no painel, resumo das três prioridades no Telegram, seis
+no e-mail.
+
+A separação existe porque os dois não são o mesmo mercado com endereços diferentes. A
+região é indústria com ERP e BI consolidados; o remoto é empresa de tecnologia com stack
+de nuvem. Uma lista média dos dois não descreve nenhum dos dois, e leva a estudar a coisa
+errada.
+
+A ordem de prioridade não é a frequência bruta. É **quanto cada habilidade destrava de
+vagas que você pode pegar hoje**, ou seja, júnior, pleno ou sem nível declarado,
+descontando o que já domina. O que você já sabe aparece no mapa marcado como domínio,
+para lembrar de destacar no currículo, mas fica fora da lista de estudo.
+
+Três salvaguardas contra ler tendência onde só há ruído:
+
+| Guarda | Efeito |
+|---|---|
+| `min_ocorrencias` no `skills.yaml` | habilidade com menos de 4 menções não entra |
+| mínimo de 10 vagas por segmento | abaixo disso a coluna "onde pesa" é neutralizada e o relatório avisa |
+| só vagas com descrição no denominador | evita que toda habilidade pareça mais rara do que é |
+
+A comparação entre os segmentos mistura duas causas: vagas remotas vêm de empresas de
+tecnologia e tendem a ser mais sêniores, então parte da diferença é o tipo de empresa, não
+o regime de trabalho. O relatório informa o tamanho da amostra ao lado de cada número.
+
+Edite o campo `tenho` do `skills.yaml` conforme for estudando (`sim`, `parcial`, `nao`) e a
+prioridade se recalcula sozinha na rodada seguinte.
+
 ## Avaliação por IA (opcional)
 
 Com `ANTHROPIC_API_KEY` no `.env` e nos segredos do repositório, as melhores vagas novas
@@ -119,6 +151,29 @@ para `claude-sonnet-5` reduz para uns 20% disso.
 Tudo em `config.yaml`: cidades, termos de busca, palavras que definem cada categoria,
 listas de senioridade, skills do currículo, `top_n`, canais. `perfil.md` alimenta a
 avaliação por IA. Nada disso exige mexer no código.
+
+### Como a taxonomia foi calibrada
+
+As categorias não saíram de intuição. Em setembro de 2026 comparamos o que o monitor
+capturava com as vagas em que o Felipe efetivamente se candidatou, e o resultado mostrou
+o ponto cego:
+
+| Vaga | O que acontecia |
+|---|---|
+| Implantador de Sistemas, SENSUM, Itajaí | nenhuma regra classificava; nunca apareceu em rodada alguma |
+| Analista SAP SD e SAP MM, Jaraguá do Sul | descartadas, apesar de SAP ser o uso diário dele na TKMS |
+| Analista DevOps Pleno | descartada |
+
+Daí nasceram as categorias `sistemas_negocio` e `devops_auto`, com prioridade baixa para
+entrarem no radar sem disputar o topo com Dados e IA, mais os termos de busca `SAP`,
+`analista de sistemas` e `devops`.
+
+O método vale para repetir: quando uma vaga interessante aparecer fora do relatório,
+rode o título por `filters.classify` e veja se alguma regra pega. Se não pegar, o que
+falta é um termo, não mais uma fonte.
+
+Duas armadilhas que essa expansão trouxe e já estão tratadas em `excluir_titulo`:
+segurança do trabalho não é segurança da informação, e agente de negócios não é agente de IA.
 
 A seção `estado` controla a memória entre rodadas:
 
