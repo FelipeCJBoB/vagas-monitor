@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-13T18:04:57",
+ "last_run": "2026-09-13T18:39:13",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -2951,7 +2951,7 @@
    "source": "linkedin",
    "score": 73,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "5a617b996d73237d": {
    "key": "cientista de dados|cix citizen experience",
@@ -3480,7 +3480,10 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-13",
+   "ext_keys": [
+    "ext:gupy:12376575"
+   ]
   },
   "eac6877f3b27fb35": {
    "key": "engenheiro(a) de software senior backend python - plataforma e arquitetura|afya",
@@ -4276,7 +4279,10 @@
    "source": "indeed",
    "score": 55,
    "first_seen": "2026-09-13",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-13",
+   "ext_keys": [
+    "ext:gupy:12469999"
+   ]
   },
   "afbe83267a2292b2": {
    "key": "ai quality analyst (personalization) - portuguese (job referral)|",
@@ -4391,7 +4397,10 @@
    "source": "indeed",
    "score": 38,
    "first_seen": "2026-09-13",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-13",
+   "ext_keys": [
+    "ext:gupy:12470672"
+   ]
   },
   "5cb1203fd2bb29f7": {
    "key": "profissional ai specialist|radix engenharia e software",
@@ -4517,7 +4526,10 @@
    "source": "indeed",
    "score": 32,
    "first_seen": "2026-09-13",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-13",
+   "ext_keys": [
+    "ext:gupy:12469654"
+   ]
   },
   "61b173da278ec86f": {
    "key": "remote - senior power bi developer / data analyst - federal - us citizenship or gc required|booker dimaio",
@@ -5913,6 +5925,86 @@
    "url": "https://br.indeed.com/viewjob?jk=f9a4959e38fab25a",
    "source": "indeed",
    "score": 36,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "46bb73091ec27d6f": {
+   "key": "analista de infraestrutura - page diversity|pageoutsourcingbr",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12466665"
+   ],
+   "title": "Analista de Infraestrutura - Page Diversity",
+   "company": "Pageoutsourcingbr",
+   "url": "https://br.indeed.com/viewjob?jk=fe40fb61aaec457d",
+   "source": "indeed",
+   "score": 52,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "372d17d72f6aca7c": {
+   "key": "qa (quality assurance) pleno | java | remoto|sofist",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12443416"
+   ],
+   "title": "QA (Quality Assurance) Pleno | Java | Remoto",
+   "company": "Sofist",
+   "url": "https://br.indeed.com/viewjob?jk=b1365ded4d4e40c2",
+   "source": "indeed",
+   "score": 37,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "8b42230db0683b07": {
+   "key": "analista command center ti sr (cartoes)|sem parar corpay",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12468808"
+   ],
+   "title": "Analista Command Center TI SR (Cartões)",
+   "company": "Sem Parar Corpay",
+   "url": "https://br.indeed.com/viewjob?jk=d7f81580ceac82f1",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "989e719d96280b11": {
+   "key": "especialista command center ti (cartoes)|sem parar corpay",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12460741"
+   ],
+   "title": "Especialista Command Center TI (Cartões)",
+   "company": "Sem Parar Corpay",
+   "url": "https://br.indeed.com/viewjob?jk=a52aa4ec716300fe",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "d95828d0b63fe1d3": {
+   "key": "consultor sap sd drc senior (sow)|jobbol",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "CONSULTOR SAP SD DRC SÊNIOR (Sow)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=80760bfab67e81bd",
+   "source": "indeed",
+   "score": 10,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "f33a2eef9dc3aebd": {
+   "key": "lider tecnico de arquitetura de software (soditech engineering & technology)|jobbol",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "LÍDER TÉCNICO DE ARQUITETURA DE SOFTWARE (SODITECH Engineering & Technology)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=696c5b2fb0629ce4",
+   "source": "indeed",
+   "score": 0,
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-13"
   }
