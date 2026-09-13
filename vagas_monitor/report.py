@@ -14,7 +14,7 @@ from .models import Job
 
 LEVEL_PT = {"junior": "Júnior", "pleno": "Pleno", "senior": "Sênior", "unknown": "—"}
 WP_PT = {"remote": "Remoto", "hybrid": "Híbrido", "onsite": "Presencial", "unknown": ""}
-SOURCE_PT = {"linkedin": "LinkedIn", "indeed": "Indeed", "gupy": "Gupy", "claude": "Avaliação por IA"}
+SOURCE_PT = {"linkedin": "LinkedIn", "indeed": "Indeed", "gupy": "Gupy", "claude": "Avaliação por IA", "ia": "Avaliação por IA"}
 
 
 def _age(date_posted: str | None, today: date) -> int | None:

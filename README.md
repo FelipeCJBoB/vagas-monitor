@@ -133,18 +133,48 @@ prioridade se recalcula sozinha na rodada seguinte.
 
 ## Avaliação por IA (opcional)
 
-Com `ANTHROPIC_API_KEY` no `.env` e nos segredos do repositório, as melhores vagas novas
-de cada rodada recebem nota de 0 a 10 e um comentário. Dois pontos que custam uma rodada
-se passarem despercebidos:
+Com uma chave configurada, as melhores vagas novas de cada rodada recebem nota de 0 a 10
+e um comentário. São dois provedores, e `avaliacao.provedor: auto` usa o primeiro que
+encontrar chave, preferindo o Gemini.
 
-- **A chave sozinha não basta: a conta precisa de crédito.** Sem saldo, a API responde 400
-  e nenhuma vaga é avaliada. O monitor desiste após 3 falhas seguidas, em vez de repetir o
-  erro 25 vezes, e o motivo aparece no topo do relatório e do painel.
-- O teto é `claude.max_vagas` (25 por padrão), aplicado às vagas novas de maior pontuação.
-  A legenda da estrela diz quantas foram avaliadas, e some quando não houve nenhuma.
+| | Gemini (Google AI Studio) | Claude (Anthropic) |
+|---|---|---|
+| Custo | nível gratuito permanente | pré-pago, ~US$ 0,30 por rodada |
+| Onde pegar a chave | <https://aistudio.google.com/apikey> | <https://console.anthropic.com> |
+| Limite | por minuto (10 RPM no Flash) | pelo saldo da conta |
+| Privacidade | no nível gratuito, o Google pode usar os dados para treinar | não usa para treinar |
+| Variável | `GEMINI_API_KEY` | `ANTHROPIC_API_KEY` |
 
-Custo aproximado com o padrão atual: cerca de US$ 0,30 por rodada. Trocar `claude.modelo`
-para `claude-sonnet-5` reduz para uns 20% disso.
+**A assinatura não dá a chave.** Nem o Gemini Pro (Google One AI Premium) nem o plano do
+Claude.ai incluem acesso à API: são cobranças separadas. No caso do Google, a chave do AI
+Studio é gratuita para qualquer conta, com ou sem assinatura, então o efeito prático é o
+mesmo, só que pelo motivo certo.
+
+Sobre a privacidade do nível gratuito do Gemini: o que trafega são anúncios de vaga, que
+já são públicos, e o `perfil.md`, que está neste repositório público. Quem ainda assim
+preferir que não seja usado para treino deve ativar cobrança na conta Google ou usar
+`provedor: anthropic`.
+
+O volume desta automação é de 25 chamadas a cada 5 dias, bem dentro do gratuito. As
+chamadas são espaçadas conforme `avaliacao.gemini.rpm` para não esbarrar no limite por
+minuto: 25 vagas a 10 RPM levam pouco mais de dois minutos, irrelevante numa rodada que
+já gasta doze minutos coletando.
+
+Para validar a chave sem esperar a próxima rodada:
+
+```powershell
+.\.venv\Scripts\python -m vagas_monitor check-ia
+```
+
+Ele mostra quais chaves encontrou, qual provedor usaria, e faz uma chamada real com uma
+vaga de exemplo.
+
+Se a avaliação falhar, a rodada segue sem as notas e o motivo aparece no topo do relatório
+e do painel. O monitor desiste após 3 falhas seguidas, e imediatamente quando o erro é
+definitivo (chave inválida, saldo zerado, modelo inexistente).
+
+O teto é `avaliacao.max_vagas`, 25 por padrão, aplicado às vagas novas de maior pontuação.
+A legenda da estrela informa quantas foram avaliadas, e some quando não houve nenhuma.
 
 ## Ajustando o alvo
 

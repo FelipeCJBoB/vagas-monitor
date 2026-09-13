@@ -27,3 +27,25 @@ def load_profile(cfg: dict) -> str:
 def env(name: str, default: str | None = None) -> str | None:
     v = os.environ.get(name)
     return v if v not in (None, "") else default
+
+
+def avaliacao_cfg(cfg: dict) -> dict:
+    """Seção de avaliação por IA, aceitando o formato antigo.
+
+    Até 09/2026 a configuração era `claude: {ativo, modelo, esforco, max_vagas}`,
+    de quando havia um provedor só. Quem tiver um config.yaml antigo continua
+    funcionando sem editar nada.
+    """
+    if cfg.get("avaliacao"):
+        return dict(cfg["avaliacao"])
+    antigo = cfg.get("claude") or {}
+    if not antigo:
+        return {}
+    ativo = antigo.get("ativo", "auto")
+    return {
+        "provedor": "nenhum" if ativo is False else "anthropic",
+        "max_vagas": antigo.get("max_vagas", 25),
+        "anthropic": {k: v for k, v in
+                      (("modelo", antigo.get("modelo")), ("esforco", antigo.get("esforco")))
+                      if v is not None},
+    }
