@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-11T08:30:03",
+ "last_run": "2026-09-13T17:11:53",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -139,7 +139,7 @@
    "source": "linkedin",
    "score": 83,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "0ff5d39825b9dcec": {
    "key": "analista de dados jr - foco em auditoria interna|cogna educacao",
@@ -1489,7 +1489,7 @@
    "source": "linkedin",
    "score": 45,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-05"
+   "last_seen": "2026-09-13"
   },
   "3279ecd47c920a62": {
    "key": "desenvolvedor operacoes senior - ia & agentes autonomos (remoto)|zenvia jobs",
@@ -2689,7 +2689,7 @@
    "source": "linkedin",
    "score": 29,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "223a1272809c16b6": {
    "key": "[tech] especialista em engenharia de software backend - progress|totvs",
@@ -2749,7 +2749,7 @@
    "source": "indeed",
    "score": 96,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "73cfb7c1b1780711": {
    "key": "processo seletivo 2026 - estagio em ciencia de dados|elogroup",
@@ -2759,7 +2759,7 @@
    "source": "indeed",
    "score": 96,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "605e21456117d2f7": {
    "key": "junior ai/ml engineer (genai, aws)|provectus",
@@ -2769,7 +2769,7 @@
    "source": "indeed",
    "score": 92,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3a67134472acd9f9": {
    "key": "analista de engenharia de dados jr|libbs farmaceutica",
@@ -2779,7 +2779,7 @@
    "source": "gupy",
    "score": 87,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "94d0fe92cabb98e2": {
    "key": "cas | cientista de dados jr – foco em gestao de produtos (preferencialmente para mulheres)|sicredi",
@@ -2799,7 +2799,10 @@
    "source": "indeed",
    "score": 82,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13",
+   "aliases": [
+    "analista de imagem junior - foco em styling & ia|grupo malwee"
+   ]
   },
   "0f9ad3ec32e6db5a": {
    "key": "ai engineer / desenvolvedor(a) full stack com foco em ia|4df connect",
@@ -2829,7 +2832,7 @@
    "source": "indeed",
    "score": 81,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "ceb6b7c84ad8fbb2": {
    "key": "processo seletivo 2026 - estagio em engenharia de dados|elogroup",
@@ -2839,7 +2842,7 @@
    "source": "indeed",
    "score": 81,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "d16d3836a5dc5d03": {
    "key": "brazil- remote: full stack ai developer|halliburton",
@@ -2859,7 +2862,7 @@
    "source": "indeed",
    "score": 77,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3b4381fcc89468da": {
    "key": "engenheiro de dados pleno|quality digital",
@@ -2869,7 +2872,7 @@
    "source": "indeed",
    "score": 76,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "ecaa3b6e9c6628b1": {
    "key": "analista de dados pleno (vaga afirmativa para pessoas com deficiencia)|grupo olx",
@@ -2879,7 +2882,7 @@
    "source": "indeed",
    "score": 76,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "fd21643442cef13b": {
    "key": "desenvolvedor(a) de sistemas pleno|rise retail",
@@ -2899,7 +2902,7 @@
    "source": "indeed",
    "score": 74,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "cb25b2c76ddf21b4": {
    "key": "desenvolvedor de automacoes e integracoes financeiras|instituto experience",
@@ -2909,7 +2912,7 @@
    "source": "indeed",
    "score": 74,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "dcc96234bd29961c": {
    "key": "desenvolvedor fullstack vtex junior|growdev",
@@ -2919,7 +2922,7 @@
    "source": "indeed",
    "score": 73,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "0c294e79dc394f59": {
    "key": "data analyst (analista de dados pleno)|stonex group",
@@ -2979,7 +2982,7 @@
    "source": "linkedin",
    "score": 71,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "c30cd16731465161": {
    "key": "analista programador front end pl|grupo sysmap",
@@ -2989,7 +2992,7 @@
    "source": "indeed",
    "score": 71,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3c65979b5fed0a7c": {
    "key": "software developer iv - java (e-docs) - 11651|senior sistemas",
@@ -2999,7 +3002,7 @@
    "source": "linkedin",
    "score": 70,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "ba1e728cc3249ca4": {
    "key": "engenheiro de dados pleno gcp/dbt|leega consultoria",
@@ -3009,7 +3012,7 @@
    "source": "gupy",
    "score": 70,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "c01f594d47d9d56f": {
    "key": "bra it analyst i (engenharia de dados)|openbank deutschland ag",
@@ -3029,7 +3032,7 @@
    "source": "linkedin",
    "score": 70,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1d7eb9c3c4327622": {
    "key": "analista desenvolvedor ti pl|multilog",
@@ -3039,7 +3042,7 @@
    "source": "linkedin",
    "score": 70,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3d5d24c63f3f2740": {
    "key": "whirlpool - analista de dados|iel/sc - instituto euvaldo lodi de santa catarina",
@@ -3049,7 +3052,7 @@
    "source": "linkedin",
    "score": 69,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "a0e4768a8f993769": {
    "key": "engenharia de agentes de ia | remota|gft technologies",
@@ -3059,7 +3062,7 @@
    "source": "indeed",
    "score": 68,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "b267f6fb8a8f4b98": {
    "key": "analista de dados pleno (martech / marketing data)|localiza&co",
@@ -3069,7 +3072,7 @@
    "source": "gupy",
    "score": 67,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "b6df1ed3419a6c44": {
    "key": "desenvolvedor full stack|multitherm",
@@ -3079,7 +3082,7 @@
    "source": "indeed",
    "score": 67,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "25c37db60a49124c": {
    "key": "software developer java ii (hcm) - 11757|senior sistemas",
@@ -3089,7 +3092,7 @@
    "source": "linkedin",
    "score": 67,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "fd6b0db49b7e5e72": {
    "key": "desenvolvedor(a) node.js pleno|unibf",
@@ -3099,7 +3102,7 @@
    "source": "linkedin",
    "score": 67,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "2e1ce62fe1bc7492": {
    "key": "ai engineer [remoto - ingles]|pitang",
@@ -3109,7 +3112,7 @@
    "source": "indeed",
    "score": 65,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "f4c74f865014f0f4": {
    "key": "desenvolvedor full stack pleno|",
@@ -3119,7 +3122,7 @@
    "source": "indeed",
    "score": 65,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "2871d9b67c13dc16": {
    "key": "full-stack engineer (kotlin)|qualysoft",
@@ -3129,7 +3132,7 @@
    "source": "indeed",
    "score": 62,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "d0c24b582df29ce4": {
    "key": "desenvolvedor full stack|agromai",
@@ -3159,7 +3162,7 @@
    "source": "linkedin",
    "score": 61,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "9be496412ba856fe": {
    "key": "data scientist / digital tech analyst|3con | it & digital",
@@ -3169,7 +3172,7 @@
    "source": "gupy",
    "score": 61,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "64095fa0ff73bff6": {
    "key": "backend developer (.net)|andersen",
@@ -3179,7 +3182,7 @@
    "source": "indeed",
    "score": 59,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "4502a0d311eb849e": {
    "key": "full stack developer (.net/c#)|andersen",
@@ -3189,7 +3192,7 @@
    "source": "indeed",
    "score": 59,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "bc66aa8bcb6cb183": {
    "key": "remote software engineer - python/typescript|turing",
@@ -3199,7 +3202,7 @@
    "source": "indeed",
    "score": 59,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "90b96861a5e93bc4": {
    "key": "desenvolvedor salesforce agentforce pl|codeart",
@@ -3209,7 +3212,7 @@
    "source": "indeed",
    "score": 59,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "19ed6afba84f6e20": {
    "key": "consultor sap sd + sap car + master data|stefanini latam",
@@ -3219,7 +3222,7 @@
    "source": "gupy",
    "score": 58,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1c86837c169e61e9": {
    "key": "desenvolvedor fullstack|mirante tecnologia",
@@ -3229,7 +3232,7 @@
    "source": "indeed",
    "score": 56,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "6ee9e447d7349be1": {
    "key": "data architect|softdesign",
@@ -3239,7 +3242,7 @@
    "source": "gupy",
    "score": 55,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "07aedce93dd62ab5": {
    "key": "software quality analyst i (hcm) - 11758|senior sistemas",
@@ -3249,7 +3252,7 @@
    "source": "indeed",
    "score": 49,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "45d0d7be318332f8": {
    "key": "engenheiro de dados pl/sr - databricks|grupo sysmap",
@@ -3259,7 +3262,7 @@
    "source": "gupy",
    "score": 41,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "06bff2742678327e": {
    "key": "digital analytics senior|",
@@ -3279,7 +3282,7 @@
    "source": "gupy",
    "score": 38,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "b26f32e19a89588b": {
    "key": "lider de dados e analytics|wescale",
@@ -3309,7 +3312,10 @@
    "source": "indeed",
    "score": 37,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13",
+   "aliases": [
+    "lider de dados e analytics|wescale"
+   ]
   },
   "9f43c4760f56c28e": {
    "key": "senior solutions architect – data & ai|ex squared",
@@ -3359,7 +3365,7 @@
    "source": "indeed",
    "score": 33,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "9b51d266039e7cc3": {
    "key": "senior full-stack (react + python) engineer|n-ix",
@@ -3369,7 +3375,7 @@
    "source": "indeed",
    "score": 33,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "d277890792d2d06a": {
    "key": "engenheiro de dados gcp senior (big query / dataflow)|leega consultoria",
@@ -3379,7 +3385,7 @@
    "source": "gupy",
    "score": 32,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3c994e27f0d2832e": {
    "key": "pessoa analista de dados senior - prevencao a lavagem de dinheiro (pld)|caju",
@@ -3389,7 +3395,7 @@
    "source": "gupy",
    "score": 32,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "a88557e256b4cd18": {
    "key": "engenheiro(a) de software senior (backend / edge computing)|strokmatic innovation technology",
@@ -3399,7 +3405,7 @@
    "source": "linkedin",
    "score": 32,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "a0a8e9ece1863d1c": {
    "key": "lead business intelligence developer- remote|upmc",
@@ -3409,7 +3415,7 @@
    "source": "linkedin",
    "score": 32,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "63a9685f26e42672": {
    "key": "engenheiro de dados senior|stefanini group",
@@ -3419,7 +3425,7 @@
    "source": "gupy",
    "score": 32,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "117cfdf633966a8e": {
    "key": "pessoa desenvolvedora backend python/ nodejs especialista i (venda direta)|grupo boticario",
@@ -3429,7 +3435,7 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "eac6877f3b27fb35": {
    "key": "engenheiro(a) de software senior backend python - plataforma e arquitetura|afya",
@@ -3439,7 +3445,7 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "f623a1cb0ae64ab8": {
    "key": "lead machine learning engineer - merchandising ai (ml ops)(remote or hybrid)|target",
@@ -3449,7 +3455,7 @@
    "source": "linkedin",
    "score": 28,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "0b2ac1683e905872": {
    "key": "staff ml engineer|hand talk",
@@ -3459,7 +3465,7 @@
    "source": "indeed",
    "score": 28,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "0b102ad3118b0470": {
    "key": "senior full-stack developer (react / node.js) ai-first|commit",
@@ -3469,7 +3475,7 @@
    "source": "indeed",
    "score": 28,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1b5d873831ffd6e5": {
    "key": "full stack and backend nodejs typescript/javascript engineer (senior) - remote, latin america|bluelight consulting",
@@ -3479,7 +3485,7 @@
    "source": "indeed",
    "score": 27,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "aca623f172eb85e3": {
    "key": "especialista de inteligencia artificial|dual",
@@ -3489,7 +3495,7 @@
    "source": "indeed",
    "score": 27,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "544afbbdf4b319d0": {
    "key": "technical account manager (tam) | arquitetura de software & ia|empresa confidencial",
@@ -3499,7 +3505,7 @@
    "source": "linkedin",
    "score": 27,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1911aa4aa8b66199": {
    "key": "specialist of data|escale",
@@ -3519,7 +3525,7 @@
    "source": "linkedin",
    "score": 26,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "3cc856b70831c44e": {
    "key": "engenheiro dados sr - iics|stefanini group",
@@ -3529,7 +3535,7 @@
    "source": "gupy",
    "score": 26,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "5b1ed688d09d06d3": {
    "key": "senior ai/ml applied scientist - remote|optum",
@@ -3539,7 +3545,7 @@
    "source": "linkedin",
    "score": 25,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "bb9807cc8f8e26b3": {
    "key": "desenvolvedor full stack .net - pleno/senior|",
@@ -3549,7 +3555,7 @@
    "source": "indeed",
    "score": 24,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "aef0a65aed2484c3": {
    "key": "pessoa desenvolvedora full stack - c# + react | senior - remoto|octafy",
@@ -3559,7 +3565,7 @@
    "source": "indeed",
    "score": 24,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "a619352179eff35c": {
    "key": "desenvolvedor(a) full stack especialista – java | react|extractta",
@@ -3569,7 +3575,7 @@
    "source": "indeed",
    "score": 24,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "906f109ffbf75e36": {
    "key": "desenvolvedor full stack senior|yandeh",
@@ -3589,7 +3595,7 @@
    "source": "indeed",
    "score": 24,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "d07e2cfe6d04ae97": {
    "key": "ai/ml governance specialist|ex squared",
@@ -3609,7 +3615,7 @@
    "source": "indeed",
    "score": 21,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1a88d5120196e395": {
    "key": "auditor senior - canal de denuncias e investigacoes corporativas|gol linhas aereas",
@@ -3629,7 +3635,7 @@
    "source": "indeed",
    "score": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "44d1be2265a20506": {
    "key": "software architect / tech lead|eclipseworks",
@@ -3639,7 +3645,7 @@
    "source": "indeed",
    "score": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "687946e6c3f3be5c": {
    "key": "arquiteto devops|hitss",
@@ -3669,7 +3675,7 @@
    "source": "linkedin",
    "score": 55,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "ac6f072abc71bf16": {
    "key": "desenvolvedor full stack c# c++ (soditech engineering & technology)|jobbol",
@@ -3689,7 +3695,7 @@
    "source": "linkedin",
    "score": 53,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "ff5c8242e7941035": {
    "key": "golang developer - remote work|bairesdev",
@@ -3699,7 +3705,7 @@
    "source": "linkedin",
    "score": 53,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "7b07513279375cb6": {
    "key": "data science | senior remote|compass uol",
@@ -3770,6 +3776,899 @@
    "score": 21,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11"
+  },
+  "db016335102888f6": {
+   "key": "analista bi jr.|saint-gobain",
+   "aliases": [],
+   "title": "Analista BI Jr.",
+   "company": "Saint-Gobain",
+   "url": "https://br.indeed.com/viewjob?jk=c3b249f92bd020c6",
+   "source": "indeed",
+   "score": 93,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "c777ec6e309ffd3e": {
+   "key": "cientista de dados junior|starta",
+   "aliases": [],
+   "title": "Cientista de Dados Júnior",
+   "company": "STARTA",
+   "url": "https://br.indeed.com/viewjob?jk=edb37a6202f7942d",
+   "source": "indeed",
+   "score": 93,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "60017bcbaa5c15bf": {
+   "key": "profissional fullstack (ia/javascript) trainee/junior - remoto|luby",
+   "aliases": [],
+   "title": "Profissional Fullstack (IA/Javascript) Trainee/Júnior - Remoto",
+   "company": "Luby",
+   "url": "https://br.indeed.com/viewjob?jk=553ff80e554c6463",
+   "source": "indeed",
+   "score": 92,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "e324ca47a5a9046e": {
+   "key": "estagiario analise de dados|ponto all ecom",
+   "aliases": [],
+   "title": "Estagiário Análise de Dados",
+   "company": "Ponto All Ecom",
+   "url": "https://br.indeed.com/viewjob?jk=6109614ec93daf1c",
+   "source": "indeed",
+   "score": 89,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "81097bf68aefa78e": {
+   "key": "estagio de bi|liber",
+   "aliases": [],
+   "title": "Estágio de BI",
+   "company": "LÍBER",
+   "url": "https://br.indeed.com/viewjob?jk=09430a9349f6564f",
+   "source": "indeed",
+   "score": 87,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "75ce8f5fafcca4b9": {
+   "key": "desenvolvedor full stack - jr|prothera inc",
+   "aliases": [
+    "desenvolvedor full stack - jr|prothera"
+   ],
+   "title": "Desenvolvedor Full Stack - JR",
+   "company": "ProThera Inc",
+   "url": "https://br.indeed.com/viewjob?jk=e32f01d9f6566b0e",
+   "source": "indeed",
+   "score": 85,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "cbd472463aa14da6": {
+   "key": "desenvolvedor full stack jr (java)|nexti",
+   "aliases": [],
+   "title": "Desenvolvedor Full Stack JR (JAVA)",
+   "company": "Nexti",
+   "url": "https://br.indeed.com/viewjob?jk=2ff090ae48f266d9",
+   "source": "indeed",
+   "score": 85,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "d6e247e033d192b9": {
+   "key": "analista junior em power bi & power apps|nestle",
+   "aliases": [],
+   "title": "Analista Júnior em Power BI & Power Apps",
+   "company": "Nestlé",
+   "url": "https://br.indeed.com/viewjob?jk=48093b29df24cb2a",
+   "source": "indeed",
+   "score": 84,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "461e231fc777e5fc": {
+   "key": "analista dados junior - proadi - projeto qualiguia hospitalar|bp - a beneficencia portuguesa de sao paulo",
+   "aliases": [],
+   "title": "Analista Dados Júnior - Proadi - Projeto QualiGuia Hospitalar",
+   "company": "BP - A Beneficência Portuguesa de São Paulo",
+   "url": "https://br.indeed.com/viewjob?jk=73f154e138b876b7",
+   "source": "indeed",
+   "score": 84,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "b7bea408ceced8e7": {
+   "key": "pessoa analista de integracoes e dados pleno (hibrido em blumenau/sc)|amcom",
+   "aliases": [],
+   "title": "Pessoa Analista de Integrações e Dados Pleno (Híbrido em Blumenau/SC)",
+   "company": "AMcom",
+   "url": "https://br.indeed.com/viewjob?jk=0e84ff6cdc5f4750",
+   "source": "indeed",
+   "score": 84,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "6e1a34cf825c58cd": {
+   "key": "dev fullstack .net - junior|squadra technology",
+   "aliases": [],
+   "title": "DEV FULLSTACK .NET - JÚNIOR",
+   "company": "Squadra Technology",
+   "url": "https://br.indeed.com/viewjob?jk=d5ca1f483701b190",
+   "source": "indeed",
+   "score": 79,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "06f6e8cc414b239e": {
+   "key": "engenheiro de dados|selbetti",
+   "aliases": [],
+   "title": "Engenheiro de Dados",
+   "company": "SELBETTI",
+   "url": "https://br.indeed.com/viewjob?jk=48f45d026ee4b273",
+   "source": "indeed",
+   "score": 78,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "862a15e00bd5ec84": {
+   "key": "engenheiro(a) backend/dados de ia pleno - remoto|solutis tecnologias",
+   "aliases": [],
+   "title": "Engenheiro(a) Backend/Dados de IA Pleno - Remoto",
+   "company": "Solutis Tecnologias",
+   "url": "https://br.indeed.com/viewjob?jk=b4f74d1a8210b0e1",
+   "source": "indeed",
+   "score": 73,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "d80b5b2a11189929": {
+   "key": "programador junior (rpa)|unimed",
+   "aliases": [],
+   "title": "Programador Júnior (RPA)",
+   "company": "Unimed",
+   "url": "https://br.indeed.com/viewjob?jk=b34df399dad94931",
+   "source": "indeed",
+   "score": 73,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "3a7201b1fbe650a2": {
+   "key": "cia hering | desenvolvedor(a) full stack i (blumenau/sc)|cia. hering",
+   "aliases": [],
+   "title": "Cia Hering | Desenvolvedor(a) Full Stack I (Blumenau/SC)",
+   "company": "Cia. Hering",
+   "url": "https://br.linkedin.com/jobs/view/cia-hering-desenvolvedor-a-full-stack-i-blumenau-sc-at-cia-hering-4466392485",
+   "source": "linkedin",
+   "score": 73,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "8867b3157b5885c9": {
+   "key": "data scientist|softdesign",
+   "aliases": [],
+   "title": "Data Scientist",
+   "company": "Softdesign",
+   "url": "https://br.indeed.com/viewjob?jk=e2e78cb58c8e0b71",
+   "source": "indeed",
+   "score": 73,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "8d64358e281cc2a9": {
+   "key": "estagio em growth|gringo & zapay",
+   "aliases": [],
+   "title": "Estágio em Growth",
+   "company": "Gringo & Zapay",
+   "url": "https://br.indeed.com/viewjob?jk=c1078d372b26b10a",
+   "source": "indeed",
+   "score": 72,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "16295aa00c57a1d4": {
+   "key": "dev automacao .net rpa & ai agent - pleno|",
+   "aliases": [],
+   "title": "Dev Automação .Net RPA & AI Agent - Pleno",
+   "company": "",
+   "url": "https://br.indeed.com/viewjob?jk=6db238b7dc29d29c",
+   "source": "indeed",
+   "score": 71,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "2d1d79f16d0ad4d8": {
+   "key": "analista de dados iii - dados | maxpar|grupo autoglass administrativo",
+   "aliases": [],
+   "title": "Analista de Dados III - Dados | Maxpar",
+   "company": "Grupo Autoglass Administrativo",
+   "url": "https://br.indeed.com/viewjob?jk=b750f94763bf1878",
+   "source": "indeed",
+   "score": 70,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "10647b9f276997df": {
+   "key": "[dados] engenharia de dados pleno | rd station (remoto)|totvs",
+   "aliases": [],
+   "title": "[Dados] Engenharia de Dados Pleno | RD Station (Remoto)",
+   "company": "TOTVS",
+   "url": "https://br.indeed.com/viewjob?jk=22593425748f53c0",
+   "source": "indeed",
+   "score": 70,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "e127a4b34059a1da": {
+   "key": "desenvolvedor java pleno - hibrido - sc / blumenau|bionexo",
+   "aliases": [],
+   "title": "Desenvolvedor Java Pleno - Híbrido - SC / Blumenau",
+   "company": "Bionexo",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-java-pleno-h%C3%ADbrido-sc-blumenau-at-bionexo-4465172837",
+   "source": "linkedin",
+   "score": 70,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "cef730b9d0e71d49": {
+   "key": "engenheiro de dados|neo credito",
+   "aliases": [],
+   "title": "Engenheiro de Dados",
+   "company": "Neo Crédito",
+   "url": "https://br.indeed.com/viewjob?jk=125d4101bf389bac",
+   "source": "indeed",
+   "score": 70,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "2d0123dc940e0dd4": {
+   "key": "cientista de dados pleno com foco em risco de credito|bip brasil",
+   "aliases": [],
+   "title": "Cientista de Dados Pleno com foco em Risco de Crédito",
+   "company": "BIP Brasil",
+   "url": "https://vemprabip.gupy.io/job/eyJqb2JJZCI6MTIxODQ3OTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 67,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "ad417cf8e87ae908": {
+   "key": "[job-31523] mid level java developer copilot ia, brazil|ci&t",
+   "aliases": [],
+   "title": "[Job-31523] Mid level Java Developer Copilot IA, Brazil",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=a78f0210e4be5b75",
+   "source": "indeed",
+   "score": 66,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "aebab22459135369": {
+   "key": "[job- 31636] mid level developer fullstack (java+ angular + ia) developer, brazil|ci&t",
+   "aliases": [],
+   "title": "[Job- 31636] Mid Level Developer Fullstack (Java+ Angular + IA) Developer, Brazil",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=bd19a3135d2da207",
+   "source": "indeed",
+   "score": 66,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "05430d5363c405af": {
+   "key": "desenvolvedor wordpress a tempo integral|descomplicar - agencia de aceleracao digital",
+   "aliases": [],
+   "title": "Desenvolvedor WordPress a Tempo Integral",
+   "company": "Descomplicar - Agência de Aceleração Digital",
+   "url": "https://br.indeed.com/viewjob?jk=5703b9c439b5f1f5",
+   "source": "indeed",
+   "score": 65,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "6cbbebdf6525ce3c": {
+   "key": "analista de bi ii | data & analytics|frete",
+   "aliases": [],
+   "title": "Analista de BI II | Data & Analytics",
+   "company": "Frete",
+   "url": "https://br.indeed.com/viewjob?jk=deb3e4512a9dc71d",
+   "source": "indeed",
+   "score": 64,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "84a09b4c70bb0207": {
+   "key": "web designer jr - 100% remoto|tribo",
+   "aliases": [],
+   "title": "Web Designer Jr - 100% Remoto",
+   "company": "TRIBO",
+   "url": "https://br.indeed.com/viewjob?jk=8500371128775f44",
+   "source": "indeed",
+   "score": 64,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "17f67aa5b27437f0": {
+   "key": "desenvolvedor (a) backend .net pleno - remoto|gf gestao de pessoas",
+   "aliases": [],
+   "title": "Desenvolvedor (a) Backend .Net Pleno - Remoto",
+   "company": "GF Gestão de Pessoas",
+   "url": "https://br.indeed.com/viewjob?jk=a076ba046c6e0c2f",
+   "source": "indeed",
+   "score": 62,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "511c2e0bd4e8ee5b": {
+   "key": "desenvolvedor powerplatform - remoto|objective",
+   "aliases": [],
+   "title": "Desenvolvedor PowerPlatform - Remoto",
+   "company": "Objective",
+   "url": "https://br.indeed.com/viewjob?jk=7ed930a758733a63",
+   "source": "indeed",
+   "score": 59,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "4f16cf07be68d34a": {
+   "key": "engenheiro de dados (domvs it)|jobbol",
+   "aliases": [],
+   "title": "ENGENHEIRO DE DADOS (Domvs It)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=99f6c46e342b1566",
+   "source": "indeed",
+   "score": 58,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "f3df8bd367008578": {
+   "key": "analista de dados (locus software)|jobbol",
+   "aliases": [],
+   "title": "ANALISTA DE DADOS (Locus Software)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=27ef46cbf858fbd9",
+   "source": "indeed",
+   "score": 58,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "aafba24188c53c3f": {
+   "key": "analista ti (bi e desenvolvimento)|helpvida home care e remocao eireli",
+   "aliases": [],
+   "title": "ANALISTA TI (BI E DESENVOLVIMENTO)",
+   "company": "Helpvida Home Care e Remoção Eireli",
+   "url": "https://br.indeed.com/viewjob?jk=1ea109410ce0e7ca",
+   "source": "indeed",
+   "score": 58,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "7abf156f4d0fe3db": {
+   "key": "[tech] coordenacao de desenvolvimento de software | inteligencia artificial|totvs",
+   "aliases": [],
+   "title": "[Tech] Coordenação de Desenvolvimento de Software | Inteligência Artificial",
+   "company": "TOTVS",
+   "url": "https://br.indeed.com/viewjob?jk=df0043ed0cab5184",
+   "source": "indeed",
+   "score": 57,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "c783787f46991428": {
+   "key": "designer conversacional especializado em inteligencia artificial|aviva",
+   "aliases": [],
+   "title": "DESIGNER CONVERSACIONAL ESPECIALIZADO EM INTELIGENCIA ARTIFICIAL",
+   "company": "Aviva",
+   "url": "https://br.indeed.com/viewjob?jk=a89fec69a8540412",
+   "source": "indeed",
+   "score": 57,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "f7a37a1d41a3f965": {
+   "key": "desenvolvedor backend|gaudium",
+   "aliases": [],
+   "title": "Desenvolvedor Backend",
+   "company": "Gaudium",
+   "url": "https://br.indeed.com/viewjob?jk=93d8ce6e750ec5fa",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "ec32b4a165b69550": {
+   "key": "|realize| analista de gestao de portfolio iii|lojas renner",
+   "aliases": [],
+   "title": "|REALIZE| Analista de Gestão de Portfólio III",
+   "company": "Lojas Renner",
+   "url": "https://br.indeed.com/viewjob?jk=40ea33110f72a7ca",
+   "source": "indeed",
+   "score": 55,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "afbe83267a2292b2": {
+   "key": "ai quality analyst (personalization) - portuguese (job referral)|",
+   "aliases": [],
+   "title": "AI Quality Analyst (Personalization) - Portuguese (Job referral)",
+   "company": "",
+   "url": "https://br.indeed.com/viewjob?jk=bde18bc536ef15f8",
+   "source": "indeed",
+   "score": 54,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "eae7682eae9db4b1": {
+   "key": "auxiliar administrativo (planejamento digital) - joinville/sc|schulze recuperacao de credito ltda",
+   "aliases": [],
+   "title": "Auxiliar Administrativo (Planejamento Digital) - Joinville/SC",
+   "company": "Schulze Recuperação de Crédito Ltda",
+   "url": "https://br.indeed.com/viewjob?jk=1780336920f77deb",
+   "source": "indeed",
+   "score": 51,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "81e8ea43488e4ed0": {
+   "key": "cientista de dados pleno/senior | ia aplicada a dados & varejo|growdev",
+   "aliases": [],
+   "title": "Cientista de Dados Pleno/Sênior | IA aplicada a Dados & Varejo",
+   "company": "Growdev",
+   "url": "https://br.indeed.com/viewjob?jk=847a295855c332f8",
+   "source": "indeed",
+   "score": 49,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "87e87da0c65301e8": {
+   "key": "analista financeiro|elo r&s talentos",
+   "aliases": [],
+   "title": "Analista Financeiro",
+   "company": "ELO R&S Talentos",
+   "url": "https://br.indeed.com/viewjob?jk=5cc4612fe83da7ff",
+   "source": "indeed",
+   "score": 46,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "9c436c253d117d06": {
+   "key": "analista de marketing intelligence|",
+   "aliases": [],
+   "title": "Analista de Marketing Intelligence",
+   "company": "",
+   "url": "https://br.indeed.com/viewjob?jk=0707c7f207c8e9a2",
+   "source": "indeed",
+   "score": 46,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "9222e4015367257f": {
+   "key": "analista de riscos e controle interno pleno|bb previdencia",
+   "aliases": [],
+   "title": "Analista de Riscos e Controle Interno Pleno",
+   "company": "BB Previdencia",
+   "url": "https://br.indeed.com/viewjob?jk=9988ecef0c5bbbda",
+   "source": "indeed",
+   "score": 46,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "e221ba2e70485fc4": {
+   "key": "pessoa engenheira de ia senior|amcom",
+   "aliases": [],
+   "title": "Pessoa Engenheira de IA Sênior",
+   "company": "AMcom",
+   "url": "https://br.indeed.com/viewjob?jk=10bb72dbfa5cebc4",
+   "source": "indeed",
+   "score": 45,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "2cb8e0f73277b9f7": {
+   "key": "engenheiro de dados sr|gente de rh",
+   "aliases": [],
+   "title": "Engenheiro de dados SR",
+   "company": "Gente de RH",
+   "url": "https://br.indeed.com/viewjob?jk=91c60fafd015a72c",
+   "source": "indeed",
+   "score": 41,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "c9a7053c4f8dfeeb": {
+   "key": "cientista de dados senior - #56|extractta",
+   "aliases": [],
+   "title": "Cientista de Dados Sênior - #56",
+   "company": "Extractta",
+   "url": "https://br.indeed.com/viewjob?jk=2f21dadcb6522756",
+   "source": "indeed",
+   "score": 38,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "f6fa07b8cc758fda": {
+   "key": "tech lead de dados|gif international",
+   "aliases": [],
+   "title": "Tech Lead de Dados",
+   "company": "GIF INTERNATIONAL",
+   "url": "https://br.indeed.com/viewjob?jk=4191418090c71b44",
+   "source": "indeed",
+   "score": 38,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "5cb1203fd2bb29f7": {
+   "key": "profissional ai specialist|radix engenharia e software",
+   "aliases": [],
+   "title": "Profissional AI Specialist",
+   "company": "Radix Engenharia e Software",
+   "url": "https://br.indeed.com/viewjob?jk=8dee1490d2614c47",
+   "source": "indeed",
+   "score": 37,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "e83241eec9826e19": {
+   "key": "senior bi & reporting analyst - thoughtspot|ey",
+   "aliases": [],
+   "title": "Senior BI & Reporting Analyst - ThoughtSpot",
+   "company": "EY",
+   "url": "https://br.linkedin.com/jobs/view/senior-bi-reporting-analyst-thoughtspot-at-ey-4454149206",
+   "source": "linkedin",
+   "score": 37,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "513171c370b565bf": {
+   "key": "analista de relacionamento e sucesso do cliente|",
+   "aliases": [],
+   "title": "Analista de Relacionamento e Sucesso do Cliente",
+   "company": "",
+   "url": "https://br.indeed.com/viewjob?jk=865edff9d3634a04",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "d199f86cb24732a1": {
+   "key": "senior machine learning engineer - content and contributor intelligence (remote - united states)|yelp",
+   "aliases": [],
+   "title": "Senior Machine Learning Engineer - Content and Contributor Intelligence (Remote - United States)",
+   "company": "Yelp",
+   "url": "https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-content-and-contributor-intelligence-remote-united-states-at-yelp-4387663037",
+   "source": "linkedin",
+   "score": 34,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "0d948d48a7467930": {
+   "key": "pessoa engenheira fullstack senior (nucleo de inovacao/ia) | react, next.js, node & aws|datum software",
+   "aliases": [],
+   "title": "Pessoa Engenheira Fullstack Sênior (Núcleo de Inovação/IA) | React, Next.js, Node & AWS",
+   "company": "Datum Software",
+   "url": "https://br.indeed.com/viewjob?jk=c72ecf6d94d005e4",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "92ccc5e03929fd16": {
+   "key": "cia hering | coordenador de dados (blumenau/sc)|cia. hering",
+   "aliases": [],
+   "title": "Cia Hering | Coordenador de Dados (Blumenau/SC)",
+   "company": "Cia. Hering",
+   "url": "https://ciahering.gupy.io/job/eyJqb2JJZCI6MTI0NDU0MDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 34,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "4c0c8a2f26df39cc": {
+   "key": "cia hering | coordenador de dados (blumenau/sc)|hering store",
+   "aliases": [],
+   "title": "Cia Hering | Coordenador de Dados (Blumenau/SC)",
+   "company": "Hering Store",
+   "url": "https://br.indeed.com/viewjob?jk=e2a2a1d7f1e38913",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "528521063024ca43": {
+   "key": "engenheiro de software sr (python e django)|gente de rh",
+   "aliases": [],
+   "title": "Engenheiro de Software SR (Python e Django)",
+   "company": "Gente de RH",
+   "url": "https://br.indeed.com/viewjob?jk=a8a83e68fe1ed036",
+   "source": "indeed",
+   "score": 33,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "8317ed90a9c0ef49": {
+   "key": "arquiteto/engenheiro de software|4df connect",
+   "aliases": [],
+   "title": "Arquiteto/Engenheiro de Software",
+   "company": "4DF Connect",
+   "url": "https://br.linkedin.com/jobs/view/arquiteto-engenheiro-de-software-at-4df-connect-4465835292",
+   "source": "linkedin",
+   "score": 32,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "9728a6af636a59f3": {
+   "key": "staff software engineer|trusted health",
+   "aliases": [],
+   "title": "Staff Software Engineer",
+   "company": "Trusted Health",
+   "url": "https://br.linkedin.com/jobs/view/staff-software-engineer-at-trusted-health-4466339041",
+   "source": "linkedin",
+   "score": 32,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "3f331d377d94e6a3": {
+   "key": "pessoa especialista de performance financeira e dados|yduqs",
+   "aliases": [],
+   "title": "PESSOA ESPECIALISTA DE PERFORMANCE FINANCEIRA E DADOS",
+   "company": "YDUQS",
+   "url": "https://br.indeed.com/viewjob?jk=cc63bd5e6a87066f",
+   "source": "indeed",
+   "score": 32,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "61b173da278ec86f": {
+   "key": "remote - senior power bi developer / data analyst - federal - us citizenship or gc required|booker dimaio",
+   "aliases": [],
+   "title": "Remote - Senior Power BI Developer / Data Analyst - Federal - US Citizenship or GC Required",
+   "company": "Booker DiMaio",
+   "url": "https://www.linkedin.com/jobs/view/remote-senior-power-bi-developer-data-analyst-federal-us-citizenship-or-gc-required-at-booker-dimaio-4465405811",
+   "source": "linkedin",
+   "score": 32,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "21fd32f98b641ca6": {
+   "key": "especialista em revops e ia senior|ecx card",
+   "aliases": [],
+   "title": "Especialista em RevOps e IA Sênior",
+   "company": "ECX CARD",
+   "url": "https://br.indeed.com/viewjob?jk=1e900f9d56f61612",
+   "source": "indeed",
+   "score": 31,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "6dacda548fc5e1da": {
+   "key": "desenvolvedor (a) fullstack senior — foco frontend | remoto|solutis tecnologias",
+   "aliases": [],
+   "title": "Desenvolvedor (a) Fullstack Sênior — Foco Frontend | Remoto",
+   "company": "Solutis Tecnologias",
+   "url": "https://br.indeed.com/viewjob?jk=29f2a787eae2ca1d",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "1c1472c8ebf41ba9": {
+   "key": "cientista de dados senior com foco em risco de credito|bip brasil",
+   "aliases": [],
+   "title": "Cientista de Dados Senior com foco em Risco de Crédito",
+   "company": "BIP Brasil",
+   "url": "https://vemprabip.gupy.io/job/eyJqb2JJZCI6MTIxODQ4NDEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 29,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "3ae00dd9230d9c05": {
+   "key": "arquiteto de dados (google cloud platform (gcp) e databricks) senior|leega consultoria",
+   "aliases": [],
+   "title": "Arquiteto de Dados (Google Cloud Platform (GCP) e Databricks) Sênior",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI0NjQyNDQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 29,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "b370377f9247ca45": {
+   "key": "desenvolvedor java senior - hibrido - sc / blumenau|bionexo",
+   "aliases": [],
+   "title": "Desenvolvedor Java Sênior - Híbrido - SC / Blumenau",
+   "company": "Bionexo",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-java-s%C3%AAnior-h%C3%ADbrido-sc-blumenau-at-bionexo-4465167837",
+   "source": "linkedin",
+   "score": 29,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "c364435b1dae6bfd": {
+   "key": "bling i especialista de engenharia backend |foco ia i remoto|lwsa",
+   "aliases": [],
+   "title": "Bling I Especialista de Engenharia Backend |Foco IA I Remoto",
+   "company": "LWSA",
+   "url": "https://br.indeed.com/viewjob?jk=ddf500aca0241b9f",
+   "source": "indeed",
+   "score": 28,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "bd2b043ffebcc50e": {
+   "key": "[tech] especialista em engenharia de ia - smart harness (remoto)|totvs",
+   "aliases": [],
+   "title": "[Tech] Especialista em Engenharia de IA - Smart Harness (Remoto)",
+   "company": "TOTVS",
+   "url": "https://br.indeed.com/viewjob?jk=e4940f741ec99559",
+   "source": "indeed",
+   "score": 28,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "63564b11b038b1ec": {
+   "key": "data insights | especialista de performance e insights (revenue)|fluency academy",
+   "aliases": [],
+   "title": "Data Insights | Especialista de Performance e Insights (Revenue)",
+   "company": "Fluency Academy",
+   "url": "https://fluencyacademy.gupy.io/job/eyJqb2JJZCI6MTI0NjcyNzYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 26,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "a432791ee71be63d": {
+   "key": "senior, ai engineer|bain & company",
+   "aliases": [],
+   "title": "Senior, AI Engineer",
+   "company": "Bain & Company",
+   "url": "https://br.indeed.com/viewjob?jk=c07ede7f6a27638a",
+   "source": "indeed",
+   "score": 25,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "656d897617402444": {
+   "key": "staff machine learning engineer|neon pagamentos",
+   "aliases": [],
+   "title": "Staff Machine Learning Engineer",
+   "company": "Neon Pagamentos",
+   "url": "https://br.indeed.com/viewjob?jk=1bbb31c02e28f783",
+   "source": "indeed",
+   "score": 25,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "ccea3eb6056a860a": {
+   "key": "senior full-stack engineer - ai cost visibility- romania(remote)|doit",
+   "aliases": [],
+   "title": "Senior Full-Stack Engineer - AI Cost Visibility- Romania(Remote)",
+   "company": "DoiT",
+   "url": "https://br.indeed.com/viewjob?jk=25e7692d16315341",
+   "source": "indeed",
+   "score": 25,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "f478db4a8c585683": {
+   "key": "lead ai/ml applied scientist - remote|optum",
+   "aliases": [],
+   "title": "Lead AI/ML Applied Scientist - Remote",
+   "company": "Optum",
+   "url": "https://www.linkedin.com/jobs/view/lead-ai-ml-applied-scientist-remote-at-optum-4466443442",
+   "source": "linkedin",
+   "score": 25,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "5694f1261c7350ac": {
+   "key": "senior qa engineer — ai products & customer implementations|helpware",
+   "aliases": [],
+   "title": "Senior QA Engineer — AI Products & Customer Implementations",
+   "company": "Helpware",
+   "url": "https://br.indeed.com/viewjob?jk=0b69678cb5651179",
+   "source": "indeed",
+   "score": 23,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "d4351416c6c8cb31": {
+   "key": "dba sql server pl-sr|globalsys.com.br",
+   "aliases": [],
+   "title": "DBA SQL Server Pl-Sr",
+   "company": "GLOBALSYS.COM.BR",
+   "url": "https://br.indeed.com/viewjob?jk=6b7391a918052b7c",
+   "source": "indeed",
+   "score": 23,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "548e8fe576f94123": {
+   "key": "especialista em ia (sleepup)|jobbol",
+   "aliases": [],
+   "title": "ESPECIALISTA EM IA (SleepUp)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=2612a145336e87c6",
+   "source": "indeed",
+   "score": 22,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "a0efdabfd8c85796": {
+   "key": "engenheiro de machine learning senior|4solution group",
+   "aliases": [],
+   "title": "Engenheiro de Machine Learning Sênior",
+   "company": "4Solution Group",
+   "url": "https://br.indeed.com/viewjob?jk=439b8ea4fd34a4ad",
+   "source": "indeed",
+   "score": 22,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "9ef262cee3c2a2b7": {
+   "key": "[job-31544] senior qa, brazil|ci&t",
+   "aliases": [],
+   "title": "[Job-31544] Senior QA, Brazil",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=dd53ad36fe47b3fa",
+   "source": "indeed",
+   "score": 15,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "5ec343e7490cc809": {
+   "key": "analista de estrategia comercial senior|remessa online",
+   "aliases": [],
+   "title": "Analista de Estratégia Comercial Sênior",
+   "company": "Remessa Online",
+   "url": "https://br.indeed.com/viewjob?jk=ccf6ff6b8584f222",
+   "source": "indeed",
+   "score": 14,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "73270375c8591b81": {
+   "key": "analista de planejamento senior | control desk|loft",
+   "aliases": [],
+   "title": "Analista de Planejamento Senior | Control Desk",
+   "company": "Loft",
+   "url": "https://br.indeed.com/viewjob?jk=a299a24b8702038e",
+   "source": "indeed",
+   "score": 11,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "bd97239ad39c298a": {
+   "key": "atento escalada - engenheiro(a) de agentes de ia (ai agent engineer) - remoto|escalada",
+   "aliases": [],
+   "title": "ATENTO ESCALADA - Engenheiro(a) de Agentes de IA (AI Agent Engineer) - Remoto",
+   "company": "Escalada",
+   "url": "https://br.indeed.com/viewjob?jk=a1e74af7da25ab5f",
+   "source": "indeed",
+   "score": 91,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "76d1218c9637307e": {
+   "key": "analista de governanca de dados pleno|leega consultoria",
+   "aliases": [],
+   "title": "Analista de Governança de Dados Pleno",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI0NjM3MjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 58,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "537ddac312f2b38c": {
+   "key": "cientista de dados sr|grupo sysmap",
+   "aliases": [],
+   "title": "Cientista de Dados SR",
+   "company": "Grupo SysMap",
+   "url": "https://br.indeed.com/viewjob?jk=9c2db6734064e46a",
+   "source": "indeed",
+   "score": 41,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
   }
  }
 }
