@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import logging
+import random
+import time
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
@@ -121,16 +123,21 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
         j.is_new = state.is_new(j, today)
     log.info("%d vagas no escopo (%d novas)", len(scoped), sum(j.is_new for j in scoped))
 
-    # descrições do LinkedIn só para vagas novas (1 requisição cada, limitado)
+    # O card de busca do LinkedIn não traz descrição: 1 requisição por vaga. Vale
+    # para toda vaga no escopo, e não só as novas, porque o ranking de tecnologias
+    # conta a janela inteira; antes, numa rodada sem novidades do LinkedIn, as
+    # vagas dele entravam no painel sem nenhuma tecnologia. Novas primeiro.
     li = cfg.get("fontes", {}).get("linkedin", {})
     if li.get("buscar_descricao", True) and "linkedin" not in skip:
-        cand = sorted((j for j in scoped if j.source == "linkedin" and j.is_new and not j.description),
-                      key=lambda j: -j.score)[: int(li.get("max_descricoes", 60))]
+        cand = sorted((j for j in scoped if j.source == "linkedin" and not j.description),
+                      key=lambda j: (not j.is_new, -j.score))[: int(li.get("max_descricoes", 80))]
         ok = 0
-        for j in cand:
+        for i, j in enumerate(cand):
+            if i:
+                time.sleep(1.0 + random.uniform(0, 1))
             ok += int(linkedin.fetch_description(j))
         if cand:
-            log.info("linkedin: descrição obtida para %d/%d vagas novas", ok, len(cand))
+            log.info("linkedin: descrição obtida para %d/%d vagas", ok, len(cand))
 
     # 2ª passada: com descrições completas, reclassifica e pontua tudo
     jobs = [j for j in scoped if annotate(j, cfg, today)]

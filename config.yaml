@@ -186,8 +186,8 @@ fontes:
     ativo: true
     cidades_ancora: [Itajaí, Blumenau, Joinville]   # a busca do LinkedIn cobre ~40 km ao redor
     paginas: 2                                       # 10 vagas por página
-    buscar_descricao: true                           # 1 requisição extra por vaga nova (para pontuar skills)
-    max_descricoes: 60
+    buscar_descricao: true                           # 1 requisição por vaga do LinkedIn no escopo (o card não traz descrição)
+    max_descricoes: 80
   indeed:
     ativo: true
     resultados_por_busca: 40

@@ -1,82 +1,203 @@
 # ============================================================
-#  Taxonomia de habilidades procuradas nas descrições das vagas.
+#  Tecnologias procuradas nas descrições das vagas.
 #
-#  Cada entrada vira uma linha do mapa "presencial x remoto" do relatório.
-#  `termos` são buscados na descrição com fronteira de palavra e sem acento,
-#  então "power bi" casa com "Power BI" mas "bi" não casa dentro de "ambiente".
+#  Cada entrada é UMA tecnologia, com o nome que aparece no anúncio: "React",
+#  "PostgreSQL", "RAG". Nunca a família ("Front-end", "Banco de dados"). O
+#  relatório conta em quantas vagas cada uma aparece e ranqueia pela contagem.
 #
-#  `tenho` declara o que já está no currículo (perfil.md). É isso que separa
-#  "o mercado pede" de "você precisa estudar" — sem essa marcação o relatório
-#  só repetiria que SQL é popular, o que não ajuda a decidir nada.
-#    sim     = domina, não é prioridade de estudo
-#    parcial = usou em projeto pessoal, falta profundidade ou uso profissional
-#    nao     = lacuna real
+#  `termos` são só grafias da MESMA coisa ("node.js", "nodejs"). Não coloque
+#  aqui uma tecnologia vizinha: "pandas" não conta como Python, "pgvector" não
+#  conta como banco vetorial. Cada uma é contada em separado, literalmente.
+#
+#  A busca é sem acento e com fronteira de palavra: "sap" não casa dentro de
+#  "sapataria", "java" não casa dentro de "javascript". Termo ambíguo em
+#  português ou inglês corrente ("make", "rest", "go", "express") só entra na
+#  forma que não deixa dúvida ("make.com", "api rest", "golang", "express.js").
+#
+#  Termo com "=" na frente é buscado respeitando MAIÚSCULAS: "=React" casa com
+#  "React" mas não com "react quickly" de um anúncio em inglês; "=SOLID" não
+#  casa com "solid experience"; "=Excel" não casa com "excel at".
+#
+#  `grupo` só organiza o arquivo e aparece como rótulo discreto no painel.
 # ============================================================
 
 habilidades:
-  # --- linguagens e fundamentos ------------------------------------------
-  python:       {nome: Python,            grupo: Linguagem,  tenho: sim,     termos: [python, pandas, numpy]}
-  sql:          {nome: SQL,               grupo: Dados,      tenho: sim,     termos: [sql, "t-sql", "pl/sql", ansi sql, consultas sql]}
-  javascript:   {nome: JavaScript/TS,     grupo: Linguagem,  tenho: parcial, termos: [javascript, typescript, node, nodejs, "node.js"]}
-  java:         {nome: Java,              grupo: Linguagem,  tenho: nao,     termos: [java, spring, spring boot, jpa, hibernate]}
-  csharp:       {nome: C#/.NET,           grupo: Linguagem,  tenho: nao,     termos: ["c#", ".net", dotnet, asp.net]}
-  php:          {nome: PHP,               grupo: Linguagem,  tenho: nao,     termos: [php, laravel, symfony]}
-  r_lang:       {nome: R,                 grupo: Dados,      tenho: nao,     termos: [linguagem r, rstudio]}
+  # --- linguagens ---------------------------------------------------------
+  python:       {nome: Python,          grupo: Linguagem, termos: [python]}
+  sql:          {nome: SQL,             grupo: Linguagem, termos: [sql, "t-sql", tsql, "pl/sql", plsql]}
+  javascript:   {nome: JavaScript,      grupo: Linguagem, termos: [javascript, es6, "es6+", ecmascript]}
+  typescript:   {nome: TypeScript,      grupo: Linguagem, termos: [typescript]}
+  java:         {nome: Java,            grupo: Linguagem, termos: [java]}
+  csharp:       {nome: "C#/.NET",       grupo: Linguagem, termos: ["c#", ".net", dotnet, "asp.net", "net core"]}
+  php:          {nome: PHP,             grupo: Linguagem, termos: [php]}
+  golang:       {nome: Go,              grupo: Linguagem, termos: [golang]}
+  kotlin:       {nome: Kotlin,          grupo: Linguagem, termos: [kotlin]}
+  r_lang:       {nome: R,               grupo: Linguagem, termos: [linguagem r, rstudio, tidyverse, ggplot2]}
+  vba:          {nome: VBA,             grupo: Linguagem, termos: [vba, macros]}
+
+  # --- front-end ----------------------------------------------------------
+  react:        {nome: React,           grupo: Front-end, termos: ["=React", reactjs, "react.js"]}
+  react_native: {nome: React Native,    grupo: Front-end, termos: [react native]}
+  angular:      {nome: Angular,         grupo: Front-end, termos: [angular, angularjs]}
+  vue:          {nome: Vue.js,          grupo: Front-end, termos: [vue, vuejs, "vue.js"]}
+  nextjs:       {nome: Next.js,         grupo: Front-end, termos: ["next.js", nextjs]}
+  htmlcss:      {nome: HTML/CSS,        grupo: Front-end, termos: [html, html5, css, css3]}
+  tailwind:     {nome: Tailwind CSS,    grupo: Front-end, termos: [tailwind, tailwindcss]}
+  flutter:      {nome: Flutter,         grupo: Front-end, termos: [flutter]}
+  figma:        {nome: Figma,           grupo: Front-end, termos: [figma]}
+
+  # --- back-end -----------------------------------------------------------
+  nodejs:       {nome: Node.js,         grupo: Back-end,  termos: [node, nodejs, "node.js"]}
+  nestjs:       {nome: NestJS,          grupo: Back-end,  termos: [nestjs, "nest.js"]}
+  express:      {nome: Express,         grupo: Back-end,  termos: ["express.js", expressjs]}
+  spring:       {nome: Spring Boot,     grupo: Back-end,  termos: [spring boot, spring framework, springboot]}
+  django:       {nome: Django,          grupo: Back-end,  termos: [django]}
+  flask:        {nome: Flask,           grupo: Back-end,  termos: [flask]}
+  fastapi:      {nome: FastAPI,         grupo: Back-end,  termos: [fastapi]}
+  laravel:      {nome: Laravel,         grupo: Back-end,  termos: [laravel]}
+  rest:         {nome: APIs REST,       grupo: Back-end,  termos: ["=REST", restful, api rest, apis rest, api restful, apis restful, rest api, rest apis, servicos rest, endpoints rest, "rest/graphql"]}
+  graphql:      {nome: GraphQL,         grupo: Back-end,  termos: [graphql]}
+  microsservicos: {nome: Microsserviços, grupo: Back-end, termos: [microsservicos, microsservico, microservices, microservice, micro servicos]}
+  prisma:       {nome: Prisma,          grupo: Back-end,  termos: [prisma orm, "=Prisma"]}
+  typeorm:      {nome: TypeORM,         grupo: Back-end,  termos: [typeorm]}
+  hibernate:    {nome: Hibernate/JPA,   grupo: Back-end,  termos: [hibernate, jpa]}
+  sqlalchemy:   {nome: SQLAlchemy,      grupo: Back-end,  termos: [sqlalchemy]}
+
+  # --- bancos de dados ----------------------------------------------------
+  postgresql:   {nome: PostgreSQL,      grupo: Banco de dados, termos: [postgresql, postgres, postgre]}
+  mysql:        {nome: MySQL,           grupo: Banco de dados, termos: [mysql, mariadb]}
+  sqlserver:    {nome: SQL Server,      grupo: Banco de dados, termos: [sql server, sqlserver, mssql]}
+  oracle_db:    {nome: Oracle Database, grupo: Banco de dados, termos: [oracle database, oracle db, banco oracle, banco de dados oracle]}
+  mongodb:      {nome: MongoDB,         grupo: Banco de dados, termos: [mongodb, mongo]}
+  redis:        {nome: Redis,           grupo: Banco de dados, termos: [redis]}
+  nosql:        {nome: NoSQL,           grupo: Banco de dados, termos: [nosql]}
+  snowflake:    {nome: Snowflake,       grupo: Banco de dados, termos: [snowflake]}
+  bigquery:     {nome: BigQuery,        grupo: Banco de dados, termos: [bigquery]}
 
   # --- dados e BI ---------------------------------------------------------
-  powerbi:      {nome: Power BI,          grupo: BI,         tenho: sim,     termos: [power bi, powerbi, dax, power query]}
-  excel:        {nome: Excel avançado,    grupo: BI,         tenho: sim,     termos: [excel, planilhas, vba, macros]}
-  tableau:      {nome: Tableau/Looker,    grupo: BI,         tenho: nao,     termos: [tableau, looker, qlik, qlikview, metabase, superset]}
-  etl:          {nome: ETL e pipelines,   grupo: Dados,      tenho: parcial, termos: [etl, elt, pipeline de dados, data pipeline, ingestao de dados, ingestão]}
-  modelagem:    {nome: Modelagem de dados,grupo: Dados,      tenho: parcial, termos: [modelagem de dados, modelagem dimensional, star schema, data modeling, normalizacao]}
-  warehouse:    {nome: Data warehouse,    grupo: Dados,      tenho: nao,     termos: [data warehouse, datawarehouse, data lake, lakehouse, data mart, delta lake]}
-  spark:        {nome: Spark/Databricks,  grupo: Dados,      tenho: nao,     termos: [spark, pyspark, databricks, hadoop]}
-  airflow:      {nome: Orquestração,      grupo: Dados,      tenho: nao,     termos: [airflow, dagster, prefect, luigi, orquestracao de pipelines]}
-  dbt:          {nome: dbt,               grupo: Dados,      tenho: nao,     termos: [dbt, data build tool]}
-  streaming:    {nome: Streaming,         grupo: Dados,      tenho: nao,     termos: [kafka, streaming de dados, pubsub, kinesis, event streaming]}
-  governanca:   {nome: Governança/LGPD,   grupo: Dados,      tenho: nao,     termos: [governanca de dados, data governance, lgpd, catalogo de dados, data quality, qualidade de dados]}
-  estatistica:  {nome: Estatística,       grupo: Dados,      tenho: parcial, termos: [estatistica, estatistico, teste de hipotese, testes estatisticos, inferencia, teste a/b, ab test]}
+  powerbi:      {nome: Power BI,        grupo: Dados e BI, termos: [power bi, powerbi]}
+  dax:          {nome: DAX,             grupo: Dados e BI, termos: [dax]}
+  power_query:  {nome: Power Query,     grupo: Dados e BI, termos: [power query]}
+  excel:        {nome: Excel,           grupo: Dados e BI, termos: ["=Excel", microsoft excel]}
+  tableau:      {nome: Tableau,         grupo: Dados e BI, termos: [tableau]}
+  looker:       {nome: Looker,          grupo: Dados e BI, termos: [looker, looker studio, data studio]}
+  qlik:         {nome: Qlik,            grupo: Dados e BI, termos: [qlik, qlikview, qlik sense]}
+  pandas:       {nome: Pandas,          grupo: Dados e BI, termos: [pandas]}
+  numpy:        {nome: NumPy,           grupo: Dados e BI, termos: [numpy]}
+  etl:          {nome: ETL/ELT,         grupo: Dados e BI, termos: [etl, elt]}
+  pipelines:    {nome: Pipelines de dados, grupo: Dados e BI, termos: [pipeline de dados, pipelines de dados, data pipeline, data pipelines, ingestao de dados]}
+  modelagem:    {nome: Modelagem de dados, grupo: Dados e BI, termos: [modelagem de dados, modelagem dimensional, star schema, data modeling]}
+  data_warehouse: {nome: Data Warehouse, grupo: Dados e BI, termos: [data warehouse, datawarehouse, data mart]}
+  data_lake:    {nome: Data Lake,       grupo: Dados e BI, termos: [data lake, datalake, lakehouse, delta lake]}
+  spark:        {nome: Spark,           grupo: Dados e BI, termos: [spark, pyspark, apache spark]}
+  databricks:   {nome: Databricks,      grupo: Dados e BI, termos: [databricks]}
+  airflow:      {nome: Airflow,         grupo: Dados e BI, termos: [airflow]}
+  dbt:          {nome: dbt,             grupo: Dados e BI, termos: [dbt, data build tool]}
+  kafka:        {nome: Kafka,           grupo: Dados e BI, termos: [kafka]}
+  data_factory: {nome: Azure Data Factory, grupo: Dados e BI, termos: [data factory, azure data factory]}
+  fabric:       {nome: Microsoft Fabric, grupo: Dados e BI, termos: [microsoft fabric]}
+  estatistica:  {nome: Estatística,     grupo: Dados e BI, termos: [estatistica, estatistico, modelos estatisticos, testes estatisticos, inferencia estatistica]}
+  governanca:   {nome: Governança de dados, grupo: Dados e BI, termos: [governanca de dados, data governance, qualidade de dados, data quality]}
 
-  # --- IA e machine learning ---------------------------------------------
-  ml:           {nome: Machine Learning,  grupo: IA,         tenho: parcial, termos: [machine learning, aprendizado de maquina, "scikit-learn", sklearn, xgboost, lightgbm, gradient boosting, modelos preditivos, modelagem preditiva]}
-  deeplearning: {nome: Deep Learning,     grupo: IA,         tenho: nao,     termos: [deep learning, redes neurais, pytorch, tensorflow, keras]}
-  llm:          {nome: LLMs,              grupo: IA,         tenho: parcial, termos: [llm, llms, modelos de linguagem, gpt, openai, anthropic, claude, gemini, ia generativa, generative ai, genai, hugging face]}
-  agentes:      {nome: Agentes de IA,     grupo: IA,         tenho: parcial, termos: [agentes de ia, ai agents, agentic, langchain, langgraph, crewai, autogen, multi-agent, mcp, function calling, tool calling]}
-  rag:          {nome: RAG e busca vetorial, grupo: IA,      tenho: parcial, termos: [rag, retrieval augmented, banco vetorial, vector database, embeddings, pinecone, chroma, faiss, qdrant]}
-  mlops:        {nome: MLOps,             grupo: IA,         tenho: nao,     termos: [mlops, mlflow, model serving, feature store, monitoramento de modelos, deploy de modelos]}
-  nlp:          {nome: NLP,               grupo: IA,         tenho: nao,     termos: [nlp, processamento de linguagem natural, text mining]}
-  visao:        {nome: Visão computacional, grupo: IA,       tenho: nao,     termos: [visao computacional, computer vision, opencv, yolo, ocr]}
-  prompteng:    {nome: Prompt engineering,grupo: IA,         tenho: sim,     termos: [prompt engineering, engenharia de prompt, prompts]}
+  # --- IA, LLMs e agentes -------------------------------------------------
+  ia_generativa: {nome: IA Generativa,  grupo: IA, termos: [ia generativa, inteligencia artificial generativa, generative ai, genai, gen ai]}
+  llm:          {nome: LLMs,            grupo: IA, termos: [llm, llms, large language model, large language models, modelos de linguagem]}
+  openai:       {nome: OpenAI/GPT,      grupo: IA, termos: [openai, gpt, chatgpt]}
+  claude:       {nome: Claude (Anthropic), grupo: IA, termos: [claude, anthropic]}
+  gemini:       {nome: Gemini,          grupo: IA, termos: [gemini]}
+  huggingface:  {nome: Hugging Face,    grupo: IA, termos: [hugging face, huggingface]}
+  rag:          {nome: RAG,             grupo: IA, termos: [rag, retrieval augmented generation, retrieval-augmented generation]}
+  embeddings:   {nome: Embeddings,      grupo: IA, termos: [embeddings, embedding]}
+  banco_vetorial: {nome: Banco vetorial, grupo: IA, termos: [banco vetorial, bancos vetoriais, vector database, vector databases, vector store, vector stores, busca vetorial, busca semantica, semantic search]}
+  pgvector:     {nome: pgvector,        grupo: IA, termos: [pgvector]}
+  pinecone:     {nome: Pinecone,        grupo: IA, termos: [pinecone]}
+  weaviate:     {nome: Weaviate,        grupo: IA, termos: [weaviate]}
+  chroma:       {nome: Chroma,          grupo: IA, termos: [chromadb, chroma db]}
+  faiss:        {nome: FAISS,           grupo: IA, termos: [faiss]}
+  qdrant:       {nome: Qdrant,          grupo: IA, termos: [qdrant]}
+  langchain:    {nome: LangChain,       grupo: IA, termos: [langchain]}
+  langgraph:    {nome: LangGraph,       grupo: IA, termos: [langgraph]}
+  llamaindex:   {nome: LlamaIndex,      grupo: IA, termos: [llamaindex, llama index]}
+  crewai:       {nome: CrewAI,          grupo: IA, termos: [crewai, crew ai]}
+  agentes:      {nome: Agentes de IA,   grupo: IA, termos: [agentes de ia, agente de ia, ai agents, ai agent, agentic, agentes inteligentes, agentes autonomos, multi-agent, multiagentes, multi-agentes]}
+  mcp:          {nome: MCP,             grupo: IA, termos: [mcp, model context protocol]}
+  function_calling: {nome: Function calling, grupo: IA, termos: [function calling, tool calling]}
+  prompt:       {nome: Prompt engineering, grupo: IA, termos: [prompt engineering, engenharia de prompt, engenharia de prompts, prompts, prompting]}
+  fine_tuning:  {nome: Fine-tuning,     grupo: IA, termos: [fine-tuning, fine tuning, finetuning]}
+  chatbot:      {nome: Chatbots,        grupo: IA, termos: [chatbot, chatbots]}
+  ml:           {nome: Machine Learning, grupo: IA, termos: [machine learning, aprendizado de maquina, aprendizagem de maquina]}
+  sklearn:      {nome: scikit-learn,    grupo: IA, termos: [scikit-learn, sklearn, scikit learn]}
+  xgboost:      {nome: XGBoost,         grupo: IA, termos: [xgboost]}
+  deep_learning: {nome: Deep Learning,  grupo: IA, termos: [deep learning, aprendizado profundo, redes neurais, neural networks]}
+  pytorch:      {nome: PyTorch,         grupo: IA, termos: [pytorch]}
+  tensorflow:   {nome: TensorFlow,      grupo: IA, termos: [tensorflow]}
+  nlp:          {nome: NLP,             grupo: IA, termos: [nlp, pln, processamento de linguagem natural, natural language processing]}
+  visao:        {nome: Visão computacional, grupo: IA, termos: [visao computacional, computer vision]}
+  opencv:       {nome: OpenCV,          grupo: IA, termos: [opencv]}
+  mlops:        {nome: MLOps,           grupo: IA, termos: [mlops]}
+  mlflow:       {nome: MLflow,          grupo: IA, termos: [mlflow]}
 
-  # --- nuvem e infraestrutura --------------------------------------------
-  aws:          {nome: AWS,               grupo: Nuvem,      tenho: nao,     termos: [aws, amazon web services, s3, redshift, lambda, ec2, glue]}
-  azure:        {nome: Azure,             grupo: Nuvem,      tenho: nao,     termos: [azure, azure data factory, synapse, fabric, adf]}
-  gcp:          {nome: Google Cloud,      grupo: Nuvem,      tenho: nao,     termos: [gcp, google cloud, bigquery, dataflow, looker studio]}
-  docker:       {nome: Docker/Kubernetes, grupo: Nuvem,      tenho: nao,     termos: [docker, kubernetes, k8s, containers, conteineres]}
-  cicd:         {nome: CI/CD,             grupo: Nuvem,      tenho: parcial, termos: ["ci/cd", integracao continua, github actions, gitlab ci, jenkins, pipeline de deploy]}
-  terraform:    {nome: IaC/Terraform,     grupo: Nuvem,      tenho: nao,     termos: [terraform, infraestrutura como codigo, ansible, pulumi]}
-  linux:        {nome: Linux,             grupo: Nuvem,      tenho: parcial, termos: [linux, shell script, bash, unix]}
+  # --- ferramentas de IA para desenvolver ---------------------------------
+  claude_code:  {nome: Claude Code,     grupo: IA no desenvolvimento, termos: [claude code]}
+  cursor:       {nome: Cursor,          grupo: IA no desenvolvimento, termos: ["=Cursor"]}
+  copilot:      {nome: GitHub Copilot,  grupo: IA no desenvolvimento, termos: [copilot, github copilot]}
 
-  # --- engenharia de software --------------------------------------------
-  git:          {nome: Git,               grupo: Software,   tenho: sim,     termos: [git, github, gitlab, bitbucket, versionamento]}
-  api:          {nome: APIs REST,         grupo: Software,   tenho: parcial, termos: [api rest, rest api, restful, graphql, webservice, web service, fastapi, integracao de sistemas]}
-  testes:       {nome: Testes automatizados, grupo: Software, tenho: sim,    termos: [testes automatizados, pytest, unit test, teste unitario, tdd, junit, jest]}
-  frontend:     {nome: Front-end,         grupo: Software,   tenho: parcial, termos: [react, angular, vue, html, css, "next.js", frontend, front-end]}
-  arquitetura:  {nome: Arquitetura,       grupo: Software,   tenho: nao,     termos: [microsservicos, microservices, arquitetura de software, design patterns, clean architecture, ddd]}
-  seguranca:    {nome: Segurança,         grupo: Software,   tenho: nao,     termos: [seguranca da informacao, cibersegurança, cibersegurancacybersecurity, owasp, pentest, iso 27001, soc]}
+  # --- automação ----------------------------------------------------------
+  n8n:          {nome: n8n,             grupo: Automação, termos: [n8n]}
+  make:         {nome: Make,            grupo: Automação, termos: [make.com, integromat]}
+  zapier:       {nome: Zapier,          grupo: Automação, termos: [zapier]}
+  power_automate: {nome: Power Automate, grupo: Automação, termos: [power automate]}
+  power_apps:   {nome: Power Apps,      grupo: Automação, termos: [power apps, powerapps]}
+  rpa:          {nome: RPA,             grupo: Automação, termos: [rpa, automacao robotica de processos]}
+  uipath:       {nome: UiPath,          grupo: Automação, termos: [uipath]}
 
-  # --- corporativo e domínio ---------------------------------------------
-  sap:          {nome: SAP,               grupo: Corporativo, tenho: sim,    termos: [sap, sap ecc, sap ewm, "s/4hana", s4hana, abap, fiori, sap mm, sap sd, sap pp, sap wm]}
-  erp:          {nome: ERP (outros),      grupo: Corporativo, tenho: parcial, termos: [erp, totvs, protheus, senior sistemas, sankhya, datasul, oracle ebs]}
-  crm:          {nome: CRM,               grupo: Corporativo, tenho: nao,    termos: [crm, salesforce, hubspot, dynamics 365, rd station]}
-  rpa:          {nome: RPA/automação,     grupo: Corporativo, tenho: parcial, termos: [rpa, uipath, automation anywhere, power automate, blue prism, n8n, zapier, make.com, automacao de processos]}
-  processos:    {nome: Processos e KPIs,  grupo: Corporativo, tenho: sim,    termos: [kpi, kpis, indicadores, mapeamento de processos, melhoria continua, lean, six sigma, pdca]}
-  agil:         {nome: Métodos ágeis,     grupo: Gestão,      tenho: parcial, termos: [scrum, kanban, agil, agile, jira, azure devops, safe]}
+  # --- nuvem e DevOps -----------------------------------------------------
+  aws:          {nome: AWS,             grupo: Nuvem e DevOps, termos: [aws, amazon web services]}
+  azure:        {nome: Azure,           grupo: Nuvem e DevOps, termos: [azure, microsoft azure]}
+  gcp:          {nome: Google Cloud,    grupo: Nuvem e DevOps, termos: [gcp, google cloud]}
+  docker:       {nome: Docker,          grupo: Nuvem e DevOps, termos: [docker, dockerfile, docker compose, docker-compose]}
+  kubernetes:   {nome: Kubernetes,      grupo: Nuvem e DevOps, termos: [kubernetes, k8s]}
+  cicd:         {nome: CI/CD,           grupo: Nuvem e DevOps, termos: ["ci/cd", cicd, "ci cd", integracao continua, entrega continua, continuous integration, deploy continuo]}
+  github_actions: {nome: GitHub Actions, grupo: Nuvem e DevOps, termos: [github actions]}
+  gitlab_ci:    {nome: GitLab CI,       grupo: Nuvem e DevOps, termos: [gitlab ci, gitlab-ci]}
+  jenkins:      {nome: Jenkins,         grupo: Nuvem e DevOps, termos: [jenkins]}
+  azure_devops: {nome: Azure DevOps,    grupo: Nuvem e DevOps, termos: [azure devops]}
+  terraform:    {nome: Terraform,       grupo: Nuvem e DevOps, termos: [terraform]}
+  linux:        {nome: Linux,           grupo: Nuvem e DevOps, termos: [linux]}
+  bash:         {nome: Bash/Shell,      grupo: Nuvem e DevOps, termos: [bash, shell script, shellscript]}
 
-  # --- idioma -------------------------------------------------------------
-  ingles:       {nome: Inglês,            grupo: Idioma,      tenho: parcial, termos: [ingles, english, fluent english, ingles avancado, ingles fluente, ingles intermediario]}
-  espanhol:     {nome: Espanhol,          grupo: Idioma,      tenho: nao,     termos: [espanhol, spanish]}
+  # --- práticas de engenharia ---------------------------------------------
+  git:          {nome: Git,             grupo: Engenharia, termos: [git, github, gitlab, bitbucket]}
+  testes:       {nome: Testes automatizados, grupo: Engenharia, termos: [testes automatizados, testes unitarios, teste unitario, testes de unidade, testes de integracao, unit tests, unit testing, tdd]}
+  jest:         {nome: Jest,            grupo: Engenharia, termos: [jest]}
+  pytest:       {nome: pytest,          grupo: Engenharia, termos: [pytest]}
+  cypress:      {nome: Cypress,         grupo: Engenharia, termos: [cypress]}
+  selenium:     {nome: Selenium,        grupo: Engenharia, termos: [selenium]}
+  code_review:  {nome: Code review,     grupo: Engenharia, termos: [code review, code reviews, revisao de codigo]}
+  solid:        {nome: SOLID,           grupo: Engenharia, termos: ["=SOLID", principios solid, solid principles]}
+  clean_code:   {nome: Clean Code,      grupo: Engenharia, termos: [clean code, codigo limpo]}
+  clean_arch:   {nome: Clean Architecture, grupo: Engenharia, termos: [clean architecture, arquitetura limpa]}
+  design_patterns: {nome: Design Patterns, grupo: Engenharia, termos: [design patterns, padroes de projeto]}
+  ddd:          {nome: DDD,             grupo: Engenharia, termos: [domain driven design, domain-driven design]}
+  scrum:        {nome: Scrum,           grupo: Engenharia, termos: [scrum]}
+  kanban:       {nome: Kanban,          grupo: Engenharia, termos: [kanban]}
+  agil:         {nome: Metodologias ágeis, grupo: Engenharia, termos: [metodologias ageis, metodologia agil, metodos ageis, agile]}
+  jira:         {nome: Jira,            grupo: Engenharia, termos: [jira]}
+  seguranca:    {nome: Segurança da informação, grupo: Engenharia, termos: [seguranca da informacao, ciberseguranca, cybersecurity, owasp]}
 
-# Mínimo de vagas com a habilidade para ela entrar no mapa. Abaixo disso o
-# percentual é ruído: 1 em 3 vira "33% do mercado", o que não significa nada.
-min_ocorrencias: 4
+  # --- corporativo --------------------------------------------------------
+  sap:          {nome: SAP,             grupo: Corporativo, termos: [sap, "s/4hana", s4hana, sap ecc]}
+  abap:         {nome: ABAP,            grupo: Corporativo, termos: [abap]}
+  totvs:        {nome: TOTVS/Protheus,  grupo: Corporativo, termos: [totvs, protheus, datasul]}
+  erp:          {nome: ERP,             grupo: Corporativo, termos: [erp, erps]}
+  crm:          {nome: CRM,             grupo: Corporativo, termos: [crm]}
+  salesforce:   {nome: Salesforce,      grupo: Corporativo, termos: [salesforce]}
+  kpi:          {nome: KPIs,            grupo: Corporativo, termos: [kpi, kpis]}
+  processos:    {nome: Mapeamento de processos, grupo: Corporativo, termos: [mapeamento de processos, modelagem de processos, bpmn]}
+  lean:         {nome: Lean/Six Sigma,  grupo: Corporativo, termos: ["=Lean", lean manufacturing, six sigma, seis sigma]}
+  lgpd:         {nome: LGPD,            grupo: Corporativo, termos: [lgpd]}
+  itil:         {nome: ITIL,            grupo: Corporativo, termos: [itil]}
+
+  # --- idiomas ------------------------------------------------------------
+  ingles:       {nome: Inglês,          grupo: Idioma, termos: [ingles, english]}
+  espanhol:     {nome: Espanhol,        grupo: Idioma, termos: [espanhol, spanish]}
