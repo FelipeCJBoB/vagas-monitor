@@ -19,48 +19,42 @@ Por local: Itajaí 5 · Balneário Camboriú 2 · Gaspar 2 · Blumenau 23 · Joi
 
 ## O que o mercado cobra
 
-Base desta rodada: **24 vagas presenciais ou híbridas na região** (de 52) e **166 remotas** (de 178) com descrição legível, cobertura de 83%. Percentuais calculados só sobre vagas com descrição; habilidade com menos de 4 ocorrências fica de fora por ser ruído.
+- **Seu diferencial:** **SQL** (38%), **Python** (35%), **Git** (33%), **Processos e KPIs** (26%). Na região pesam ainda mais Processos e KPIs e SAP: Corporativo aparece em 71% das vagas presenciais, contra 52% das remotas. Não é para estudar; é para abrir o currículo.
+- **Seu pedágio para o remoto:** **CI/CD** (25%), **Azure** (24%), **AWS** (23%). Em Nuvem, a fatia de vagas que pede algo que você não tem sobe de 29% na região para 59% no remoto, a maior diferença entre os dois mercados.
+- **Como ler:** a diferença entre os mercados mistura duas causas. As vagas remotas vêm de empresas de tecnologia e tendem a ser mais sêniores; as regionais incluem cargos de ERP que pedem menos stack. Vale como direção, não como medida exata.
 
-- **Seu terreno já conquistado: Corporativo.** Aparece em 71% das vagas presenciais da região, contra 52% das remotas. É o que você usa todo dia hoje. Não é para estudar, é para ocupar o topo do currículo e virar história de entrevista com número junto.
-- **O pedágio do mercado remoto: Linguagem.** 64% das vagas remotas pedem, contra 29% das regionais. É a maior distância entre os dois mercados nesta rodada, e é onde suas lacunas se concentram: JavaScript/TS, Java, C#/.NET, PHP.
-- **O que já joga a seu favor, item a item.** SQL (38%), Python (35%), Git (33%), Processos e KPIs (26%), Testes automatizados (16%). Percentual é a fatia das vagas acessíveis em que cada um aparece.
-- **Onde o estudo rende mais.** Azure destrava 24% das vagas acessíveis e hoje é lacuna; AWS destrava 23% das vagas acessíveis e hoje é lacuna; Docker/Kubernetes destrava 20% das vagas acessíveis e hoje é lacuna.
-- **Como ler a diferença entre os dois mercados.** Ela mistura duas causas. As vagas remotas vêm de empresas de tecnologia e tendem a ser mais sêniores; as regionais incluem cargos de ERP e suporte que pedem menos stack. Parte do contraste é o tipo de empresa, não o regime de trabalho. Vale como direção, não como medida exata.
+### Estude primeiro
 
-### Por família de tecnologia
+Ordem por quanto cada item destrava vagas que você pode pegar hoje, descontando o que já domina.
 
-Uma vaga conta uma vez por família, mesmo citando três tecnologias dela. Este corte existe porque AWS, Azure e Google Cloud competem entre si na tabela item a item e cada uma parece modesta, quando na verdade são a mesma lacuna.
+| # | Estude | Vagas acessíveis | Região | Remoto | Família | Situação |
+|---:|---|---:|---:|---:|---|---|
+| 1 | **Azure** | 24% | 21% | 30% | Nuvem | lacuna |
+| 2 | **AWS** | 23% | 4% | 32% | Nuvem | lacuna |
+| 3 | **Docker/Kubernetes** | 20% | 8% | 25% | Nuvem | lacuna |
+| 4 | **Métodos ágeis** | 34% | 12% | 33% | Gestão | usou em projeto |
+| 5 | **Inglês** | 29% | 29% | 25% | Idioma | usou em projeto |
+| 6 | **Java** | 13% | 12% | 10% | Linguagem | lacuna |
 
-| Família | Presencial região | Remoto nacional | Vagas acessíveis | O que falta em você |
-|---|---:|---:|---:|---|
-| **Linguagem** | 29% | 64% | 59% | JavaScript/TS, Java, C#/.NET, PHP |
-| **Corporativo** | 71% | 52% | 53% | ERP (outros), CRM, RPA/automação |
-| **Dados** | 38% | 54% | 51% | R, ETL e pipelines, Modelagem de dados, Data warehouse |
-| **Software** | 33% | 55% | 51% | APIs REST, Front-end, Arquitetura, Segurança |
-| **Nuvem** | 29% | 59% | 46% | AWS, Azure, Google Cloud, Docker/Kubernetes |
-| **Gestão** | 12% | 33% | 34% | Métodos ágeis |
-| **IA** | 12% | 39% | 30% | Machine Learning, Deep Learning, LLMs, Agentes de IA |
-| **Idioma** | 29% | 25% | 29% | Inglês, Espanhol |
-| **BI** | 38% | 19% | 23% | Tableau/Looker |
+### Onde está cada lacuna
 
-### Prioridade de estudo
+Tecnologias que faltam, com o peso de cada uma. "Pedem algo que falta" é a fatia das vagas acessíveis que cita ao menos uma delas; região e remoto comparam essa mesma lacuna.
 
-Ordem por quanto cada item destrava candidaturas que você pode realmente pegar (júnior, pleno ou sem nível declarado), descontando o que já domina.
+| Estude | Família | Pedem algo que falta | Região | Remoto | Você já tem |
+|---|---|---:|---:|---:|---|
+| **CI/CD** (25%), **Azure** (24%), **AWS** (23%) | Nuvem | 46% | 29% | 59% | — |
+| **Front-end** (22%), **Arquitetura** (11%), **APIs REST** (10%) | Software | 36% | 25% | 42% | Git, Testes automatizados |
+| **Modelagem de dados** (14%), **ETL e pipelines** (11%), **Estatística** (11%) | Dados | 35% | 25% | 37% | SQL |
+| **JavaScript/TS** (24%), **Java** (13%), **C#/.NET** (7%) | Linguagem | 34% | 21% | 33% | Python |
+| **Métodos ágeis** (34%) | Gestão | 34% | 12% | 33% | — |
+| **LLMs** (19%), **Agentes de IA** (11%), **Machine Learning** (10%) | IA | 30% | 12% | 39% | Prompt engineering |
+| **Inglês** (29%), **Espanhol** (4%) | Idioma | 29% | 29% | 25% | — |
+| **ERP (outros)** (10%), **RPA/automação** (10%), **CRM** (9%) | Corporativo | 26% | 42% | 23% | Processos e KPIs, SAP |
+| **Tableau/Looker** (6%) | BI | 6% | 4% | 8% | Power BI, Excel avançado |
 
-| # | Habilidade | Aparece em | Onde pesa | Situação |
-|---:|---|---:|---|---|
-| 1 | **Azure** | 24% das acessíveis | cobrado nos dois | lacuna |
-| 2 | **AWS** | 23% das acessíveis | pesa no remoto | lacuna |
-| 3 | **Docker/Kubernetes** | 20% das acessíveis | pesa no remoto | lacuna |
-| 4 | **Métodos ágeis** | 34% das acessíveis | pesa no remoto | usou em projeto |
-| 5 | **Inglês** | 29% das acessíveis | cobrado nos dois | usou em projeto |
-| 6 | **Java** | 13% das acessíveis | cobrado nos dois | lacuna |
-| 7 | **Google Cloud** | 13% das acessíveis | pesa no remoto | lacuna |
-| 8 | **CI/CD** | 25% das acessíveis | pesa no remoto | usou em projeto |
+<details><summary>Mapa completo das habilidades medidas</summary>
 
-### Mapa completo
-
-| Habilidade | Grupo | Presencial região | Remoto nacional | Onde pesa | Você |
+| Habilidade | Família | Presencial região | Remoto nacional | Onde pesa | Você |
 |---|---|---:|---:|---|---|
 | Azure | Nuvem | 21% (5) | 30% (50) | cobrado nos dois | lacuna |
 | AWS | Nuvem | 4% (1) | 32% (53) | pesa no remoto | lacuna |
@@ -108,7 +102,9 @@ Ordem por quanto cada item destrava candidaturas que você pode realmente pegar 
 | Excel avançado | BI | 17% (4) | 10% (17) | cobrado nos dois | já domina |
 | Prompt engineering | IA | 8% (2) | 7% (12) | cobrado nos dois | já domina |
 
-Marcação de domínio vem de `skills.yaml`, campo `tenho`. Ajuste lá conforme for estudando e a prioridade se recalcula sozinha na próxima rodada.
+</details>
+
+Base: 24 vagas presenciais ou híbridas na região (de 52) e 166 remotas (de 178) com descrição legível. Habilidade com menos de 4 menções fica de fora. A marcação de domínio vem do `skills.yaml`.
 
 ## Agentes de IA (10)
 

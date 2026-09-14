@@ -158,3 +158,75 @@ def test_familia_dominada_e_marcada():
 def test_familia_sem_ocorrencia_nao_aparece():
     jobs = [_dict_job("remoto", ["aws"]) for _ in range(10)]
     assert "Corporativo" not in {g["grupo"] for g in skills.analyze(jobs, TAX)["grupos"]}
+
+
+# --- a tecnologia específica, não a família ---------------------------------
+TAX_FAM = {
+    "habilidades": {
+        "python": {"nome": "Python", "grupo": "Linguagem", "tenho": "sim", "termos": ["python"]},
+        "java":   {"nome": "Java", "grupo": "Linguagem", "tenho": "nao", "termos": ["java"]},
+        "php":    {"nome": "PHP", "grupo": "Linguagem", "tenho": "nao", "termos": ["php"]},
+        "aws":    {"nome": "AWS", "grupo": "Nuvem", "tenho": "nao", "termos": ["aws"]},
+        "azure":  {"nome": "Azure", "grupo": "Nuvem", "tenho": "nao", "termos": ["azure"]},
+        "sap":    {"nome": "SAP", "grupo": "Corporativo", "tenho": "sim", "termos": ["sap"]},
+    },
+    "min_ocorrencias": 2,
+}
+
+
+def _mercado_familias():
+    """Python domina a presença de Linguagem; Nuvem é lacuna pura; SAP puxa a região."""
+    jobs = ([_dict_job("regional", ["python", "sap"]) for _ in range(10)]
+            + [_dict_job("regional", ["aws"]) for _ in range(2)]
+            + [_dict_job("remoto", ["python", "aws", "azure"]) for _ in range(10)]
+            + [_dict_job("remoto", ["python", "java"]) for _ in range(3)])
+    return skills.analyze(jobs, TAX_FAM)
+
+
+def test_lacuna_lista_so_o_que_apareceu_nas_vagas():
+    """Antes vinha da taxonomia inteira e mostrava "falta: PHP" sem vaga alguma pedir."""
+    ling = next(g for g in _mercado_familias()["grupos"] if g["grupo"] == "Linguagem")
+    nomes = [f["nome"] for f in ling["faltam_detalhe"]]
+    assert "Java" in nomes and "PHP" not in nomes
+
+
+def test_lacuna_traz_o_peso_de_cada_item_em_ordem():
+    nuvem = next(g for g in _mercado_familias()["grupos"] if g["grupo"] == "Nuvem")
+    pesos = [f["pct"] for f in nuvem["faltam_detalhe"]]
+    assert pesos == sorted(pesos, reverse=True) and all(p > 0 for p in pesos)
+    assert nuvem["faltam_detalhe"][0]["nome"] == "AWS"  # 12 vagas contra 10 do Azure
+
+
+def test_familia_ordena_pela_lacuna_e_nao_pela_presenca():
+    """Linguagem aparece em quase tudo por causa do Python, que ele já domina.
+
+    Ordenar pela presença total punha Linguagem no topo da lista de estudo.
+    """
+    grupos = _mercado_familias()["grupos"]
+    ling = next(g for g in grupos if g["grupo"] == "Linguagem")
+    nuvem = next(g for g in grupos if g["grupo"] == "Nuvem")
+    assert ling["pct_acessivel"] > nuvem["pct_acessivel"]  # presença engana...
+    assert nuvem["pct_lacuna"] > ling["pct_lacuna"]         # ...a lacuna não
+    assert grupos.index(nuvem) < grupos.index(ling)
+
+
+def test_pedagio_compara_a_lacuna_entre_mercados():
+    """O mesmo vício na comparação regional x remoto: a família inteira de
+    Linguagem cresce no remoto, mas quem cresce é o Python, que ele tem."""
+    v = skills.veredito(_mercado_familias())
+    assert v["pedagio"]["grupo"] == "Nuvem"
+    assert [i["nome"] for i in v["pedagio"]["itens"]][:2] == ["AWS", "Azure"]
+
+
+def test_veredito_nomeia_o_que_ele_ja_domina():
+    v = skills.veredito(_mercado_familias())
+    assert "Python" in [i["nome"] for i in v["forte"]["itens"]]
+    assert v["forte"]["casa"]["grupo"] == "Corporativo"
+    assert [i["nome"] for i in v["forte"]["casa"]["itens"]] == ["SAP"]
+
+
+def test_sem_amostra_comparavel_nao_ha_pedagio():
+    jobs = [_dict_job("regional", ["sap"]) for _ in range(3)] + \
+           [_dict_job("remoto", ["aws"]) for _ in range(30)]
+    v = skills.veredito(skills.analyze(jobs, TAX_FAM))
+    assert v["pedagio"] is None and v["comparavel"] is False

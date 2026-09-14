@@ -10728,10 +10728,234 @@
   ],
   "grupos": [
    {
+    "grupo": "Nuvem",
+    "pct_lacuna": 46.1,
+    "lacuna_regional": 29.2,
+    "lacuna_remoto": 59.0,
+    "n_lacuna_regional": 7,
+    "n_lacuna_remoto": 98,
+    "pct_acessivel": 46.1,
+    "pct_regional": 29.2,
+    "pct_remoto": 59.0,
+    "n_regional": 7,
+    "n_remoto": 98,
+    "faltam_detalhe": [
+     {
+      "nome": "CI/CD",
+      "pct": 25.2,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Azure",
+      "pct": 23.5,
+      "onde": "ambos"
+     },
+     {
+      "nome": "AWS",
+      "pct": 22.6,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Docker/Kubernetes",
+      "pct": 20.0,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Google Cloud",
+      "pct": 13.0,
+      "onde": "remoto"
+     },
+     {
+      "nome": "IaC/Terraform",
+      "pct": 9.6,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Linux",
+      "pct": 7.8,
+      "onde": "remoto"
+     }
+    ],
+    "tem_detalhe": [],
+    "faltam": [
+     "CI/CD",
+     "Azure",
+     "AWS",
+     "Docker/Kubernetes",
+     "Google Cloud",
+     "IaC/Terraform",
+     "Linux"
+    ],
+    "dominado": false
+   },
+   {
+    "grupo": "Software",
+    "pct_lacuna": 36.5,
+    "lacuna_regional": 25.0,
+    "lacuna_remoto": 42.2,
+    "n_lacuna_regional": 6,
+    "n_lacuna_remoto": 70,
+    "pct_acessivel": 51.3,
+    "pct_regional": 33.3,
+    "pct_remoto": 55.4,
+    "n_regional": 8,
+    "n_remoto": 92,
+    "faltam_detalhe": [
+     {
+      "nome": "Front-end",
+      "pct": 21.7,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Arquitetura",
+      "pct": 11.3,
+      "onde": "remoto"
+     },
+     {
+      "nome": "APIs REST",
+      "pct": 10.4,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Segurança",
+      "pct": 7.8,
+      "onde": "ambos"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "Git",
+      "pct": 33.0,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Testes automatizados",
+      "pct": 16.5,
+      "onde": "remoto"
+     }
+    ],
+    "faltam": [
+     "Front-end",
+     "Arquitetura",
+     "APIs REST",
+     "Segurança"
+    ],
+    "dominado": false
+   },
+   {
+    "grupo": "Dados",
+    "pct_lacuna": 34.8,
+    "lacuna_regional": 25.0,
+    "lacuna_remoto": 36.7,
+    "n_lacuna_regional": 6,
+    "n_lacuna_remoto": 61,
+    "pct_acessivel": 51.3,
+    "pct_regional": 37.5,
+    "pct_remoto": 53.6,
+    "n_regional": 9,
+    "n_remoto": 89,
+    "faltam_detalhe": [
+     {
+      "nome": "Modelagem de dados",
+      "pct": 13.9,
+      "onde": "ambos"
+     },
+     {
+      "nome": "ETL e pipelines",
+      "pct": 11.3,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Estatística",
+      "pct": 11.3,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Governança/LGPD",
+      "pct": 10.4,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Spark/Databricks",
+      "pct": 8.7,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Data warehouse",
+      "pct": 7.0,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Orquestração",
+      "pct": 4.3,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Streaming",
+      "pct": 1.7,
+      "onde": "remoto"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "SQL",
+      "pct": 38.3,
+      "onde": "ambos"
+     }
+    ],
+    "faltam": [
+     "Modelagem de dados",
+     "ETL e pipelines",
+     "Estatística",
+     "Governança/LGPD",
+     "Spark/Databricks",
+     "Data warehouse",
+     "Orquestração",
+     "Streaming"
+    ],
+    "dominado": false
+   },
+   {
     "grupo": "Linguagem",
+    "pct_lacuna": 33.9,
+    "lacuna_regional": 20.8,
+    "lacuna_remoto": 33.1,
+    "n_lacuna_regional": 5,
+    "n_lacuna_remoto": 55,
     "pct_acessivel": 59.1,
     "pct_regional": 29.2,
     "pct_remoto": 63.9,
+    "n_regional": 7,
+    "n_remoto": 106,
+    "faltam_detalhe": [
+     {
+      "nome": "JavaScript/TS",
+      "pct": 23.5,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Java",
+      "pct": 13.0,
+      "onde": "ambos"
+     },
+     {
+      "nome": "C#/.NET",
+      "pct": 7.0,
+      "onde": "remoto"
+     },
+     {
+      "nome": "PHP",
+      "pct": 2.6,
+      "onde": "remoto"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "Python",
+      "pct": 34.8,
+      "onde": "remoto"
+     }
+    ],
     "faltam": [
      "JavaScript/TS",
      "Java",
@@ -10741,70 +10965,25 @@
     "dominado": false
    },
    {
-    "grupo": "Corporativo",
-    "pct_acessivel": 53.0,
-    "pct_regional": 70.8,
-    "pct_remoto": 52.4,
-    "faltam": [
-     "ERP (outros)",
-     "CRM",
-     "RPA/automação"
-    ],
-    "dominado": false
-   },
-   {
-    "grupo": "Dados",
-    "pct_acessivel": 51.3,
-    "pct_regional": 37.5,
-    "pct_remoto": 53.6,
-    "faltam": [
-     "R",
-     "ETL e pipelines",
-     "Modelagem de dados",
-     "Data warehouse",
-     "Spark/Databricks",
-     "Orquestração",
-     "dbt",
-     "Streaming",
-     "Governança/LGPD",
-     "Estatística"
-    ],
-    "dominado": false
-   },
-   {
-    "grupo": "Software",
-    "pct_acessivel": 51.3,
-    "pct_regional": 33.3,
-    "pct_remoto": 55.4,
-    "faltam": [
-     "APIs REST",
-     "Front-end",
-     "Arquitetura",
-     "Segurança"
-    ],
-    "dominado": false
-   },
-   {
-    "grupo": "Nuvem",
-    "pct_acessivel": 46.1,
-    "pct_regional": 29.2,
-    "pct_remoto": 59.0,
-    "faltam": [
-     "AWS",
-     "Azure",
-     "Google Cloud",
-     "Docker/Kubernetes",
-     "CI/CD",
-     "IaC/Terraform",
-     "Linux"
-    ],
-    "dominado": false
-   },
-   {
     "grupo": "Gestão",
+    "pct_lacuna": 33.9,
+    "lacuna_regional": 12.5,
+    "lacuna_remoto": 33.1,
+    "n_lacuna_regional": 3,
+    "n_lacuna_remoto": 55,
     "pct_acessivel": 33.9,
     "pct_regional": 12.5,
     "pct_remoto": 33.1,
+    "n_regional": 3,
+    "n_remoto": 55,
+    "faltam_detalhe": [
+     {
+      "nome": "Métodos ágeis",
+      "pct": 33.9,
+      "onde": "remoto"
+     }
+    ],
+    "tem_detalhe": [],
     "faltam": [
      "Métodos ágeis"
     ],
@@ -10812,26 +10991,90 @@
    },
    {
     "grupo": "IA",
+    "pct_lacuna": 29.6,
+    "lacuna_regional": 12.5,
+    "lacuna_remoto": 38.6,
+    "n_lacuna_regional": 3,
+    "n_lacuna_remoto": 64,
     "pct_acessivel": 29.6,
     "pct_regional": 12.5,
     "pct_remoto": 38.6,
+    "n_regional": 3,
+    "n_remoto": 64,
+    "faltam_detalhe": [
+     {
+      "nome": "LLMs",
+      "pct": 19.1,
+      "onde": "remoto"
+     },
+     {
+      "nome": "Agentes de IA",
+      "pct": 11.3,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Machine Learning",
+      "pct": 9.6,
+      "onde": "remoto"
+     },
+     {
+      "nome": "RAG e busca vetorial",
+      "pct": 5.2,
+      "onde": "ambos"
+     },
+     {
+      "nome": "MLOps",
+      "pct": 1.7,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Visão computacional",
+      "pct": 1.7,
+      "onde": "remoto"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "Prompt engineering",
+      "pct": 6.1,
+      "onde": "ambos"
+     }
+    ],
     "faltam": [
-     "Machine Learning",
-     "Deep Learning",
      "LLMs",
      "Agentes de IA",
+     "Machine Learning",
      "RAG e busca vetorial",
      "MLOps",
-     "NLP",
      "Visão computacional"
     ],
     "dominado": false
    },
    {
     "grupo": "Idioma",
+    "pct_lacuna": 28.7,
+    "lacuna_regional": 29.2,
+    "lacuna_remoto": 25.3,
+    "n_lacuna_regional": 7,
+    "n_lacuna_remoto": 42,
     "pct_acessivel": 28.7,
     "pct_regional": 29.2,
     "pct_remoto": 25.3,
+    "n_regional": 7,
+    "n_remoto": 42,
+    "faltam_detalhe": [
+     {
+      "nome": "Inglês",
+      "pct": 28.7,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Espanhol",
+      "pct": 4.3,
+      "onde": "presencial"
+     }
+    ],
+    "tem_detalhe": [],
     "faltam": [
      "Inglês",
      "Espanhol"
@@ -10839,10 +11082,84 @@
     "dominado": false
    },
    {
+    "grupo": "Corporativo",
+    "pct_lacuna": 26.1,
+    "lacuna_regional": 41.7,
+    "lacuna_remoto": 22.9,
+    "n_lacuna_regional": 10,
+    "n_lacuna_remoto": 38,
+    "pct_acessivel": 53.0,
+    "pct_regional": 70.8,
+    "pct_remoto": 52.4,
+    "n_regional": 17,
+    "n_remoto": 87,
+    "faltam_detalhe": [
+     {
+      "nome": "ERP (outros)",
+      "pct": 10.4,
+      "onde": "presencial"
+     },
+     {
+      "nome": "RPA/automação",
+      "pct": 10.4,
+      "onde": "ambos"
+     },
+     {
+      "nome": "CRM",
+      "pct": 8.7,
+      "onde": "ambos"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "Processos e KPIs",
+      "pct": 26.1,
+      "onde": "ambos"
+     },
+     {
+      "nome": "SAP",
+      "pct": 16.5,
+      "onde": "ambos"
+     }
+    ],
+    "faltam": [
+     "ERP (outros)",
+     "RPA/automação",
+     "CRM"
+    ],
+    "dominado": false
+   },
+   {
     "grupo": "BI",
+    "pct_lacuna": 6.1,
+    "lacuna_regional": 4.2,
+    "lacuna_remoto": 7.8,
+    "n_lacuna_regional": 1,
+    "n_lacuna_remoto": 13,
     "pct_acessivel": 22.6,
     "pct_regional": 37.5,
     "pct_remoto": 19.3,
+    "n_regional": 9,
+    "n_remoto": 32,
+    "faltam_detalhe": [
+     {
+      "nome": "Tableau/Looker",
+      "pct": 6.1,
+      "onde": "ambos"
+     }
+    ],
+    "tem_detalhe": [
+     {
+      "nome": "Power BI",
+      "pct": 15.7,
+      "onde": "ambos"
+     },
+     {
+      "nome": "Excel avançado",
+      "pct": 13.0,
+      "onde": "ambos"
+     }
+    ],
     "faltam": [
      "Tableau/Looker"
     ],

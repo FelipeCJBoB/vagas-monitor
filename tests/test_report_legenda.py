@@ -114,14 +114,14 @@ def _mercado_ctx(comparavel=True):
 def test_secao_de_mercado_no_markdown():
     md = report.render_markdown(_mercado_ctx())
     assert "## O que o mercado cobra" in md
-    assert "Prioridade de estudo" in md and "Mapa completo" in md
+    assert "### Estude primeiro" in md and "### Onde está cada lacuna" in md
+    assert "Mapa completo" in md  # recolhido em <details>, mas presente
     assert "AWS" in md and "SAP" in md
-    assert "pesa no presencial" in md and "pesa no remoto" in md
 
 
 def test_prioridade_ordena_lacuna_antes_do_que_ja_domina():
     md = report.render_markdown(_mercado_ctx())
-    prio = md.split("### Prioridade de estudo")[1].split("### Mapa completo")[0]
+    prio = md.split("### Estude primeiro")[1].split("### Onde está cada lacuna")[0]
     assert "AWS" in prio and "SAP" not in prio       # SAP já é domínio dele
     assert prio.index("AWS") < prio.index("Docker")  # lacuna antes de parcial
 
@@ -160,12 +160,36 @@ def test_email_resume_o_que_estudar():
     assert "<script" not in bloco
 
 
-def test_narrativa_nomeia_terreno_forte_e_pedagio():
-    """As duas frases que respondem 'o que estudar' antes de qualquer tabela."""
+def test_veredito_nomeia_tecnologias_e_nao_familias():
+    """O pedido original: não "Nuvem", mas QUAL tecnologia de nuvem.
+
+    As duas conclusões que respondem "o que estudar" têm de trazer os itens
+    concretos no título. A família aparece só como contexto na frase seguinte.
+    """
     md = report.render_markdown(_mercado_ctx())
-    assert "Seu terreno já conquistado: Corporativo" in md
-    assert "pedágio do mercado remoto: Nuvem" in md
-    assert "Por família de tecnologia" in md
+    pedagio = next(l for l in md.splitlines() if "Seu pedágio para o remoto" in l)
+    titulo = pedagio.split(".")[0]                   # a parte antes do primeiro ponto
+    assert "**AWS**" in titulo and "Nuvem" not in titulo
+    diferencial = next(l for l in md.splitlines() if "Seu diferencial" in l)
+    assert "**SAP**" in diferencial.split(".")[0]
+
+
+def test_tabela_de_lacunas_poe_a_tecnologia_na_primeira_coluna():
+    md = report.render_markdown(_mercado_ctx())
+    tabela = md.split("### Onde está cada lacuna")[1].split("<details>")[0]
+    cabecalho = next(l for l in tabela.splitlines() if l.startswith("| "))
+    assert cabecalho.startswith("| Estude | Família")  # tecnologia antes da família
+    linha_nuvem = next(l for l in tabela.splitlines() if "| Nuvem |" in l)
+    assert linha_nuvem.startswith("| **AWS**") or linha_nuvem.startswith("| **Docker**")
+
+
+def test_painel_usa_as_cores_de_serie_validadas():
+    """Teal com o verde de status reprovava no validador (ΔE 8,7) e confundia
+    "remoto" com "positivo". As séries usam tokens próprios."""
+    html = report.render_html(_mercado_ctx())
+    assert "--serie-reg:#2a78d6" in html and "--serie-rem:#eb6834" in html
+    assert ".bar.rem .fill{background:var(--good)}" not in html
+    assert "veredito" in html and "linhaFamilia" in html
 
 
 def test_ressalva_metodologica_sempre_presente():
@@ -191,3 +215,26 @@ def test_render_recalcula_o_mapa_a_partir_das_skills_gravadas(tmp_path):
     ctx = report.load_context(p)
     assert ctx["mercado"]["linhas"], "o mapa tem de ser recalculado, não lido do arquivo"
     assert ctx["mercado"]["grupos"]
+
+
+def test_hidden_esconde_mesmo_com_display_de_autor():
+    """A lista de vagas tem `display:flex`; sem a regra global, `hidden` perdia e a
+    aba "O que estudar" mostrava as vagas empilhadas em cima do conteúdo."""
+    assert "[hidden]{display:none!important}" in report.render_html(_ctx([_job()]))
+
+
+def test_linhas_da_lista_tem_posicao_explicita_no_grid():
+    """Com o posicionamento automático, a estatística tomava a coluna do meio e o
+    nome da tecnologia era espremido e cortado na coluna estreita da direita."""
+    html = report.render_html(_mercado_ctx())
+    assert ".rrow .body{grid-column:2;grid-row:1" in html
+    assert ".rrow .stat{grid-column:3;grid-row:1/span 2" in html
+
+
+def test_arquivos_gerados_sempre_em_lf(tmp_path, monkeypatch):
+    """No Windows o padrão é CRLF; o robô do GitHub gera LF. Sem forçar, cada rodada
+    local virava um diff do arquivo inteiro: 25 mil linhas para mudar poucas."""
+    monkeypatch.setattr(report, "ROOT", tmp_path)
+    paths = report.write_all(_mercado_ctx(), load_config())
+    for nome, caminho in paths.items():
+        assert b"\r\n" not in caminho.read_bytes(), f"{nome} saiu com CRLF"

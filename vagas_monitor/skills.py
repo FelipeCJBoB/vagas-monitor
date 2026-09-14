@@ -151,7 +151,7 @@ def analyze(jobs: list[dict], taxonomia: dict) -> dict:
     linhas.sort(key=lambda r: (-r["prioridade"], -r["pct_acessivel"]))
     return {
         "linhas": linhas,
-        "grupos": _por_grupo(habs, acessiveis, base),
+        "grupos": _por_grupo(habs, acessiveis, base, linhas),
         "amostra": {
             "regional": n_reg, "remoto": n_rem,
             "regional_total": total_por_segmento["regional"],
@@ -167,24 +167,32 @@ def analyze(jobs: list[dict], taxonomia: dict) -> dict:
     }
 
 
-def _por_grupo(habs: dict, acessiveis: list[dict], base: dict) -> list[dict]:
+def _por_grupo(habs: dict, acessiveis: list[dict], base: dict, linhas: list[dict]) -> list[dict]:
     """Agrega por família de tecnologia.
 
     Linha a linha, AWS, Azure e Google Cloud disputam entre si e cada uma parece
     modesta. São a mesma lacuna: quem não sabe nuvem não sabe nenhuma das três, e
     quem aprende uma transfere a maior parte para as outras. Sem esta agregação a
     prioridade de estudo aponta para o lugar errado.
+
+    A família é o contexto; o que se estuda é a tecnologia. Por isso cada família
+    devolve também `faltam_detalhe` e `tem_detalhe`, com o nome e a fatia de vagas
+    de cada item, ordenados do mais cobrado para o menos. É isso que o relatório
+    mostra como título, e não o nome abstrato da família.
+
+    Só entram itens que de fato apareceram nas vagas (os de `linhas`, que já
+    passaram por `min_ocorrencias`). Antes, a lista de lacunas vinha da taxonomia
+    inteira e mostrava "falta: R, PHP" para tecnologias que nenhuma vaga pediu.
     """
+    por_nome = {r["chave"]: r for r in linhas}
     grupos: dict[str, dict] = {}
     for chave, meta in habs.items():
-        g = grupos.setdefault(meta.get("grupo", "Outros"),
-                              {"grupo": meta.get("grupo", "Outros"), "chaves": [], "faltam": []})
+        g = grupos.setdefault(meta.get("grupo", "Outros"), {"grupo": meta.get("grupo", "Outros"), "chaves": []})
         g["chaves"].append(chave)
-        if PESO_LACUNA.get((meta.get("tenho") or "nao").lower(), 1.0) > 0:
-            g["faltam"].append(meta.get("nome", chave))
 
     out = []
     n_ace = len(acessiveis)
+    n_reg, n_rem = len(base["regional"]), len(base["remoto"])
     for g in grupos.values():
         chaves = set(g["chaves"])
         # uma vaga conta uma vez pelo grupo, mesmo citando três tecnologias dele
@@ -193,17 +201,90 @@ def _por_grupo(habs: dict, acessiveis: list[dict], base: dict) -> list[dict]:
             continue
         c_reg = sum(1 for j in base["regional"] if chaves & set(j.get("skills") or []))
         c_rem = sum(1 for j in base["remoto"] if chaves & set(j.get("skills") or []))
-        n_reg, n_rem = len(base["regional"]), len(base["remoto"])
+
+        itens = sorted((por_nome[k] for k in g["chaves"] if k in por_nome),
+                       key=lambda r: -r["pct_acessivel"])
+        detalhe = lambda r: {"nome": r["nome"], "pct": r["pct_acessivel"], "onde": r["onde"]}
+        faltam = [detalhe(r) for r in itens if PESO_LACUNA.get(r["tenho"], 1.0) > 0]
+        tem = [detalhe(r) for r in itens if PESO_LACUNA.get(r["tenho"], 1.0) == 0]
+
+        # Fatia das vagas acessíveis que pedem ALGO desta família que ele não tem.
+        # É a ordem certa para estudar: a presença total da família engana, porque
+        # "Linguagem" aparece em 59% das vagas quase só por causa do Python, que
+        # ele já domina. O que interessa é quanto destrava fechar a lacuna.
+        faltando = {k for k in g["chaves"]
+                    if PESO_LACUNA.get((habs[k].get("tenho") or "nao").lower(), 1.0) > 0}
+        pede_lacuna = lambda j: bool(faltando & set(j.get("skills") or []))
+        c_lac = sum(1 for j in acessiveis if pede_lacuna(j))
+        # A mesma lacuna, separada por mercado. Comparar remoto x região sobre a
+        # presença total da família seria enganoso pelo mesmo motivo: "Linguagem"
+        # cresce muito no remoto, mas quem cresce é o Python, que ele já tem.
+        c_lac_reg = sum(1 for j in base["regional"] if pede_lacuna(j))
+        c_lac_rem = sum(1 for j in base["remoto"] if pede_lacuna(j))
+
         out.append({
             "grupo": g["grupo"],
+            "pct_lacuna": round(100 * c_lac / n_ace, 1) if n_ace else 0.0,
+            "lacuna_regional": round(100 * c_lac_reg / n_reg, 1) if n_reg else 0.0,
+            "lacuna_remoto": round(100 * c_lac_rem / n_rem, 1) if n_rem else 0.0,
+            # contagens absolutas: 29% de 24 vagas não pesa o mesmo que 29% de 166
+            "n_lacuna_regional": c_lac_reg, "n_lacuna_remoto": c_lac_rem,
             "pct_acessivel": round(100 * c_ace / n_ace, 1) if n_ace else 0.0,
             "pct_regional": round(100 * c_reg / n_reg, 1) if n_reg else 0.0,
             "pct_remoto": round(100 * c_rem / n_rem, 1) if n_rem else 0.0,
-            "faltam": g["faltam"],
-            "dominado": not g["faltam"],
+            "n_regional": c_reg, "n_remoto": c_rem,
+            "faltam_detalhe": faltam,
+            "tem_detalhe": tem,
+            "faltam": [f["nome"] for f in faltam],  # mantido para quem só quer os nomes
+            "dominado": not faltam,
         })
-    out.sort(key=lambda r: -r["pct_acessivel"])
+    out.sort(key=lambda r: (-r["pct_lacuna"], -r["pct_acessivel"]))
     return out
+
+
+def veredito(mercado: dict, n_itens: int = 3) -> dict:
+    """As duas conclusões que respondem "o que estudar", como dado e não como texto.
+
+    Painel, Markdown e Telegram renderizam a partir daqui, então dizem a mesma
+    coisa. E cada conclusão nomeia as TECNOLOGIAS, não a família: "CI/CD, Azure,
+    AWS" é acionável; "Nuvem" não é.
+
+    - `forte`: o que ele já domina e o mercado pede, mais cobrado primeiro.
+    - `pedagio`: a família com a maior distância entre remoto e região onde ainda
+      há lacuna, com as tecnologias que faltam. Só existe se a amostra permitir
+      comparar os dois mercados.
+    """
+    linhas, grupos = mercado.get("linhas") or [], mercado.get("grupos") or []
+    am = mercado.get("amostra") or {}
+    comparavel = am.get("comparavel", False)
+    item = lambda r: {"nome": r["nome"], "pct": r["pct_acessivel"]}
+
+    forte = [item(r) for r in sorted((r for r in linhas if r["tenho"] == "sim"),
+                                    key=lambda r: -r["pct_acessivel"])][:n_itens + 1]
+    casa = None
+    if comparavel:
+        candidatas = [g for g in grupos if g["tem_detalhe"] and g["pct_regional"] > g["pct_remoto"]]
+        casa = max(candidatas, key=lambda g: g["pct_regional"] - g["pct_remoto"], default=None)
+
+    pedagio = None
+    if comparavel:
+        # compara a LACUNA entre os mercados, não a presença da família inteira
+        com_lacuna = [g for g in grupos if g["faltam_detalhe"]
+                      and g["lacuna_remoto"] > 1.5 * max(g["lacuna_regional"], 1)]
+        alvo = max(com_lacuna, key=lambda g: g["lacuna_remoto"] - g["lacuna_regional"], default=None)
+        if alvo:
+            pedagio = {"grupo": alvo["grupo"], "itens": alvo["faltam_detalhe"][:n_itens],
+                       "pct_regional": alvo["lacuna_regional"], "pct_remoto": alvo["lacuna_remoto"],
+                       "pct_lacuna": alvo["pct_lacuna"]}
+
+    return {
+        "forte": {"itens": forte,
+                  "casa": ({"grupo": casa["grupo"], "pct_regional": casa["pct_regional"],
+                            "pct_remoto": casa["pct_remoto"],
+                            "itens": casa["tem_detalhe"][:n_itens]} if casa else None)},
+        "pedagio": pedagio,
+        "comparavel": comparavel,
+    }
 
 
 def prioridades(mercado: dict, limite: int = 8) -> list[dict]:
