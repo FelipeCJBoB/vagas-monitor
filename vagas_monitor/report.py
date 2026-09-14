@@ -61,6 +61,8 @@ def build_context(jobs: list[Job], cfg: dict, run_dt: datetime, lookback_days: i
         "top_n": int(cfg.get("relatorio", {}).get("top_n", 20)),
         "report_url": cfg.get("relatorio", {}).get("url_publica") or env("REPORT_URL") or "",
         "state_stats": state_stats,
+        # o JSON guarda a descrição inteira: `render` pode reextrair dela sozinha
+        "descricao_completa": True,
     }
 
 
@@ -120,108 +122,26 @@ def _md_row(j: dict, cats: dict, with_cat: bool = True) -> str:
     return row
 
 
-TENHO_PT = {"sim": "já domina", "parcial": "usou em projeto", "nao": "lacuna"}
-ONDE_PT = {"presencial": "pesa no presencial", "remoto": "pesa no remoto",
-           "ambos": "cobrado nos dois", "indeterminado": "amostra insuficiente"}
-
-
-def _itens_md(lista: list[dict], n: int = 3) -> str:
-    """"CI/CD (25%), Azure (24%), AWS (23%)": a tecnologia na frente, o peso ao lado."""
-    return ", ".join(f"**{x['nome']}** ({x['pct']:.0f}%)" for x in lista[:n])
-
-
-def _leitura_do_mercado(m: dict) -> list[str]:
-    """As conclusões, nomeando tecnologias e não famílias.
-
-    Vem de `skills.veredito`, a mesma fonte do painel e do Telegram, para que os
-    três digam a mesma coisa. Se a amostra for pequena, o texto diz isso em vez
-    de afirmar tendência.
-    """
-    if not (m.get("linhas") or []):
-        return []
-    am = m.get("amostra") or {}
-    reg, rem = am.get("regional", 0), am.get("remoto", 0)
-    v = skills.veredito(m)
-    out = []
-
-    if not am.get("comparavel", True):
-        menor = "regional" if reg <= rem else "remoto"
-        out.append(f"⚠️ **Comparação entre os dois mercados suspensa nesta rodada.** O lado "
-                   f"{menor} tem só {min(reg, rem)} vagas com descrição, abaixo do mínimo de "
-                   f"{am.get('min_segmento', 10)}. Os números absolutos continuam válidos.")
-
-    forte = v["forte"]
-    if forte["itens"]:
-        txt = f"**Seu diferencial:** {_itens_md(forte['itens'], 4)}."
-        if forte["casa"]:
-            c = forte["casa"]
-            txt += (f" Na região pesam ainda mais {' e '.join(t['nome'] for t in c['itens'])}: "
-                    f"{c['grupo']} aparece em {c['pct_regional']:.0f}% das vagas presenciais, contra "
-                    f"{c['pct_remoto']:.0f}% das remotas.")
-        out.append(txt + " Não é para estudar; é para abrir o currículo.")
-
-    p = v["pedagio"]
-    if p:
-        out.append(f"**Seu pedágio para o remoto:** {_itens_md(p['itens'])}. Em {p['grupo']}, a fatia de "
-                   f"vagas que pede algo que você não tem sobe de {p['pct_regional']:.0f}% na região para "
-                   f"{p['pct_remoto']:.0f}% no remoto, a maior diferença entre os dois mercados.")
-
-    out.append("**Como ler:** a diferença entre os mercados mistura duas causas. As vagas remotas vêm "
-               "de empresas de tecnologia e tendem a ser mais sêniores; as regionais incluem cargos de "
-               "ERP que pedem menos stack. Vale como direção, não como medida exata.")
-    return out
-
-
-def _secao_mercado(ctx: dict) -> list[str]:
+def _secao_mercado(ctx: dict, limite: int = 30) -> list[str]:
+    """Ranking das tecnologias: em quantas vagas cada uma aparece."""
     m = ctx.get("mercado") or {}
-    linhas = m.get("linhas") or []
-    if not linhas:
+    ranking = m.get("ranking") or []
+    if not ranking:
         return []
     am = m["amostra"]
-    out = ["## O que o mercado cobra", ""]
-    out += [f"- {t}" for t in _leitura_do_mercado(m)] + [""]
-
-    faltam = skills.prioridades(m, limite=6)
-    if faltam:
-        out += ["### Estude primeiro", "",
-                "Ordem por quanto cada item destrava vagas que você pode pegar hoje, descontando o que "
-                "já domina.", "",
-                "| # | Estude | Vagas acessíveis | Região | Remoto | Família | Situação |",
-                "|---:|---|---:|---:|---:|---|---|"]
-        for i, r in enumerate(faltam, 1):
-            out.append(f"| {i} | **{r['nome']}** | {r['pct_acessivel']:.0f}% | {r['pct_regional']:.0f}% | "
-                       f"{r['pct_remoto']:.0f}% | {r['grupo']} | {TENHO_PT[r['tenho']]} |")
-        out.append("")
-
-    grupos = m.get("grupos") or []
-    if grupos:
-        # a tecnologia é o conteúdo; a família é só o agrupamento, e vai para o lado
-        out += ["### Onde está cada lacuna", "",
-                "Tecnologias que faltam, com o peso de cada uma. \"Pedem algo que falta\" é a fatia das "
-                "vagas acessíveis que cita ao menos uma delas; região e remoto comparam essa mesma lacuna.", "",
-                "| Estude | Família | Pedem algo que falta | Região | Remoto | Você já tem |",
-                "|---|---|---:|---:|---:|---|"]
-        for g in grupos:
-            if g["dominado"]:
-                estude, lac = "— você domina", "—"
-            else:
-                estude, lac = _itens_md(g["faltam_detalhe"]), f"{g['pct_lacuna']:.0f}%"
-            tem = ", ".join(t["nome"] for t in g["tem_detalhe"][:3]) or "—"
-            out.append(f"| {estude} | {g['grupo']} | {lac} | {g['lacuna_regional']:.0f}% | "
-                       f"{g['lacuna_remoto']:.0f}% | {tem} |")
-        out.append("")
-
-    out += ["<details><summary>Mapa completo das habilidades medidas</summary>", "",
-            "| Habilidade | Família | Presencial região | Remoto nacional | Onde pesa | Você |",
-            "|---|---|---:|---:|---|---|"]
-    for r in linhas:
-        out.append(f"| {r['nome']} | {r['grupo']} | {r['pct_regional']:.0f}% ({r['n_regional']}) | "
-                   f"{r['pct_remoto']:.0f}% ({r['n_remoto']}) | {ONDE_PT[r['onde']]} | "
-                   f"{TENHO_PT[r['tenho']]} |")
-    out += ["", "</details>", "",
-            f"Base: {am['regional']} vagas presenciais ou híbridas na região (de {am['regional_total']}) e "
-            f"{am['remoto']} remotas (de {am['remoto_total']}) com descrição legível. Habilidade com menos de "
-            f"{m['min_ocorrencias']} menções fica de fora. A marcação de domínio vem do `skills.yaml`.", ""]
+    cab = ["| # | Tecnologia | Vagas | % | Região | Remoto |", "|---:|---|---:|---:|---:|---:|"]
+    linha = lambda i, r: (f"| {i} | **{r['nome']}** | {r['n']} | {r['pct']:.0f}% | "
+                          f"{r['n_regional']} | {r['n_remoto']} |")
+    out = ["## Tecnologias mais pedidas", "",
+           f"Em quantas vagas cada tecnologia aparece, contando uma vez por vaga, sobre as "
+           f"**{am['com_descricao']}** vagas com descrição (de {am['total']} no escopo): "
+           f"{am['regional']} na região e {am['remoto']} remotas.", ""]
+    out += cab + [linha(i, r) for i, r in enumerate(ranking[:limite], 1)] + [""]
+    resto = ranking[limite:]
+    if resto:
+        out += [f"<details><summary>Mais {len(resto)} tecnologias citadas</summary>", ""]
+        out += cab + [linha(i, r) for i, r in enumerate(resto, limite + 1)]
+        out += ["", "</details>", ""]
     return out
 
 
@@ -291,25 +211,18 @@ HTML_TEMPLATE = r"""<title>Radar de Vagas SC</title>
   --accent:#0E6B70;--accent-ink:#FFFFFF;--accent-soft:#D9ECEC;--chip:#EAF0EF;
   --good:#2C7A4B;--good-soft:#DCEFE3;--warn:#B8741F;--warn-soft:#F6E9D2;--low:#8794A0;
   --shadow:0 1px 2px rgba(22,33,42,.06);
-  /* Séries dos gráficos: slots 1 e 2 da paleta categórica, em ordem fixa.
-     Validadas contra esta superfície (ΔE 33,6 visão normal, 24,7 protan). O par
-     anterior, teal com o verde de status, reprovava: ΔE 8,7, indistinguível
-     até para visão normal, e ainda confundia "remoto" com "positivo". */
-  --serie-reg:#2a78d6;--serie-rem:#eb6834;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0E1316;--surface:#151B20;--ink:#E3E8EB;--muted:#93A0A9;--line:#26313A;
     --accent:#4FB7BB;--accent-ink:#0B1214;--accent-soft:#143A3C;--chip:#1D262C;
     --good:#5DC087;--good-soft:#173627;--warn:#DBA050;--warn-soft:#3A2B12;--low:#6C7983;--shadow:none;
-    --serie-reg:#3987e5;--serie-rem:#d95926;  /* validadas contra #151B20 */
   }
 }
 :root[data-theme="dark"]{
   --bg:#0E1316;--surface:#151B20;--ink:#E3E8EB;--muted:#93A0A9;--line:#26313A;
   --accent:#4FB7BB;--accent-ink:#0B1214;--accent-soft:#143A3C;--chip:#1D262C;
   --good:#5DC087;--good-soft:#173627;--warn:#DBA050;--warn-soft:#3A2B12;--low:#6C7983;--shadow:none;
-  --serie-reg:#3987e5;--serie-rem:#d95926;
 }
 *{box-sizing:border-box}
 /* Sem isto o atributo `hidden` não esconde nada: o `display:flex` de `ol.jobs` é
@@ -362,80 +275,36 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
 .tabs{display:flex;gap:4px;margin:0 0 14px;border-bottom:1px solid var(--line)}
 .tab{border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);font:inherit;font-weight:600;padding:8px 14px;cursor:pointer;margin-bottom:-1px}
 .tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
-/* ---- aba "O que estudar" --------------------------------------------------
-   Hierarquia: o veredito é o único bloco com relevo (cartão). As listas são
-   linhas planas separadas por fio, como uma tabela, para não repetir caixa em
-   tudo. Em cada linha o título é a TECNOLOGIA; a família é só o sobretítulo. */
-.study{display:flex;flex-direction:column;gap:30px;max-width:900px}
-.eyebrow{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:999px;white-space:nowrap;text-transform:none}
-.chip.gap{background:var(--warn-soft);color:var(--warn)}
-.chip.tem{background:var(--good-soft);color:var(--good)}
-.chip.par{background:var(--chip);color:var(--ink)}
-
-.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
-.vcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px 15px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px}
-.vcard .top-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.items{display:flex;flex-wrap:wrap;gap:3px 16px;margin:0;padding:0;list-style:none}
-.items li{font-family:Sora,"Segoe UI",sans-serif;font-weight:600;line-height:1.3;white-space:nowrap}
-.items i{font-style:normal;font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:500;font-size:.76em;color:var(--muted);margin-left:6px;font-variant-numeric:tabular-nums}
-.vcard .items li{font-size:19px}
-.vcard p{margin:0;color:var(--muted);font-size:14px;max-width:60ch}
-.vcard p b{color:var(--ink);font-weight:600}
-.alerta{padding:11px 14px;border-radius:8px;background:var(--warn-soft);color:var(--warn);font-size:14px;max-width:80ch}
-
-.sec h2{font-family:Sora,"Segoe UI",sans-serif;font-size:17px;font-weight:600;margin:0;text-wrap:balance}
-.sec .lede{margin:4px 0 14px;color:var(--muted);font-size:14px;max-width:68ch}
-.legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 6px;font-size:12.5px;color:var(--muted)}
-.legend span{display:inline-flex;align-items:center;gap:7px}
-.legend span::before{content:"";width:12px;height:6px;border-radius:0 3px 3px 0;background:var(--c)}
-.legend .reg{--c:var(--serie-reg)}.legend .rem{--c:var(--serie-rem)}
-
+/* ---- aba "Tecnologias mais pedidas" ---------------------------------------
+   Um ranking e nada mais: a tecnologia é o título da linha, a contagem de vagas
+   é o número grande, e a barra (uma série só, na cor de destaque) dá a ordem de
+   grandeza. Linhas planas separadas por fio, como uma tabela. */
+.study{max-width:860px}
+.sec-head h2{font-family:Sora,"Segoe UI",sans-serif;font-size:18px;font-weight:600;margin:0;text-wrap:balance}
+.sec-head .lede{margin:4px 0 14px;color:var(--muted);font-size:14px;max-width:68ch}
+.sec-head .lede b{color:var(--ink);font-weight:600}
 .rank{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-/* Posição explícita em TODOS os filhos. Com o grid decidindo sozinho, itens
-   presos a uma linha (a estatística, que ocupa duas) são posicionados antes dos
-   livres e tomavam a coluna do meio, empurrando o nome da tecnologia para a
-   coluna estreita da direita, onde era cortado. */
-.rrow{display:grid;grid-template-columns:26px minmax(0,1fr) 104px;grid-template-rows:auto auto;column-gap:16px;row-gap:9px;padding:14px 4px 15px;border-bottom:1px solid var(--line)}
-.rrow .n{grid-column:1;grid-row:1/span 2;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);text-align:right;padding-top:2px;font-variant-numeric:tabular-nums}
-.rrow .body{grid-column:2;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:3px}
-.rrow .items li{font-size:16px;white-space:normal}
-.rrow .has{font-size:13px;color:var(--muted)}
-.rrow .has b{color:var(--ink);font-weight:600}
-.rrow .stat{grid-column:3;grid-row:1/span 2;text-align:right}
-.stat b{display:block;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:22px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
-.stat small{display:block;color:var(--muted);font-size:11.5px;line-height:1.3;margin-top:3px}
-.stat .chip{margin-top:6px}
-.rrow .bars{grid-column:2;grid-row:2;max-width:440px}
-
-/* barras: base reta na linha de zero, ponta arredondada no valor; valor em tinta
-   de texto (nunca na cor da série); rótulo direto em cada barra, e legenda acima */
-.bars{display:flex;flex-direction:column;gap:3px;min-width:0}
-.bar{display:grid;grid-template-columns:56px minmax(0,1fr) 36px;gap:8px;align-items:center;font-size:11.5px;color:var(--muted)}
-.bar .track{height:6px;background:var(--chip);border-radius:0 3px 3px 0}
-.bar .fill{display:block;height:100%;min-width:2px;border-radius:0 3px 3px 0;background:var(--c)}
-.bar.reg{--c:var(--serie-reg)}.bar.rem{--c:var(--serie-rem)}
-.bar .val{font-family:"JetBrains Mono",ui-monospace,monospace;text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
-
-.more{border-top:1px solid var(--line);padding-top:12px;margin:0;color:var(--muted);font-size:14px}
-.more summary{cursor:pointer;color:var(--ink);font-weight:600;list-style-position:outside}
-.more summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
-.more[open] summary{margin-bottom:12px}
-.more .rank{margin-top:4px}
-.more p{max-width:70ch;margin:0 0 10px}
-
+/* posição explícita em todos os filhos: com o grid decidindo sozinho, a
+   estatística, que ocupa duas linhas, tomava a coluna do nome */
+.rrow{display:grid;grid-template-columns:30px minmax(0,1fr) 112px;grid-template-rows:auto auto;column-gap:16px;row-gap:7px;padding:12px 4px 13px;border-bottom:1px solid var(--line)}
+.rrow .n{grid-column:1;grid-row:1/span 2;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);text-align:right;padding-top:3px;font-variant-numeric:tabular-nums}
+.rrow .body{grid-column:2;grid-row:1;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px}
+.rrow .nome{font-family:Sora,"Segoe UI",sans-serif;font-weight:600;font-size:16px;line-height:1.3}
+.rrow .grupo{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.rrow .split{font-size:12.5px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.rrow .track{grid-column:2;grid-row:2;align-self:center;height:6px;background:var(--chip);border-radius:0 3px 3px 0}
+.rrow .fill{display:block;height:100%;min-width:2px;border-radius:0 3px 3px 0;background:var(--accent)}
+.rrow .stat{grid-column:3;grid-row:1/span 2;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px}
+.stat b{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:21px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat small{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.ver{border:0;background:none;padding:2px 0;color:var(--accent);font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.mais{margin-top:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.skillchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 10px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
 @media (max-width:700px){
-  /* no celular vira uma coluna só: nome, estatística, barras */
-  .rrow{grid-template-columns:22px minmax(0,1fr);grid-template-rows:auto auto auto;row-gap:10px}
-  .rrow .n{grid-row:1}
-  .rrow .body{grid-column:2;grid-row:1}
-  .rrow .stat{grid-column:2;grid-row:2;text-align:left;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-  .rrow .bars{grid-column:2;grid-row:3}
-  .stat b{font-size:18px;display:inline}.stat small{display:inline;margin:0}.stat .chip{margin:0}
-  .rrow .bars{max-width:none}
-  .vcard .items li{font-size:17px}
+  .rrow{grid-template-columns:24px minmax(0,1fr) auto;column-gap:12px}
+  .rrow .split{margin-left:0;flex-basis:100%}
 }
-@media (prefers-reduced-motion:no-preference){.bar .fill{transition:width .35s ease-out}}
+@media (prefers-reduced-motion:no-preference){.rrow .fill{transition:width .35s ease-out}}
 .errors{margin:0 0 14px;padding:10px 12px;border-radius:6px;background:var(--warn-soft);color:var(--warn);font-size:13.5px}
 .foot{margin:28px 0 0;color:var(--muted);font-size:13px;max-width:80ch}
 @media (max-width:820px){
@@ -465,25 +334,25 @@ details ul{margin:6px 0 0 18px;padding:0}details p{margin:6px 0 0;max-width:70ch
     <fieldset><legend>Categoria</legend><div class="chips" id="cats"></div></fieldset>
     <fieldset><legend>Local</legend><select id="place" aria-label="Local"></select></fieldset>
     <fieldset><legend>Nível</legend><div class="chips" id="levels"></div></fieldset>
-    <fieldset><legend>Ordenar</legend>
+    <fieldset class="so-vagas"><legend>Ordenar</legend>
       <select id="sort" aria-label="Ordenar">
         <option value="score">Maior pontuação</option>
         <option value="date">Mais recentes</option>
         {% if ai_count %}<option value="fit">Avaliação da IA</option>{% endif %}
       </select>
     </fieldset>
-    <label class="toggle"><input type="checkbox" id="onlyNew"> Só vagas novas desta rodada</label>
+    <label class="toggle so-vagas"><input type="checkbox" id="onlyNew"> Só vagas novas desta rodada</label>
   </aside>
 
   <section aria-label="Vagas">
     {% if errors %}<div class="errors">Problemas nesta rodada: {% for k, v in errors.items() %}<b>{{ source_pt.get(k, k) }}</b> — {{ v }}{% if not loop.last %}; {% endif %}{% endfor %}</div>{% endif %}
-    {% if mercado.get('linhas') %}
+    {% if mercado.get('ranking') %}
     <div class="tabs" role="tablist">
       <button class="tab" id="tabVagas" role="tab" aria-selected="true">Vagas</button>
-      <button class="tab" id="tabMercado" role="tab" aria-selected="false">O que estudar</button>
+      <button class="tab" id="tabMercado" role="tab" aria-selected="false">Tecnologias mais pedidas</button>
     </div>
     {% endif %}
-    <div class="count"><span><b id="n">0</b> vagas</span><span id="hint"></span></div>
+    <div class="count"><span><b id="n">0</b> vagas <span id="skillf"></span></span><span id="hint"></span></div>
     <ol class="jobs" id="list"></ol>
     <div id="mercado" hidden></div>
     <p class="foot">Pontuação por regras explícitas: categoria no título +30 · júnior/estágio +25 · cidade-alvo +20 · remoto +12 · skills do currículo até +18 · sênior/liderança −30.{% if ai_count %} ★ = avaliação do Claude (0–10) sobre a descrição completa, aplicada às {{ ai_count }} melhores vagas novas de um total de {{ new_count }}.{% endif %}</p>
@@ -496,7 +365,9 @@ const LEVEL = {junior:"Júnior", pleno:"Pleno", senior:"Sênior", unknown:"Níve
 const WP = {remote:"Remoto", hybrid:"Híbrido", onsite:"Presencial", unknown:""};
 const SRC = {linkedin:"LinkedIn", indeed:"Indeed", gupy:"Gupy"};
 const cats = Object.entries(DATA.categorias).sort((a,b)=>a[1].prioridade-b[1].prioridade);
-const st = {q:"", cats:new Set(), levels:new Set(), place:"all", sort:"score", onlyNew: DATA.new_count>0 && DATA.new_count<DATA.total};
+const st = {q:"", cats:new Set(), levels:new Set(), place:"all", sort:"score", skill:null, onlyNew: DATA.new_count>0 && DATA.new_count<DATA.total};
+const HABS = (DATA.mercado || {}).catalogo || {};
+let abaMercado = false, verTodas = false;
 const $ = s => document.querySelector(s);
 const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm = s => String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
@@ -525,10 +396,14 @@ function buildFilters(){
   opt("remote", `Remoto (${DATA.jobs.filter(j=>!j.matched_city && j.workplace==="remote").length})`);
   $("#onlyNew").checked = st.onlyNew;
 }
-function filtered(){
+// `ranking`: o ranking usa os mesmos filtros da lista, menos "só novas" e o
+// filtro por tecnologia, que são da lista. Contar só as vagas novas de uma rodada
+// encolheria a amostra a poucas dezenas sem que isso ficasse evidente.
+function filtered(ranking = false){
   const q = norm(st.q).trim();
   let out = DATA.jobs.filter(j => {
-    if (st.onlyNew && !j.is_new) return false;
+    if (!ranking && st.onlyNew && !j.is_new) return false;
+    if (!ranking && st.skill && !(j.skills || []).includes(st.skill)) return false;
     if (st.cats.size && !st.cats.has(j.category)) return false;
     if (st.levels.size && !st.levels.has(j.seniority)) return false;
     if (st.place==="region" && !j.matched_city) return false;
@@ -569,161 +444,90 @@ function row(j){
   </li>`;
 }
 function render(){
+  if (abaMercado) return renderMercado();
   const out = filtered();
+  $("#skillf").innerHTML = st.skill
+    ? `<button type="button" class="skillchip" id="limpaSkill" title="Remover este filtro">que pedem ${esc((HABS[st.skill] || {}).nome || st.skill)} ✕</button>` : "";
   $("#n").textContent = out.length;
   $("#hint").textContent = st.onlyNew ? `de ${DATA.new_count} novas` : `de ${DATA.total} na janela`;
   $("#list").innerHTML = out.length ? out.map(row).join("") : `<li class="empty">Nenhuma vaga com esses filtros.</li>`;
 }
-// --- aba "O que estudar" ---------------------------------------------------
-const TENHO = {sim:["já domina","tem"], parcial:["usou em projeto","par"], nao:["lacuna","gap"]};
-const ONDE = {presencial:"pesa no presencial", remoto:"pesa no remoto",
-              ambos:"cobrado nos dois", indeterminado:"amostra insuficiente"};
-const pct = v => `${Math.round(v)}%`;
-
-// Uma barra por mercado. Rótulo direto ("região"/"remoto") em cada uma e legenda
-// no topo da seção: identidade nunca depende só da cor. A dica ao passar o mouse
-// traz a contagem absoluta, porque 29% de 24 vagas não pesa o mesmo que de 166.
-function barra(rotulo, v, n, total, classe){
-  const dica = `${rotulo === "região" ? "Região" : "Remoto"}: ${n} de ${total} vagas com descrição (${pct(v)})`;
-  return `<div class="bar ${classe}" title="${esc(dica)}" aria-label="${esc(dica)}" role="img">
-    <span>${rotulo}</span>
-    <span class="track"><i class="fill" style="width:${Math.min(100, v)}%"></i></span>
-    <span class="val">${pct(v)}</span></div>`;
-}
-function barras(reg, nReg, rem, nRem, am){
-  return `<div class="bars">${barra("região", reg, nReg, am.regional, "reg")}${barra("remoto", rem, nRem, am.remoto, "rem")}</div>`;
-}
-// Lista de tecnologias com a fatia de cada uma: é o conteúdo que o leitor procura,
-// então vira o título da linha, e a família desce para o sobretítulo.
-function itens(lista, max = 3){
-  return `<ul class="items">${lista.slice(0, max).map(x =>
-    `<li>${esc(x.nome)}<i>${pct(x.pct)}</i></li>`).join("")}</ul>`;
-}
-function linhaSkill(r, i, am){
-  const [rotulo, cls] = TENHO[r.tenho] || TENHO.nao;
-  return `<li class="rrow">
-    <span class="n">${i}</span>
-    <div class="body">
-      <span class="eyebrow">${esc(r.grupo)} · ${ONDE[r.onde] || ""}</span>
-      <ul class="items"><li>${esc(r.nome)}</li></ul>
-    </div>
-    <div class="stat"><b>${pct(r.pct_acessivel)}</b><small>das vagas<br>acessíveis</small>
-      <span class="chip ${cls}">${rotulo}</span></div>
-    ${barras(r.pct_regional, r.n_regional, r.pct_remoto, r.n_remoto, am)}
-  </li>`;
-}
-function linhaFamilia(g, i, am){
-  // família sem lacuna nenhuma: o título passa a ser o que ele já domina
-  const titulo = g.dominado ? itens(g.tem_detalhe) : itens(g.faltam_detalhe);
-  const tem = !g.dominado && g.tem_detalhe.length
-    ? `<span class="has">Você já tem <b>${g.tem_detalhe.slice(0, 3).map(t => esc(t.nome)).join(", ")}</b></span>` : "";
-  return `<li class="rrow">
-    <span class="n">${i}</span>
-    <div class="body">
-      <span class="eyebrow">${esc(g.grupo)}</span>
-      ${titulo}${tem}
-    </div>
-    <div class="stat">${g.dominado
-      ? `<span class="chip tem">você domina</span>`
-      : `<b>${pct(g.pct_lacuna)}</b><small>das vagas pedem<br>algo que falta</small>`}</div>
-    ${barras(g.lacuna_regional, g.n_lacuna_regional, g.lacuna_remoto, g.n_lacuna_remoto, am)}
-  </li>`;
-}
-function cartoes(v){
-  if (!v) return "";
-  const out = [];
-  const f = v.forte || {};
-  if ((f.itens || []).length){
-    const casa = f.casa
-      ? `<p>Na região pesam ainda mais <b>${f.casa.itens.map(t => esc(t.nome)).join(" e ")}</b>:
-           ${esc(f.casa.grupo)} aparece em ${pct(f.casa.pct_regional)} das vagas presenciais,
-           contra ${pct(f.casa.pct_remoto)} das remotas.</p>`
-      : `<p>Percentual é a fatia das vagas acessíveis que pedem cada item.</p>`;
-    out.push(`<article class="vcard">
-      <div class="top-row"><span class="eyebrow">Seu diferencial</span><span class="chip tem">já domina</span></div>
-      ${itens(f.itens, 4)}${casa}
-      <p>Não é para estudar. É para abrir o currículo e virar exemplo com número na entrevista.</p>
-    </article>`);
-  }
-  const p = v.pedagio;
-  if (p){
-    out.push(`<article class="vcard">
-      <div class="top-row"><span class="eyebrow">Seu pedágio para o remoto</span><span class="chip gap">lacuna</span></div>
-      ${itens(p.itens)}
-      <p>Em <b>${esc(p.grupo)}</b>, a fatia de vagas que pede algo que você não tem sobe de
-         ${pct(p.pct_regional)} na região para ${pct(p.pct_remoto)} no remoto. É a maior diferença entre os dois mercados.</p>
-    </article>`);
-  }
-  return out.length ? `<div class="verdict">${out.join("")}</div>` : "";
-}
-const legenda = `<div class="legend" aria-hidden="true">
-  <span class="reg">Região, presencial ou híbrido</span><span class="rem">Remoto nacional</span></div>`;
-
+// --- aba "Tecnologias mais pedidas" ----------------------------------------
+// Conta em quantas vagas cada tecnologia aparece, uma vez por vaga, sobre as
+// vagas que passam pelos filtros da barra lateral. Sem peso nem filtro de perfil:
+// é a contagem crua, ranqueada. As habilidades de cada vaga foram extraídas da
+// descrição completa no momento da coleta, não do trecho que vai no painel.
+const LIMITE = 30;
 function renderMercado(){
-  const m = DATA.mercado || {}, linhas = m.linhas || [];
-  if (!linhas.length) return;
-  const am = m.amostra || {};
-  const estudar = linhas.filter(r => r.prioridade > 0).slice(0, 6);
-  const familias = (m.grupos || []);
-  const aviso = am.comparavel === false
-    ? `<p class="alerta">A comparação entre os mercados está suspensa nesta rodada: o lado
-         ${am.regional <= am.remoto ? "regional" : "remoto"} tem só ${Math.min(am.regional, am.remoto)}
-         vagas com descrição, abaixo do mínimo de ${am.min_segmento}. Os números absolutos continuam valendo.</p>` : "";
-
+  const todas = filtered(true);
+  const base = todas.filter(j => j.description);
+  const cont = {}, reg = {}, rem = {};
+  for (const j of base) for (const k of new Set(j.skills || [])) {
+    if (!HABS[k]) continue;
+    cont[k] = (cont[k] || 0) + 1;
+    if (j.matched_city) reg[k] = (reg[k] || 0) + 1;
+    else if (j.workplace === "remote") rem[k] = (rem[k] || 0) + 1;
+  }
+  const rk = Object.keys(cont)
+    .map(k => ({k, nome: HABS[k].nome, grupo: HABS[k].grupo, n: cont[k], reg: reg[k] || 0, rem: rem[k] || 0}))
+    .sort((a, b) => b.n - a.n || a.nome.localeCompare(b.nome, "pt"));
+  const max = rk.length ? rk[0].n : 1;
+  const semDesc = todas.length - base.length;
+  const filtrando = st.q || st.cats.size || st.levels.size || st.place !== "all";
+  const mostrar = verTodas ? rk : rk.slice(0, LIMITE);
+  const linha = (r, i) => {
+    const pct = base.length ? Math.round(100 * r.n / base.length) : 0;
+    const dica = `${r.nome}: citada em ${r.n} de ${base.length} vagas com descrição (${pct}%)`;
+    return `<li class="rrow">
+      <span class="n">${i}</span>
+      <div class="body"><span class="nome">${esc(r.nome)}</span><span class="grupo">${esc(r.grupo)}</span>
+        ${st.place === "all" ? `<span class="split">região ${r.reg} · remoto ${r.rem}</span>` : ""}</div>
+      <span class="track" role="img" aria-label="${esc(dica)}" title="${esc(dica)}"><i class="fill" style="width:${100 * r.n / max}%"></i></span>
+      <div class="stat"><b>${r.n}</b><small>vagas · ${pct}%</small>
+        <button type="button" class="ver" data-k="${esc(r.k)}">ver vagas</button></div>
+    </li>`;
+  };
   $("#mercado").innerHTML = `<div class="study">
-    ${cartoes(DATA.veredito)}${aviso}
-
-    ${estudar.length ? `<section class="sec" aria-labelledby="h-estudar">
-      <h2 id="h-estudar">Estude primeiro</h2>
-      <p class="lede">Ordem por quanto cada item destrava vagas que você pode pegar hoje, júnior, pleno ou
-        sem nível declarado, descontando o que já domina.</p>
-      ${legenda}
-      <ol class="rank">${estudar.map((r, i) => linhaSkill(r, i + 1, am)).join("")}</ol>
-    </section>` : ""}
-
-    ${familias.length ? `<section class="sec" aria-labelledby="h-familia">
-      <h2 id="h-familia">Onde está cada lacuna</h2>
-      <p class="lede">Tecnologias que faltam, agrupadas por família e ordenadas pelo peso de cada uma. O número
-        à direita é a fatia das vagas acessíveis que pede ao menos uma delas. As barras comparam essa mesma
-        lacuna entre os dois mercados.</p>
-      ${legenda}
-      <ol class="rank">${familias.map((g, i) => linhaFamilia(g, i + 1, am)).join("")}</ol>
-    </section>` : ""}
-
-    <details class="more">
-      <summary>Ver as ${linhas.length} habilidades medidas</summary>
-      ${legenda}
-      <ol class="rank">${linhas.map((r, i) => linhaSkill(r, i + 1, am)).join("")}</ol>
-    </details>
-
-    <details class="more">
-      <summary>Como ler estes números</summary>
-      <p>Base desta rodada: <b>${am.regional}</b> vagas presenciais ou híbridas na região, de ${am.regional_total},
-        e <b>${am.remoto}</b> remotas, de ${am.remoto_total}, com descrição legível. Os percentuais consideram só
-        vagas com descrição, e habilidade com menos de ${m.min_ocorrencias} menções fica de fora por ser ruído.</p>
-      <p>A diferença entre os mercados mistura duas causas. As vagas remotas vêm de empresas de tecnologia e
-        tendem a ser mais sêniores; as regionais incluem cargos de ERP que pedem menos stack. Parte do contraste é
-        o tipo de empresa, não o regime de trabalho. Vale como direção, não como medida exata.</p>
-      <p>A marcação "já domina", "usou em projeto" e "lacuna" vem do arquivo <code>skills.yaml</code>. Atualize
-        conforme estudar e a prioridade se recalcula na rodada seguinte.</p>
-    </details>
+    <header class="sec-head">
+      <h2>Tecnologias mais pedidas</h2>
+      <p class="lede">Em quantas vagas cada tecnologia aparece, contando uma vez por vaga. Base:
+        <b>${base.length}</b> vagas com descrição${filtrando ? ", com os filtros ao lado" : ""}${semDesc
+        ? `; ${semDesc} sem descrição ficam de fora` : ""}.</p>
+    </header>
+    ${rk.length
+      ? `<ol class="rank">${mostrar.map((r, i) => linha(r, i + 1)).join("")}</ol>
+         ${rk.length > mostrar.length ? `<button type="button" class="mais" id="verTodas">Mostrar todas as ${rk.length}</button>` : ""}`
+      : `<p class="empty">Nenhuma vaga com descrição nesses filtros.</p>`}
   </div>`;
 }
 function aba(mercado){
   const tv = $("#tabVagas"), tm = $("#tabMercado");
   if (!tv) return;
+  abaMercado = mercado;
   tv.setAttribute("aria-selected", String(!mercado));
   tm.setAttribute("aria-selected", String(mercado));
   $("#list").hidden = mercado;
   $("#mercado").hidden = !mercado;
   document.querySelector(".count").hidden = mercado;
-  document.querySelector(".filters").style.visibility = mercado ? "hidden" : "";
+  // ordenação e "só novas" não se aplicam ao ranking; os demais filtros sim
+  document.querySelectorAll(".so-vagas").forEach(el => el.hidden = mercado);
+  render();
 }
 if ($("#tabVagas")){
   $("#tabVagas").addEventListener("click", () => aba(false));
   $("#tabMercado").addEventListener("click", () => aba(true));
-  renderMercado();
+  $("#mercado").addEventListener("click", e => {
+    const ver = e.target.closest(".ver");
+    if (ver){
+      // da contagem para as vagas: mesma base, agora filtrada pela tecnologia
+      st.skill = ver.dataset.k; st.onlyNew = false; $("#onlyNew").checked = false;
+      aba(false); window.scrollTo({top: 0});
+    } else if (e.target.id === "verTodas"){ verTodas = true; renderMercado(); }
+  });
 }
+document.querySelector(".count").addEventListener("click", e => {
+  if (e.target.id === "limpaSkill"){ st.skill = null; render(); }
+});
 
 $("#q").addEventListener("input", e => { st.q = e.target.value; render(); });
 $("#place").addEventListener("change", e => { st.place = e.target.value; render(); });
@@ -738,8 +542,10 @@ def render_html(ctx: dict) -> str:
     env_ = Environment(loader=BaseLoader(), autoescape=True)
     tpl = env_.from_string(HTML_TEMPLATE)
     data = {k: ctx[k] for k in ("jobs", "total", "new_count", "categorias", "cidades", "run_date_br")}
+    # o painel só mostra os primeiros 600 caracteres; a descrição completa fica no
+    # JSON da rodada, que é de onde `render` reextrai as tecnologias
+    data["jobs"] = [{**j, "description": (j.get("description") or "")[:1200]} for j in ctx["jobs"]]
     data["mercado"] = ctx.get("mercado") or {}
-    data["veredito"] = skills.veredito(data["mercado"]) if data["mercado"].get("linhas") else None
     data_json = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c").replace("\u2028", "\\u2028")
     return tpl.render(**ctx, source_pt=SOURCE_PT, data_json=data_json)
 
@@ -777,11 +583,23 @@ def load_context(json_path: Path) -> dict:
     ctx.setdefault("total", len(jobs))
     ctx.setdefault("new_count", sum(1 for j in jobs if j.get("is_new")))
     ctx.setdefault("errors", {})
-    # o mapa de mercado é recalculado, e não lido do arquivo: as habilidades por vaga
-    # já estão gravadas, então `render` reflete a versão atual da análise sem precisar
-    # coletar tudo de novo. É o que permite iterar na metodologia sobre dados reais.
-    if any(j.get("skills") for j in jobs):
-        ctx["mercado"] = skills.analyze(jobs, skills.load_taxonomy(ROOT))
+    # O ranking é recalculado, e não lido do arquivo, para refletir a taxonomia
+    # atual sem coletar tudo de novo: as tecnologias de cada vaga são reextraídas da
+    # descrição gravada, que é a completa desde `descricao_completa`.
+    # JSON anterior a isso guarda só 1200 caracteres; nele, soma-se o que a coleta
+    # gravou e ainda existe na taxonomia, para não perder o que vinha depois do corte.
+    # É aproximado (algumas chaves antigas tinham sentido mais largo) e só vale
+    # para rodadas antigas.
+    tax = skills.load_taxonomy(ROOT)
+    if tax and any(j.get("description") or j.get("skills") for j in jobs):
+        legado = not ctx.get("descricao_completa")
+        validas = set((tax.get("habilidades") or {}))
+        for j in jobs:
+            novas = (skills.extract(f"{j.get('title', '')}\n{j['description']}", tax)
+                     if j.get("description") else [])
+            antigas = [k for k in (j.get("skills") or []) if k in validas] if legado else []
+            j["skills"] = list(dict.fromkeys(novas + antigas))
+        ctx["mercado"] = skills.analyze(jobs, tax)
     ctx.setdefault("mercado", {})
     ctx.setdefault("source_counts", {})
     ctx.setdefault("report_url", "")

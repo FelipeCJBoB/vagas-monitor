@@ -92,51 +92,46 @@ def test_render_de_relatorio_antigo_nao_quebra(tmp_path):
     assert "Radar de Vagas" in report.render_html(ctx)
 
 
-# --- seção "O que o mercado cobra" ------------------------------------------
-def _mercado_ctx(comparavel=True):
-    """Contexto com mapa de mercado já calculado, para exercitar a renderização."""
+# --- ranking de tecnologias -------------------------------------------------
+TAX = {"habilidades": {
+    "sap": {"nome": "SAP", "grupo": "Corporativo", "termos": ["sap"]},
+    "aws": {"nome": "AWS", "grupo": "Nuvem", "termos": ["aws"]},
+    "docker": {"nome": "Docker", "grupo": "Nuvem", "termos": ["docker"]},
+}}
+
+
+def _mercado_ctx():
+    """Contexto com o ranking já calculado, para exercitar a renderização."""
     from vagas_monitor import skills
-    tax = {"habilidades": {
-        "sap": {"nome": "SAP", "grupo": "Corporativo", "tenho": "sim", "termos": ["sap"]},
-        "aws": {"nome": "AWS", "grupo": "Nuvem", "tenho": "nao", "termos": ["aws"]},
-        "docker": {"nome": "Docker", "grupo": "Nuvem", "tenho": "parcial", "termos": ["docker"]},
-    }, "min_ocorrencias": 2}
-    n_reg = 12 if comparavel else 3
-    jl = [{"matched_city": "Itajaí", "workplace": "hybrid", "seniority": "junior",
-           "description": "d", "skills": ["sap"]} for _ in range(n_reg)]
-    jl += [{"matched_city": None, "workplace": "remote", "seniority": "junior",
-            "description": "d", "skills": ["aws", "docker"]} for _ in range(12)]
+    jl = [{"matched_city": "Itajaí", "workplace": "hybrid", "description": "d", "skills": ["sap"]}
+          for _ in range(3)]
+    jl += [{"matched_city": None, "workplace": "remote", "description": "d", "skills": ["aws", "docker"]}
+           for _ in range(12)]
+    jl += [{"matched_city": None, "workplace": "remote", "description": "d", "skills": ["aws"]}
+           for _ in range(2)]
     ctx = _ctx([_job()])
-    ctx["mercado"] = skills.analyze(jl, tax)
+    ctx["mercado"] = skills.analyze(jl, TAX)
     return ctx
 
 
-def test_secao_de_mercado_no_markdown():
+def test_ranking_no_markdown_ordena_pela_contagem():
     md = report.render_markdown(_mercado_ctx())
-    assert "## O que o mercado cobra" in md
-    assert "### Estude primeiro" in md and "### Onde está cada lacuna" in md
-    assert "Mapa completo" in md  # recolhido em <details>, mas presente
-    assert "AWS" in md and "SAP" in md
+    assert "## Tecnologias mais pedidas" in md
+    sec = md.split("## Tecnologias mais pedidas")[1]
+    assert sec.index("**AWS** | 14") < sec.index("**Docker** | 12") < sec.index("**SAP** | 3")
 
 
-def test_prioridade_ordena_lacuna_antes_do_que_ja_domina():
+def test_markdown_nao_fala_em_lacuna_nem_perfil():
     md = report.render_markdown(_mercado_ctx())
-    prio = md.split("### Estude primeiro")[1].split("### Onde está cada lacuna")[0]
-    assert "AWS" in prio and "SAP" not in prio       # SAP já é domínio dele
-    assert prio.index("AWS") < prio.index("Docker")  # lacuna antes de parcial
+    for termo in ("lacuna", "já domina", "Estude primeiro", "pedágio", "acessíveis"):
+        assert termo not in md, termo
 
 
-def test_amostra_pequena_vira_aviso_explicito():
-    md = report.render_markdown(_mercado_ctx(comparavel=False))
-    assert "Comparação entre os dois mercados suspensa" in md
-    assert "amostra insuficiente" in md
-
-
-def test_painel_ganha_aba_de_mercado():
+def test_painel_ganha_aba_de_ranking():
     html = report.render_html(_mercado_ctx())
-    assert 'id="tabMercado"' in html and "O que estudar" in html
+    assert 'id="tabMercado"' in html and "Tecnologias mais pedidas" in html
     assert "renderMercado" in html
-    assert '"mercado"' in html  # os dados vão no payload
+    assert '"catalogo"' in html  # o painel reconta com os filtros da barra lateral
 
 
 def test_sem_mercado_o_painel_nao_mostra_aba():
@@ -144,61 +139,33 @@ def test_sem_mercado_o_painel_nao_mostra_aba():
     assert 'id="tabMercado"' not in html
 
 
-def test_telegram_resume_o_que_estudar():
+def test_painel_corta_a_descricao_mas_o_json_guarda_inteira(tmp_path, monkeypatch):
+    j = _job()
+    j.description = "x" * 3000 + " AWS"
+    ctx = _ctx([j])
+    assert ctx["jobs"][0]["description"].endswith("AWS")
+    html = report.render_html(ctx)
+    assert "x" * 1300 not in html
+
+
+def test_telegram_resume_as_mais_pedidas():
     from vagas_monitor.notify import telegram
     ctx = _mercado_ctx()
     ctx.update({"jobs": [], "new_count": 0, "total": 0, "run_date_br": "13/09/2026", "report_url": ""})
     msg = telegram.build_messages(ctx)[0]
-    assert "Estudar primeiro" in msg and "AWS" in msg
+    assert "Mais pedidas" in msg and "<b>AWS</b> 14" in msg
     assert len(msg) <= 4096
 
 
-def test_email_resume_o_que_estudar():
+def test_email_resume_as_mais_pedidas():
     from vagas_monitor.notify import email_
     bloco = email_.build_mercado_html(_mercado_ctx())
-    assert "O que estudar primeiro" in bloco and "AWS" in bloco
+    assert "Tecnologias mais pedidas" in bloco and "AWS" in bloco
     assert "<script" not in bloco
 
 
-def test_veredito_nomeia_tecnologias_e_nao_familias():
-    """O pedido original: não "Nuvem", mas QUAL tecnologia de nuvem.
-
-    As duas conclusões que respondem "o que estudar" têm de trazer os itens
-    concretos no título. A família aparece só como contexto na frase seguinte.
-    """
-    md = report.render_markdown(_mercado_ctx())
-    pedagio = next(l for l in md.splitlines() if "Seu pedágio para o remoto" in l)
-    titulo = pedagio.split(".")[0]                   # a parte antes do primeiro ponto
-    assert "**AWS**" in titulo and "Nuvem" not in titulo
-    diferencial = next(l for l in md.splitlines() if "Seu diferencial" in l)
-    assert "**SAP**" in diferencial.split(".")[0]
-
-
-def test_tabela_de_lacunas_poe_a_tecnologia_na_primeira_coluna():
-    md = report.render_markdown(_mercado_ctx())
-    tabela = md.split("### Onde está cada lacuna")[1].split("<details>")[0]
-    cabecalho = next(l for l in tabela.splitlines() if l.startswith("| "))
-    assert cabecalho.startswith("| Estude | Família")  # tecnologia antes da família
-    linha_nuvem = next(l for l in tabela.splitlines() if "| Nuvem |" in l)
-    assert linha_nuvem.startswith("| **AWS**") or linha_nuvem.startswith("| **Docker**")
-
-
-def test_painel_usa_as_cores_de_serie_validadas():
-    """Teal com o verde de status reprovava no validador (ΔE 8,7) e confundia
-    "remoto" com "positivo". As séries usam tokens próprios."""
-    html = report.render_html(_mercado_ctx())
-    assert "--serie-reg:#2a78d6" in html and "--serie-rem:#eb6834" in html
-    assert ".bar.rem .fill{background:var(--good)}" not in html
-    assert "veredito" in html and "linhaFamilia" in html
-
-
-def test_ressalva_metodologica_sempre_presente():
-    md = report.render_markdown(_mercado_ctx())
-    assert "mistura duas causas" in md
-
-
-def test_render_recalcula_o_mapa_a_partir_das_skills_gravadas(tmp_path):
-    """Permite iterar na análise sobre dados reais sem recoletar 12 minutos de vagas."""
+def test_render_reextrai_da_descricao_com_a_taxonomia_atual(tmp_path):
+    """Mudou a taxonomia? `render` refaz o ranking sem recoletar as vagas."""
     import json
     p = tmp_path / "2026-09-13.json"
     p.write_text(json.dumps({
@@ -208,13 +175,34 @@ def test_render_recalcula_o_mapa_a_partir_das_skills_gravadas(tmp_path):
         "jobs": [{"title": "Dev", "company": "X", "url": "u", "source": "gupy", "score": 70,
                   "is_new": True, "seniority": "junior", "category": None, "matched_city": None,
                   "workplace": "remote", "location": "", "date_posted": None, "age_days": None,
-                  "description": "python e aws", "reasons": [], "fit": None, "fit_note": "",
-                  "tags": [], "skills": ["python", "aws"]} for _ in range(12)],
-        "mercado": {},  # gravado por uma versão anterior, sem o corte por família
+                  "description": "Stack com Python, React e pgvector", "reasons": [], "fit": None,
+                  "fit_note": "", "tags": [],
+                  # gravado por uma versão anterior: chave que não existe mais e uma
+                  # tecnologia que só aparecia depois do corte de 1200 caracteres
+                  "skills": ["frontend", "aws"]} for _ in range(3)],
+        "mercado": {},
     }, ensure_ascii=False), encoding="utf-8")
     ctx = report.load_context(p)
-    assert ctx["mercado"]["linhas"], "o mapa tem de ser recalculado, não lido do arquivo"
-    assert ctx["mercado"]["grupos"]
+    chaves = set(ctx["jobs"][0]["skills"])
+    assert {"python", "react", "pgvector", "aws"} <= chaves
+    assert "frontend" not in chaves
+    assert {r["nome"] for r in ctx["mercado"]["ranking"]} >= {"Python", "React", "pgvector", "AWS"}
+
+
+def test_json_com_descricao_completa_reextrai_so_da_descricao(tmp_path):
+    """Com a descrição inteira gravada, a chave antiga não tem por que sobreviver."""
+    import json
+    p = tmp_path / "2026-09-18.json"
+    p.write_text(json.dumps({
+        "run_date": "2026-09-18", "run_date_br": "18/09/2026", "run_time": "08:30",
+        "lookback_days": 7, "cidades": [], "categorias": {}, "descricao_completa": True,
+        "jobs": [{"title": "Dev", "company": "X", "url": "u", "source": "gupy", "score": 70,
+                  "is_new": True, "seniority": "junior", "category": None, "matched_city": None,
+                  "workplace": "remote", "location": "", "date_posted": None, "age_days": None,
+                  "description": "Python", "reasons": [], "fit": None, "fit_note": "", "tags": [],
+                  "skills": ["aws"]}],
+    }, ensure_ascii=False), encoding="utf-8")
+    assert report.load_context(p)["jobs"][0]["skills"] == ["python"]
 
 
 def test_hidden_esconde_mesmo_com_display_de_autor():

@@ -99,37 +99,27 @@ Ele agora aborta se houver rebase pendente ou alteração não commitada em `rep
 Ative a verificação em 2 etapas e gere uma **senha de app** em
 <https://myaccount.google.com/apppasswords>. Preencha `SMTP_USER`, `SMTP_PASSWORD` e `EMAIL_TO` no `.env`.
 
-## O que o mercado cobra
+## Tecnologias mais pedidas
 
-Cada rodada lê as descrições das vagas e monta um mapa de habilidades separando
-**presencial ou híbrido na região** de **remoto nacional**. Ele sai em todos os canais:
-tabela completa no Markdown e no painel, resumo das três prioridades no Telegram, seis
-no e-mail.
+Cada rodada conta **em quantas vagas cada tecnologia aparece**, uma vez por vaga, e
+ranqueia pela contagem. Sem peso nem filtro de perfil: é a demanda crua do mercado. Sai
+em todos os canais: tabela no Markdown, aba no painel, as dez primeiras no Telegram e
+quinze no e-mail.
 
-A separação existe porque os dois não são o mesmo mercado com endereços diferentes. A
-região é indústria com ERP e BI consolidados; o remoto é empresa de tecnologia com stack
-de nuvem. Uma lista média dos dois não descreve nenhum dos dois, e leva a estudar a coisa
-errada.
+- **Extração no momento da coleta**, sobre a descrição completa de cada vaga. As do
+  LinkedIn são buscadas uma a uma, porque o card da busca não traz descrição.
+- **Uma tecnologia por item** no `skills.yaml`: React, PostgreSQL, RAG, pgvector, e não
+  "Front-end" ou "Banco de dados". Os termos de um item são só grafias da mesma coisa;
+  pandas não conta como Python.
+- **Termo com `=` na frente respeita maiúsculas**, para nomes que também são palavras
+  comuns em inglês: `=React` não casa com "react quickly", `=SOLID` não casa com "solid
+  experience".
+- **No painel, o ranking obedece aos filtros da barra lateral** (categoria, local, nível,
+  busca). "Ver vagas" em qualquer linha abre a lista filtrada por aquela tecnologia.
+- Só vagas com descrição entram na base; o painel diz quantas ficaram de fora.
 
-A ordem de prioridade não é a frequência bruta. É **quanto cada habilidade destrava de
-vagas que você pode pegar hoje**, ou seja, júnior, pleno ou sem nível declarado,
-descontando o que já domina. O que você já sabe aparece no mapa marcado como domínio,
-para lembrar de destacar no currículo, mas fica fora da lista de estudo.
-
-Três salvaguardas contra ler tendência onde só há ruído:
-
-| Guarda | Efeito |
-|---|---|
-| `min_ocorrencias` no `skills.yaml` | habilidade com menos de 4 menções não entra |
-| mínimo de 10 vagas por segmento | abaixo disso a coluna "onde pesa" é neutralizada e o relatório avisa |
-| só vagas com descrição no denominador | evita que toda habilidade pareça mais rara do que é |
-
-A comparação entre os segmentos mistura duas causas: vagas remotas vêm de empresas de
-tecnologia e tendem a ser mais sêniores, então parte da diferença é o tipo de empresa, não
-o regime de trabalho. O relatório informa o tamanho da amostra ao lado de cada número.
-
-Edite o campo `tenho` do `skills.yaml` conforme for estudando (`sim`, `parcial`, `nao`) e a
-prioridade se recalcula sozinha na rodada seguinte.
+Mudou o `skills.yaml`? `python -m vagas_monitor render` refaz o ranking da última rodada
+sem coletar de novo, porque o JSON guarda a descrição inteira.
 
 ## Avaliação por IA (opcional)
 

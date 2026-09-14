@@ -28,18 +28,15 @@ def _place(j: dict) -> str:
     return j.get("location") or "local n/i"
 
 
-def _bloco_mercado(ctx: dict, top: int = 3) -> str:
-    """Resumo do que estudar. Curto de propósito: a mensagem é lida no celular."""
-    linhas = (ctx.get("mercado") or {}).get("linhas") or []
-    faltam = [r for r in linhas if r["prioridade"] > 0][:top]
-    if not faltam:
+def _bloco_mercado(ctx: dict, top: int = 10) -> str:
+    """As tecnologias mais pedidas, em uma linha. Curto: a mensagem é lida no celular."""
+    m = ctx.get("mercado") or {}
+    rk = (m.get("ranking") or [])[:top]
+    if not rk:
         return ""
-    itens = "\n".join(
-        f"   {i}. <b>{esc(r['nome'])}</b> — {r['pct_acessivel']:.0f}% das vagas acessíveis"
-        + (" · só no remoto" if r["onde"] == "remoto" else
-           " · só na região" if r["onde"] == "presencial" else "")
-        for i, r in enumerate(faltam, 1))
-    return f"\n\n📚 <b>Estudar primeiro</b>\n{itens}"
+    n = (m.get("amostra") or {}).get("com_descricao", 0)
+    itens = " · ".join(f"<b>{esc(r['nome'])}</b> {r['n']}" for r in rk)
+    return f"\n\n📚 <b>Mais pedidas</b> (vagas que citam, de {n})\n{itens}"
 
 
 def build_messages(ctx: dict, top_n: int = 15) -> list[str]:

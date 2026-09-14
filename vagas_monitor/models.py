@@ -7,6 +7,9 @@ from typing import Optional
 
 from .text import normalize
 
+# teto de segurança; as fontes entregam bem menos que isso
+MAX_DESCRICAO = 12000
+
 
 @dataclass
 class Job:
@@ -65,5 +68,7 @@ class Job:
     def to_dict(self) -> dict:
         d = asdict(self)
         d["id"] = self.id
-        d["description"] = (self.description or "")[:1200]
+        # inteira no JSON da rodada: é dela que `render` reextrai as tecnologias
+        # quando a taxonomia muda. O painel corta para 1200 ao montar a página.
+        d["description"] = (self.description or "")[:MAX_DESCRICAO]
         return d
