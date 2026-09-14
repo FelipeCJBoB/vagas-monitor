@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-13T18:39:13",
+ "last_run": "2026-09-13T22:32:15",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -3642,7 +3642,7 @@
    "source": "indeed",
    "score": 24,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-13"
   },
   "1e21530693a86510": {
    "key": "senior frontend engineers (react/react native)|cleo",
@@ -6005,6 +6005,82 @@
    "url": "https://br.indeed.com/viewjob?jk=696c5b2fb0629ce4",
    "source": "indeed",
    "score": 0,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "2405288ab6c2e546": {
+   "key": "desenvolvedor backend e integracoes|instituto experience",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor Backend e Integrações",
+   "company": "Instituto Experience",
+   "url": "https://br.indeed.com/viewjob?jk=baf54bd55ea14d22",
+   "source": "indeed",
+   "score": 68,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "a54b7013114ff253": {
+   "key": "desenvolvedor de sistemas fullstack | java e react | credito 1 | csc (remoto)|cresol",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12425499"
+   ],
+   "title": "Desenvolvedor de Sistemas Fullstack | Java e React | Crédito 1 | CSC (remoto)",
+   "company": "Cresol",
+   "url": "https://br.indeed.com/viewjob?jk=0403d402281daae8",
+   "source": "indeed",
+   "score": 65,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "e6ab0b5e7af3d179": {
+   "key": "analista de negocios e projetos pleno | business analyst|smarthis",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12474129"
+   ],
+   "title": "Analista de Negócios e Projetos Pleno | Business Analyst",
+   "company": "Smarthis",
+   "url": "https://br.indeed.com/viewjob?jk=bcd318cfd7aa79d9",
+   "source": "indeed",
+   "score": 57,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "bd6c13aa7ca3250d": {
+   "key": "analista funcional de sap|mazzatech",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista funcional de SAP",
+   "company": "mazzatech",
+   "url": "https://br.linkedin.com/jobs/view/analista-funcional-de-sap-at-mazzatech-4465481393",
+   "source": "linkedin",
+   "score": 53,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "50466afcab251507": {
+   "key": "senior full stack engineer | java & angular|ey",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Full Stack Engineer | Java & Angular",
+   "company": "EY",
+   "url": "https://br.indeed.com/viewjob?jk=3ebc9a85d6095ee7",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13"
+  },
+  "b7675cff0be90260": {
+   "key": "senior full-stack developer – java & integrations|launchpad technologies",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Full-Stack Developer – Java & Integrations",
+   "company": "Launchpad Technologies",
+   "url": "https://br.indeed.com/viewjob?jk=161e7d1748318ab1",
+   "source": "indeed",
+   "score": 27,
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-13"
   }
