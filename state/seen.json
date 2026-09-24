@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-19T11:17:56",
+ "last_run": "2026-09-24T12:46:55",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -89,7 +89,7 @@
    "source": "linkedin",
    "score": 88,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-05"
+   "last_seen": "2026-09-24"
   },
   "920c34320fc3731d": {
    "key": "pessoa desenvolvedora full stack junior com foco em front-end e cloud azure (remoto)|viceri seidor",
@@ -439,7 +439,7 @@
    "source": "linkedin",
    "score": 72,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-05"
+   "last_seen": "2026-09-24"
   },
   "d5765acb5329c5af": {
    "key": "engenheiro de integracao de dados pl - brasil|prophix latam",
@@ -699,7 +699,7 @@
    "source": "linkedin",
    "score": 67,
    "first_seen": "2026-09-05",
-   "last_seen": "2026-09-05"
+   "last_seen": "2026-09-24"
   },
   "4f5c6a856256f3cb": {
    "key": "desenvolvedor pleno (full-stack)|quality digital",
@@ -6142,7 +6142,7 @@
    "source": "linkedin",
    "score": 90,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "bcaef415b2c22ccb": {
    "key": "estagiario em moda e inteligencia artificial|falaboss",
@@ -6166,7 +6166,7 @@
    "source": "indeed",
    "score": 87,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "27a841ede3f56a11": {
    "key": "vaga para desenvolvedor shopify|tittanium inc",
@@ -6574,7 +6574,7 @@
    "source": "linkedin",
    "score": 67,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "c92a02d4c7c14097": {
    "key": "bi data engineering pleno|stefanini latam",
@@ -6616,7 +6616,7 @@
    "source": "gupy",
    "score": 65,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "aee9c12a3534288c": {
    "key": "desenvolvedor/desenvolvedora java full stack|capgemini",
@@ -6644,7 +6644,7 @@
    "source": "gupy",
    "score": 65,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "91dd8e5d8352d61b": {
    "key": "data architect|stefanini latam",
@@ -6820,7 +6820,7 @@
    "source": "linkedin",
    "score": 53,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "c3050969d661a4e8": {
    "key": "devops salesforce|stefanini latam",
@@ -6834,7 +6834,7 @@
    "source": "gupy",
    "score": 52,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "7e608670ffe7ae8b": {
    "key": "especialista em ia e orquestracao de agentes - rha3890|spread tecnologia",
@@ -6898,7 +6898,7 @@
    "source": "linkedin",
    "score": 48,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "c6e0e27c95a85be7": {
    "key": "analista de ti sr. - desenvolvedor senior|tupy",
@@ -7004,7 +7004,7 @@
    "source": "gupy",
    "score": 45,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "25e41dcb0262a824": {
    "key": "[wg] analista desenvolvedor backend senior|iblue",
@@ -7210,7 +7210,7 @@
    "source": "gupy",
    "score": 36,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "67e64eab338a30eb": {
    "key": "especialista i em dados financeiros - credito pj|grupo boticario",
@@ -7238,7 +7238,7 @@
    "source": "gupy",
    "score": 36,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "873b45d1fab2949a": {
    "key": "analista de bi senior (corretora de seguros)|unicred",
@@ -7252,7 +7252,7 @@
    "source": "gupy",
    "score": 36,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "d6e100c5f4c1d4e6": {
    "key": "gestor(a) de pcp - solucoes em aco|jmf servicos administrativos e projetos ltda",
@@ -7314,7 +7314,7 @@
    "source": "gupy",
    "score": 33,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "b64fdf693f60cec0": {
    "key": "pessoa desenvolvedora java e angular senior|amcom",
@@ -7340,7 +7340,7 @@
    "source": "gupy",
    "score": 33,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "601e301419ae43ed": {
    "key": "[tech] engenharia de desenvolvimento de software senior - fluig | ti|totvs",
@@ -7458,7 +7458,7 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "8a63f8ea286e06b3": {
    "key": "analista de governanca de dados senior|grupo sysmap",
@@ -7486,7 +7486,7 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "e131002d0d022edb": {
    "key": "senior business analyst with ai experience|helpware",
@@ -7664,7 +7664,7 @@
    "source": "gupy",
    "score": 20,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "c7d1f0d359b997f4": {
    "key": "especialista em modelagem - prevencao a fraudes|magnetis",
@@ -7724,7 +7724,7 @@
    "source": "linkedin",
    "score": 15,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "2653fd1364705e48": {
    "key": "product manager especialista i | plataforma de agentes|grupo boticario",
@@ -7886,7 +7886,7 @@
    "source": "gupy",
    "score": 0,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "88c233556479cb8f": {
    "key": "desenvolvedor iii- foco em inteligencia artificial|cooperativa central ailos",
@@ -7912,7 +7912,7 @@
    "source": "gupy",
    "score": 76,
    "first_seen": "2026-09-19",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-24"
   },
   "7e7bfd2026639210": {
    "key": "business intelligence analyst - remote|indi staffing services",
@@ -7999,6 +7999,2372 @@
    "score": 14,
    "first_seen": "2026-09-19",
    "last_seen": "2026-09-19"
+  },
+  "ae6094bcb12a88d7": {
+   "key": "desenvolvedor de automacao e ia jr|libbs farmaceutica ltda",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12569824"
+   ],
+   "title": "Desenvolvedor de Automação e IA Jr",
+   "company": "Libbs Farmacêutica Ltda",
+   "url": "https://br.indeed.com/viewjob?jk=7d3c40efbed276ad",
+   "source": "indeed",
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "511502e5490ca509": {
+   "key": "desenvolvedor(a) de automacoes e ia — n8n|the forge ai",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor(a) de Automações e IA — n8n",
+   "company": "The Forge Ai",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-de-automa%C3%A7%C3%B5es-e-ia-%E2%80%94-n8n-at-the-forge-ai-4469341434",
+   "source": "linkedin",
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3fe2b36ce04c4a5c": {
+   "key": "desenvolvedor full stack (php)|clinica agil",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor Full Stack (PHP)",
+   "company": "Clínica Ágil",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-full-stack-php-at-cl%C3%ADnica-%C3%A1gil-4469759255",
+   "source": "linkedin",
+   "score": 100,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "48a20fe4e512b6f5": {
+   "key": "estagiario de dados|grupo unimed santa catarina",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "ESTAGIÁRIO DE DADOS",
+   "company": "Grupo Unimed Santa Catarina",
+   "url": "https://br.linkedin.com/jobs/view/estagi%C3%A1rio-de-dados-at-grupo-unimed-santa-catarina-4469070364",
+   "source": "linkedin",
+   "score": 99,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d1f51676413fd73a": {
+   "key": "r&d intern – engineering automation & ai (brazil)|aiesec en peru",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "R&D Intern – Engineering Automation & AI (Brazil)",
+   "company": "AIESEC en Perú",
+   "url": "https://br.linkedin.com/jobs/view/r-d-intern-%E2%80%93-engineering-automation-ai-brazil-at-aiesec-en-per%C3%BA-4469371670",
+   "source": "linkedin",
+   "score": 97,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "00e7740fba2bb4ef": {
+   "key": "engenheiro(a) de machine learning junior|spc brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12288237"
+   ],
+   "title": "Engenheiro(a) de Machine Learning Júnior",
+   "company": "SPC Brasil",
+   "url": "https://spcbrasil.gupy.io/job/eyJqb2JJZCI6MTIyODgyMzcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 92,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "16f7b39718be6f8b": {
+   "key": "analista dados jr|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12459926"
+   ],
+   "title": "ANALISTA DADOS JR",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI0NTk5MjYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 91,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "831926866e3bdf12": {
+   "key": "analista desenvolvedor ti jr|multilog",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista Desenvolvedor TI JR",
+   "company": "MULTILOG",
+   "url": "https://br.linkedin.com/jobs/view/analista-desenvolvedor-ti-jr-at-multilog-4469989940",
+   "source": "linkedin",
+   "score": 90,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b693e924de53353c": {
+   "key": "desenvolvedor full stack|clinica rigatti",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor full stack",
+   "company": "Clínica Rigatti",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-full-stack-at-cl%C3%ADnica-rigatti-4471462602",
+   "source": "linkedin",
+   "score": 90,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "5a652556bf9bf59e": {
+   "key": "engenheiro de dados / ia - hibrida em joinville ou jaragua do sul|lyncas",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Engenheiro de Dados / IA - híbrida em Joinville ou Jaraguá do Sul",
+   "company": "Lyncas",
+   "url": "https://br.indeed.com/viewjob?jk=620c9be2e2d3a212",
+   "source": "indeed",
+   "score": 88,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "89d606440a878d23": {
+   "key": "analista de riscos e controles internos junior (foco em privacidade de dados e lgpd)|aegea saneamento",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12562918"
+   ],
+   "title": "Analista de Riscos e Controles Internos Júnior (Foco em Privacidade de Dados e LGPD)",
+   "company": "Aegea Saneamento",
+   "url": "https://aegea.gupy.io/job/eyJqb2JJZCI6MTI1NjI5MTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 88,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f93e4379b506b156": {
+   "key": "desenvolvedor(a) advpl / protheus|l e v i carreiras autorais",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor(a) ADVPL / Protheus",
+   "company": "L é v i Carreiras Autorais",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-advpl-protheus-at-l-%C3%A9-v-i-carreiras-autorais-4467356115",
+   "source": "linkedin",
+   "score": 87,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "757ffab6ed8ce19f": {
+   "key": "desenvolvedor backend golang + ai|4solution group",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor Backend Golang + AI",
+   "company": "4Solution Group",
+   "url": "https://br.indeed.com/viewjob?jk=dd6fc8dde245ff45",
+   "source": "indeed",
+   "score": 87,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "552c335906fa1a34": {
+   "key": "ai platform engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "AI Platform Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=69b9f161289d0467",
+   "source": "indeed",
+   "score": 84,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f2e33fdd7f90e42d": {
+   "key": "engenheiro(a) de ia pleno | machine learning e ia generativa|growdev",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Engenheiro(a) de IA Pleno | Machine Learning e IA Generativa",
+   "company": "Growdev",
+   "url": "https://br.indeed.com/viewjob?jk=69c2882a8a9ffc47",
+   "source": "indeed",
+   "score": 83,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c20e437d7d9d4b80": {
+   "key": "qa software engineer|legrand",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "QA Software Engineer",
+   "company": "Legrand",
+   "url": "https://br.indeed.com/viewjob?jk=8b2e6d3100162bae",
+   "source": "indeed",
+   "score": 82,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "6525dc223be75db5": {
+   "key": "[job-31711] ai engineer agentic sdlc, brazil|ci&t",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "[Job-31711] AI Engineer Agentic SDLC, Brazil",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=d83ea8c01d3c6ccd",
+   "source": "indeed",
+   "score": 82,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "8cfdbab4f9340f2b": {
+   "key": "dev java full stack pl - segmento governamental|db",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12554833"
+   ],
+   "title": "Dev Java Full Stack PL - Segmento Governamental",
+   "company": "DB",
+   "url": "https://db.gupy.io/job/eyJqb2JJZCI6MTI1NTQ4MzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 80,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ae6709f2de39790d": {
+   "key": "analista de operacao junior|selbetti",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Operação Júnior",
+   "company": "SELBETTI",
+   "url": "https://br.indeed.com/viewjob?jk=0243cd0c3df452ae",
+   "source": "indeed",
+   "score": 78,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "062b86113adc2a0a": {
+   "key": "analista de pricing junior | operacoes e precos|selbetti",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Pricing Júnior | Operações e Preços",
+   "company": "SELBETTI",
+   "url": "https://br.indeed.com/viewjob?jk=8b356f144497a1b7",
+   "source": "indeed",
+   "score": 78,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "7b3b17cc93153088": {
+   "key": "ze delivery | machine learning engineer|ambev",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574588"
+   ],
+   "title": "Zé Delivery | Machine Learning Engineer",
+   "company": "Ambev",
+   "url": "https://br.indeed.com/viewjob?jk=5aa65eb8d2467375",
+   "source": "indeed",
+   "score": 78,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "af7218debd8d63b0": {
+   "key": "banco de talentos - analista de dados|mtp metodos e tecnologia – brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574396"
+   ],
+   "title": "Banco de talentos - Analista de Dados",
+   "company": "MTP Métodos e Tecnologia – Brasil",
+   "url": "https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI1NzQzOTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 77,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "7251449241a7749d": {
+   "key": "analista de automacao | visao computacional|pollux automation",
+   "aliases": [
+    "analista de automacao | visao computacional|pollux"
+   ],
+   "ext_keys": [],
+   "title": "Analista de Automação | Visão Computacional",
+   "company": "Pollux Automation",
+   "url": "https://br.indeed.com/viewjob?jk=73280f399b431ad5",
+   "source": "indeed",
+   "score": 77,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d42296484a21054d": {
+   "key": "desenvolvedor/a cobol - pleno|ey",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor/a Cobol - Pleno",
+   "company": "EY",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-cobol-pleno-at-ey-4362624944",
+   "source": "linkedin",
+   "score": 76,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ae9b56969846ef6a": {
+   "key": "[job 31895] ai engineer ( arquitetura app sre )|ci&t",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "[Job 31895] AI ENGINEER ( Arquitetura APP SRE )",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=1f6efaa66611bbb8",
+   "source": "indeed",
+   "score": 76,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "dc10e9684a681243": {
+   "key": "chief software engineer (ai-powered financial assistant)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Chief Software Engineer (AI-Powered Financial Assistant)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=78480aba49b810f1",
+   "source": "indeed",
+   "score": 75,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3c536e77e74e7e17": {
+   "key": "banco de talentos - engenheiro de dados|mtp metodos e tecnologia – brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574666"
+   ],
+   "title": "Banco de talentos - Engenheiro de Dados",
+   "company": "MTP Métodos e Tecnologia – Brasil",
+   "url": "https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI1NzQ2NjYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 74,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9769751c9c66bed6": {
+   "key": "engenheiro(a) de dados|solar coca-cola",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574625"
+   ],
+   "title": "Engenheiro(a) de Dados",
+   "company": "Solar Coca-Cola",
+   "url": "https://solarcocacola.gupy.io/job/eyJqb2JJZCI6MTI1NzQ2MjUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 74,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ceaba6e96ca57e90": {
+   "key": "analista de sistemas — segmento textil e moda|systextil",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Sistemas — Segmento Têxtil e Moda",
+   "company": "Systêxtil",
+   "url": "https://br.linkedin.com/jobs/view/analista-de-sistemas-%E2%80%94-segmento-t%C3%AAxtil-e-moda-at-syst%C3%AAxtil-4469359048",
+   "source": "linkedin",
+   "score": 73,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c653ac27287ec840": {
+   "key": "espec tecnologia informacao i (sap sd/fiscal)|bunge",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Espec Tecnologia Informação I (SAP SD/FISCAL)",
+   "company": "Bunge",
+   "url": "https://br.linkedin.com/jobs/view/espec-tecnologia-informa%C3%A7%C3%A3o-i-sap-sd-fiscal-at-bunge-4417007431",
+   "source": "linkedin",
+   "score": 73,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "50f55b8eb9bc5b52": {
+   "key": "engenheiro de inteligencia artificial (abler)|jobbol",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "ENGENHEIRO DE INTELIGÊNCIA ARTIFICIAL (Abler)",
+   "company": "Jobbol",
+   "url": "https://br.indeed.com/viewjob?jk=a890eea889c5a2f3",
+   "source": "indeed",
+   "score": 72,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "44888ac00c5f1c0c": {
+   "key": "engenheiro(a) de software full stack pleno|asaas",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12547954"
+   ],
+   "title": "Engenheiro(a) de Software Full Stack Pleno",
+   "company": "Asaas",
+   "url": "https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1NDc5NTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b3b498c1a42b73f2": {
+   "key": "administrador de dados / modelador de dados (powerdesigner)|certsys",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12559652"
+   ],
+   "title": "Administrador de Dados / Modelador de Dados (PowerDesigner)",
+   "company": "Certsys",
+   "url": "https://certsys.gupy.io/job/eyJqb2JJZCI6MTI1NTk2NTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c8cf717449b1a15c": {
+   "key": "analista de sistemas iii - foco em sistemas de credito|central ailos",
+   "aliases": [
+    "analista de sistemas iii - foco em sistemas de credito|cooperativa central ailos"
+   ],
+   "ext_keys": [
+    "ext:gupy:12542124"
+   ],
+   "title": "Analista de Sistemas III - Foco em Sistemas de Crédito",
+   "company": "Central Ailos",
+   "url": "https://br.indeed.com/viewjob?jk=ff04e7c56471a827",
+   "source": "indeed",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f64914921d1cdd05": {
+   "key": "cas | engenharia de dados - asset|sicredi",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12533406"
+   ],
+   "title": "CAS | Engenharia de Dados - Asset",
+   "company": "Sicredi",
+   "url": "https://sicredi.gupy.io/job/eyJqb2JJZCI6MTI1MzM0MDYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "89bc913fb18cc4f2": {
+   "key": "engenheiro de dados - pleno|venha ser #sanguelaranja 🧡🚀",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12582629"
+   ],
+   "title": "Engenheiro de Dados - Pleno",
+   "company": "VENHA SER #SANGUELARANJA 🧡🚀",
+   "url": "https://fcamara.gupy.io/job/eyJqb2JJZCI6MTI1ODI2MjksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "1e428e0b0620186f": {
+   "key": "desenvolvedor(a) fullstack pleno — java e vue.js|mazzatech",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor(a) Fullstack Pleno — Java e Vue.js",
+   "company": "Mazzatech",
+   "url": "https://br.indeed.com/viewjob?jk=5de75e06332d9457",
+   "source": "indeed",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "af46a30658760077": {
+   "key": "middle full-stack developer (.net)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Middle Full-Stack Developer (.NET)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=fe24a7f6cd37a8d5",
+   "source": "indeed",
+   "score": 71,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "58847237cc52a72b": {
+   "key": "analista de negocios|printbag embalagens",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "ANALISTA DE NEGÓCIOS",
+   "company": "Printbag Embalagens",
+   "url": "https://br.indeed.com/viewjob?jk=326dafd49753dafa",
+   "source": "indeed",
+   "score": 70,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b9ae605470e5526e": {
+   "key": "374889 - jaragua do sul - tecnico de suporte (telecomunicacoes redes de dados) (copia)|weg",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12558945"
+   ],
+   "title": "374889 - JARAGUA DO SUL - TÉCNICO DE SUPORTE (TELECOMUNICACOES REDES DE DADOS) (CÓPIA)",
+   "company": "WEG",
+   "url": "https://weg.gupy.io/job/eyJqb2JJZCI6MTI1NTg5NDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 70,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e26489d19ec22720": {
+   "key": "software developer iv - delphi (mega) - 11781|senior sistemas",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Software Developer IV - Delphi (MEGA) - 11781",
+   "company": "Senior Sistemas",
+   "url": "https://br.indeed.com/viewjob?jk=c19ae13d1a68bcb5",
+   "source": "indeed",
+   "score": 70,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "95c3a8da3f01da0c": {
+   "key": "software developer ii java/angular (erp) - 11790|senior sistemas",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Software Developer II Java/Angular (ERP) - 11790",
+   "company": "Senior Sistemas",
+   "url": "https://br.linkedin.com/jobs/view/software-developer-ii-java-angular-erp-11790-at-senior-sistemas-4468939461",
+   "source": "linkedin",
+   "score": 70,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e48f140d759f699f": {
+   "key": "desenvolvedor full stack .net pleno|join | creative tech",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12541487"
+   ],
+   "title": "Desenvolvedor Full Stack .NET Pleno",
+   "company": "Join | Creative Tech",
+   "url": "https://jointecnologia.gupy.io/job/eyJqb2JJZCI6MTI1NDE0ODcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "26f0a8fecfb85230": {
+   "key": "analista de dominio iii (diretoria de dados)|grupo boticario",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12491485"
+   ],
+   "title": "Analista de Domínio III (Diretoria de Dados)",
+   "company": "Grupo Boticário",
+   "url": "https://grupoboticario.gupy.io/job/eyJqb2JJZCI6MTI0OTE0ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "82d38dc72eb30834": {
+   "key": "engenheiro de dados (azure data factory)|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12565178"
+   ],
+   "title": "Engenheiro de Dados (Azure Data Factory)",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI1NjUxNzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b2fda6d4a7e278d6": {
+   "key": "pessoa analista de data quality - pleno|bip brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12552758"
+   ],
+   "title": "Pessoa Analista de Data Quality - Pleno",
+   "company": "BIP Brasil",
+   "url": "https://vemprabip.gupy.io/job/eyJqb2JJZCI6MTI1NTI3NTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "5ba3e1da483291bc": {
+   "key": "analista de sistemas pl (web)|grupo kmr",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12461248"
+   ],
+   "title": "Analista de Sistemas PL (Web)",
+   "company": "GRUPO KMR",
+   "url": "https://grupokmr.gupy.io/job/eyJqb2JJZCI6MTI0NjEyNDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "8d1d51d27915f832": {
+   "key": "desenvolvedor(a) de sistemas | full stack|brisanet",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12483202"
+   ],
+   "title": "Desenvolvedor(a) de Sistemas | Full Stack",
+   "company": "Brisanet",
+   "url": "https://brisanet.gupy.io/job/eyJqb2JJZCI6MTI0ODMyMDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "37119f9d9f8e1b72": {
+   "key": "software developer iii - c# (wiipo) - 11548|senior sistemas",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Software Developer III - C# (Wiipo) - 11548",
+   "company": "Senior Sistemas",
+   "url": "https://br.linkedin.com/jobs/view/software-developer-iii-c%23-wiipo-11548-at-senior-sistemas-4469977478",
+   "source": "linkedin",
+   "score": 67,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ceb787178062c7d5": {
+   "key": "[31868] ai fullstack java/angular desenvolvedor|ci&t",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "[31868] AI Fullstack Java/Angular Desenvolvedor",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=ea42c82aa3160210",
+   "source": "indeed",
+   "score": 66,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "44d0f6b96951e466": {
+   "key": "[job 31894] ai orchestrator (app sre)|ci&t",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "[Job 31894] AI ORCHESTRATOR (APP SRE)",
+   "company": "Ci&T",
+   "url": "https://br.indeed.com/viewjob?jk=d201c918f2a41e5c",
+   "source": "indeed",
+   "score": 66,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d762a37c0db23f26": {
+   "key": "engenheiro de dados (snowflake)|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12564575"
+   ],
+   "title": "Engenheiro de Dados (Snowflake)",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI1NjQ1NzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 65,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ad4dd21799b45561": {
+   "key": "analista de logistica|distribuidora muller",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Logística",
+   "company": "Distribuidora Muller",
+   "url": "https://br.indeed.com/viewjob?jk=a223e611d3dc43c0",
+   "source": "indeed",
+   "score": 64,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "575db00974b6a804": {
+   "key": "product owner - data optimization|metricaz tecnologia e marketing",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:1000018280"
+   ],
+   "title": "Product Owner - Data Optimization",
+   "company": "METRICAZ TECNOLOGIA E MARKETING",
+   "url": "https://vaga-ja.com/vagas/metricaz-tecnologia-e-marketing/product-owner-data-optimization",
+   "source": "gupy",
+   "score": 62,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "dc6167b8d69219de": {
+   "key": "scrum master / product owner – dados|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12569811"
+   ],
+   "title": "Scrum Master / Product Owner – Dados",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI1Njk4MTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 62,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "6ff83a4726df7b7c": {
+   "key": "analista de qualidade|ligthwall brasil",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Qualidade",
+   "company": "Ligthwall Brasil",
+   "url": "https://br.indeed.com/viewjob?jk=cb1210e20fb6d581",
+   "source": "indeed",
+   "score": 61,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a32facd1d0f3b0ad": {
+   "key": "full-stack java developer|epam systems",
+   "aliases": [
+    "chief full-stack developer (java & gcp)|epam systems",
+    "middle full-stack java developer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Full-Stack Java Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=d98e7880fa6fe6c8",
+   "source": "indeed",
+   "score": 59,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "43ef449819243d08": {
+   "key": "analista de seguranca da informacao pl|nauterra",
+   "aliases": [
+    "analista de seguranca da informacao pl|nauterra brasil"
+   ],
+   "ext_keys": [
+    "ext:gupy:12075352"
+   ],
+   "title": "Analista de Segurança da informação PL",
+   "company": "Nauterra",
+   "url": "https://nauterra.gupy.io/job/eyJqb2JJZCI6MTIwNzUzNTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 57,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "cdbe286602095c33": {
+   "key": "linux administrator (infrastructure)|quadcode",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Linux Administrator (Infrastructure)",
+   "company": "QuadCode",
+   "url": "https://br.indeed.com/viewjob?jk=2c30a64a80405318",
+   "source": "indeed",
+   "score": 57,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9f72226f9398edcd": {
+   "key": "sap btp devops engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "SAP BTP DevOps Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=7075254cfcbab1b2",
+   "source": "indeed",
+   "score": 57,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "23d651141581bc76": {
+   "key": "analista de qualidade|vagasligthwall",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Qualidade",
+   "company": "Vagasligthwall",
+   "url": "https://br.indeed.com/viewjob?jk=b0efa396eddba1ce",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "db2c75340dc918a7": {
+   "key": "analista sap pl|multilog s/a",
+   "aliases": [
+    "analista sap pl|multilog"
+   ],
+   "ext_keys": [],
+   "title": "Analista SAP PL",
+   "company": "multilog s/a",
+   "url": "https://br.indeed.com/viewjob?jk=6cfa3aed93022ee5",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3465055b92b3f6c8": {
+   "key": "senior ai agentic developer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior AI Agentic Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=1c891437941e126d",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "75802396d6f26c6d": {
+   "key": "lead ai agentic developer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead AI Agentic Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=16d2a284379b8acb",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "68ab6b825d3698ac": {
+   "key": "part-time game developer – godot engine - 2d action roguelite|",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Part-Time Game Developer – Godot engine - 2D Action Roguelite",
+   "company": "",
+   "url": "https://br.indeed.com/viewjob?jk=2f3164b8ed8b9b69",
+   "source": "indeed",
+   "score": 56,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e8ae771102b578f4": {
+   "key": "banco de talentos - devops engineer|mtp metodos e tecnologia – brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574761"
+   ],
+   "title": "Banco de talentos - DevOps Engineer",
+   "company": "MTP Métodos e Tecnologia – Brasil",
+   "url": "https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI1NzQ3NjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 55,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "64864df5b044989e": {
+   "key": "aws devops engineer|scaleup",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "AWS DevOps Engineer",
+   "company": "ScaleUp",
+   "url": "https://br.indeed.com/viewjob?jk=03a98bec30cd7e84",
+   "source": "indeed",
+   "score": 55,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3d4c19bded54f4b5": {
+   "key": "chief devops engineer|epam systems",
+   "aliases": [
+    "chief devops engineer - amazon connect|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Chief DevOps Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=c66c44be5975b8ca",
+   "source": "indeed",
+   "score": 55,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "48b7a96de340aeda": {
+   "key": "chief cloud engineer (aws)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Chief Cloud Engineer (AWS)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=aee5c3cc4f28a397",
+   "source": "indeed",
+   "score": 55,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "65826dc7cd2bad84": {
+   "key": "qa com foco em sap|blite",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "QA com foco em SAP",
+   "company": "Blite",
+   "url": "https://br.indeed.com/viewjob?jk=9cfcbbad40cfb6bd",
+   "source": "indeed",
+   "score": 54,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "88f9cf5ea018404b": {
+   "key": "linux administrator (ops)|quadcode",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Linux Administrator (Ops)",
+   "company": "QuadCode",
+   "url": "https://br.indeed.com/viewjob?jk=bf96c4aaaad1c8f7",
+   "source": "indeed",
+   "score": 54,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "0f46bd9b174e2aa5": {
+   "key": "28702 - pessoa analista de desenvolvimento de produto ii | devops | teletrabalho/presencial|intelbras",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "28702 - Pessoa Analista de Desenvolvimento de Produto II | DevOps | Teletrabalho/Presencial",
+   "company": "Intelbras",
+   "url": "https://br.indeed.com/viewjob?jk=c03308a3fb9a7d14",
+   "source": "indeed",
+   "score": 52,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "088f4744311fbe55": {
+   "key": "data science senior | remoto|compass uol",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12562942"
+   ],
+   "title": "Data Science Sênior | Remoto",
+   "company": "Compass UOL",
+   "url": "https://compass.gupy.io/job/eyJqb2JJZCI6MTI1NjI5NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 51,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "aea6d8993dc4f21b": {
+   "key": "ai engineer manager (python)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "AI Engineer Manager (Python)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=a100babb0cdfc63a",
+   "source": "indeed",
+   "score": 50,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "2f43dbe6f7c1eb3b": {
+   "key": "analista de sistemas pleno|afya",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12421655"
+   ],
+   "title": "Analista de Sistemas Pleno",
+   "company": "Afya",
+   "url": "https://afya.gupy.io/job/eyJqb2JJZCI6MTI0MjE2NTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f865adab08748cda": {
+   "key": "api solutions engineer / pre-sales engineer|whistle",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "API Solutions Engineer / Pre-Sales Engineer",
+   "company": "Whistle",
+   "url": "https://br.indeed.com/viewjob?jk=ad59ceb2e2fd077e",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "4463eee77040d15a": {
+   "key": "cientista de dados senior (ia e machine learning)|ninecon consultores associados ltda",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Cientista de Dados Sênior (IA e Machine Learning)",
+   "company": "Ninecon Consultores Associados Ltda",
+   "url": "https://br.indeed.com/viewjob?jk=7cf2b819a1dd821d",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "53e642168889b2b0": {
+   "key": "cientista de dados senior|leega consultoria",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574418"
+   ],
+   "title": "Cientista de Dados Sênior",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI1NzQ0MTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "eab5a9c09e862006": {
+   "key": "sap transportation management (tm) consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "SAP Transportation Management (TM) Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=aaaf022ddfe1cd65",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b8742dbb8dbf1309": {
+   "key": "sap s/4hana consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "SAP S/4HANA Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=137108702e4fea60",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3a55ff6a7a95800e": {
+   "key": "chief sap fico consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Chief SAP FICO Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=d67c2f6028c12b49",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "126dbd87333e2356": {
+   "key": "sap s/4hana architect - erp|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "SAP S/4HANA Architect - ERP",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=84dee14d3109aed4",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "2b906d737b8f5e6c": {
+   "key": "analista de sistemas pleno (vaga mista)|domoinovacao",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12543474"
+   ],
+   "title": "Analista de Sistemas Pleno (Vaga Mista)",
+   "company": "domoinovacao",
+   "url": "https://domo.gupy.io/job/eyJqb2JJZCI6MTI1NDM0NzQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "16076f810fe58746": {
+   "key": "analista de sistemas - java|recrutamento para area de tecnologia com fit cultural e aderencia tecnica.",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12541813"
+   ],
+   "title": "Analista de Sistemas - Java",
+   "company": "Recrutamento para área de tecnologia com Fit Cultural e Aderência Técnica.",
+   "url": "https://werecruiter.gupy.io/job/eyJqb2JJZCI6MTI1NDE4MTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "7f9299903187d4f5": {
+   "key": "analista funcional sap pp - rha4002|spread tecnologia",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12582717"
+   ],
+   "title": "Analista Funcional SAP PP - RHA4002",
+   "company": "Spread Tecnologia",
+   "url": "https://spread.gupy.io/job/eyJqb2JJZCI6MTI1ODI3MTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "1ebe8c850be592cc": {
+   "key": "lead data devops engineer|epam systems",
+   "aliases": [
+    "lead devops engineer - amazon connect|epam systems",
+    "lead devops engineer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Lead Data DevOps Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=66e9d662ebddc6ff",
+   "source": "indeed",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "966b01039cf0fa90": {
+   "key": "sap business solution architect|epam systems",
+   "aliases": [
+    "director, sap business solution architect|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "SAP Business Solution Architect",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=9eb66a0f37a76543",
+   "source": "indeed",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b480a7a97c92c4d3": {
+   "key": "chief sap s/4 hana consultant|epam systems",
+   "aliases": [
+    "sap s/4 hana consultant|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Chief SAP S/4 HANA Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=fa9c04dc783d815c",
+   "source": "indeed",
+   "score": 45,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "391059eab2f8e1df": {
+   "key": "lead ai engineer|epam systems",
+   "aliases": [
+    "lead ai security engineer|epam systems",
+    "lead ai solution engineer|epam systems",
+    "lead full-stack, data and ai agent engineer|epam systems",
+    "lead python ai engineer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Lead AI Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=d3d6c4cccf90b8b8",
+   "source": "indeed",
+   "score": 44,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "cfc63a110d0d6961": {
+   "key": "lead ai developer (full-stack)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead AI Developer (Full-Stack)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=958f56069cc1c228",
+   "source": "indeed",
+   "score": 43,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "2d4967a1151d99fc": {
+   "key": "senior ai developer (full-stack)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior AI Developer (Full-Stack)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=66c15b0ad8d31bf9",
+   "source": "indeed",
+   "score": 43,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b0b86861eab2cad0": {
+   "key": "engenheiro de dados gcp senior (gcp / databricks)|leega consultoria",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12561842"
+   ],
+   "title": "Engenheiro de Dados GCP Sênior (GCP / Databricks)",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI1NjE4NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 42,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "db2e67a64bd6e9c7": {
+   "key": "senior platform engineer with python|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Platform Engineer with Python",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=dac68bd560871937",
+   "source": "indeed",
+   "score": 42,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "753a5e6c82245aec": {
+   "key": "lead platform engineer with python|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Platform Engineer with Python",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=f3e7c5f167520eca",
+   "source": "indeed",
+   "score": 42,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3e9013355f89ad88": {
+   "key": "senior ai engineer|epam systems",
+   "aliases": [
+    "senior ai engineer (python)|epam systems",
+    "senior ai platform engineer|epam systems",
+    "senior ai security engineer|epam systems",
+    "senior ai solution engineer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior AI Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=7ec1ee64f6b4be88",
+   "source": "indeed",
+   "score": 41,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "66f46c158bdefcc4": {
+   "key": "lead genai engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead GenAI Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=ca9217337941c50d",
+   "source": "indeed",
+   "score": 40,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "59c5c9774eccdb1e": {
+   "key": "senior genai engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior GenAI Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=5f0cc783f7e1d52a",
+   "source": "indeed",
+   "score": 40,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "dfaf3e7ce8331abd": {
+   "key": "analista de suporte tecnico|datasolver tecnologia",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Suporte Técnico",
+   "company": "Datasolver Tecnologia",
+   "url": "https://br.indeed.com/viewjob?jk=73e7b96d8c03839d",
+   "source": "indeed",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "52adff209fd9164f": {
+   "key": "pessoa desenvolvedora frontend (react) especialista i (venda direta)|grupo boticario",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12559262"
+   ],
+   "title": "Pessoa Desenvolvedora Frontend (react) Especialista I (Venda Direta)",
+   "company": "Grupo Boticário",
+   "url": "https://br.indeed.com/viewjob?jk=3e597fd2bdb9065a",
+   "source": "indeed",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a2bb4eca909bcfcd": {
+   "key": "senior data scientist|constructor",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Data Scientist",
+   "company": "Constructor",
+   "url": "https://br.indeed.com/viewjob?jk=1c33e41fc4e21b7b",
+   "source": "indeed",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "0195ec00d2fb7a07": {
+   "key": "senior data analyst: multiple teams|constructor",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Data Analyst: Multiple Teams",
+   "company": "Constructor",
+   "url": "https://br.indeed.com/viewjob?jk=fe2463d84a700d54",
+   "source": "indeed",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "2cd4278fa02fb936": {
+   "key": "lead data software engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Data Software Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=cdedd47a7d018de7",
+   "source": "indeed",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f8d5712b6b7992a6": {
+   "key": "analista fiscal|igo contabilidade integrada ltda",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista Fiscal",
+   "company": "IGO CONTABILIDADE INTEGRADA LTDA",
+   "url": "https://br.indeed.com/viewjob?jk=68e38dac3025f749",
+   "source": "indeed",
+   "score": 38,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "abc0787f56a21d9c": {
+   "key": "engenheiro de dados sr|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12541800"
+   ],
+   "title": "Engenheiro de Dados SR",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1NDE4MDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c4a34d0d85bba07e": {
+   "key": "analista de dados especialista|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12541689"
+   ],
+   "title": "Analista de Dados Especialista",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1NDE2ODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b3a4bfe6e5988809": {
+   "key": "engenheiro de dados senior - gcp|cadastra",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12549253"
+   ],
+   "title": "Engenheiro de Dados Sênior - GCP",
+   "company": "Cadastra",
+   "url": "https://cadastra.gupy.io/job/eyJqb2JJZCI6MTI1NDkyNTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9ffd7be3f9e6f36f": {
+   "key": "engenheiro(a) de dados senior|supersim",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12571064"
+   ],
+   "title": "Engenheiro(a) de Dados Sênior",
+   "company": "SuperSim",
+   "url": "https://supersim.gupy.io/job/eyJqb2JJZCI6MTI1NzEwNjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "15277fb7fc38513e": {
+   "key": "senior investment analytics manager|jellyfish",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Investment Analytics Manager",
+   "company": "JELLYFISH",
+   "url": "https://br.indeed.com/viewjob?jk=fd64e6c96fc36aa1",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "42ebca93e6a79950": {
+   "key": "senior data and analytics engineer id90885|agileengine",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Data and Analytics Engineer ID90885",
+   "company": "AgileEngine",
+   "url": "https://br.indeed.com/viewjob?jk=97000079fab996db",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "89cfe6c5804d9599": {
+   "key": "senior full-stack developer (.net)|epam systems",
+   "aliases": [
+    "senior .net developer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior Full-Stack Developer (.NET)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=e402392b1f6e2935",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c7b023f678cb71ec": {
+   "key": "senior data solution architect|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Data Solution Architect",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=2a50e759bcbb20c2",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9fc473ca920359bc": {
+   "key": "lead fullstack developer|epam systems",
+   "aliases": [
+    "lead fullstack developer (javascript)|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Lead Fullstack Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=862cc61845867f3d",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "fbeebe9179fdac33": {
+   "key": "senior fullstack developer|epam systems",
+   "aliases": [
+    "senior fullstack developer (javascript)|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior Fullstack Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=46f40f0ed077d503",
+   "source": "indeed",
+   "score": 36,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d32435f6a6cc34e1": {
+   "key": "gerente de produto forward deployed (fde) - agente de ia|atento ti",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12582607"
+   ],
+   "title": "Gerente de Produto Forward Deployed (FDE) - Agente de IA",
+   "company": "Atento TI",
+   "url": "https://atentoti.gupy.io/job/eyJqb2JJZCI6MTI1ODI2MDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 35,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f3081736870a9fa1": {
+   "key": "senior software engineer|nucs ai",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Software Engineer",
+   "company": "Nucs AI",
+   "url": "https://br.indeed.com/viewjob?jk=ea4f5f53ea89eee0",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "eb5238fd6b1629cb": {
+   "key": "staff ai/mlops engineer|grupo olx",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12446752"
+   ],
+   "title": "Staff AI/MLOPS Engineer",
+   "company": "GRUPO OLX",
+   "url": "https://br.indeed.com/viewjob?jk=329f8ad84f31ce73",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "74d156e832145fd0": {
+   "key": "machine learning engineer sr|leega consultoria",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12574389"
+   ],
+   "title": "Machine Learning Engineer Sr",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI1NzQzODksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 34,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "afec7603310544c8": {
+   "key": "lead mlops engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead MLOps Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=4de246accac2ff7b",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a3070eab3d1ee2cc": {
+   "key": "systems architect|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Systems Architect",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=088c14f8ff68929b",
+   "source": "indeed",
+   "score": 34,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ee5325ad7193eea3": {
+   "key": "engenheiro(a) de software full stack senior|asaas",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12548008"
+   ],
+   "title": "Engenheiro(a) de Software Full Stack Sênior",
+   "company": "Asaas",
+   "url": "https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1NDgwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 33,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e13da2c7cf4c2679": {
+   "key": "big data senior - remote work|indi staffing services",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Big Data Senior - Remote Work",
+   "company": "INDI Staffing Services",
+   "url": "https://br.linkedin.com/jobs/view/big-data-senior-remote-work-at-indi-staffing-services-4470427896",
+   "source": "linkedin",
+   "score": 33,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3cb196546967854c": {
+   "key": "analista de dados databricks sr - 100% remoto- rha3992|spread tecnologia",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12561535"
+   ],
+   "title": "ANALISTA DE DADOS DATABRICKS SR - 100% REMOTO-  RHA3992",
+   "company": "Spread Tecnologia",
+   "url": "https://spread.gupy.io/job/eyJqb2JJZCI6MTI1NjE1MzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 33,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "93362066766036ca": {
+   "key": "data software engineering manager|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Data Software Engineering Manager",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=40fdfd03546daba1",
+   "source": "indeed",
+   "score": 33,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a957efb445643c84": {
+   "key": "lead data engineer with gcp|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Data Engineer with GCP",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=b9d5abe4476d3ab2",
+   "source": "indeed",
+   "score": 33,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f59997d921890cb6": {
+   "key": "especialista em dados industriais (oil & gas)|compass uol",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12583957"
+   ],
+   "title": "Especialista em Dados Industriais (Oil & Gas)",
+   "company": "Compass UOL",
+   "url": "https://compass.gupy.io/job/eyJqb2JJZCI6MTI1ODM5NTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "61497b3fbf9d11fd": {
+   "key": "senior domino developer - api|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Domino Developer - API",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=b57951261263ef31",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "4394ebebca6e5503": {
+   "key": "lead full-stack javascript engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Full-Stack JavaScript Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=3081d8f24866ef8c",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "0b021a99d20f3120": {
+   "key": "senior full-stack javascript engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Full-Stack JavaScript Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=943476681ac31477",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "891dcdc271e7f9e1": {
+   "key": "lead java developer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Java Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=af9c1aa86c71b117",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "274028b151879c27": {
+   "key": "senior frontend engineer (medical imaging viewer)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=6e5cfbec7c742817",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a27ba8e7c3ffc76c": {
+   "key": "site reliability engineer senior (devsecops & plataforma)|lincros",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Site Reliability Engineer Sênior (DevSecOps & Plataforma)",
+   "company": "LINCROS",
+   "url": "https://br.linkedin.com/jobs/view/site-reliability-engineer-s%C3%AAnior-devsecops-plataforma-at-lincros-4469744406",
+   "source": "linkedin",
+   "score": 28,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d3ec0c526090bac9": {
+   "key": "especialista em banco de dados idms|certsys",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12554168"
+   ],
+   "title": "Especialista em Banco de Dados IDMS",
+   "company": "Certsys",
+   "url": "https://certsys.gupy.io/job/eyJqb2JJZCI6MTI1NTQxNjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "0f657166e0229b02": {
+   "key": "[ambev tech] gerente de dados i|ambev tech",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12569147"
+   ],
+   "title": "[Ambev Tech] Gerente de Dados I",
+   "company": "Ambev Tech",
+   "url": "https://ambevtech.gupy.io/job/eyJqb2JJZCI6MTI1NjkxNDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "efad35ab61f9102f": {
+   "key": "data analyst (chatbot/cx) | sr (remote)|invillia br",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12575895"
+   ],
+   "title": "Data Analyst (Chatbot/CX) | SR (Remote)",
+   "company": "Invillia BR",
+   "url": "https://invilliabr.gupy.io/job/eyJqb2JJZCI6MTI1NzU4OTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "01708116405a6d6a": {
+   "key": "lead php developer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead PHP Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=07fddcf03b00d5f0",
+   "source": "indeed",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a94983c8bf7551d9": {
+   "key": "senior software engineer – backend / distributed systems|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Software Engineer – Backend / Distributed Systems",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=5f61b46340464693",
+   "source": "indeed",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "bd1e72705b6dc672": {
+   "key": "especialista inteligencia de mercado|karsten",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12547952"
+   ],
+   "title": "ESPECIALISTA INTELIGENCIA DE MERCADO",
+   "company": "Karsten",
+   "url": "https://br.indeed.com/viewjob?jk=ce8529bbff74c627",
+   "source": "indeed",
+   "score": 26,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "ce6568f85c20d114": {
+   "key": "advanced software engineering manager|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Advanced Software Engineering Manager",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=f95a58ac1b8c6256",
+   "source": "indeed",
+   "score": 25,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9dd47d0d1eef73fa": {
+   "key": "senior full-stack java developer|epam systems",
+   "aliases": [
+    "senior java developer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior Full-Stack Java Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=03805586fb394ddc",
+   "source": "indeed",
+   "score": 24,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d3055bc70da56c4b": {
+   "key": "especialista em ciberseguranca e infraestrutura|trust group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12556605"
+   ],
+   "title": "Especialista em Cibersegurança e Infraestrutura",
+   "company": "Trust Group",
+   "url": "https://grupotrust.gupy.io/job/eyJqb2JJZCI6MTI1NTY2MDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 22,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "27cca8f17e12cfaa": {
+   "key": "senior financial analyst|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Financial Analyst",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=d50ef16e0648cbed",
+   "source": "indeed",
+   "score": 21,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "b05fdce6813567c6": {
+   "key": "lead financial analyst|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Financial Analyst",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=f3064958324f22ce",
+   "source": "indeed",
+   "score": 21,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "c216ce9ae4981b8f": {
+   "key": "arquiteto de sistemas ii|central ailos",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12542142"
+   ],
+   "title": "Arquiteto de Sistemas II",
+   "company": "Central Ailos",
+   "url": "https://br.indeed.com/viewjob?jk=55804baf8539c593",
+   "source": "indeed",
+   "score": 20,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a6b9a8370cd1903c": {
+   "key": "senior devops engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior DevOps Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=5908ead81b9faf72",
+   "source": "indeed",
+   "score": 20,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "6796f4d6ded1dbba": {
+   "key": "analista de ti sr. - automacao digital e low-code|tupy",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de TI SR. - Automação Digital e Low-Code",
+   "company": "Tupy",
+   "url": "https://br.linkedin.com/jobs/view/analista-de-ti-sr-automa%C3%A7%C3%A3o-digital-e-low-code-at-tupy-4468921973",
+   "source": "linkedin",
+   "score": 18,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "6e41ae0e160d2b64": {
+   "key": "lead cloud engineer (aws)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Cloud Engineer (AWS)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=3fb5d39a0a54167e",
+   "source": "indeed",
+   "score": 17,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a5ba16a851b6d551": {
+   "key": "senior business analyst|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Business Analyst",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=7cba8a7c170fc9f4",
+   "source": "indeed",
+   "score": 13,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "6d30873d94c984b0": {
+   "key": "lead sap s/4hana credit management consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead SAP S/4HANA Credit Management Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=e2f561aa40c3164a",
+   "source": "indeed",
+   "score": 13,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "5669705df83c0621": {
+   "key": "sap specialist|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "SAP Specialist",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=88db569d5d3d4513",
+   "source": "indeed",
+   "score": 13,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9bd2541cd47e18b6": {
+   "key": "senior sap transportation management (tm) consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior SAP Transportation Management (TM) Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=111ba21643d55002",
+   "source": "indeed",
+   "score": 13,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9a342b7ff4c8939b": {
+   "key": "consultor funcional sap pp sr|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12534802"
+   ],
+   "title": "CONSULTOR FUNCIONAL SAP PP SR",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI1MzQ4MDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 10,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "083cc59210baed49": {
+   "key": "consultor(a) sap pp senior|vetta tecnologia",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12540061"
+   ],
+   "title": "Consultor(a) SAP PP Sênior",
+   "company": "Vetta Tecnologia",
+   "url": "https://vetta.gupy.io/job/eyJqb2JJZCI6MTI1NDAwNjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 10,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "61c0c5e4657557e4": {
+   "key": "lead sap s/4 hana consultant|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead SAP S/4 HANA Consultant",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=4a0ef1ed232bea74",
+   "source": "indeed",
+   "score": 10,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9e3c4ffd13e41156": {
+   "key": "senior sap business solution architect|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior SAP Business Solution Architect",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=41269e2f664e5eab",
+   "source": "indeed",
+   "score": 10,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3c05ac7b5c2f48dc": {
+   "key": "analista de sistemas senior (foco em crm)|vagas confidenciais",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12537590"
+   ],
+   "title": "Analista de Sistemas Sênior (Foco em CRM)",
+   "company": "Vagas Confidenciais",
+   "url": "https://off-hiring-confidencial.gupy.io/job/eyJqb2JJZCI6MTI1Mzc1OTAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 7,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "30688993b8a10da6": {
+   "key": "analista de sistemas senior|afya",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12541602"
+   ],
+   "title": "Analista de Sistemas Sênior",
+   "company": "Afya",
+   "url": "https://afya.gupy.io/job/eyJqb2JJZCI6MTI1NDE2MDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 7,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "43f5583cf0178dcb": {
+   "key": "analista de sistemas senior - foco em crm e cadastro|central ailos",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12555345"
+   ],
+   "title": "Analista de Sistemas  Sênior - Foco em CRM e Cadastro",
+   "company": "Central Ailos",
+   "url": "https://centralailos.gupy.io/job/eyJqb2JJZCI6MTI1NTUzNDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 7,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "f0bc7f83d4789248": {
+   "key": "pessoa engenheira de plataforma & cloud security senior / especialista (aws)|mazzatech",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Pessoa Engenheira de Plataforma & Cloud Security Sênior / Especialista (AWS)",
+   "company": "Mazzatech",
+   "url": "https://br.indeed.com/viewjob?jk=1678a38304d917c3",
+   "source": "indeed",
+   "score": 5,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "fa42935cc8530157": {
+   "key": "especialista fiscal|cantu inc",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12513252"
+   ],
+   "title": "Especialista Fiscal",
+   "company": "Cantu Inc",
+   "url": "https://cantustore.gupy.io/job/eyJqb2JJZCI6MTI1MTMyNTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 3,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "77ec9d57a6b6fb66": {
+   "key": "senior database engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Senior Database Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=2a29fd7617e44211",
+   "source": "indeed",
+   "score": 2,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9ab051b3b2d23f71": {
+   "key": "lead database engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Database Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=fcb07b9f9caa8a27",
+   "source": "indeed",
+   "score": 2,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "bd8411921ac40f21": {
+   "key": "gerente de tecnologia|global solutions",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Gerente de Tecnologia",
+   "company": "GLOBAL SOLUTIONS",
+   "url": "https://br.indeed.com/viewjob?jk=4407cab1885fe1ad",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "1d4268e16e44f02f": {
+   "key": "arquiteta de solucoes - afirmativa exclusiva para mulheres - hibrido - sao paulo/sp|the heineken company",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Arquiteta de Soluções - Afirmativa Exclusiva para Mulheres - Híbrido - São Paulo/SP",
+   "company": "The HEINEKEN Company",
+   "url": "https://br.indeed.com/viewjob?jk=4fc7861a422d0c1c",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "0391a8c18822dfd3": {
+   "key": "analista de suporte tecnico senior|clicksign",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12571526"
+   ],
+   "title": "Analista de Suporte Técnico Sênior",
+   "company": "Clicksign",
+   "url": "https://br.indeed.com/viewjob?jk=64b6591c67890850",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "bf5a98357ab01b5c": {
+   "key": "lead infrastructure engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Infrastructure Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=b96b9e1f21aef0cd",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d90cc68da740a62e": {
+   "key": "technical program manager (tpm) – gcp cloud infrastructure|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Technical Program Manager (TPM) – GCP Cloud Infrastructure",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=5a819eac3bb6e1be",
+   "source": "indeed",
+   "score": 0,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e19b1c58b9e98a9f": {
+   "key": "estagio em contabilidade: dados e inteligencia artificial|instituto infnet - venha ser estagiario ou trainee!",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12540405"
+   ],
+   "title": "Estágio em Contabilidade: Dados e Inteligência Artificial",
+   "company": "Instituto Infnet - Venha ser estagiário ou trainee!",
+   "url": "https://estagio-e-trainee-infnet.gupy.io/job/eyJqb2JJZCI6MTI1NDA0MDUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 91,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "1f3566c2e8c9fa51": {
+   "key": "engenheiro de dados pl|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12563075"
+   ],
+   "title": "Engenheiro de Dados Pl",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI1NjMwNzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 77,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "4dfc85e88867795a": {
+   "key": "desenvolvedor(a) full stack|conecta ads",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Desenvolvedor(a) Full Stack",
+   "company": "Conecta Ads",
+   "url": "https://br.linkedin.com/jobs/view/desenvolvedor-a-full-stack-at-conecta-ads-4470442099",
+   "source": "linkedin",
+   "score": 76,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "8bbc1c3828dd3e8a": {
+   "key": "analista desenvolvedor ti pl|multilog",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista Desenvolvedor TI PL",
+   "company": "MULTILOG",
+   "url": "https://br.linkedin.com/jobs/view/analista-desenvolvedor-ti-pl-at-multilog-4470205199",
+   "source": "linkedin",
+   "score": 73,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "69de4bb6b8075bd9": {
+   "key": "javascript full-stack developer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "JavaScript Full-Stack Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=d0c9b1e0d1563c33",
+   "source": "indeed",
+   "score": 65,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "2daec037149dcdc4": {
+   "key": "information security analyst i (cyber security coc) – 11793|senior sistemas",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Information Security Analyst I (Cyber Security COC) – 11793",
+   "company": "Senior Sistemas",
+   "url": "https://br.linkedin.com/jobs/view/information-security-analyst-i-cyber-security-coc-%E2%80%93-11793-at-senior-sistemas-4466615891",
+   "source": "linkedin",
+   "score": 54,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "d7732707fa8780ca": {
+   "key": "analista de dados sr|multilog",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de Dados SR",
+   "company": "Multilog",
+   "url": "https://br.indeed.com/viewjob?jk=ab5f83626421443e",
+   "source": "indeed",
+   "score": 53,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "e6d8c1449d226cc9": {
+   "key": "analista de ti sr. - foco em business intelligence|tupy",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Analista de TI SR. -  Foco em Business Intelligence",
+   "company": "Tupy",
+   "url": "https://br.linkedin.com/jobs/view/analista-de-ti-sr-foco-em-business-intelligence-at-tupy-4468999469",
+   "source": "linkedin",
+   "score": 53,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "3c1a0043b538071d": {
+   "key": "consultor sap fi|capitani group",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Consultor SAP FI",
+   "company": "Capitani Group",
+   "url": "https://br.linkedin.com/jobs/view/consultor-sap-fi-at-capitani-group-4471474904",
+   "source": "linkedin",
+   "score": 53,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "be5bb1c9c5bb0775": {
+   "key": "senior data engineer|epam systems",
+   "aliases": [
+    "senior data devops engineer|epam systems",
+    "senior data engineer with gcp|epam systems",
+    "senior data science engineer|epam systems",
+    "senior data software engineer|epam systems",
+    "senior full-stack, data and ai agent engineer|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior Data Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=8528778a033c09a2",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a2115a5bdb2721e9": {
+   "key": "lead data science engineer|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead Data Science Engineer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=e8f3bf46ed3c6fb4",
+   "source": "indeed",
+   "score": 48,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "bf94853a590a230d": {
+   "key": "engenheiro de dados gcp senior|leega consultoria",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12556723"
+   ],
+   "title": "Engenheiro de Dados GCP Sênior",
+   "company": "Leega Consultoria",
+   "url": "https://leega.gupy.io/job/eyJqb2JJZCI6MTI1NTY3MjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 39,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "7bc1aa8b7910dca9": {
+   "key": "analista de governanca de dados senior|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12511060"
+   ],
+   "title": "Analista de Governança de Dados Sênior",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1MTEwNjAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "9abdc2962efa31b4": {
+   "key": "senior javascript full-stack developer|epam systems",
+   "aliases": [
+    "senior javascript full-stack developer (discovery pod)|epam systems"
+   ],
+   "ext_keys": [],
+   "title": "Senior JavaScript Full-Stack Developer",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=3798b3746750bb9d",
+   "source": "indeed",
+   "score": 30,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "4860ecb96b552009": {
+   "key": "lead javascript full-stack developer (discovery pod)|epam systems",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "Lead JavaScript Full-Stack Developer (Discovery Pod)",
+   "company": "EPAM Systems",
+   "url": "https://br.indeed.com/viewjob?jk=f5531dc4c5d13011",
+   "source": "indeed",
+   "score": 27,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "38262eb1d0c1e606": {
+   "key": "arquiteto de sistemas iii|central ailos",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12436917"
+   ],
+   "title": "Arquiteto de Sistemas III",
+   "company": "Central Ailos",
+   "url": "https://br.indeed.com/viewjob?jk=79d18108385eec21",
+   "source": "indeed",
+   "score": 20,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
+  },
+  "a0a10df6bc381c37": {
+   "key": "devops tech lead - trabalho remoto|bairesdev",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "DevOps Tech Lead - Trabalho Remoto",
+   "company": "BairesDev",
+   "url": "https://br.linkedin.com/jobs/view/devops-tech-lead-trabalho-remoto-at-bairesdev-4470000131",
+   "source": "linkedin",
+   "score": 14,
+   "first_seen": "2026-09-24",
+   "last_seen": "2026-09-24"
   }
  }
 }
