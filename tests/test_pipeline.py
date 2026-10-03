@@ -116,3 +116,37 @@ def test_falha_da_ia_nao_derruba_a_rodada(monkeypatch, tmp_path):
     assert (tmp_path / "state" / "seen.json").exists()
     # e o leitor fica sabendo que faltou a nota da IA
     assert "Avaliação por IA" in (tmp_path / "reports" / "LATEST.md").read_text(encoding="utf-8")
+
+
+def test_falha_de_notificacao_aparece_no_relatorio_e_no_codigo_de_saida(monkeypatch, tmp_path):
+    """Telegram com token revogado ficou 10 dias mudo com o passo do Actions verde.
+
+    A rodada continua valendo (relatório e estado gravados), mas o motivo vai para o
+    topo do relatório e `cmd_run` devolve erro para o job ficar vermelho.
+    """
+    from types import SimpleNamespace
+
+    from vagas_monitor import __main__ as cli
+    from vagas_monitor.notify import telegram
+
+    monkeypatch.setattr(pipeline, "ROOT", tmp_path)
+    monkeypatch.setattr(report, "ROOT", tmp_path)
+    monkeypatch.setattr(pipeline, "collect_all", lambda cfg, lb, errors, skip=(): (_fake_jobs(), {"gupy": 6}))
+    monkeypatch.setattr(pipeline.linkedin, "fetch_description", lambda j: False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("SMTP_USER", raising=False)
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "revogado")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+    monkeypatch.setattr(telegram, "send_message", lambda token, chat, text: False)
+
+    s = pipeline.run(force=True)
+
+    assert s["sent"] == {"telegram": False}
+    assert s["notify_failed"] == ["telegram"]
+    assert (tmp_path / "state" / "seen.json").exists()
+    assert "Telegram" in (tmp_path / "reports" / "LATEST.md").read_text(encoding="utf-8")
+
+    monkeypatch.setattr(pipeline, "run", lambda **k: s)
+    args = SimpleNamespace(force=True, dry_run=False, no_notify=False, lookback=None, config=None, skip=None)
+    assert cli.cmd_run(args) == 1

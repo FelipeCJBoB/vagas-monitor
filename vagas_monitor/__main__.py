@@ -26,7 +26,7 @@ def cmd_run(a) -> int:
     summary = run(force=a.force, dry_run=a.dry_run, notify=not a.no_notify, lookback=a.lookback,
                   config_path=a.config, skip=tuple(a.skip or ()))
     print(json.dumps(summary, ensure_ascii=False, indent=1))
-    return 0
+    return 1 if summary.get("notify_failed") else 0
 
 
 def cmd_status(a) -> int:

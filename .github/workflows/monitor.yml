@@ -48,7 +48,11 @@ jobs:
           # a variável REPORT_URL continua valendo como alternativa, se ele ficar vazio
         run: python -m vagas_monitor run ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
 
+      # `!cancelled()` e não `success()`: se só a notificação falhou, a rodada
+      # terminou e o estado precisa ser publicado, senão a próxima repete tudo.
+      # O job continua vermelho, e é isso que avisa por e-mail do GitHub.
       - name: Publicar relatórios no repositório
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "vagas-monitor[bot]"
           git config user.email "vagas-monitor@users.noreply.github.com"
