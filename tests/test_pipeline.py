@@ -150,3 +150,37 @@ def test_falha_de_notificacao_aparece_no_relatorio_e_no_codigo_de_saida(monkeypa
     monkeypatch.setattr(pipeline, "run", lambda **k: s)
     args = SimpleNamespace(force=True, dry_run=False, no_notify=False, lookback=None, config=None, skip=None)
     assert cli.cmd_run(args) == 1
+
+
+def test_fonte_que_volta_vazia_vira_aviso(monkeypatch):
+    """A Gupy ficou em zero vagas por dias (API trocada) e só havia um warning no log."""
+    monkeypatch.setattr(pipeline.gupy, "collect", lambda *a, **k: [])
+    monkeypatch.setattr(pipeline.indeed, "collect", lambda *a, **k: _fake_jobs()[:1])
+    monkeypatch.setattr(pipeline.linkedin, "collect", lambda *a, **k: _fake_jobs()[1:2])
+    errors: dict = {}
+
+    _, counts = pipeline.collect_all(load_config(), 7, errors)
+
+    assert counts["gupy"] == 0 and counts["indeed"] == 1
+    assert list(errors) == ["gupy"]
+    assert "nenhuma vaga" in errors["gupy"]
+
+
+def test_aviso_de_fonte_chega_no_telegram_e_no_email_mas_o_da_ia_nao():
+    from vagas_monitor.notify import email_, fontes_com_problema, telegram
+
+    ctx = json.loads(json.dumps({
+        "jobs": [], "categorias": {}, "total": 0, "lookback_days": 7, "run_date_br": "03/10/2026",
+        "new_count": 0, "report_url": "",
+        "errors": {"gupy": "nenhuma vaga coletada", "ia": "Gemini: 503", "telegram": "envio falhou"},
+    }))
+
+    assert fontes_com_problema(ctx) == {"Gupy": "nenhuma vaga coletada"}
+    assert "Fonte com problema" in telegram.build_messages(ctx)[0]
+    assert "Gupy" in telegram.build_messages(ctx)[0]
+    assert "Gemini" not in telegram.build_messages(ctx)[0]
+    assert "Fonte com problema" in email_.build_html(ctx)
+
+    sem_erro = dict(ctx, errors={})
+    assert "Fonte com problema" not in telegram.build_messages(sem_erro)[0]
+    assert "Fonte com problema" not in email_.build_html(sem_erro)

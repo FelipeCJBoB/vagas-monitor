@@ -42,6 +42,11 @@ def collect_all(cfg: dict, lookback: int, errors: dict, skip: tuple[str, ...] = 
             got = fn()
             counts[name] = len(got)
             jobs.extend(got)
+            # Zero vagas numa fonte que costuma trazer centenas é a API que mudou, não
+            # um dia sem vagas: a Gupy ficou assim por dias, só com warning no log.
+            if not got:
+                log.error("fonte %s não trouxe nenhuma vaga", name)
+                errors[name] = "nenhuma vaga coletada (a fonte pode ter mudado de API)"
         except Exception as e:  # noqa: BLE001
             log.exception("fonte %s falhou", name)
             errors[name] = f"{type(e).__name__}: {e}"[:200]

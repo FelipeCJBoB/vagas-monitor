@@ -8,6 +8,8 @@ from pathlib import Path
 
 import requests
 
+from . import fontes_com_problema
+
 log = logging.getLogger("vagas.telegram")
 API = "https://api.telegram.org/bot{token}/{method}"
 MAX_LEN = 4000  # limite do Telegram é 4096
@@ -39,12 +41,21 @@ def _bloco_mercado(ctx: dict, top: int = 10) -> str:
     return f"\n\n📚 <b>Mais pedidas</b> (vagas que citam, de {n})\n{itens}"
 
 
+def _bloco_problemas(ctx: dict) -> str:
+    probs = fontes_com_problema(ctx)
+    if not probs:
+        return ""
+    itens = "; ".join(f"<b>{esc(k)}</b>: {esc(v)}" for k, v in probs.items())
+    return f"⚠️ Fonte com problema — {itens}\n"
+
+
 def build_messages(ctx: dict, top_n: int = 15) -> list[str]:
     """Quebra o resumo em mensagens <= 4000 caracteres."""
     new_jobs = [j for j in ctx["jobs"] if j.get("is_new")]
     cats = ctx["categorias"]
     head = (f"🎯 <b>Radar de Vagas</b> — {ctx['run_date_br']}\n"
             f"{len(new_jobs)} novas · {ctx['total']} na janela de {ctx['lookback_days']} dias\n")
+    head += _bloco_problemas(ctx)
     if not new_jobs:
         head += "\nNenhuma vaga nova nesta rodada."
         head += _bloco_mercado(ctx)

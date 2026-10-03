@@ -7,6 +7,8 @@ import smtplib
 from email.message import EmailMessage
 from pathlib import Path
 
+from . import fontes_com_problema
+
 log = logging.getLogger("vagas.email")
 LEVEL_PT = {"junior": "Júnior", "pleno": "Pleno", "senior": "Sênior", "unknown": "—"}
 
@@ -34,12 +36,19 @@ def build_html(ctx: dict, top_n: int = 40) -> str:
              "<tr style='text-align:left;color:#5F6C77'><th style='padding:8px'>Score</th><th style='padding:8px'>Vaga</th>"
              "<th style='padding:8px'>Local</th><th style='padding:8px'>Nível</th><th style='padding:8px'>Categoria</th><th style='padding:8px'>IA</th></tr>"
              + "".join(rows) + "</table>") if rows else "<p>Nenhuma vaga nova nesta rodada.</p>"
+    probs = fontes_com_problema(ctx)
+    aviso = (
+        "<p style='margin:0 0 16px;padding:8px 12px;background:#FFF3D6;color:#7A4B00;border-radius:6px'>"
+        "⚠️ Fonte com problema — "
+        + "; ".join(f"<b>{html.escape(k)}</b>: {html.escape(v)}" for k, v in probs.items())
+        + "</p>"
+    ) if probs else ""
     link = f"<p><a href='{html.escape(ctx['report_url'])}'>Relatório completo</a></p>" if ctx.get("report_url") else ""
     mercado = build_mercado_html(ctx)
     return (f"<div style='font-family:Segoe UI,Arial,sans-serif;color:#17222B'>"
             f"<h2 style='margin:0 0 4px'>Radar de Vagas — {ctx['run_date_br']}</h2>"
             f"<p style='margin:0 0 16px;color:#5F6C77'>{ctx['new_count']} novas · {ctx['total']} na janela de {ctx['lookback_days']} dias</p>"
-            f"{table}{mercado}{link}</div>")
+            f"{aviso}{table}{mercado}{link}</div>")
 
 
 def build_mercado_html(ctx: dict, top: int = 15) -> str:
