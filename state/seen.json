@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-03T11:04:51",
+ "last_run": "2026-10-03T11:29:28",
  "jobs": {
   "b7d81ca5e6882f49": {
    "key": "analista de dados junior (sql) - joinville/sc - hibrido|ultra lims",
@@ -10394,7 +10394,7 @@
    "source": "gupy",
    "score": 100,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "478fb4193f6510b9": {
    "key": "desenvolvedor java junior - sc / blumenau - hibrido|bionexo",
@@ -10482,7 +10482,7 @@
    "source": "gupy",
    "score": 91,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "32f9b0ded1cef66e": {
    "key": "assistente de conteudo visual & ia (presencial — jaragua do sul/sc)|acrilico store",
@@ -10650,7 +10650,7 @@
    "source": "gupy",
    "score": 74,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "72c031d9bbcac813": {
    "key": "analista de infraestrutura em ti jr|selbetti tecnologia",
@@ -11040,7 +11040,7 @@
    "source": "gupy",
    "score": 51,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "4dc0bcbe72cebb14": {
    "key": "especialista em automacoes e ia|quantum logistics",
@@ -11090,7 +11090,7 @@
    "source": "gupy",
    "score": 48,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "474d7baf38c71dca": {
    "key": "engenheiro de dados senior|mottu",
@@ -11116,7 +11116,7 @@
    "source": "gupy",
    "score": 45,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "2ee823a3d3cecae9": {
    "key": "especialista em inteligencia artificial — plataforma agentica|confidencial",
@@ -11130,7 +11130,7 @@
    "source": "gupy",
    "score": 43,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "246e2959d645e51d": {
    "key": "analista bpo financeiro|contana advisory",
@@ -11170,7 +11170,7 @@
    "source": "gupy",
    "score": 42,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "f9059ae77ae5df2c": {
    "key": "especialista de dados e devops|totvs",
@@ -11208,7 +11208,7 @@
    "source": "gupy",
    "score": 39,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "16e4fbb8cba6eca5": {
    "key": "especialista em engenharia de plataforma de dados|conecte seu talento a projetos que impulsionam a pesquisa, a educacao e a inovacao no brasil e no mundo. vem para a rnp!",
@@ -11222,7 +11222,7 @@
    "source": "gupy",
    "score": 39,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "0620aa5fb04c2ba6": {
    "key": "cientista de dados especialista (modelagem de credito)|asaas",
@@ -11250,7 +11250,7 @@
    "source": "gupy",
    "score": 39,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "b9dbdc27420be902": {
    "key": "senior data engineer id82269|agileengine",
@@ -11314,7 +11314,7 @@
    "source": "gupy",
    "score": 36,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "35fdc0864cf56c99": {
    "key": "[job-31911] senior data scientist, brazil|ci&t",
@@ -11548,7 +11548,7 @@
    "source": "gupy",
    "score": 30,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "3c3ec3c675778681": {
    "key": "especialista em ciencia de dados i (diretoria de dados - lojas e franquias)|grupo boticario",
@@ -12448,7 +12448,7 @@
    "source": "gupy",
    "score": 7,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-09-29"
+   "last_seen": "2026-10-03"
   },
   "18ac2c8d6d4b4ecb": {
    "key": "senior database engineer|epam systems",
@@ -12846,7 +12846,9 @@
   },
   "e025174c2d331203": {
    "key": "pessoa desenvolvedora fullstack python e react pleno|neogridcarreiras",
-   "aliases": [],
+   "aliases": [
+    "pessoa desenvolvedora fullstack python e react pleno|neogrid carreiras"
+   ],
    "ext_keys": [
     "ext:gupy:12383693"
    ],
@@ -13324,7 +13326,9 @@
   },
   "430a7ac495e8a518": {
    "key": "analista de infraestrutura pl / cloud|governanca brasil",
-   "aliases": [],
+   "aliases": [
+    "analista de infraestrutura pl / cloud|governancabrasil"
+   ],
    "ext_keys": [
     "ext:gupy:12664900"
    ],
@@ -14956,7 +14960,9 @@
   },
   "f6d13e63a89012a0": {
    "key": "arquiteto(a) de software|governanca brasil",
-   "aliases": [],
+   "aliases": [
+    "arquiteto(a) de software|governancabrasil"
+   ],
    "ext_keys": [
     "ext:gupy:12651943"
    ],
@@ -15316,6 +15322,368 @@
    "url": "https://www.linkedin.com/jobs/view/senior-ai-ml-applied-scientist-remote-at-optum-4474775624",
    "source": "linkedin",
    "score": 31,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "4b45257e0d68a40b": {
+   "key": "engenheiro(a) de prompts / desenvolvedor(a) de agentes de ia|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12659808"
+   ],
+   "title": "Engenheiro(a) de Prompts / Desenvolvedor(a) de Agentes de IA",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NTk4MDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 85,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "8a85efa705acc883": {
+   "key": "cientista de dados (ia generativa)|itix",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12661812"
+   ],
+   "title": "Cientista de Dados (IA Generativa)",
+   "company": "Itix",
+   "url": "https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjE4MTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 83,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "bbeea5737f208b97": {
+   "key": "engenheiro de dados pleno|itix",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12664133"
+   ],
+   "title": "Engenheiro de Dados Pleno",
+   "company": "Itix",
+   "url": "https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjQxMzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 77,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "b30424b344e1113a": {
+   "key": "analista de desenvolvimento de sistemas pleno | python & node.js|finnet",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12598008"
+   ],
+   "title": "Analista de Desenvolvimento de Sistemas Pleno | Python & Node.js",
+   "company": "Finnet",
+   "url": "https://finnet.gupy.io/job/eyJqb2JJZCI6MTI1OTgwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 74,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "b4bc3b24ce04703f": {
+   "key": "375296 - jaragua do sul - analista de privacidade de dados|weg",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12634485"
+   ],
+   "title": "375296 - JARAGUA DO SUL - ANALISTA DE PRIVACIDADE DE DADOS",
+   "company": "WEG",
+   "url": "https://weg.gupy.io/job/eyJqb2JJZCI6MTI2MzQ0ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 73,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "bdd3798197c08eb9": {
+   "key": "engenheiro de dados dataops aws|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12623730"
+   ],
+   "title": "Engenheiro de Dados DataOps AWS",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjM3MzAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 71,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "bf3fc60c0279c145": {
+   "key": "data scientist|stefanini latam",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12645638"
+   ],
+   "title": "Data Scientist",
+   "company": "Stefanini Latam",
+   "url": "https://stefaninilatam.gupy.io/job/eyJqb2JJZCI6MTI2NDU2MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 68,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "7eb2fdd620483888": {
+   "key": "banco de talentos | sap (todos os modulos e senioridades)|mtp metodos e tecnologia – brasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12632020"
+   ],
+   "title": "Banco de Talentos | SAP (Todos os Módulos e Senioridades)",
+   "company": "MTP Métodos e Tecnologia – Brasil",
+   "url": "https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI2MzIwMjAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 65,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "36233a31c90b0478": {
+   "key": "profissional de analise de dados de inspecao (analise de dados tecnicos)|pipeway engenharia",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12653838"
+   ],
+   "title": "Profissional de Análise de Dados de Inspeção (Análise de Dados técnicos)",
+   "company": "Pipeway Engenharia",
+   "url": "https://pipeway.gupy.io/job/eyJqb2JJZCI6MTI2NTM4MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 65,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "c6f6b5755a735e30": {
+   "key": "devops engineer|softdesign",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12650308"
+   ],
+   "title": "DevOps Engineer",
+   "company": "SoftDesign",
+   "url": "https://softdesign.gupy.io/job/eyJqb2JJZCI6MTI2NTAzMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 52,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "17754ed30349aed9": {
+   "key": "analista de sistemas|unifique telecomunicacoes",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12530747"
+   ],
+   "title": "Analista de Sistemas",
+   "company": "Unifique Telecomunicações",
+   "url": "https://vemserunifique.gupy.io/job/eyJqb2JJZCI6MTI1MzA3NDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 45,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "dac88505ac269696": {
+   "key": "desenvolvedor(a) full stack java senior|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12530738"
+   ],
+   "title": "Desenvolvedor(a) Full Stack Java Sênior",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1MzA3MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 42,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "48354f71d027a974": {
+   "key": "analista de estrategia de prevencao a fraudes senior (dados)|asaas",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12497339"
+   ],
+   "title": "Analista de Estratégia de Prevenção a Fraudes Sênior (Dados)",
+   "company": "Asaas",
+   "url": "https://asaas.gupy.io/job/eyJqb2JJZCI6MTI0OTczMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 42,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "d1e6fdf6698cce1a": {
+   "key": "engenheiro de dados sr - microsoft fabric|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12630267"
+   ],
+   "title": "ENGENHEIRO DE DADOS SR - MICROSOFT FABRIC",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2MzAyNjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 39,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "80e29ce8c9cb0e77": {
+   "key": "arquiteto(a) / especialista de dados|grupo sysmap",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12620841"
+   ],
+   "title": "Arquiteto(a) / Especialista de Dados",
+   "company": "Grupo SysMap",
+   "url": "https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjA4NDEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 36,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "0f0ef4a820dd2aaa": {
+   "key": "desenvolvedor fullstack especialista ( java,.net, python, node/ts)|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12664442"
+   ],
+   "title": "Desenvolvedor Fullstack Especialista ( Java,.Net, Python, Node/TS)",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjQ0NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 30,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "387cd3a598675f73": {
+   "key": "especialista de recrutamento - data analytics - sao paulo-sp|stefanini group",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12669218"
+   ],
+   "title": "Especialista de Recrutamento - Data Analytics - São Paulo-SP",
+   "company": "Stefanini Group",
+   "url": "https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjkyMTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 27,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "1a32f606a1485314": {
+   "key": "especialista de inteligencia artificial - projetos|motriz",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12599516"
+   ],
+   "title": "Especialista de Inteligência Artificial - Projetos",
+   "company": "Motriz",
+   "url": "https://motriz.gupy.io/job/eyJqb2JJZCI6MTI1OTk1MTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 25,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "602792cd9ddfb0cd": {
+   "key": "analista de sistemas sr|governancabrasil",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12649740"
+   ],
+   "title": "Analista de Sistemas Sr",
+   "company": "Governançabrasil",
+   "url": "https://governancabrasil.gupy.io/job/eyJqb2JJZCI6MTI2NDk3NDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 18,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "d91b8c4b8bd18151": {
+   "key": "analista de sistemas senior (4801)|keep simple",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12657121"
+   ],
+   "title": "Analista de Sistemas Sênior (4801)",
+   "company": "Keep Simple",
+   "url": "https://keepsimple.gupy.io/job/eyJqb2JJZCI6MTI2NTcxMjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 16,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "942f027b0db3fb60": {
+   "key": "engenheiro(a) de inteligencia artificial pl - equiplano|equiplano!",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12617139"
+   ],
+   "title": "Engenheiro(a) de Inteligência Artificial Pl - Equiplano",
+   "company": "Equiplano!",
+   "url": "https://equiplano.gupy.io/job/eyJqb2JJZCI6MTI2MTcxMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 78,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "556f64ef5f2ad038": {
+   "key": "analista devops|attus procuradoria digital",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12614793"
+   ],
+   "title": "Analista DevOps",
+   "company": "Attus Procuradoria Digital",
+   "url": "https://attus.gupy.io/job/eyJqb2JJZCI6MTI2MTQ3OTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 58,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "42879375d6452425": {
+   "key": "especialista em ciencia de dados i (diretoria de dados - lojas e franquias)|grupo boticario",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12516015"
+   ],
+   "title": "Especialista em Ciência de Dados I (Diretoria de Dados - Lojas e Franquias)",
+   "company": "Grupo Boticário",
+   "url": "https://grupoboticario.gupy.io/job/eyJqb2JJZCI6MTI1MTYwMTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 48,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "688c91bf2e82ad61": {
+   "key": "cientista de dados especialista (modelagem de credito)|asaas",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12528609"
+   ],
+   "title": "Cientista de Dados Especialista (Modelagem de Crédito)",
+   "company": "Asaas",
+   "url": "https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1Mjg2MDksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 39,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "ab062c9fba48354d": {
+   "key": "cientista de dados especialista (politicas de credito)|asaas",
+   "aliases": [],
+   "ext_keys": [
+    "ext:gupy:12532213"
+   ],
+   "title": "Cientista de Dados Especialista (Políticas de Crédito)",
+   "company": "Asaas",
+   "url": "https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1MzIyMTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=",
+   "source": "gupy",
+   "score": 33,
+   "first_seen": "2026-10-03",
+   "last_seen": "2026-10-03"
+  },
+  "01b6e7e2fc9b2e16": {
+   "key": "devops tech lead - trabalho remoto|bairesdev",
+   "aliases": [],
+   "ext_keys": [],
+   "title": "DevOps Tech Lead - Trabalho Remoto",
+   "company": "BairesDev",
+   "url": "https://br.linkedin.com/jobs/view/devops-tech-lead-trabalho-remoto-at-bairesdev-4473336770",
+   "source": "linkedin",
+   "score": 14,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03"
   }
