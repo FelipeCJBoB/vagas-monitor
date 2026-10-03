@@ -183,7 +183,11 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
         ncfg = cfg.get("notificacoes", {})
         if _on(ncfg.get("telegram", {}).get("ativo", "auto"), "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"):
             from .notify import telegram
-            n = telegram.send(env("TELEGRAM_BOT_TOKEN"), env("TELEGRAM_CHAT_ID"), ctx, int(ncfg.get("telegram", {}).get("top_n", 15)))
+            try:
+                n = telegram.send(env("TELEGRAM_BOT_TOKEN"), env("TELEGRAM_CHAT_ID"), ctx, int(ncfg.get("telegram", {}).get("top_n", 15)))
+            except Exception as e:  # noqa: BLE001
+                log.error("telegram falhou: %s", e)
+                n = 0
             sent["telegram"] = n > 0
             log.info("telegram: %d mensagem(ns) enviada(s)", n)
         if _on(ncfg.get("email", {}).get("ativo", "auto"), "SMTP_USER", "SMTP_PASSWORD", "EMAIL_TO"):
@@ -193,9 +197,18 @@ def run(force: bool = False, dry_run: bool = False, notify: bool = True, lookbac
             sent["email"] = ok
             log.info("email: %s", "enviado" if ok else "falhou")
 
+    # Notificação que falha não pode passar em silêncio: o passo do Actions ficava
+    # verde e o Telegram ficou 10 dias mudo sem ninguém saber. O motivo vai para o
+    # topo do relatório (que é regerado) e o comando sai com erro.
+    notify_failed = [k for k, ok in sent.items() if not ok]
+    if notify_failed:
+        for k in notify_failed:
+            errors[k] = "envio falhou (veja o log da execução; token ou senha inválidos são a causa mais comum)"
+        paths = report.write_all(ctx, cfg)
+
     return {
         "skipped": False, "date": today.isoformat(), "lookback_days": lb, "raw": len(raw),
         "in_scope": len(jobs), "new": len(new_jobs), "ai_evaluated": ai_done, "ai_error": ai_error,
-        "sources": counts, "errors": errors, "sent": sent,
+        "sources": counts, "errors": errors, "sent": sent, "notify_failed": notify_failed,
         "paths": {k: str(v) for k, v in paths.items()},
     }
