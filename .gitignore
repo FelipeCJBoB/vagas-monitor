@@ -5,3 +5,6 @@ __pycache__/
 .pytest_cache/
 *.tmp
 logs/
+
+# configuração local do Claude Code
+.claude/settings.local.json
