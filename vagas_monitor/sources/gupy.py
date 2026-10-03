@@ -12,7 +12,10 @@ from ..text import strip_html
 
 log = logging.getLogger("vagas.gupy")
 
-BASE = "https://employability-portal.gupy.io/api/v1/jobs"
+# O endpoint antigo (employability-portal.gupy.io/api/v1/jobs) passou a devolver 404
+# entre 29/09 e 03/10/2026, e a fonte ficou em zero vagas sem aviso. O portal público
+# agora serve a busca em portal.gupy.io/api/job-search/jobs.
+BASE = "https://portal.gupy.io/api/job-search/jobs"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) vagas-monitor/1.0"}
 WORKPLACE = {"remote": "remote", "hybrid": "hybrid", "on-site": "onsite", "onsite": "onsite"}
 
@@ -34,7 +37,8 @@ def _to_job(j: dict) -> Job:
         tags.append("estagio")
     wp = WORKPLACE.get((j.get("workplaceType") or "").lower(), "unknown")
     city, state = j.get("city") or "", j.get("state") or ""
-    remote = bool(j.get("isRemoteWork"))
+    # a resposta nova não traz mais `isRemoteWork`; o modelo de trabalho vem em workplaceType
+    remote = wp == "remote" or bool(j.get("isRemoteWork"))
     # o `id` do portal é o mesmo jobId que o Indeed carrega no link de candidatura
     ext = f"gupy:{j['id']}" if isinstance(j.get("id"), int) else None
     return Job(
@@ -72,7 +76,7 @@ def collect(terms: list[str], lookback_days: int, include_remote: bool = True,
     if include_remote:
         for term in terms:
             for i in range(2):
-                data = _page({"jobName": term, "isRemoteWork": "true", "limit": 100, "offset": i * 100})
+                data = _page({"jobName": term, "workplaceType": "remote", "limit": 100, "offset": i * 100})
                 for j in data:
                     raw[j["id"]] = j
                 if len(data) < 100:
