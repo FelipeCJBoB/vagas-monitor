@@ -1,556 +1,571 @@
-# Radar de Vagas — 03/10/2026
+# Radar de Vagas — 08/10/2026
 
-**20 vagas novas** · 291 na janela de 7 dias · gerado 03/10/2026 11:29  
-Fontes (brutas): Gupy 813 · Indeed 763 · LinkedIn 934  
+**172 vagas novas** · 287 na janela de 7 dias · gerado 08/10/2026 14:48  
+Fontes (brutas): Gupy 898 · Indeed 727 · LinkedIn 820  
 Cidades: Itajaí, Navegantes, Balneário Camboriú, Gaspar, Blumenau, Joinville, Jaraguá do Sul, Brusque · Remoto (Brasil) incluído  
-Por categoria: Agentes de IA 19 · Dados 82 · IA / LLMs 35 · Full Stack / Dev 75 · Sistemas e ERP 42 · DevOps e Automação 38  
-Por local: Itajaí 8 · Navegantes 3 · Balneário Camboriú 1 · Gaspar 2 · Blumenau 32 · Joinville 7 · Jaraguá do Sul 5 · Brusque 3 · Remoto 230
-
-> ⚠️ Problemas nesta rodada: **Avaliação por IA** — Gemini: limite de requisições do nível gratuito atingido: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de
+Por categoria: Agentes de IA 17 · Dados 80 · IA / LLMs 38 · Full Stack / Dev 72 · Sistemas e ERP 52 · DevOps e Automação 28  
+Por local: Itajaí 8 · Navegantes 1 · Balneário Camboriú 1 · Gaspar 3 · Blumenau 29 · Joinville 10 · Jaraguá do Sul 2 · Remoto 233
 
 ## Destaques — top 20 novas
 
 | Score | Vaga | Empresa | Local | Nível | Categoria | Fonte | Publicada |
 |---:|---|---|---|---|---|---|---|
-| **85** | [Engenheiro(a) de Prompts / Desenvolvedor(a) de Agentes de IA](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NTk4MDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | — | Agentes de IA | Gupy | 01/10 (2d) |
-| **83** | [Cientista de Dados (IA Generativa)](https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjE4MTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Itix | Remoto | — | Dados | Gupy | 01/10 (2d) |
-| **77** | [Engenheiro de Dados Pleno](https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjQxMzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Itix | Remoto | Pleno | Dados | Gupy | 01/10 (2d) |
-| **74** | [Analista de Desenvolvimento de Sistemas Pleno / Python & Node.js](https://finnet.gupy.io/job/eyJqb2JJZCI6MTI1OTgwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Finnet | Remoto | Pleno | Full Stack / Dev | Gupy | 29/09 (4d) |
-| **73** | [375296 - JARAGUA DO SUL - ANALISTA DE PRIVACIDADE DE DADOS](https://weg.gupy.io/job/eyJqb2JJZCI6MTI2MzQ0ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | WEG | Jaraguá do Sul (presencial) | — | Dados | Gupy | 29/09 (4d) |
-| **71** | [Engenheiro de Dados DataOps AWS](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjM3MzAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | — | Dados | Gupy | 29/09 (4d) |
-| **68** | [Data Scientist](https://stefaninilatam.gupy.io/job/eyJqb2JJZCI6MTI2NDU2MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Latam | Remoto | — | Dados | Gupy | 02/10 (1d) |
-| **65** | [Banco de Talentos / SAP (Todos os Módulos e Senioridades)](https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI2MzIwMjAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | MTP Métodos e Tecnologia – Brasil | Remoto | Júnior | Sistemas e ERP | Gupy | 29/09 (4d) |
-| **65** | [Profissional de Análise de Dados de Inspeção (Análise de Dados técnicos)](https://pipeway.gupy.io/job/eyJqb2JJZCI6MTI2NTM4MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Pipeway Engenharia | Remoto | — | Dados | Gupy | 01/10 (2d) |
-| **52** | [DevOps Engineer](https://softdesign.gupy.io/job/eyJqb2JJZCI6MTI2NTAzMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | SoftDesign | Remoto | — | DevOps e Automação | Gupy | 01/10 (2d) |
-| **45** | [Analista de Sistemas](https://vemserunifique.gupy.io/job/eyJqb2JJZCI6MTI1MzA3NDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Unifique Telecomunicações | Remoto | — | Sistemas e ERP | Gupy | 30/09 (3d) |
-| **42** | [Desenvolvedor(a) Full Stack Java Sênior](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1MzA3MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | Sênior | Full Stack / Dev | Gupy | 29/09 (4d) |
-| **42** | [Analista de Estratégia de Prevenção a Fraudes Sênior (Dados)](https://asaas.gupy.io/job/eyJqb2JJZCI6MTI0OTczMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Asaas | Remoto | Sênior | Dados | Gupy | 01/10 (2d) |
-| **39** | [ENGENHEIRO DE DADOS SR - MICROSOFT FABRIC](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2MzAyNjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Dados | Gupy | 02/10 (1d) |
-| **36** | [Arquiteto(a) / Especialista de Dados](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjA4NDEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | Sênior | Dados | Gupy | 29/09 (4d) |
-| **30** | [Desenvolvedor Fullstack Especialista ( Java,.Net, Python, Node/TS)](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjQ0NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Full Stack / Dev | Gupy | 01/10 (2d) |
-| **27** | [Especialista de Recrutamento - Data Analytics - São Paulo-SP](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjkyMTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Dados | Gupy | 02/10 (1d) |
-| **25** | [Especialista de Inteligência Artificial - Projetos](https://motriz.gupy.io/job/eyJqb2JJZCI6MTI1OTk1MTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Motriz | Remoto | Sênior | IA / LLMs | Gupy | 30/09 (3d) |
-| **18** | [Analista de Sistemas Sr](https://governancabrasil.gupy.io/job/eyJqb2JJZCI6MTI2NDk3NDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Governançabrasil | Blumenau (híbrido) | Sênior | Sistemas e ERP | Gupy | 30/09 (3d) |
-| **16** | [Analista de Sistemas Sênior (4801)](https://keepsimple.gupy.io/job/eyJqb2JJZCI6MTI2NTcxMjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Keep Simple | Remoto | Sênior | Sistemas e ERP | Gupy | 01/10 (2d) |
+| **100** ★9/10 | [Analista de IA e Automação JR.](https://br.indeed.com/viewjob?jk=e8f312318336fb2b) 🆕 | TEC MAIS SOLUCOES INTELIGENTES EM INFORMATICA LTDA | Blumenau | Júnior | IA / LLMs | Indeed | 06/10 (2d) |
+| | ↳ _Excelente encaixe: vaga júnior de IA/automação que valoriza conhecimentos em LLMs, Python e APIs, alinhando-se aos seus projetos e estudos. Destaque sua experiência com agentes de IA, automação de processos internos e projetos práticos em Python._ | | | | | | |
+| **97** ★9/10 | [ANALISTA DE DADOS JUNIOR](https://br.indeed.com/viewjob?jk=1f542bcde4afb893) 🆕 | cashgo | Remoto | Júnior | Dados | Indeed | 05/10 (3d) |
+| | ↳ _Excelente aderência para o nível júnior, combinando exatamente a stack exigida (Power BI, SQL, Excel) e Python como diferencial. Destaque sua vivência na construção de relatórios, acompanhamento de KPIs e o projeto CJ BOB Bank para evidenciar afinidade com o setor financeiro._ | | | | | | |
+| **97** ★7/10 | [Web Analytics JR](https://br.indeed.com/viewjob?jk=ad37dba63bf7f3b4) 🆕 | Lima Consulting Group - Brasil | Remoto | Júnior | Dados | Indeed | 06/10 (2d) |
+| | ↳ _A vaga é júnior e remota, casando perfeitamente com a graduação em andamento e seus conhecimentos em JavaScript, HTML/CSS e manipulação de dados em Python. O candidato precisará apenas demonstrar rápida curva de aprendizado em Tag Management (GTM) e métricas de web analytics._ | | | | | | |
+| **94** ★9/10 | [Analista de Dados Jr - Crédito](https://br.indeed.com/viewjob?jk=1c164902eee1d6d5) 🆕 | POWER DATA TECNOLOGIA ANALITICA LTDA | Remoto | Júnior | Dados | Indeed | 06/10 (2d) |
+| | ↳ _Excelente aderência: vaga júnior 100% remota aceitando graduação em andamento e com foco em SQL e Python. Destaque sua vivência com KPIs corporativos e a base analítica desenvolvida nos projetos de finanças quantitativas._ | | | | | | |
+| **93** | [Administrador de banco de dados Jr](https://br.linkedin.com/jobs/view/administrador-de-banco-de-dados-jr-at-migrati-solu%C3%A7%C3%B5es-em-banco-de-dados-4474455889) 🆕 | MigraTI Soluções em Banco de dados | Blumenau | Júnior | Dados | LinkedIn | 07/10 (1d) |
+| **90** ★4/10 | [Engenheiro(a) de Inteligência Artificial - Pleno (Acessível também para pessoas com deficiência)](https://br.indeed.com/viewjob?jk=6d50e7991c91e334) 🆕 | Gol Linhas Aéreas | Remoto | Pleno | IA / LLMs | Indeed | 08/10 (hoje) |
+| | ↳ _A stack de LLMs, agentes e testes em Python tem forte sinergia com o interesse e projetos do candidato, mas a vaga é de nível Pleno e exige formação superior concluída e vivência prática em ambientes corporativos de IA (Cloud, Docker, LangChain). ⚠ Vaga exige nível Pleno e formação superior concluída (candidato está cursando com previsão para 2027)._ | | | | | | |
+| **88** ★5/10 | [Desenvolvedor Full Stack java - Junior](https://br.indeed.com/viewjob?jk=5f1e6662ec9919c2) 🆕 | FCamara | Remoto | Júnior | Full Stack / Dev | Indeed | 07/10 (1d) |
+| | ↳ _A vaga valoriza muito o uso de IA no fluxo de desenvolvimento e interesse no mercado financeiro, pontos fortes do candidato. Contudo, o foco central do backend é Java/Spring Boot, tecnologia não presente no seu perfil. ⚠ Exige conhecimento de Java e Spring Boot, tecnologias que não constam no perfil do candidato._ | | | | | | |
+| **88** ★6/10 | [Data Analyst II (Wiipo) - 11892](https://br.indeed.com/viewjob?jk=ccbcdc72e52879cb) 🆕 | Wiipo Benefícios | Blumenau | — | Dados | Indeed | 07/10 (1d) |
+| | ↳ _A vaga é de nível II (Pleno), o que pode ser um obstáculo, mas o fit técnico com Python, SQL, Power BI e iniciativas de IA/automação na região de Blumenau é altíssimo. Vale a pena aplicar destacando os KPIs criados e a automação de sistemas internos. ⚠ Vaga exige nível Pleno (Analyst II), enquanto o candidato busca posições júnior/transição de carreira._ | | | | | | |
+| **88** ★6/10 | [Data Analyst II (Wiipo) - 11892](https://br.indeed.com/viewjob?jk=e4d2dd7a5e01d065) 🆕 | Senior Sistemas | Blumenau | — | Dados | Indeed | 07/10 (1d) |
+| | ↳ _A vaga é para Analista II (Pleno) em Blumenau, mas possui altíssima aderência técnica com seu stack (Python, SQL, Power BI, ML e IA aplicada). Destaque sua experiência prática na digitalização de processos internos e projetos de IA. ⚠ Vaga direcionada a nível Pleno (Analista II), superior ao perfil júnior/em transição de carreira._ | | | | | | |
+| **88** | [WEG - Pesquisador em Ciência de Dados e IA](https://br.linkedin.com/jobs/view/weg-pesquisador-em-ci%C3%AAncia-de-dados-e-ia-at-iel-sc-4474827587) 🆕 | IEL/SC - Instituto Euvaldo Lodi de Santa Catarina | Jaraguá do Sul | — | Dados | LinkedIn | 08/10 (hoje) |
+| **87** | [[Programador de Manutenção Jr] - Seara](https://grupojbs.gupy.io/job/eyJqb2JJZCI6MTI2ODIzMTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | JBS | Gaspar (presencial) | Júnior | Full Stack / Dev | Gupy | 06/10 (2d) |
+| **87** | [Analista de Inteligência Artificial PL](https://br.indeed.com/viewjob?jk=20702e561f6c4db9) 🆕 | INSTITUTO HARDWARE BR - HBR | Remoto | Pleno | IA / LLMs | Indeed | 06/10 (2d) |
+| **86** | [Analista de Dados e BI Pleno (Python/SQL - Remoto)](https://br.indeed.com/viewjob?jk=db91a7ca4fe543cd) 🆕 | Looqbox | Remoto | Pleno | Dados | Indeed | 06/10 (2d) |
+| **85** | [[Job 32145] AI Engineer (Enabling Team)](https://br.indeed.com/viewjob?jk=deb75b14be5c9a7d) 🆕 | Ci&T | Remoto | — | Agentes de IA | Indeed | 06/10 (2d) |
+| **85** | [Engenheiro de software - SC](https://br.linkedin.com/jobs/view/engenheiro-de-software-sc-at-quick-soft-tecnologia-4474012629) 🆕 | Quick Soft Tecnologia | Blumenau | — | Full Stack / Dev | LinkedIn | 06/10 (2d) |
+| **84** | [Engenheiro(a) de Inteligência Artificial / Chatbot / IBM Watson](https://br.indeed.com/viewjob?jk=f67262a379129ecc) 🆕 | Growdev | Remoto | — | IA / LLMs | Indeed | 07/10 (1d) |
+| **83** | [Gerente de Produto Técnico - Assistente de Agentes com Inteligência Artificial](https://br.indeed.com/viewjob?jk=b5bd93503b78ed4a) 🆕 | Atento | Remoto | Júnior | IA / LLMs | Indeed | 06/10 (2d) |
+| **83** | [Pessoa Cientista de Dados](https://br.indeed.com/viewjob?jk=ae72aaab99fbec3a) 🆕 | MJV Innovation | Remoto | — | Dados | Indeed | 06/10 (2d) |
+| **83** | [Machine Learning / Data Engineer](https://br.indeed.com/viewjob?jk=705601b53a6ca03b) 🆕 | turing | Remoto | — | Dados | Indeed | 06/10 (2d) |
+| **83** | [Atento Escalada - Gerente de Produto Técnico - Assistente de Agentes com Inteligência Artificial](https://br.indeed.com/viewjob?jk=2c52f68118ed7c73) 🆕 | Escalada | Remoto | Júnior | IA / LLMs | Indeed | 07/10 (1d) |
 
 ## Tecnologias mais pedidas
 
-Em quantas vagas cada tecnologia aparece, contando uma vez por vaga, sobre as **291** vagas com descrição (de 291 no escopo): 61 na região e 230 remotas.
+Em quantas vagas cada tecnologia aparece, contando uma vez por vaga, sobre as **287** vagas com descrição (de 287 no escopo): 54 na região e 233 remotas.
 
 | # | Tecnologia | Vagas | % | Região | Remoto |
 |---:|---|---:|---:|---:|---:|
-| 1 | **Python** | 128 | 44% | 14 | 114 |
-| 2 | **Inglês** | 122 | 42% | 18 | 104 |
-| 3 | **SQL** | 110 | 38% | 22 | 88 |
-| 4 | **CI/CD** | 106 | 36% | 15 | 91 |
-| 5 | **AWS** | 99 | 34% | 14 | 85 |
-| 6 | **Git** | 95 | 33% | 14 | 81 |
-| 7 | **Azure** | 73 | 25% | 10 | 63 |
-| 8 | **Agentes de IA** | 69 | 24% | 3 | 66 |
-| 9 | **LLMs** | 66 | 23% | 5 | 61 |
-| 10 | **Docker** | 65 | 22% | 12 | 53 |
-| 11 | **APIs REST** | 62 | 21% | 13 | 49 |
-| 12 | **Metodologias ágeis** | 55 | 19% | 9 | 46 |
-| 13 | **Kubernetes** | 54 | 19% | 12 | 42 |
-| 14 | **IA Generativa** | 51 | 18% | 6 | 45 |
-| 15 | **Java** | 48 | 16% | 12 | 36 |
-| 16 | **RAG** | 47 | 16% | 4 | 43 |
-| 17 | **Testes automatizados** | 47 | 16% | 8 | 39 |
-| 18 | **Terraform** | 46 | 16% | 4 | 42 |
-| 19 | **Google Cloud** | 45 | 16% | 8 | 37 |
-| 20 | **TypeScript** | 42 | 14% | 3 | 39 |
-| 21 | **JavaScript** | 41 | 14% | 11 | 30 |
-| 22 | **Microsserviços** | 41 | 14% | 5 | 36 |
-| 23 | **SAP** | 41 | 14% | 12 | 29 |
-| 24 | **Machine Learning** | 40 | 14% | 3 | 37 |
-| 25 | **React** | 40 | 14% | 6 | 34 |
-| 26 | **PostgreSQL** | 39 | 13% | 4 | 35 |
-| 27 | **Prompt engineering** | 38 | 13% | 3 | 35 |
-| 28 | **Claude (Anthropic)** | 37 | 13% | 2 | 35 |
-| 29 | **Node.js** | 37 | 13% | 5 | 32 |
-| 30 | **Code review** | 36 | 12% | 4 | 32 |
+| 1 | **Inglês** | 118 | 41% | 18 | 100 |
+| 2 | **SQL** | 115 | 40% | 23 | 92 |
+| 3 | **Python** | 112 | 39% | 17 | 95 |
+| 4 | **Git** | 89 | 31% | 12 | 77 |
+| 5 | **CI/CD** | 87 | 30% | 12 | 75 |
+| 6 | **AWS** | 77 | 27% | 7 | 70 |
+| 7 | **Azure** | 74 | 26% | 10 | 64 |
+| 8 | **APIs REST** | 65 | 23% | 13 | 52 |
+| 9 | **LLMs** | 58 | 20% | 4 | 54 |
+| 10 | **Agentes de IA** | 57 | 20% | 2 | 55 |
+| 11 | **Metodologias ágeis** | 56 | 20% | 16 | 40 |
+| 12 | **IA Generativa** | 53 | 18% | 4 | 49 |
+| 13 | **Docker** | 52 | 18% | 8 | 44 |
+| 14 | **Testes automatizados** | 47 | 16% | 10 | 37 |
+| 15 | **SAP** | 46 | 16% | 11 | 35 |
+| 16 | **Google Cloud** | 44 | 15% | 6 | 38 |
+| 17 | **Kubernetes** | 44 | 15% | 6 | 38 |
+| 18 | **React** | 41 | 14% | 5 | 36 |
+| 19 | **Java** | 40 | 14% | 7 | 33 |
+| 20 | **RAG** | 37 | 13% | 3 | 34 |
+| 21 | **Machine Learning** | 36 | 12% | 4 | 32 |
+| 22 | **Claude (Anthropic)** | 35 | 12% | 4 | 31 |
+| 23 | **Code review** | 33 | 12% | 5 | 28 |
+| 24 | **Excel** | 33 | 12% | 18 | 15 |
+| 25 | **TypeScript** | 33 | 12% | 4 | 29 |
+| 26 | **PostgreSQL** | 32 | 11% | 4 | 28 |
+| 27 | **Power BI** | 32 | 11% | 14 | 18 |
+| 28 | **Prompt engineering** | 32 | 11% | 3 | 29 |
+| 29 | **JavaScript** | 31 | 11% | 10 | 21 |
+| 30 | **C#/.NET** | 30 | 10% | 9 | 21 |
 
 <details><summary>Mais 116 tecnologias citadas</summary>
 
 | # | Tecnologia | Vagas | % | Região | Remoto |
 |---:|---|---:|---:|---:|---:|
-| 31 | **Databricks** | 30 | 10% | 5 | 25 |
-| 32 | **Pipelines de dados** | 30 | 10% | 2 | 28 |
-| 33 | **Segurança da informação** | 30 | 10% | 9 | 21 |
-| 34 | **Estatística** | 29 | 10% | 6 | 23 |
-| 35 | **OpenAI/GPT** | 29 | 10% | 1 | 28 |
-| 36 | **SQL Server** | 29 | 10% | 5 | 24 |
-| 37 | **Power BI** | 28 | 10% | 9 | 19 |
-| 38 | **Scrum** | 28 | 10% | 6 | 22 |
-| 39 | **C#/.NET** | 27 | 9% | 9 | 18 |
-| 40 | **Modelagem de dados** | 27 | 9% | 5 | 22 |
-| 41 | **Jira** | 25 | 9% | 1 | 24 |
-| 42 | **HTML/CSS** | 24 | 8% | 7 | 17 |
-| 43 | **NoSQL** | 23 | 8% | 5 | 18 |
-| 44 | **ERP** | 22 | 8% | 10 | 12 |
-| 45 | **Governança de dados** | 22 | 8% | 4 | 18 |
-| 46 | **Kafka** | 22 | 8% | 6 | 16 |
-| 47 | **Kanban** | 22 | 8% | 6 | 16 |
-| 48 | **MCP** | 22 | 8% | 1 | 21 |
-| 49 | **Angular** | 21 | 7% | 3 | 18 |
-| 50 | **Function calling** | 21 | 7% | 0 | 21 |
-| 51 | **Azure DevOps** | 20 | 7% | 3 | 17 |
-| 52 | **Embeddings** | 20 | 7% | 1 | 19 |
-| 53 | **ETL/ELT** | 20 | 7% | 4 | 16 |
-| 54 | **LangChain** | 20 | 7% | 1 | 19 |
-| 55 | **Spark** | 20 | 7% | 5 | 15 |
-| 56 | **BigQuery** | 19 | 6% | 0 | 19 |
-| 57 | **GitHub Copilot** | 19 | 6% | 2 | 17 |
-| 58 | **MongoDB** | 19 | 6% | 1 | 18 |
-| 59 | **Claude Code** | 18 | 6% | 1 | 17 |
-| 60 | **Design Patterns** | 18 | 6% | 4 | 14 |
-| 61 | **Excel** | 18 | 6% | 10 | 8 |
-| 62 | **Banco vetorial** | 17 | 6% | 2 | 15 |
-| 63 | **Clean Code** | 17 | 6% | 2 | 15 |
-| 64 | **Data Lake** | 17 | 6% | 2 | 15 |
-| 65 | **Espanhol** | 17 | 6% | 4 | 13 |
-| 66 | **LangGraph** | 17 | 6% | 0 | 17 |
-| 67 | **LGPD** | 17 | 6% | 3 | 14 |
-| 68 | **Gemini** | 16 | 6% | 0 | 16 |
-| 69 | **Linux** | 16 | 6% | 5 | 11 |
-| 70 | **GitHub Actions** | 15 | 5% | 1 | 14 |
-| 71 | **MLOps** | 15 | 5% | 2 | 13 |
-| 72 | **MySQL** | 15 | 5% | 3 | 12 |
-| 73 | **Redis** | 15 | 5% | 1 | 14 |
-| 74 | **KPIs** | 14 | 5% | 4 | 10 |
-| 75 | **Spring Boot** | 14 | 5% | 1 | 13 |
-| 76 | **Jenkins** | 13 | 4% | 1 | 12 |
-| 77 | **Snowflake** | 13 | 4% | 1 | 12 |
-| 78 | **Salesforce** | 12 | 4% | 0 | 12 |
-| 79 | **Bash/Shell** | 11 | 4% | 4 | 7 |
-| 80 | **CRM** | 11 | 4% | 2 | 9 |
-| 81 | **FastAPI** | 11 | 4% | 2 | 9 |
-| 82 | **LlamaIndex** | 11 | 4% | 0 | 11 |
-| 83 | **Looker** | 11 | 4% | 2 | 9 |
-| 84 | **dbt** | 10 | 3% | 0 | 10 |
-| 85 | **Airflow** | 9 | 3% | 0 | 9 |
-| 86 | **Cursor** | 9 | 3% | 0 | 9 |
-| 87 | **Data Warehouse** | 9 | 3% | 1 | 8 |
-| 88 | **Next.js** | 9 | 3% | 0 | 9 |
-| 89 | **PHP** | 9 | 3% | 0 | 9 |
-| 90 | **SOLID** | 9 | 3% | 2 | 7 |
-| 91 | **Tableau** | 9 | 3% | 2 | 7 |
-| 92 | **TOTVS/Protheus** | 9 | 3% | 5 | 4 |
-| 93 | **Visão computacional** | 8 | 3% | 0 | 8 |
-| 94 | **Vue.js** | 8 | 3% | 2 | 6 |
-| 95 | **Fine-tuning** | 7 | 2% | 0 | 7 |
-| 96 | **Jest** | 7 | 2% | 0 | 7 |
-| 97 | **Clean Architecture** | 6 | 2% | 0 | 6 |
-| 98 | **Django** | 6 | 2% | 2 | 4 |
-| 99 | **GraphQL** | 6 | 2% | 1 | 5 |
-| 100 | **ITIL** | 6 | 2% | 3 | 3 |
-| 101 | **Mapeamento de processos** | 6 | 2% | 1 | 5 |
-| 102 | **MLflow** | 6 | 2% | 0 | 6 |
-| 103 | **n8n** | 6 | 2% | 1 | 5 |
-| 104 | **NestJS** | 6 | 2% | 0 | 6 |
-| 105 | **NumPy** | 6 | 2% | 0 | 6 |
-| 106 | **Pandas** | 6 | 2% | 0 | 6 |
+| 31 | **Microsserviços** | 29 | 10% | 4 | 25 |
+| 32 | **Terraform** | 29 | 10% | 5 | 24 |
+| 33 | **Modelagem de dados** | 28 | 10% | 3 | 25 |
+| 34 | **OpenAI/GPT** | 28 | 10% | 5 | 23 |
+| 35 | **Scrum** | 27 | 9% | 8 | 19 |
+| 36 | **Databricks** | 25 | 9% | 2 | 23 |
+| 37 | **Governança de dados** | 25 | 9% | 2 | 23 |
+| 38 | **Jira** | 25 | 9% | 1 | 24 |
+| 39 | **Node.js** | 25 | 9% | 2 | 23 |
+| 40 | **Segurança da informação** | 25 | 9% | 8 | 17 |
+| 41 | **ERP** | 24 | 8% | 10 | 14 |
+| 42 | **Angular** | 23 | 8% | 3 | 20 |
+| 43 | **Estatística** | 23 | 8% | 7 | 16 |
+| 44 | **Kafka** | 23 | 8% | 3 | 20 |
+| 45 | **Kanban** | 23 | 8% | 6 | 17 |
+| 46 | **Linux** | 23 | 8% | 6 | 17 |
+| 47 | **Pipelines de dados** | 23 | 8% | 0 | 23 |
+| 48 | **LangChain** | 22 | 8% | 2 | 20 |
+| 49 | **SQL Server** | 22 | 8% | 2 | 20 |
+| 50 | **Clean Code** | 21 | 7% | 3 | 18 |
+| 51 | **NoSQL** | 21 | 7% | 3 | 18 |
+| 52 | **Espanhol** | 20 | 7% | 4 | 16 |
+| 53 | **Azure DevOps** | 19 | 7% | 1 | 18 |
+| 54 | **Data Lake** | 19 | 7% | 2 | 17 |
+| 55 | **GitHub Copilot** | 19 | 7% | 3 | 16 |
+| 56 | **KPIs** | 19 | 7% | 6 | 13 |
+| 57 | **MongoDB** | 19 | 7% | 0 | 19 |
+| 58 | **LGPD** | 18 | 6% | 3 | 15 |
+| 59 | **SOLID** | 17 | 6% | 3 | 14 |
+| 60 | **Spark** | 17 | 6% | 3 | 14 |
+| 61 | **Spring Boot** | 17 | 6% | 2 | 15 |
+| 62 | **Design Patterns** | 16 | 6% | 2 | 14 |
+| 63 | **ETL/ELT** | 16 | 6% | 2 | 14 |
+| 64 | **LangGraph** | 16 | 6% | 1 | 15 |
+| 65 | **Banco vetorial** | 14 | 5% | 0 | 14 |
+| 66 | **Bash/Shell** | 14 | 5% | 5 | 9 |
+| 67 | **Claude Code** | 14 | 5% | 0 | 14 |
+| 68 | **Gemini** | 14 | 5% | 1 | 13 |
+| 69 | **HTML/CSS** | 14 | 5% | 2 | 12 |
+| 70 | **GitHub Actions** | 13 | 4% | 0 | 13 |
+| 71 | **Mapeamento de processos** | 13 | 4% | 3 | 10 |
+| 72 | **MySQL** | 13 | 4% | 1 | 12 |
+| 73 | **Next.js** | 13 | 4% | 0 | 13 |
+| 74 | **Embeddings** | 12 | 4% | 0 | 12 |
+| 75 | **MLOps** | 12 | 4% | 1 | 11 |
+| 76 | **Tableau** | 12 | 4% | 4 | 8 |
+| 77 | **BigQuery** | 10 | 4% | 0 | 10 |
+| 78 | **Data Warehouse** | 10 | 4% | 1 | 9 |
+| 79 | **Function calling** | 10 | 4% | 0 | 10 |
+| 80 | **MCP** | 10 | 4% | 3 | 7 |
+| 81 | **Salesforce** | 10 | 4% | 0 | 10 |
+| 82 | **TOTVS/Protheus** | 10 | 4% | 6 | 4 |
+| 83 | **Vue.js** | 10 | 4% | 1 | 9 |
+| 84 | **CRM** | 9 | 3% | 0 | 9 |
+| 85 | **Redis** | 9 | 3% | 0 | 9 |
+| 86 | **Snowflake** | 9 | 3% | 1 | 8 |
+| 87 | **Airflow** | 8 | 3% | 0 | 8 |
+| 88 | **Clean Architecture** | 8 | 3% | 1 | 7 |
+| 89 | **Deep Learning** | 8 | 3% | 1 | 7 |
+| 90 | **ABAP** | 7 | 2% | 1 | 6 |
+| 91 | **Chatbots** | 7 | 2% | 1 | 6 |
+| 92 | **Cursor** | 7 | 2% | 0 | 7 |
+| 93 | **FastAPI** | 7 | 2% | 0 | 7 |
+| 94 | **Jenkins** | 7 | 2% | 1 | 6 |
+| 95 | **LlamaIndex** | 7 | 2% | 0 | 7 |
+| 96 | **MLflow** | 7 | 2% | 1 | 6 |
+| 97 | **n8n** | 7 | 2% | 4 | 3 |
+| 98 | **NLP** | 7 | 2% | 1 | 6 |
+| 99 | **scikit-learn** | 7 | 2% | 0 | 7 |
+| 100 | **dbt** | 6 | 2% | 0 | 6 |
+| 101 | **GitLab CI** | 6 | 2% | 0 | 6 |
+| 102 | **GraphQL** | 6 | 2% | 0 | 6 |
+| 103 | **Jest** | 6 | 2% | 0 | 6 |
+| 104 | **NumPy** | 6 | 2% | 0 | 6 |
+| 105 | **Pandas** | 6 | 2% | 0 | 6 |
+| 106 | **PHP** | 6 | 2% | 0 | 6 |
 | 107 | **PyTorch** | 6 | 2% | 0 | 6 |
-| 108 | **scikit-learn** | 6 | 2% | 0 | 6 |
-| 109 | **Chatbots** | 5 | 2% | 0 | 5 |
-| 110 | **CrewAI** | 5 | 2% | 0 | 5 |
-| 111 | **Deep Learning** | 5 | 2% | 0 | 5 |
-| 112 | **GitLab CI** | 5 | 2% | 0 | 5 |
-| 113 | **Go** | 5 | 2% | 1 | 4 |
-| 114 | **NLP** | 5 | 2% | 0 | 5 |
-| 115 | **TensorFlow** | 5 | 2% | 0 | 5 |
-| 116 | **ABAP** | 4 | 1% | 3 | 1 |
-| 117 | **DAX** | 4 | 1% | 1 | 3 |
-| 118 | **pgvector** | 4 | 1% | 0 | 4 |
-| 119 | **Pinecone** | 4 | 1% | 0 | 4 |
-| 120 | **Power Automate** | 4 | 1% | 1 | 3 |
-| 121 | **React Native** | 4 | 1% | 1 | 3 |
-| 122 | **RPA** | 4 | 1% | 1 | 3 |
-| 123 | **Azure Data Factory** | 3 | 1% | 1 | 2 |
-| 124 | **Flask** | 3 | 1% | 0 | 3 |
-| 125 | **Laravel** | 3 | 1% | 0 | 3 |
-| 126 | **Oracle Database** | 3 | 1% | 2 | 1 |
-| 127 | **Power Query** | 3 | 1% | 2 | 1 |
-| 128 | **Prisma** | 3 | 1% | 0 | 3 |
-| 129 | **Qlik** | 3 | 1% | 2 | 1 |
-| 130 | **TypeORM** | 3 | 1% | 0 | 3 |
-| 131 | **XGBoost** | 3 | 1% | 0 | 3 |
-| 132 | **Cypress** | 2 | 1% | 0 | 2 |
-| 133 | **Hugging Face** | 2 | 1% | 0 | 2 |
-| 134 | **Qdrant** | 2 | 1% | 0 | 2 |
-| 135 | **Selenium** | 2 | 1% | 0 | 2 |
-| 136 | **Zapier** | 2 | 1% | 0 | 2 |
-| 137 | **DDD** | 1 | 0% | 0 | 1 |
-| 138 | **FAISS** | 1 | 0% | 0 | 1 |
-| 139 | **Figma** | 1 | 0% | 0 | 1 |
-| 140 | **Hibernate/JPA** | 1 | 0% | 1 | 0 |
-| 141 | **Kotlin** | 1 | 0% | 0 | 1 |
+| 108 | **Visão computacional** | 6 | 2% | 0 | 6 |
+| 109 | **Cypress** | 5 | 2% | 0 | 5 |
+| 110 | **Fine-tuning** | 5 | 2% | 1 | 4 |
+| 111 | **ITIL** | 5 | 2% | 3 | 2 |
+| 112 | **Kotlin** | 5 | 2% | 0 | 5 |
+| 113 | **Looker** | 5 | 2% | 2 | 3 |
+| 114 | **Power Automate** | 5 | 2% | 2 | 3 |
+| 115 | **Qdrant** | 5 | 2% | 0 | 5 |
+| 116 | **Qlik** | 5 | 2% | 2 | 3 |
+| 117 | **Figma** | 4 | 1% | 0 | 4 |
+| 118 | **Hibernate/JPA** | 4 | 1% | 0 | 4 |
+| 119 | **Hugging Face** | 4 | 1% | 1 | 3 |
+| 120 | **Lean/Six Sigma** | 4 | 1% | 0 | 4 |
+| 121 | **NestJS** | 4 | 1% | 0 | 4 |
+| 122 | **pgvector** | 4 | 1% | 0 | 4 |
+| 123 | **React Native** | 4 | 1% | 0 | 4 |
+| 124 | **TensorFlow** | 4 | 1% | 0 | 4 |
+| 125 | **Weaviate** | 4 | 1% | 0 | 4 |
+| 126 | **Azure Data Factory** | 3 | 1% | 0 | 3 |
+| 127 | **DAX** | 3 | 1% | 1 | 2 |
+| 128 | **FAISS** | 3 | 1% | 0 | 3 |
+| 129 | **Pinecone** | 3 | 1% | 0 | 3 |
+| 130 | **pytest** | 3 | 1% | 0 | 3 |
+| 131 | **RPA** | 3 | 1% | 0 | 3 |
+| 132 | **XGBoost** | 3 | 1% | 0 | 3 |
+| 133 | **CrewAI** | 2 | 1% | 1 | 1 |
+| 134 | **DDD** | 2 | 1% | 0 | 2 |
+| 135 | **Django** | 2 | 1% | 0 | 2 |
+| 136 | **Flutter** | 2 | 1% | 2 | 0 |
+| 137 | **Go** | 2 | 1% | 0 | 2 |
+| 138 | **Oracle Database** | 2 | 1% | 0 | 2 |
+| 139 | **Power Query** | 2 | 1% | 2 | 0 |
+| 140 | **Flask** | 1 | 0% | 0 | 1 |
+| 141 | **Laravel** | 1 | 0% | 0 | 1 |
 | 142 | **Microsoft Fabric** | 1 | 0% | 0 | 1 |
 | 143 | **Power Apps** | 1 | 0% | 0 | 1 |
-| 144 | **Tailwind CSS** | 1 | 0% | 0 | 1 |
-| 145 | **VBA** | 1 | 0% | 0 | 1 |
-| 146 | **Weaviate** | 1 | 0% | 0 | 1 |
+| 144 | **Selenium** | 1 | 0% | 0 | 1 |
+| 145 | **TypeORM** | 1 | 0% | 0 | 1 |
+| 146 | **VBA** | 1 | 0% | 0 | 1 |
 
 </details>
 
-## Agentes de IA (19)
+## Agentes de IA (17)
 
-### Remoto (19)
-
-| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
-|---:|---|---|---|---|---|---|
-| **85** | [Engenheiro(a) de Prompts / Desenvolvedor(a) de Agentes de IA](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NTk4MDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | — | Gupy | 01/10 (2d) |
-| **88** | [[Job-31910] AI Engineer, Brazil](https://br.indeed.com/viewjob?jk=43bc2005141168cd) | Ci&T | Remoto | — | Indeed | 29/09 (4d) |
-| **88** | [Pessoa Engenheira de IA](https://br.indeed.com/viewjob?jk=a6737605c2ef7312) | Volkswagen | Remoto | — | Indeed | 01/10 (2d) |
-| **82** | [[Job-32047] Mid-Level AI Engineer](https://br.indeed.com/viewjob?jk=1e45f00c406dfacf) | Ci&T | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **79** | [Engenheiro(a) de Agentes de IA (AI Agent Engineer) - Remoto](https://br.indeed.com/viewjob?jk=b5ce5b4e50ba6e8b) | Atento TI | Remoto | — | Indeed | 01/10 (2d) |
-| **76** | [Chief Agentic AI Engineer](https://br.indeed.com/viewjob?jk=e5853a330430a6c4) | EPAM Systems | Remoto | — | Indeed | 02/10 (1d) |
-| **74** | [AI Engineer Intern](https://br.indeed.com/viewjob?jk=581eb99a942c0eca) | Lockheed Martin | Remoto | — | Indeed | 17/09 (16d) |
-| **73** | [[Job 31924] AI ENGINEER (Arquitetura)](https://br.indeed.com/viewjob?jk=b1f3d0fa804f0c54) | Ci&T | Remoto | — | Indeed | 01/10 (2d) |
-| **67** | [Engenheiro de IA Tradicional e IA Generativa](https://br.indeed.com/viewjob?jk=cd668d696f239279) | 4Solution Group | Remoto | — | Indeed | 02/10 (1d) |
-| **53** | [Senior Deployed AI Engineer (Gemini) (PCS848)](https://br.indeed.com/viewjob?jk=be9c5342887e97f4) | Hire Overseas | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **53** | [Fullstack AI Engineer - Pleno/Sênior](https://br.indeed.com/viewjob?jk=e261b757eb8caa0c) | FCamara | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **50** | [Senior AI and Agentic Engineer (PCS847)](https://br.indeed.com/viewjob?jk=1683e17553fa0c19) | Hire Overseas | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **50** | [Engenheiro de IA Sênior (68450)](https://br.indeed.com/viewjob?jk=08eed9fe2ea2ec3d) | EVT | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **47** | [[Job-32046] Senior AI Engineer](https://br.indeed.com/viewjob?jk=09637246135f9dec) | Ci&T | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **44** | [AI Engineer / Senior (Hybrid/SP)](https://br.indeed.com/viewjob?jk=e6dfac40835c74e0) | Compass Uol | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **44** | [Technical Consultant SR ⎯ AI Agents & Software Engineering](https://br.indeed.com/viewjob?jk=e45c8efcc8aa8205) | EPI-USE | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **41** | [Senior Agentic AI Engineer](https://br.indeed.com/viewjob?jk=71b2d7cdc70cffda) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **41** | [Lead Agentic AI Engineer](https://br.indeed.com/viewjob?jk=452235fbd94fd53f) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **41** | [Engenheiro de IA Sr](https://br.indeed.com/viewjob?jk=227d8037f49ca901) | Mirante Tecnologia | Remoto | Sênior | Indeed | 03/10 (hoje) |
-
-## Dados (82)
-
-### Na região (15)
+### Na região (1)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **73** | [375296 - JARAGUA DO SUL - ANALISTA DE PRIVACIDADE DE DADOS](https://weg.gupy.io/job/eyJqb2JJZCI6MTI2MzQ0ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | WEG | Jaraguá do Sul (presencial) | — | Gupy | 29/09 (4d) |
-| **99** | [Engenheiro (a) de Dados Júnior (Vaga Exclusiva PCD) - Banco de Talentos](https://br.linkedin.com/jobs/view/engenheiro-a-de-dados-j%C3%BAnior-vaga-exclusiva-pcd-banco-de-talentos-at-ey-4406923320) | EY | Blumenau | Júnior | LinkedIn | 26/09 (7d) |
-| **91** | [Analista de Business Intelligence Pleno](https://br.indeed.com/viewjob?jk=ca7d551a906358cc) | clube candeias | Itajaí | Pleno | Indeed | 02/10 (1d) |
-| **90** | [Estágio Em Logística & Sustentabilidade](https://br.indeed.com/viewjob?jk=82bd5b8edbf357c3) | Red Bull | Itajaí | Júnior | Indeed | 02/10 (1d) |
-| **88** | [Data Analyst I - 11881](https://br.indeed.com/viewjob?jk=bba2313a41ed0423) | Senior Sistemas | Blumenau | — | Indeed | 02/10 (1d) |
-| **84** | [ANALISTA DE RISCO JUNIOR](https://br.indeed.com/viewjob?jk=f52b07e39c475d2d) | Empresa não informada | Jaraguá do Sul | Júnior | Indeed | 30/09 (3d) |
-| **82** | [Engenheiro de Dados Pleno - Híbrido em Blumenau/SC](https://br.indeed.com/viewjob?jk=f96c9768968f0e11) | Growdev | Blumenau (híbrido) | Pleno | Indeed | 30/09 (3d) |
-| **82** | [Analista de Planejamento de Demanda (Dados) PL](https://br.indeed.com/viewjob?jk=120e64a1d0ce4f16) | Karsten | Blumenau | Pleno | Indeed | 02/10 (1d) |
-| **81** | [ESTAGIÁRIO DE T.I.](https://br.indeed.com/viewjob?jk=f3e859f2aa7a6c56) | Portonave | Navegantes | Júnior | Indeed | 29/09 (4d) |
-| **79** | [Cia Hering / Engenheiro de Dados III (Blumenau/SC)](https://br.indeed.com/viewjob?jk=deca1586233187cb) | Hering Store | Blumenau | — | Indeed | 29/09 (4d) |
-| **78** | [Analista de Compliance - Júnior](https://br.indeed.com/viewjob?jk=51d467f83e162d72) | Cakto Pay | Balneário Camboriú | Júnior | Indeed | 01/10 (2d) |
-| **78** | [Estágio em EHS Corporativo](https://br.indeed.com/viewjob?jk=69bcaeb583dd3c98) | Nidec Global Appliance (Brasil) | Joinville | Júnior | Indeed | 02/10 (1d) |
-| **47** | [Cientista de Dados Sr. - Banco de Talentos](https://br.linkedin.com/jobs/view/cientista-de-dados-sr-banco-de-talentos-at-ey-4424801475) | EY | Blumenau | Sênior | LinkedIn | 28/09 (5d) |
-| **41** | [Cia Hering / Coordenador de Dados (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-coordenador-de-dados-blumenau-sc-at-cia-hering-4466391536) | Cia. Hering | Blumenau | Sênior | LinkedIn | 03/10 (hoje) |
-| **38** | [Engenheiro(a) de Dados Senior](https://br.linkedin.com/jobs/view/engenheiro-a-de-dados-senior-at-agricopel-4472158981) | Agricopel | Jaraguá do Sul | Sênior | LinkedIn | 30/09 (3d) |
+| **61** | [Engenheiro de IA (Senior)](https://br.linkedin.com/jobs/view/engenheiro-de-ia-senior-at-ey-4454136357) | EY | Blumenau | Sênior | LinkedIn | 03/10 (5d) |
 
-### Remoto (67)
+### Remoto (16)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **83** | [Cientista de Dados (IA Generativa)](https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjE4MTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Itix | Remoto | — | Gupy | 01/10 (2d) |
-| **77** | [Engenheiro de Dados Pleno](https://sejaitix.gupy.io/job/eyJqb2JJZCI6MTI2NjQxMzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Itix | Remoto | Pleno | Gupy | 01/10 (2d) |
-| **71** | [Engenheiro de Dados DataOps AWS](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjM3MzAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | — | Gupy | 29/09 (4d) |
-| **68** | [Data Scientist](https://stefaninilatam.gupy.io/job/eyJqb2JJZCI6MTI2NDU2MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Latam | Remoto | — | Gupy | 02/10 (1d) |
-| **65** | [Profissional de Análise de Dados de Inspeção (Análise de Dados técnicos)](https://pipeway.gupy.io/job/eyJqb2JJZCI6MTI2NTM4MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Pipeway Engenharia | Remoto | — | Gupy | 01/10 (2d) |
-| **42** | [Analista de Estratégia de Prevenção a Fraudes Sênior (Dados)](https://asaas.gupy.io/job/eyJqb2JJZCI6MTI0OTczMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Asaas | Remoto | Sênior | Gupy | 01/10 (2d) |
-| **39** | [ENGENHEIRO DE DADOS SR - MICROSOFT FABRIC](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2MzAyNjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Gupy | 02/10 (1d) |
-| **36** | [Arquiteto(a) / Especialista de Dados](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI2MjA4NDEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | Sênior | Gupy | 29/09 (4d) |
-| **27** | [Especialista de Recrutamento - Data Analytics - São Paulo-SP](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjkyMTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Gupy | 02/10 (1d) |
-| **100** | [Analista de Dados Júnior](https://afya.gupy.io/job/eyJqb2JJZCI6MTI1ODkwOTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Afya | Remoto | Júnior | Gupy | 28/09 (5d) |
-| **94** | [Engenheiro de Dados Júnior - Remoto](https://br.indeed.com/viewjob?jk=9f9e1bf4c2f38c0d) | Brivia | Remoto | Júnior | Indeed | 30/09 (3d) |
-| **94** | [Estágio em Desenvolvimento de Software / Data Mining](https://br.indeed.com/viewjob?jk=d8664db04d56f588) | Instituto de Pesquisas ELDORADO | Remoto | Júnior | Indeed | 02/10 (1d) |
-| **85** | [Assistente de Categorias (Dados)](https://br.indeed.com/viewjob?jk=8dfd8bc2fb19c8c6) | Grupo Boticário | Remoto | Júnior | Indeed | 03/10 (hoje) |
-| **83** | [PESSOA ANALISTA DE DADOS PLENO- FOCO EM ANALYTICS E PROJEÇÕES](https://br.indeed.com/viewjob?jk=e3d58c75745da670) | YDUQS | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **80** | [[Job-31817] Master Engenheiro(a) de Dados, Brasil](https://br.indeed.com/viewjob?jk=e36c48ca21bb75f1) | Ci&T | Remoto | — | Indeed | 01/10 (2d) |
-| **80** | [Engenheiro de Dados GCP (Analytics) Pleno](https://br.indeed.com/viewjob?jk=976af67f610587d4) | Leega Consultoria | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **80** | [Profissional Engenheiro de Dados Pleno](https://br.indeed.com/viewjob?jk=63a6d624670ab9a9) | Radix Engenharia e Software | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **74** | [Cientista de Dados](https://heartmanhouse.gupy.io/job/eyJqb2JJZCI6MTI2MTk2OTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Heartman House | Remoto | — | Gupy | 28/09 (5d) |
-| **74** | [Analista Pleno em Power BI](https://br.indeed.com/viewjob?jk=c9e20725ffa46928) | Nestlé | Remoto | Pleno | Indeed | 01/10 (2d) |
-| **71** | [CAS / Coordenação de Dados e Analytics - Foco em Canais](https://br.indeed.com/viewjob?jk=8946fff0e202f40e) | Sicredi | Remoto | — | Indeed | 30/09 (3d) |
-| **71** | [Analista de Banco Dados Pleno](https://br.indeed.com/viewjob?jk=7aefd65ebc086d9a) | DAREDE | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **71** | [Analista de Banco de Dados - Remoto](https://br.indeed.com/viewjob?jk=013f671b98550fee) | CTC Tech | Remoto | — | Indeed | 02/10 (1d) |
-| **68** | [Data Analyst III (remote)](https://www.linkedin.com/jobs/view/data-analyst-iii-remote-at-ryder-system-inc-4472346656) | Ryder System, Inc. | Remoto | — | LinkedIn | 30/09 (3d) |
-| **68** | [Data Analyst II (remote)](https://www.linkedin.com/jobs/view/data-analyst-ii-remote-at-ryder-system-inc-4472362055) | Ryder System, Inc. | Remoto | — | LinkedIn | 30/09 (3d) |
-| **68** | [Talent Data Analytics - Remote Work](https://br.indeed.com/viewjob?jk=d5bdd5106aed1b7d) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **59** | [ANALISTA DE OMNICHANNEL II](https://br.indeed.com/viewjob?jk=ebca7b5f7ac90724) | Lojas Renner | Remoto | — | Indeed | 01/10 (2d) |
-| **56** | [Quality Assurance (QA)](https://br.indeed.com/viewjob?jk=23357a39821b12cf) | FMX Soluções em Tecnologia | Remoto | — | Indeed | 02/10 (1d) |
-| **54** | [[Job-31930] Senior Data Developer/AI Solutions Developer, Brazil](https://br.indeed.com/viewjob?jk=55e6371b009c1152) | Ci&T | Remoto | Sênior | Indeed | 30/09 (3d) |
-| **51** | [[Dados] Cientista de Dados Especialista I / Varejo e Distribuição](https://br.indeed.com/viewjob?jk=921ad9e858585f27) | TOTVS | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **51** | [Data Science / SR (Remote)](https://br.indeed.com/viewjob?jk=850bc57d6e80d47d) | Compass Uol | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **50** | [Analista de Performance Pleno](https://br.indeed.com/viewjob?jk=87ebbff544da8f61) | THE DREAM | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **48** | [Especialista em Ciência de Dados I (Diretoria de Dados - Lojas e Franquias)](https://grupoboticario.gupy.io/job/eyJqb2JJZCI6MTI1MTYwMTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Grupo Boticário | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **48** | [ENGENHEIRO DADOS SR](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2MDE0OTIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **48** | [Senior Data Scientist - IntelliScript (Remote)](https://www.linkedin.com/jobs/view/senior-data-scientist-intelliscript-remote-at-milliman-intelliscript-4473183778) | Milliman IntelliScript | Remoto | Sênior | LinkedIn | 02/10 (1d) |
-| **45** | [Gerente de Ciência de Dados](https://br.indeed.com/viewjob?jk=62060d4f7bab66db) | Frete | Remoto | Sênior | Indeed | 30/09 (3d) |
-| **45** | [[Job-31997] Senior Engenheiro(a) de Dados- Governança e Linhagem de Dados, Brasil](https://br.indeed.com/viewjob?jk=9d4d475330bdcb07) | Ci&T | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **45** | [Profissional Engenheiro de Dados Senior](https://br.indeed.com/viewjob?jk=59186928673f5ef1) | Radix Engenharia e Software | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **42** | [Arquiteto(a) de Dados Sênior](https://br.indeed.com/viewjob?jk=68837d99f05a5904) | Ninecon Consultores Associados Ltda | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **42** | [Senior Data Platform Engineer ID92207](https://br.indeed.com/viewjob?jk=095792925ceba6c8) | AgileEngine | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **42** | [Data Science Manager](https://br.indeed.com/viewjob?jk=d51a4ab233868ae4) | Nestlé | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **39** | [Analista de Dados Pleno/Sênior](https://motriz.gupy.io/job/eyJqb2JJZCI6MTI2MTMxMzIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Motriz | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **39** | [Especialista em Engenharia de Plataforma de Dados](https://rnp.gupy.io/job/eyJqb2JJZCI6MTI2MTQzNjIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Conecte seu talento a projetos que impulsionam a pesquisa, a educação e a inovação no Brasil e no mundo. Vem para a RNP! | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **39** | [Cientista de Dados Especialista (Modelagem de Crédito)](https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1Mjg2MDksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Asaas | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **39** | [Engenheiro de Dados Sênior GCP/DBT](https://leega.gupy.io/job/eyJqb2JJZCI6MTI2MjExNzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Leega Consultoria | Remoto | Sênior | Gupy | 29/09 (4d) |
-| **39** | [Senior Power BI /Dashboard UI Specialist - Remote - USA](https://www.linkedin.com/jobs/view/senior-power-bi-dashboard-ui-specialist-remote-usa-at-fullstack-4473552479) | FullStack | Remoto | Sênior | LinkedIn | 29/09 (4d) |
-| **39** | [HEAD Data Plataform](https://br.indeed.com/viewjob?jk=83d57617ded5a8fb) | Loft | Remoto | Sênior | Indeed | 30/09 (3d) |
-| **39** | [Data Engineer Specialist (Data Quality)](https://br.indeed.com/viewjob?jk=c2bf4774a2379d6a) | Nestlé | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **39** | [Profissional Líder Técnico de Projetos de Dados](https://br.indeed.com/viewjob?jk=c9a192265264e046) | Radix Engenharia e Software | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **36** | [Arquiteto de dados SR - Remoto](https://inmetrics.gupy.io/job/eyJqb2JJZCI6MTI2MTM5MTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Vagas Inmetrics | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **36** | [Analista Desenvolvedor Especialista Data Cloud](https://br.indeed.com/viewjob?jk=afc37bc6f1077644) | Webjump | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Senior Data Software Engineer](https://br.indeed.com/viewjob?jk=9ad59dbfaaeaf93d) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Lead Data Software Engineer](https://br.indeed.com/viewjob?jk=5fdd970e9aa0853f) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **33** | [Cientista de Dados Especialista (Políticas de Crédito)](https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1MzIyMTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Asaas | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **33** | [Especialista Engenheiro de Dados](https://br.indeed.com/viewjob?jk=52f8cef2b2bd162b) | Insi | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **33** | [Big Data Senior - Remote Work](https://br.linkedin.com/jobs/view/big-data-senior-remote-work-at-indi-staffing-services-4473771963) | INDI Staffing Services | Remoto | Sênior | LinkedIn | 30/09 (3d) |
-| **33** | [Analista de Banco de Dados - Sênior](https://br.indeed.com/viewjob?jk=aca2611ef8df6fcd) | PicPay | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **33** | [Engenheiro Analítico Sênior (DBT / GCP)](https://br.indeed.com/viewjob?jk=2338ffaee4d3e9f4) | Leega Consultoria | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **30** | [Cientista de Dados Sênior (Políticas de Crédito)](https://asaas.gupy.io/job/eyJqb2JJZCI6MTI1MzM2MTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Asaas | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **27** | [Analista de Revenue Ops Sênior - São Paulo](https://br.indeed.com/viewjob?jk=571a40169210bba0) | Omie | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **21** | [Coordenador de Operações](https://br.indeed.com/viewjob?jk=a3a3bf3a9136c2ba) | Vertem | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **21** | [Especialista de Mídia Performance & Consultoria GMP](https://br.indeed.com/viewjob?jk=1586ec59e09387f5) | CADASTRA | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **21** | [[Contabilidade] Analista de Planejamento e Controle Sênior](https://br.indeed.com/viewjob?jk=3df2c82b9f150b90) | CONTABILIZEI | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **18** | [Analista de Produtos SR / Crédito PJ [Híbrido / SP]](https://br.indeed.com/viewjob?jk=7a1db1381c9d3db9) | PicPay | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **18** | [Especialista Grade Longo Prazo I - Venda Direta](https://br.indeed.com/viewjob?jk=a90fc2c8bd933207) | Grupo Boticário | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **18** | [Product Manager / Remoto](https://br.indeed.com/viewjob?jk=d31cdf6c41fdd98f) | NSTECH | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **18** | [Analista de Riscos e Controles Internos Sênior](https://br.indeed.com/viewjob?jk=9367c143c3dccc66) | Ser CAIXA Consórcio | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **15** | [Controller Jurídico Sênior](https://br.indeed.com/viewjob?jk=60618e4660581e46) | Condoconta | Remoto | Sênior | Indeed | 30/09 (3d) |
+| **85** | [[Job 32145] AI Engineer (Enabling Team)](https://br.indeed.com/viewjob?jk=deb75b14be5c9a7d) 🆕 | Ci&T | Remoto | — | Indeed | 06/10 (2d) |
+| **82** | [[Job-32141] AI Engineer (Mid Level Developer Backend Java), Brasil](https://br.indeed.com/viewjob?jk=7704f532f3df34a4) 🆕 | Ci&T | Remoto | Pleno | Indeed | 08/10 (hoje) |
+| **79** | [Agentic AI Engineer ID87375](https://br.indeed.com/viewjob?jk=e58af4df721348c9) 🆕 | AgileEngine | Remoto | — | Indeed | 05/10 (3d) |
+| **53** | [Engenheiro de IA Generativa (ML) Sênior](https://br.indeed.com/viewjob?jk=14ccace3d19b1d8d) 🆕 | Extractta | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **53** | [Fullstack AI Engineer - Sênior](https://br.indeed.com/viewjob?jk=4e07b6bd1af2fd24) 🆕 | FCamara | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **47** | [[Job-00020] Tech Lead AI Engineer, Brazil](https://br.indeed.com/viewjob?jk=4a5a8457164c1b85) 🆕 | Ci&T | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **41** | [Senior Cloud Engineer / AI Engineer [Remoto - Brasil]](https://br.indeed.com/viewjob?jk=166088054b76304d) 🆕 | DBServices Portugal | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **38** | [[Job 32088] Tech Lead - AI Engineer - SDLC Agêntico](https://br.indeed.com/viewjob?jk=f99e3cca5459c49c) 🆕 | Ci&T | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **85** | [Engenheiro(a) de Prompts / Desenvolvedor(a) de Agentes de IA](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NTk4MDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | — | Gupy | 01/10 (7d) |
+| **79** | [Engenheiro(a) de Agentes de IA (AI Agent Engineer) - Remoto](https://atentoti.gupy.io/job/eyJqb2JJZCI6MTI2NTc4MzMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Atento TI | Remoto | — | Gupy | 01/10 (7d) |
+| **73** | [[Job 31924] AI ENGINEER (Arquitetura)](https://br.indeed.com/viewjob?jk=b1f3d0fa804f0c54) | Ci&T | Remoto | — | Indeed | 01/10 (7d) |
+| **67** | [Engenheiro de IA Tradicional e IA Generativa](https://br.indeed.com/viewjob?jk=cd668d696f239279) | 4Solution Group | Remoto | — | Indeed | 02/10 (6d) |
+| **53** | [Fullstack AI Engineer - Pleno/Sênior](https://br.indeed.com/viewjob?jk=e261b757eb8caa0c) | FCamara | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **44** | [Technical Consultant SR ⎯ AI Agents & Software Engineering](https://br.indeed.com/viewjob?jk=e45c8efcc8aa8205) | EPI-USE | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **44** | [[Job-32140] AI Engineer (Senior Developer Backend Java), Brasil](https://br.indeed.com/viewjob?jk=221a2afe1f721b45) | Ci&T | Remoto | Sênior | Indeed | 08/10 (hoje) |
+| **41** | [Engenheiro de IA Sr](https://br.indeed.com/viewjob?jk=227d8037f49ca901) | Mirante Tecnologia | Remoto | Sênior | Indeed | 03/10 (5d) |
 
-## IA / LLMs (35)
+## Dados (80)
+
+### Na região (16)
+
+| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
+|---:|---|---|---|---|---|---|
+| **93** | [Administrador de banco de dados Jr](https://br.linkedin.com/jobs/view/administrador-de-banco-de-dados-jr-at-migrati-solu%C3%A7%C3%B5es-em-banco-de-dados-4474455889) 🆕 | MigraTI Soluções em Banco de dados | Blumenau | Júnior | LinkedIn | 07/10 (1d) |
+| **88** ★6/10 | [Data Analyst II (Wiipo) - 11892](https://br.indeed.com/viewjob?jk=ccbcdc72e52879cb) 🆕 | Wiipo Benefícios | Blumenau | — | Indeed | 07/10 (1d) |
+| | ↳ _A vaga é de nível II (Pleno), o que pode ser um obstáculo, mas o fit técnico com Python, SQL, Power BI e iniciativas de IA/automação na região de Blumenau é altíssimo. Vale a pena aplicar destacando os KPIs criados e a automação de sistemas internos. ⚠ Vaga exige nível Pleno (Analyst II), enquanto o candidato busca posições júnior/transição de carreira._ | | | | | |
+| **88** ★6/10 | [Data Analyst II (Wiipo) - 11892](https://br.indeed.com/viewjob?jk=e4d2dd7a5e01d065) 🆕 | Senior Sistemas | Blumenau | — | Indeed | 07/10 (1d) |
+| | ↳ _A vaga é para Analista II (Pleno) em Blumenau, mas possui altíssima aderência técnica com seu stack (Python, SQL, Power BI, ML e IA aplicada). Destaque sua experiência prática na digitalização de processos internos e projetos de IA. ⚠ Vaga direcionada a nível Pleno (Analista II), superior ao perfil júnior/em transição de carreira._ | | | | | |
+| **88** | [WEG - Pesquisador em Ciência de Dados e IA](https://br.linkedin.com/jobs/view/weg-pesquisador-em-ci%C3%AAncia-de-dados-e-ia-at-iel-sc-4474827587) 🆕 | IEL/SC - Instituto Euvaldo Lodi de Santa Catarina | Jaraguá do Sul | — | LinkedIn | 08/10 (hoje) |
+| **82** | [Analista de Recuperação de Crédito II- Foco em Análise de Dados](https://centralailos.gupy.io/job/eyJqb2JJZCI6MTI2MzEwOTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Central Ailos | Blumenau (presencial) | — | Gupy | 05/10 (3d) |
+| **76** | [Analista de Dados Pleno](https://br.linkedin.com/jobs/view/analista-de-dados-pleno-at-grupo-krona-4475133396) 🆕 | Grupo Krona | Joinville | Pleno | LinkedIn | 06/10 (2d) |
+| **50** | [Analista de Dados Sr / Joinville SC](https://br.indeed.com/viewjob?jk=906209959d686c57) 🆕 | NSTECH | Joinville | Sênior | Indeed | 05/10 (3d) |
+| **91** | [Analista de Business Intelligence Pleno](https://br.indeed.com/viewjob?jk=ca7d551a906358cc) | clube candeias | Itajaí | Pleno | Indeed | 02/10 (6d) |
+| **90** | [Estágio Em Logística & Sustentabilidade](https://br.indeed.com/viewjob?jk=82bd5b8edbf357c3) | Red Bull | Itajaí | Júnior | Indeed | 03/10 (5d) |
+| **88** | [Data Analyst I - 11881](https://br.indeed.com/viewjob?jk=bba2313a41ed0423) | Senior Sistemas | Blumenau | — | Indeed | 02/10 (6d) |
+| **82** | [Analista de Planejamento de Demanda (Dados) PL](https://br.indeed.com/viewjob?jk=120e64a1d0ce4f16) | Karsten | Blumenau | Pleno | Indeed | 02/10 (6d) |
+| **79** | [Analista de Cadastro Pleno (Master Data)](https://br.linkedin.com/jobs/view/analista-de-cadastro-pleno-master-data-at-bunge-4468342295) | Bunge | Gaspar | Pleno | LinkedIn | 08/10 (hoje) |
+| **78** | [Estágio em EHS Corporativo](https://br.indeed.com/viewjob?jk=69bcaeb583dd3c98) | Nidec Global Appliance (Brasil) | Joinville | Júnior | Indeed | 02/10 (6d) |
+| **78** | [Analista de Compliance - Júnior](https://br.indeed.com/viewjob?jk=51d467f83e162d72) | Cakto Pay | Balneário Camboriú | Júnior | Indeed | 02/10 (6d) |
+| **61** | [Cia Hering / Analista Comercial II - Canal Multimarcas (Blumenau/SC)](https://br.indeed.com/viewjob?jk=4088d0c72f9e1b8c) | Hering Store | Blumenau | — | Indeed | 07/10 (1d) |
+| **41** | [Cia Hering / Coordenador de Dados (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-coordenador-de-dados-blumenau-sc-at-cia-hering-4466391536) | Cia. Hering | Blumenau | Sênior | LinkedIn | 03/10 (5d) |
+
+### Remoto (64)
+
+| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
+|---:|---|---|---|---|---|---|
+| **97** ★9/10 | [ANALISTA DE DADOS JUNIOR](https://br.indeed.com/viewjob?jk=1f542bcde4afb893) 🆕 | cashgo | Remoto | Júnior | Indeed | 05/10 (3d) |
+| | ↳ _Excelente aderência para o nível júnior, combinando exatamente a stack exigida (Power BI, SQL, Excel) e Python como diferencial. Destaque sua vivência na construção de relatórios, acompanhamento de KPIs e o projeto CJ BOB Bank para evidenciar afinidade com o setor financeiro._ | | | | | |
+| **97** ★7/10 | [Web Analytics JR](https://br.indeed.com/viewjob?jk=ad37dba63bf7f3b4) 🆕 | Lima Consulting Group - Brasil | Remoto | Júnior | Indeed | 06/10 (2d) |
+| | ↳ _A vaga é júnior e remota, casando perfeitamente com a graduação em andamento e seus conhecimentos em JavaScript, HTML/CSS e manipulação de dados em Python. O candidato precisará apenas demonstrar rápida curva de aprendizado em Tag Management (GTM) e métricas de web analytics._ | | | | | |
+| **94** ★9/10 | [Analista de Dados Jr - Crédito](https://br.indeed.com/viewjob?jk=1c164902eee1d6d5) 🆕 | POWER DATA TECNOLOGIA ANALITICA LTDA | Remoto | Júnior | Indeed | 06/10 (2d) |
+| | ↳ _Excelente aderência: vaga júnior 100% remota aceitando graduação em andamento e com foco em SQL e Python. Destaque sua vivência com KPIs corporativos e a base analítica desenvolvida nos projetos de finanças quantitativas._ | | | | | |
+| **86** | [Analista de Dados e BI Pleno (Python/SQL - Remoto)](https://br.indeed.com/viewjob?jk=db91a7ca4fe543cd) 🆕 | Looqbox | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **83** | [Pessoa Cientista de Dados](https://br.indeed.com/viewjob?jk=ae72aaab99fbec3a) 🆕 | MJV Innovation | Remoto | — | Indeed | 06/10 (2d) |
+| **83** | [Machine Learning / Data Engineer](https://br.indeed.com/viewjob?jk=705601b53a6ca03b) 🆕 | turing | Remoto | — | Indeed | 06/10 (2d) |
+| **80** | [Pessoa Cientista de Dados Pleno](https://br.indeed.com/viewjob?jk=d3606f1a78ea7fc0) 🆕 | Aquarela Analytics | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **77** | [Analista de BI Pleno (Foco em dados de Mídia)](https://br.indeed.com/viewjob?jk=e333eafdba8aa75f) 🆕 | Unicred | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **77** | [Analista de Dados PL](https://br.indeed.com/viewjob?jk=abbfa7ca0b161578) 🆕 | Grupo SysMap | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **77** | [Data Engineer GCP (inglês avançado)](https://br.indeed.com/viewjob?jk=da81e56ffd85de23) 🆕 | Insi | Remoto | — | Indeed | 06/10 (2d) |
+| **77** | [ENGENHEIRO DADOS PL (REMOTO)](https://br.indeed.com/viewjob?jk=062ecb039aee9144) 🆕 | Nortel Networks | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **77** | [Engenheiro de Dados Pleno](https://vagasstefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjE4MjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | ADMINISTRADOR DE REDES | Remoto | Pleno | Gupy | 08/10 (hoje) |
+| **74** | [Eng.(a) de Plataforma de Dados e IA](https://br.indeed.com/viewjob?jk=2b810e0393500074) 🆕 | Digiage Technologies | Remoto | — | Indeed | 07/10 (1d) |
+| **73** | [ANALISTA PLANEJAMENTO FINANCEIRO JR - MTZ](https://br.indeed.com/viewjob?jk=e0f20a6bb000b36e) 🆕 | Azul Linhas Aereas Brasileiras | Remoto | Júnior | Indeed | 06/10 (2d) |
+| **71** | [ADMINISTRADOR BANCO DADOS PL](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2ODgxMTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Pleno | Gupy | 06/10 (2d) |
+| **71** | [Data Analyst (Databricks) REMOTE](https://www.linkedin.com/jobs/view/data-analyst-databricks-remote-at-enablecomp-4477419286) 🆕 | EnableComp | Remoto | — | LinkedIn | 08/10 (hoje) |
+| **68** | [Pessoa Analista de Dados Pl (Remoto) - 8996](https://br.indeed.com/viewjob?jk=da29a9ea82571321) 🆕 | Starian | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **68** | [Consultor/Cientista de Dados](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2OTIwMjMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | — | Gupy | 08/10 (hoje) |
+| **65** | [Administrador de Banco de Dados III (15:00 às 23:45)](https://br.indeed.com/viewjob?jk=af5fdbc205bf7942) 🆕 | Central Ailos | Remoto | — | Indeed | 06/10 (2d) |
+| **65** | [Analista Pleno de Proteção de Dados](https://vagasstefanini.gupy.io/job/eyJqb2JJZCI6MTI2OTQ2OTUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | ADMINISTRADOR DE REDES | Remoto | Pleno | Gupy | 07/10 (1d) |
+| **62** | [Analista de Dados Fiscais](https://br.indeed.com/viewjob?jk=f3528b5c47601612) 🆕 | Grupo MCX | Remoto | — | Indeed | 06/10 (2d) |
+| **54** | [Cientista de Dados Sênior - IA Generativa e Agentes](https://br.indeed.com/viewjob?jk=d4de835065103571) 🆕 | Leega Consultoria | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **42** | [ESPECIALISTA EM CIENCIAS DE DADOS II](https://localiza.gupy.io/job/eyJqb2JJZCI6MTIxNDM0OTcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Localiza&Co | Remoto | Sênior | Gupy | 05/10 (3d) |
+| **42** | [Pessoa Analista de Dados Sênior](https://br.indeed.com/viewjob?jk=e099d8701f2d498b) 🆕 | Datum Software | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **42** | [Engenheiro de Dados Azure + Databricks Sênior (Remoto)](https://br.indeed.com/viewjob?jk=fd790cd82e1305f1) 🆕 | Dataside | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **42** | [Data Science Specialist I / Diretoria de Dados](https://br.indeed.com/viewjob?jk=3e1211d5396613a0) 🆕 | Grupo Boticário | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **36** | [[Job - 32043] Senior Data Architect, Brazil](https://br.indeed.com/viewjob?jk=de2201ba3be82584) 🆕 | Ci&T | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **36** | [Analytics and Decision Support Manager](https://br.indeed.com/viewjob?jk=15911a1de405e852) 🆕 | World Business Lenders, LLC | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **36** | [Analista Power BI Pleno/Sênior (68542)](https://br.indeed.com/viewjob?jk=91c8d6e9490eae12) 🆕 | EVT | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **36** | [Databricks Data Engineer / Senior (Remote)](https://compass.gupy.io/job/eyJqb2JJZCI6MTI2NzUzNDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Compass UOL | Remoto | Sênior | Gupy | 07/10 (1d) |
+| **36** | [Lead Data Engineer](https://br.indeed.com/viewjob?jk=31f5da1593d26c96) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **36** | [SysAdmin/DBA Sênior](https://br.indeed.com/viewjob?jk=d2e58a2432acb172) 🆕 | Jedis Tecnologia | Remoto | Sênior | Indeed | 08/10 (hoje) |
+| **33** | [Analista de Dados Sênior – Google Analytics](https://br.indeed.com/viewjob?jk=624fbe303996302b) 🆕 | Zallpy Digital | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **30** | [COORDENADOR DE DADOS (Decision)](https://br.indeed.com/viewjob?jk=d9707d26e4e9158e) 🆕 | Jobbol | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **30** | [Data Product Analyst (Governance & Data Mesh)/ Senior (Remote)](https://br.indeed.com/viewjob?jk=05343bc0bd9a67ce) 🆕 | Compass Uol | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **30** | [ESPECIALISTA DE PERFORMANCE LOGISTICA](https://br.indeed.com/viewjob?jk=5beb7fe7e42b9049) 🆕 | Bernoulli Educação | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **27** | [Arquiteto de Dados Corporativo](https://montreal.gupy.io/job/eyJqb2JJZCI6MTI2NzUyMTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Montreal / Tecnologia e Inovação | Remoto | Sênior | Gupy | 06/10 (2d) |
+| **94** | [Estágio em Desenvolvimento de Software / Data Mining](https://br.indeed.com/viewjob?jk=d8664db04d56f588) | Instituto de Pesquisas ELDORADO | Remoto | Júnior | Indeed | 02/10 (6d) |
+| **83** | [Cientista de Dados (IA Generativa)](https://br.indeed.com/viewjob?jk=809ebc917d9e73aa) | ITIX | Remoto | — | Indeed | 01/10 (7d) |
+| **80** | [Engenheiro de Dados GCP (Analytics) Pleno](https://br.indeed.com/viewjob?jk=976af67f610587d4) | Leega Consultoria | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **80** | [Profissional Engenheiro de Dados Pleno](https://br.indeed.com/viewjob?jk=63a6d624670ab9a9) | Radix Engenharia e Software | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **80** | [[Job-31817] Master Engenheiro(a) de Dados, Brasil](https://br.indeed.com/viewjob?jk=e36c48ca21bb75f1) | Ci&T | Remoto | — | Indeed | 02/10 (6d) |
+| **77** | [Engenheiro de Dados Pleno](https://br.indeed.com/viewjob?jk=a433975c026a5447) | ITIX | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **74** | [Analista Pleno em Power BI](https://br.indeed.com/viewjob?jk=c9e20725ffa46928) | Nestlé | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **71** | [Analista de Banco Dados Pleno](https://br.indeed.com/viewjob?jk=7aefd65ebc086d9a) | DAREDE | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **71** | [Analista de Banco de Dados - Remoto](https://br.indeed.com/viewjob?jk=013f671b98550fee) | CTC Tech | Remoto | — | Indeed | 02/10 (6d) |
+| **71** | [Business Intelligence Analyst - Remote](https://br.linkedin.com/jobs/view/business-intelligence-analyst-remote-at-indi-staffing-services-4476719394) | INDI Staffing Services | Remoto | — | LinkedIn | 07/10 (1d) |
+| **68** | [Talent Data Analytics - Remote Work](https://br.indeed.com/viewjob?jk=d5bdd5106aed1b7d) | BairesDev | Remoto | — | Indeed | 01/10 (7d) |
+| **68** | [Data Scientist](https://stefaninilatam.gupy.io/job/eyJqb2JJZCI6MTI2NDU2MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Latam | Remoto | — | Gupy | 02/10 (6d) |
+| **68** | [Data Analyst III (remote)](https://www.linkedin.com/jobs/view/data-analyst-iii-remote-at-ryder-system-inc-4475480979) | Ryder System, Inc. | Remoto | — | LinkedIn | 07/10 (1d) |
+| **65** | [Profissional de Análise de Dados de Inspeção (Análise de Dados técnicos)](https://pipeway.gupy.io/job/eyJqb2JJZCI6MTI2OTU5NzUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Pipeway Engenharia | Remoto | — | Gupy | 08/10 (hoje) |
+| **51** | [[Dados] Cientista de Dados Especialista I / Varejo e Distribuição](https://br.indeed.com/viewjob?jk=921ad9e858585f27) | TOTVS | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **51** | [Data Science / SR (Remote)](https://br.indeed.com/viewjob?jk=850bc57d6e80d47d) | Compass Uol | Remoto | Sênior | Indeed | 03/10 (5d) |
+| **48** | [Senior Data Scientist - IntelliScript (Remote)](https://www.linkedin.com/jobs/view/senior-data-scientist-intelliscript-remote-at-milliman-intelliscript-4473183778) | Milliman IntelliScript | Remoto | Sênior | LinkedIn | 02/10 (6d) |
+| **48** | [[Job-31930] Senior Data Developer - AI Solutions, Brazil](https://br.indeed.com/viewjob?jk=681ec1ea2c6ebcfd) | Ci&T | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **45** | [Profissional Engenheiro de Dados Senior](https://br.indeed.com/viewjob?jk=59186928673f5ef1) | Radix Engenharia e Software | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **42** | [Analista de Estratégia de Prevenção a Fraudes Sênior (Dados)](https://br.indeed.com/viewjob?jk=4f0c0c41084e6df6) | ASAAS | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **39** | [ENGENHEIRO DE DADOS SR - MICROSOFT FABRIC](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2MzAyNjcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Sênior | Gupy | 02/10 (6d) |
+| **36** | [Analista Desenvolvedor Especialista Data Cloud](https://webjump.gupy.io/job/eyJqb2JJZCI6MTI2NjQzMDksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | WEBJUMP | Remoto | Sênior | Gupy | 02/10 (6d) |
+| **36** | [Senior Data Engineer](https://br.indeed.com/viewjob?jk=2805af2e93fcc255) | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **27** | [Especialista de Recrutamento - Data Analytics - São Paulo-SP](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjkyMTgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Sênior | Gupy | 02/10 (6d) |
+| **27** | [Analista de Revenue Ops Sênior - São Paulo](https://br.indeed.com/viewjob?jk=571a40169210bba0) | Omie | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **21** | [[Contabilidade] Analista de Planejamento e Controle Sênior](https://br.indeed.com/viewjob?jk=3df2c82b9f150b90) | CONTABILIZEI | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **18** | [Product Manager / Remoto](https://br.indeed.com/viewjob?jk=d31cdf6c41fdd98f) | NSTECH | Remoto | Sênior | Indeed | 02/10 (6d) |
+
+## IA / LLMs (38)
 
 ### Na região (2)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **57** | [Pessoa Arquiteta de Cibersegurança Sênior - IA](https://br.linkedin.com/jobs/view/pessoa-arquiteta-de-ciberseguran%C3%A7a-s%C3%AAnior-ia-at-ey-4441583541) | EY | Blumenau | Sênior | LinkedIn | 26/09 (7d) |
-| **51** | [Especialista em Automações e IA](https://br.indeed.com/viewjob?jk=63a4011f0d0661fe) | QUANTUM LOGISTICS | Itajaí | Sênior | Indeed | 28/09 (5d) |
+| **100** ★9/10 | [Analista de IA e Automação JR.](https://br.indeed.com/viewjob?jk=e8f312318336fb2b) 🆕 | TEC MAIS SOLUCOES INTELIGENTES EM INFORMATICA LTDA | Blumenau | Júnior | Indeed | 06/10 (2d) |
+| | ↳ _Excelente encaixe: vaga júnior de IA/automação que valoriza conhecimentos em LLMs, Python e APIs, alinhando-se aos seus projetos e estudos. Destaque sua experiência com agentes de IA, automação de processos internos e projetos práticos em Python._ | | | | | |
+| **73** | [Estágio Administrativo](https://br.indeed.com/viewjob?jk=88a6518ee53d16ca) 🆕 | Culture Designer | Joinville | Júnior | Indeed | 05/10 (3d) |
 
-### Remoto (33)
+### Remoto (36)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **25** | [Especialista de Inteligência Artificial - Projetos](https://motriz.gupy.io/job/eyJqb2JJZCI6MTI1OTk1MTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Motriz | Remoto | Sênior | Gupy | 30/09 (3d) |
-| **84** | [Pessoa Desenvolvedora Fullstack "IA"](https://br.indeed.com/viewjob?jk=97ec053446126159) | Volkswagen | Remoto | — | Indeed | 01/10 (2d) |
-| **81** | [Engenheiro(a) de IA - Aplicações Agênticas (Pleno) - Remoto](https://br.indeed.com/viewjob?jk=f5cb0ef884700276) | Kognit (inferida) | Remoto | Pleno | Indeed | 28/09 (5d) |
-| **78** | [Engenheiro(a) de Inteligência Artificial Pl - Equiplano](https://equiplano.gupy.io/job/eyJqb2JJZCI6MTI2MTcxMzksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Equiplano! | Remoto | Pleno | Gupy | 28/09 (5d) |
-| **78** | [AI Testing Engineer, Amazon Bedrock](https://br.indeed.com/viewjob?jk=1d0b1266bbdfe1fb) | Empresa não informada | Remoto | — | Indeed | 29/09 (4d) |
-| **78** | [Chief Software Engineer - AI-Powered, Python](https://br.indeed.com/viewjob?jk=4dde6017fc6b81f7) | EPAM Systems | Remoto | — | Indeed | 02/10 (1d) |
-| **75** | [[Job 31950] Mid Level Java + IA Developer, Brazil](https://br.indeed.com/viewjob?jk=af1272e7b5a24825) | Ci&T | Remoto | Pleno | Indeed | 29/09 (4d) |
-| **75** | [AI-native Full Stack Engineer ID86905](https://br.indeed.com/viewjob?jk=97e6401eda042f90) | AgileEngine | Remoto | — | Indeed | 29/09 (4d) |
-| **75** | [AI and Software Solutions Architect (Remote, Contract)](https://br.indeed.com/viewjob?jk=aeafdcd4420f38bd) | INFUSE | Remoto | — | Indeed | 30/09 (3d) |
-| **75** | [[Job-31712] Software Architect AI SDLC, Brazil](https://br.indeed.com/viewjob?jk=f275e8349d4c35f6) | Ci&T | Remoto | — | Indeed | 02/10 (1d) |
-| **74** | [Estágio em Automação de Testes / Desenvolvimento de Software](https://br.indeed.com/viewjob?jk=0142dc14ec01633c) | Instituto de Pesquisas ELDORADO | Remoto | Júnior | Indeed | 02/10 (1d) |
-| **69** | [AI Infrastructure Engineer - Remote Work](https://br.indeed.com/viewjob?jk=ef83890d69f49bd7) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **69** | [Consultor Funcional SAP e IA Generativa](https://br.indeed.com/viewjob?jk=de547becb6080c6f) | Verity | Remoto | — | Indeed | 02/10 (1d) |
-| **66** | [GenAI Engineer - Remote Work](https://br.indeed.com/viewjob?jk=13523662ea2322c8) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **66** | [Analista de IA](https://br.indeed.com/viewjob?jk=4eacb48d5878d308) | #VEMPRAIT4US | Remoto | — | Indeed | 01/10 (2d) |
-| **49** | [Senior Platform Engineer / Developer Experience & AI Native SDLC](https://br.indeed.com/viewjob?jk=137bde5eb9c36a26) | PicPay | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **46** | [AI Technical Lead, Amazon Bedrock](https://br.indeed.com/viewjob?jk=0c3b4678338bde10) | Empresa não informada | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **43** | [Especialista em Inteligência Artificial — Plataforma Agêntica](https://confidencial.gupy.io/job/eyJqb2JJZCI6MTI1MzA3ODMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Confidencial | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **43** | [[Job-32070] Senior AI Developer, Brasil](https://br.indeed.com/viewjob?jk=272278be8761d39e) | Ci&T | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **43** | [Especialista I Engenharia de IA Generativa e Agentes (Venda Direta)](https://br.indeed.com/viewjob?jk=39e5bf007ba883f2) | Grupo Boticário | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **42** | [Estrategista de Conteúdo e Social Media](https://br.indeed.com/viewjob?jk=e9f438b741dc996a) | Empresa não informada | Remoto | — | Indeed | 02/10 (1d) |
-| **40** | [Arquiteto de Soluções / APIs, Integração & IA (13763)](https://br.indeed.com/viewjob?jk=1504d6d2cd57510e) | Sensedia | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **37** | [Lead AI Solution Engineer](https://br.indeed.com/viewjob?jk=8a30a67faee77e17) | EPAM Systems | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **37** | [AI Lead / Engineering Manager](https://br.indeed.com/viewjob?jk=8382abb860ed404e) | Saas.group | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **37** | [AI Platform Software Engineering Manager (Python/FastAPI)](https://br.indeed.com/viewjob?jk=ab3a3b748be7e4d5) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **34** | [Technical Account Manager (AI Driven) - Curveglass](https://br.indeed.com/viewjob?jk=e4ca4942670b5095) | AE STUDIO | Remoto | Sênior | Indeed | 28/09 (5d) |
-| **34** | [Forward Deployed Engineer (Senior, Python,AI/ML)](https://br.indeed.com/viewjob?jk=df875d8faa4a694b) | Modus Create | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **34** | [Lead/Architect GenAI Adoption (freelance, part-time)](https://br.indeed.com/viewjob?jk=db0e230545361e93) | N-iX | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **31** | [Principal Machine Learning Engineer - Remote Work](https://br.indeed.com/viewjob?jk=6b48eef191f31588) | BairesDev | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **31** | [[Job 32074] AI Developer Backend Java Pl/Sr](https://br.indeed.com/viewjob?jk=bfe6f91a8d6a75a5) | Ci&T | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **31** | [Senior AI/ML Applied Scientist - Remote](https://www.linkedin.com/jobs/view/senior-ai-ml-applied-scientist-remote-at-optum-4474775624) | Optum | Remoto | Sênior | LinkedIn | 02/10 (1d) |
-| **31** | [AI Product Manager - IAN](https://br.indeed.com/viewjob?jk=353bf22128814d81) | ASAAS | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **28** | [Especialista Sênior em Enablement / Plataformas & IA](https://br.indeed.com/viewjob?jk=fa6396f19c10defa) | NSTECH | Remoto | Sênior | Indeed | 01/10 (2d) |
+| **90** ★4/10 | [Engenheiro(a) de Inteligência Artificial - Pleno (Acessível também para pessoas com deficiência)](https://br.indeed.com/viewjob?jk=6d50e7991c91e334) 🆕 | Gol Linhas Aéreas | Remoto | Pleno | Indeed | 08/10 (hoje) |
+| | ↳ _A stack de LLMs, agentes e testes em Python tem forte sinergia com o interesse e projetos do candidato, mas a vaga é de nível Pleno e exige formação superior concluída e vivência prática em ambientes corporativos de IA (Cloud, Docker, LangChain). ⚠ Vaga exige nível Pleno e formação superior concluída (candidato está cursando com previsão para 2027)._ | | | | | |
+| **87** | [Analista de Inteligência Artificial PL](https://br.indeed.com/viewjob?jk=20702e561f6c4db9) 🆕 | INSTITUTO HARDWARE BR - HBR | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **84** | [Engenheiro(a) de Inteligência Artificial / Chatbot / IBM Watson](https://br.indeed.com/viewjob?jk=f67262a379129ecc) 🆕 | Growdev | Remoto | — | Indeed | 07/10 (1d) |
+| **83** | [Gerente de Produto Técnico - Assistente de Agentes com Inteligência Artificial](https://br.indeed.com/viewjob?jk=b5bd93503b78ed4a) 🆕 | Atento | Remoto | Júnior | Indeed | 06/10 (2d) |
+| **83** | [Atento Escalada - Gerente de Produto Técnico - Assistente de Agentes com Inteligência Artificial](https://br.indeed.com/viewjob?jk=2c52f68118ed7c73) 🆕 | Escalada | Remoto | Júnior | Indeed | 07/10 (1d) |
+| **75** | [Desenvolvedor(a) de Projetos Digitais / Web e IA](https://br.indeed.com/viewjob?jk=9243590e337bd603) 🆕 | agência ddwb | Remoto | — | Indeed | 05/10 (3d) |
+| **75** | [Mid-level DevOps & AI Platform Engineer](https://br.indeed.com/viewjob?jk=003ca5abc8f1a394) 🆕 | Dentsu World Services Brazil | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **75** | [Analista de Governança de Inteligência Artificial](https://br.indeed.com/viewjob?jk=4b7f6d4c720c4e34) 🆕 | Extractta | Remoto | — | Indeed | 07/10 (1d) |
+| **75** | [Product Designer (foco em IA e Inovação)](https://br.indeed.com/viewjob?jk=1e8d2a2f5c0218e4) 🆕 | Clicksign | Remoto | — | Indeed | 08/10 (hoje) |
+| **68** | [Project Manager RI - Junior (Remote)](https://br.indeed.com/viewjob?jk=8df243ccaea2f2e8) 🆕 | Involves | Remoto | Júnior | Indeed | 06/10 (2d) |
+| **65** | [Analista de Testes (QA) - Junior](https://br.indeed.com/viewjob?jk=571298f6367800d0) 🆕 | FCamara | Remoto | Júnior | Indeed | 07/10 (1d) |
+| **63** | [Systems Administrator - AI](https://br.indeed.com/viewjob?jk=fdd25093b880e54c) 🆕 | Velocity Work | Remoto | — | Indeed | 05/10 (3d) |
+| **63** | [Business Transformation & AI I Gestão, Processos e Operações](https://br.indeed.com/viewjob?jk=750296d4abebdf00) 🆕 | MOURA'S RH | Remoto | — | Indeed | 06/10 (2d) |
+| **49** | [Senior Python AI Solution Engineer](https://br.indeed.com/viewjob?jk=b7873250f71ba3ab) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **46** | [Lead Python AI Solution Engineer](https://br.indeed.com/viewjob?jk=9f7dbffef36aaf86) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **43** | [Engenheiro GenAI Sênior](https://br.indeed.com/viewjob?jk=c0c92cffa9470a2f) 🆕 | 4Solution Group | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **43** | [Desenvolvedor Python/Java Sr. (Foco em IA)](https://br.indeed.com/viewjob?jk=e5021c204c80158c) 🆕 | Evertec Brasil | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **40** | [Lead Python Engineer (AI-Powered Financial Assistant)](https://br.indeed.com/viewjob?jk=4ba8f3527a357c46) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **40** | [Senior Python Engineer (AI-Powered Financial Assistant)](https://br.indeed.com/viewjob?jk=13dc10c84d3c83a7) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **40** | [[Job-32144] Senior IA Architect / GenAI Solutions Architect, Brazil](https://br.indeed.com/viewjob?jk=7bc4cf3bec495f2c) 🆕 | Ci&T | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **34** | [Machine Learning Engineer / Senior (Remote)](https://br.indeed.com/viewjob?jk=e29966175582bf82) 🆕 | Compass Uol | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **16** | [Intelligence Products and Systems Manager](https://br.indeed.com/viewjob?jk=348d1742a64c5844) 🆕 | World Business Lenders, LLC | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **7** | [Senior Instructional Designer](https://br.indeed.com/viewjob?jk=ec012ac73bb44e85) 🆕 | Motorola Solutions | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **81** | [Engenheiro(a) de IA - Aplicações Agênticas (Pleno) - Remoto](https://br.indeed.com/viewjob?jk=f5cb0ef884700276) | M2d Consultoria E Assessoria Em Informática E | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **75** | [[Job-31712] Software Architect AI SDLC, Brazil](https://br.indeed.com/viewjob?jk=f275e8349d4c35f6) | Ci&T | Remoto | — | Indeed | 03/10 (5d) |
+| **74** | [Estágio em Automação de Testes / Desenvolvimento de Software](https://br.indeed.com/viewjob?jk=0142dc14ec01633c) | Instituto de Pesquisas ELDORADO | Remoto | Júnior | Indeed | 02/10 (6d) |
+| **69** | [SAP Functional Consultant (Generative AI) - REMOTO](https://br.indeed.com/viewjob?jk=de547becb6080c6f) | Verity | Remoto | — | Indeed | 02/10 (6d) |
+| **40** | [Arquiteto de Soluções / APIs, Integração & IA (13763)](https://br.indeed.com/viewjob?jk=1504d6d2cd57510e) | Sensedia | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **40** | [Lead Software Engineer - Alti (AI)](https://br.indeed.com/viewjob?jk=98a377c5e6ba6c52) | Alternative Payments | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **40** | [Senior Software Engineer - Alti (AI)](https://br.indeed.com/viewjob?jk=6db51344efb2d5f8) | Alternative Payments | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **37** | [AI Lead / Engineering Manager](https://br.indeed.com/viewjob?jk=8382abb860ed404e) | Saas.group | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **31** | [Principal Machine Learning Engineer - Remote Work](https://br.indeed.com/viewjob?jk=6b48eef191f31588) | BairesDev | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **31** | [[Job 32074] AI Developer Backend Java Pl/Sr](https://br.indeed.com/viewjob?jk=bfe6f91a8d6a75a5) | Ci&T | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **31** | [Senior AI/ML Applied Scientist - Remote](https://www.linkedin.com/jobs/view/senior-ai-ml-applied-scientist-remote-at-optum-4474775624) | Optum | Remoto | Sênior | LinkedIn | 02/10 (6d) |
+| **31** | [AI Product Manager - IAN](https://br.indeed.com/viewjob?jk=353bf22128814d81) | ASAAS | Remoto | Sênior | Indeed | 03/10 (5d) |
+| **28** | [Especialista Sênior em Enablement / Plataformas & IA](https://br.indeed.com/viewjob?jk=fa6396f19c10defa) | NSTECH | Remoto | Sênior | Indeed | 01/10 (7d) |
 
-## Full Stack / Dev (75)
+## Full Stack / Dev (72)
 
 ### Na região (14)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **99** | [Desenvolvedor(a) ABAP — SAP](https://br.linkedin.com/jobs/view/desenvolvedor-a-abap-%E2%80%94-sap-at-makevalue-4473147188) | MakeValue | Joinville | Júnior | LinkedIn | 02/10 (1d) |
-| **93** | [Desenvolvedor Java Junior](https://br.linkedin.com/jobs/view/desenvolvedor-java-junior-at-bionexo-4473753964) | Bionexo | Blumenau | Júnior | LinkedIn | 30/09 (3d) |
-| **82** | [Engenheiro de Software - Fullstack](https://br.indeed.com/viewjob?jk=34e59b0f13bfdba8) | Brusque | Brusque | — | Indeed | 29/09 (4d) |
-| **82** | [Engenheiro de Software - Fullstack](https://br.linkedin.com/jobs/view/engenheiro-de-software-fullstack-at-loopia-4473503231) | Loopia | Brusque | — | LinkedIn | 29/09 (4d) |
-| **76** | [374460 - BLUMENAU - DESENVOLVEDOR SOFTWARE [Exclusiva PcD]](https://br.indeed.com/viewjob?jk=f98ddc0915315783) | WEG | Blumenau | — | Indeed | 01/10 (2d) |
-| **76** | [Software Developer III – Segurança (Wippo) - 11875](https://br.indeed.com/viewjob?jk=4531e120f3a5b6b5) | Senior Sistemas | Blumenau | — | Indeed | 02/10 (1d) |
-| **76** | [Cia Hering / Desenvolvedor(a) Full Stack I (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-desenvolvedor-a-full-stack-i-blumenau-sc-at-cia-hering-4466392485) | Cia. Hering | Blumenau | — | LinkedIn | 03/10 (hoje) |
-| **73** | [Desenvolvedor Java Pleno (PL/SQL) / Híbrido / Blumenau/SC](https://br.linkedin.com/jobs/view/desenvolvedor-java-pleno-pl-sql-h%C3%ADbrido-blumenau-sc-at-premiersoft-4471565823) | Premiersoft | Blumenau (híbrido) | Pleno | LinkedIn | 28/09 (5d) |
-| **73** | [Desenvolvedor Java Pleno - Híbrido - SC / Blumenau](https://br.linkedin.com/jobs/view/desenvolvedor-java-pleno-h%C3%ADbrido-sc-blumenau-at-bionexo-4472326603) | Bionexo | Blumenau (híbrido) | Pleno | LinkedIn | 30/09 (3d) |
-| **73** | [Software Developer II - C# / React (Wiipo) - 11874](https://br.linkedin.com/jobs/view/software-developer-ii-c%23-react-wiipo-11874-at-senior-sistemas-4473154657) | Senior Sistemas | Blumenau | — | LinkedIn | 02/10 (1d) |
-| **70** | [Software Developer III Java - 10915](https://br.linkedin.com/jobs/view/software-developer-iii-java-10915-at-senior-sistemas-4472632859) | Senior Sistemas | Blumenau | — | LinkedIn | 30/09 (3d) |
-| **67** | [Desenvolvedor C#](https://br.linkedin.com/jobs/view/desenvolvedor-c%23-at-datainfo-solu%C3%A7%C3%B5es-em-ti-4473228259) | Datainfo | Blumenau | — | LinkedIn | 29/09 (4d) |
-| **35** | [Desenvolvedor Tasy Sênior / Híbrida / Blumenau/Sc](https://br.linkedin.com/jobs/view/desenvolvedor-tasy-s%C3%AAnior-h%C3%ADbrida-blumenau-sc-at-premiersoft-4472796838) | Premiersoft | Blumenau (híbrido) | Sênior | LinkedIn | 28/09 (5d) |
-| **32** | [Desenvolvedor Web Pleno/Sênior](https://br.linkedin.com/jobs/view/desenvolvedor-web-pleno-s%C3%AAnior-at-dwc-consult-4473154580) | DWC Consult | Joinville | Sênior | LinkedIn | 02/10 (1d) |
+| **87** | [[Programador de Manutenção Jr] - Seara](https://grupojbs.gupy.io/job/eyJqb2JJZCI6MTI2ODIzMTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | JBS | Gaspar (presencial) | Júnior | Gupy | 06/10 (2d) |
+| **85** | [Engenheiro de software - SC](https://br.linkedin.com/jobs/view/engenheiro-de-software-sc-at-quick-soft-tecnologia-4474012629) 🆕 | Quick Soft Tecnologia | Blumenau | — | LinkedIn | 06/10 (2d) |
+| **73** | [Software Developer Delphi II (ERP XT) - 11869](https://br.linkedin.com/jobs/view/software-developer-delphi-ii-erp-xt-11869-at-senior-sistemas-4473656589) 🆕 | Senior Sistemas | Blumenau | — | LinkedIn | 05/10 (3d) |
+| **73** | [Software Developer II (ServiceNow) - 11872](https://br.indeed.com/viewjob?jk=d75ce8fae47f92f2) 🆕 | Senior Sistemas | Blumenau | — | Indeed | 06/10 (2d) |
+| **73** | [Analista de TI - Desenvolvedor Full-Stack](https://br.indeed.com/viewjob?jk=1aa60d1d44356761) 🆕 | D1 Fitness | Itajaí | — | Indeed | 08/10 (hoje) |
+| **67** | [Programador de Manutenção](https://nauterra.gupy.io/job/eyJqb2JJZCI6MTI2NjkzMDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Nauterra | Itajaí (presencial) | — | Gupy | 07/10 (1d) |
+| **38** | [Software Developer Java/Flutter III (Senior X) - 11870](https://br.linkedin.com/jobs/view/software-developer-java-flutter-iii-senior-x-11870-at-senior-sistemas-4474073729) 🆕 | Senior Sistemas | Blumenau | Sênior | LinkedIn | 06/10 (2d) |
+| **38** | [Desenvolvedor Flutter Sênior / Presencial / Blumenau/SC](https://br.linkedin.com/jobs/view/desenvolvedor-flutter-s%C3%AAnior-presencial-blumenau-sc-at-premiersoft-4475726019) 🆕 | Premiersoft | Blumenau | Sênior | LinkedIn | 07/10 (1d) |
+| **76** | [374460 - BLUMENAU - DESENVOLVEDOR SOFTWARE [Exclusiva PcD]](https://br.indeed.com/viewjob?jk=f98ddc0915315783) | WEG | Blumenau | — | Indeed | 01/10 (7d) |
+| **76** | [Software Developer III – Segurança (Wiipo) - 11875](https://br.indeed.com/viewjob?jk=4531e120f3a5b6b5) | Senior Sistemas | Blumenau | — | Indeed | 02/10 (6d) |
+| **76** | [Cia Hering / Desenvolvedor(a) Full Stack I (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-desenvolvedor-a-full-stack-i-blumenau-sc-at-cia-hering-4466392485) | Cia. Hering | Blumenau | — | LinkedIn | 03/10 (5d) |
+| **73** | [Software Developer II - C# / React (Wiipo) - 11874](https://br.linkedin.com/jobs/view/software-developer-ii-c%23-react-wiipo-11874-at-senior-sistemas-4473154657) | Senior Sistemas | Blumenau | — | LinkedIn | 02/10 (6d) |
+| **35** | [Senior System Developer](https://br.linkedin.com/jobs/view/senior-system-developer-at-infios-4457160771) | Infios | Blumenau | Sênior | LinkedIn | 06/10 (2d) |
+| **32** | [Desenvolvedor Java Sênior - Híbrido - SC / Blumenau](https://br.linkedin.com/jobs/view/desenvolvedor-java-s%C3%AAnior-h%C3%ADbrido-sc-blumenau-at-bionexo-4473381189) | Bionexo | Blumenau (híbrido) | Sênior | LinkedIn | 02/10 (6d) |
 
-### Remoto (61)
-
-| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
-|---:|---|---|---|---|---|---|
-| **74** | [Analista de Desenvolvimento de Sistemas Pleno / Python & Node.js](https://finnet.gupy.io/job/eyJqb2JJZCI6MTI1OTgwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Finnet | Remoto | Pleno | Gupy | 29/09 (4d) |
-| **42** | [Desenvolvedor(a) Full Stack Java Sênior](https://gruposysmap.gupy.io/job/eyJqb2JJZCI6MTI1MzA3MzgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Grupo SysMap | Remoto | Sênior | Gupy | 29/09 (4d) |
-| **30** | [Desenvolvedor Fullstack Especialista ( Java,.Net, Python, Node/TS)](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjQ0NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Gupy | 01/10 (2d) |
-| **91** | [Desenvolvedor(a) Full Stack Júnior (PHP/React)](https://softexpert.gupy.io/job/eyJqb2JJZCI6MTI2MjgwOTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Carreiras SoftExpert | Remoto | Júnior | Gupy | 29/09 (4d) |
-| **83** | [Pessoa Desenvolvedora Pleno – Foco em Desenvolvimento Agêntico](https://br.indeed.com/viewjob?jk=553f8391b52aafd9) | Nimbi | Remoto | Pleno | Indeed | 01/10 (2d) |
-| **80** | [Desenvolvedor FullStack React/Node.js - Foco em Segurança (Vaga Híbrida)](https://br.indeed.com/viewjob?jk=0bf1adb307fa298a) | DELIVER IT | Remoto | — | Indeed | 29/09 (4d) |
-| **80** | [Desenvolvedor Full Stack Pleno (.NET / SQL Server / Cloud)](https://br.indeed.com/viewjob?jk=83d5e85f88954bda) | Atento TI | Remoto | Pleno | Indeed | 01/10 (2d) |
-| **77** | [Pessoa Desenvolvedora FullStack Python e React Pleno](https://br.indeed.com/viewjob?jk=15a261aecf18faf8) | Neogridcarreiras (inferida) | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **77** | [Desenvolvedor PHP Fullstack Pleno](https://br.indeed.com/viewjob?jk=62fcd0317319bb2d) | Jointecnologia (inferida) | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **74** | [Desenvolvedor Full Stack Pleno](https://br.indeed.com/viewjob?jk=8bb0a419abd0a621) | ISA SAÚDE | Remoto | Pleno | Indeed | 01/10 (2d) |
-| **74** | [Desenvolvedor Full Stack](https://br.indeed.com/viewjob?jk=9874ac495f7647c8) | matrixcargo | Remoto | — | Indeed | 01/10 (2d) |
-| **74** | [Full-Stack .NET Developer](https://br.indeed.com/viewjob?jk=6de891c75fe9b10b) | EPAM Systems | Remoto | — | Indeed | 02/10 (1d) |
-| **74** | [Desenvolvedor/ Desenvolvedora .NET](https://br.indeed.com/viewjob?jk=0fc7b9c94d860bd0) | Capgemini | Remoto | — | Indeed | 02/10 (1d) |
-| **71** | [Mid-level Full Stack Engineer ID92628](https://br.indeed.com/viewjob?jk=a8d4a02daaa76049) | AgileEngine | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **71** | [Profissional Desenvolvedor FullStack Pleno](https://br.indeed.com/viewjob?jk=b49cee650383d6a0) | Radix Engenharia e Software | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **68** | [.Net + Angular Fullstack / Research + Development - Remote Work](https://br.indeed.com/viewjob?jk=c2caeda631611e95) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **68** | [Full Stack Developer](https://br.indeed.com/viewjob?jk=7f5ce60200297ab4) | EX Squared | Remoto | — | Indeed | 01/10 (2d) |
-| **68** | [[ job - 32054] Mid-Level Fullstack Developer ( Java + Angular ), Brasil](https://br.indeed.com/viewjob?jk=a60f94681f115698) | Ci&T | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **68** | [Desenvolvedor/ Desenvolvedora Front End](https://br.indeed.com/viewjob?jk=ea48afec3ac32aef) | Capgemini | Remoto | — | Indeed | 02/10 (1d) |
-| **68** | [Desenvolvedor(a) Java - Pleno](https://br.indeed.com/viewjob?jk=a5c7b20cf388f49e) | Rethink Recruitment Solutions Ltd | Remoto | Pleno | Indeed | 03/10 (hoje) |
-| **65** | [Desenvolvedor Full Stack](https://br.indeed.com/viewjob?jk=f21304399d38ee47) | SP Capital - Fundo de Investimentos | Remoto | — | Indeed | 01/10 (2d) |
-| **65** | [Desenvolvedor/Desenvolvedora Java](https://br.indeed.com/viewjob?jk=35f605fbc4b4c0d1) | Capgemini | Remoto | — | Indeed | 02/10 (1d) |
-| **65** | [Desenvolvimento Fullstack](https://br.indeed.com/viewjob?jk=d8fce0eb8d2b33be) | Capgemini | Remoto | — | Indeed | 02/10 (1d) |
-| **62** | [Software Engineer](https://br.indeed.com/viewjob?jk=5eb6a2ad779a6792) | Sanar | Remoto | — | Indeed | 29/09 (4d) |
-| **62** | [Golang Developer - Remote Work](https://br.linkedin.com/jobs/view/golang-developer-remote-work-at-bairesdev-4471935273) | BairesDev | Remoto | — | LinkedIn | 29/09 (4d) |
-| **62** | [Java Developer - Remote Work](https://br.indeed.com/viewjob?jk=98c1903ebff0c22c) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **59** | [React Frontend Developer - Remote Work](https://br.indeed.com/viewjob?jk=db833cafc842ff0e) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **59** | [R&D Commercial Full-Stack Developer - Remote Work](https://br.indeed.com/viewjob?jk=4a568ca0e7efb0fa) | BairesDev | Remoto | — | Indeed | 01/10 (2d) |
-| **59** | [Desenvolvedor Front End](https://br.indeed.com/viewjob?jk=4d0225cfb5c36887) | Beta Online | Remoto | — | Indeed | 02/10 (1d) |
-| **59** | [Desenvolvedor Back End](https://br.indeed.com/viewjob?jk=973bc668b9e69e10) | Beta Online | Remoto | — | Indeed | 02/10 (1d) |
-| **59** | [/ Fullstack Developer (Java + Angular/React) / Mid-level](https://br.indeed.com/viewjob?jk=209e600188e52239) | GX2 | Remoto | Pleno | Indeed | 02/10 (1d) |
-| **59** | [Native iOS Developer - REMOTO](https://br.indeed.com/viewjob?jk=f034b6dc61a3e7ad) | Verity (inferida) | Remoto | — | Indeed | 03/10 (hoje) |
-| **56** | [DESENVOLVEDOR .NET (5By5 Soluções Em Sistemas)](https://br.indeed.com/viewjob?jk=eab098fb40e0e88e) | Jobbol | Remoto | — | Indeed | 30/09 (3d) |
-| **56** | [Pessoa Desenvolvedora Full Stack - Go (Golang e React)](https://br.indeed.com/viewjob?jk=7116bc202ef6ac66) | MK Solutions | Remoto | — | Indeed | 01/10 (2d) |
-| **53** | [ANALISTA DESENVOLVIMENTO SOFTWARE II](https://br.indeed.com/viewjob?jk=a846fda8fa507468) | Voltz (inferida) | Remoto | — | Indeed | 03/10 (hoje) |
-| **48** | [Desenvolvedor(a) Fullstack Sênior](https://br.indeed.com/viewjob?jk=542986c0b77297a7) | 4Solution Group | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **45** | [[1242] Pessoa Desenvolvedora Fullstack Senior (Híbrido - Manaus)](https://br.indeed.com/viewjob?jk=3e683bec40b13f1d) | Venturus Centro de Inovação Tecnológica | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **42** | [Pessoa Desenvolvedora Full Stack Sênior](https://effecti.gupy.io/job/eyJqb2JJZCI6MTI1NjUwMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Effecti | Remoto | Sênior | Gupy | 29/09 (4d) |
-| **42** | [Desenvolvedor Backend JAVA Sênior](https://br.indeed.com/viewjob?jk=a9c4e3f80d013e1c) | PicPay | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **42** | [Engenheiro de Software Sênior (68451)](https://br.indeed.com/viewjob?jk=8bec21a3ad3deee8) | EVT | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **39** | [Profissional Desenvolvedor Quant (Python) Sênior - Remoto](https://br.indeed.com/viewjob?jk=5f28cd5372565a25) | Luby | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **39** | [Analista de Desenvolvimento de Sistemas Sênior / Backend Node.js](https://br.indeed.com/viewjob?jk=694b6b9d64c2d03d) | Finnet | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **39** | [Senior Full-Stack .NET Developer](https://br.indeed.com/viewjob?jk=995a1629e64b6a5a) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Desenvolvedor(a) Java Sênior Full Stack — Sustentação de Produção Crítica](https://br.indeed.com/viewjob?jk=5f301377ef81b81d) | Avantti | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **36** | [Desenvolvedor Java Sênior](https://br.indeed.com/viewjob?jk=50aa0f1aea8d5084) | Evertec Brasil | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **36** | [Senior Software Engineer - Alti Team](https://br.indeed.com/viewjob?jk=6db51344efb2d5f8) | Alternative Payments | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Lead Software Engineer](https://br.indeed.com/viewjob?jk=98a377c5e6ba6c52) | Alternative Payments | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [[Job-31680] Specialist AWS I Python Developer, Brazil](https://br.indeed.com/viewjob?jk=a732f78171c82fcc) | Ci&T | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Senior Sitecore Developer](https://br.indeed.com/viewjob?jk=60942e86aff5af96) | VARTEQ | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **36** | [Desenvolvedor PowerBuilder Sênior](https://br.indeed.com/viewjob?jk=1dc226dc2c50afa7) | Zallpy Digital | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **33** | [Desenvolvedor(a) DevOps Sênior](https://br.indeed.com/viewjob?jk=c2b334c8008e0fdc) | Condoconta | Remoto | Sênior | Indeed | 28/09 (5d) |
-| **33** | [Desenvolvedor FullStack Python/React Sr](https://br.indeed.com/viewjob?jk=d899416300d4af66) | Insi | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **33** | [Senior Python Developer](https://br.indeed.com/viewjob?jk=08b13eb705615982) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **33** | [Senior Software Engineer - Product Expansion Team](https://br.indeed.com/viewjob?jk=c554624fc16dbc4b) | Alternative Payments | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **30** | [[Job-32079] Senior Backend / Integration Engineer, Brazil](https://br.indeed.com/viewjob?jk=f611b7b46e85d473) | Ci&T | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **30** | [Profissional Desenvolvedor Full Stack Sênior](https://br.indeed.com/viewjob?jk=d5cf34f2f455404c) | Radix Engenharia e Software | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **27** | [Staff Software Engineer, Product](https://br.indeed.com/viewjob?jk=d0a733b515e1e1e1) | LawnStarter | Remoto | Sênior | Indeed | 28/09 (5d) |
-| **27** | [Principal Backend Engineer (Python) - Trabalho Remoto](https://br.linkedin.com/jobs/view/principal-backend-engineer-python-trabalho-remoto-at-bairesdev-4471398984) | BairesDev | Remoto | Sênior | LinkedIn | 28/09 (5d) |
-| **27** | [Staff Backend Engineer – Python - Trabalho Remoto](https://br.linkedin.com/jobs/view/staff-backend-engineer-%E2%80%93-python-trabalho-remoto-at-bairesdev-4471514561) | BairesDev | Remoto | Sênior | LinkedIn | 28/09 (5d) |
-| **27** | [Desenvolvedor Full Stack Sênior](https://br.indeed.com/viewjob?jk=5c9a9124ca7e54ed) | Evertec Brasil | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **24** | [Contractor: Senior Software Engineer (Remote: Argentina; Brazil; Chile; Colombia; Costa Rica; Ecuador; Mexico; Portugal)](https://br.indeed.com/viewjob?jk=2b1a1e12e97ffb5b) | Newsela | Remoto | Sênior | Indeed | 02/10 (1d) |
-
-## Sistemas e ERP (42)
-
-### Na região (19)
+### Remoto (58)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **18** | [Analista de Sistemas Sr](https://governancabrasil.gupy.io/job/eyJqb2JJZCI6MTI2NDk3NDAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Governançabrasil | Blumenau (híbrido) | Sênior | Gupy | 30/09 (3d) |
-| **73** | [Espec Tecnologia Informacao I (SAP ABAP)](https://br.linkedin.com/jobs/view/espec-tecnologia-informacao-i-sap-abap-at-bunge-4418410369) | Bunge | Gaspar | Júnior | LinkedIn | 27/09 (6d) |
-| **73** | [Implantador de Sistemas - Folha / Fiscal / Contábil / Presencial Blumenau](https://br.linkedin.com/jobs/view/implantador-de-sistemas-folha-fiscal-cont%C3%A1bil-presencial-blumenau-at-sci-sistemas-cont%C3%A1beis-4470881172) | SCI Sistemas Contábeis | Blumenau | Júnior | LinkedIn | 28/09 (5d) |
-| **73** | [ANALISTA DE INTEGRAÇÃO JR](https://br.linkedin.com/jobs/view/analista-de-integra%C3%A7%C3%A3o-jr-at-unimed-blumenau-4472361679) | Unimed Blumenau | Blumenau | Júnior | LinkedIn | 30/09 (3d) |
-| **68** | [Analista de Sistemas PL (Web)](https://br.linkedin.com/jobs/view/analista-de-sistemas-pl-web-at-grupo-kmr-4472149952) | Grupo KMR | Itajaí | Pleno | LinkedIn | 30/09 (3d) |
-| **58** | [ASSISTENTE ADMINISTRATIVO - COMPRAS/SUPRIMENTOS](https://br.indeed.com/viewjob?jk=bc681ce333a002f6) | Emergent Cold LatAm | Itajaí | Júnior | Indeed | 02/10 (1d) |
-| **56** | [Analista de Sistemas](https://br.linkedin.com/jobs/view/analista-de-sistemas-at-jobbol-4473787402) | Jobbol | Blumenau | — | LinkedIn | 30/09 (3d) |
-| **53** | [Analista de Negócios de TI - ERP](https://br.linkedin.com/jobs/view/analista-de-neg%C3%B3cios-de-ti-erp-at-luza-group-4471537826) | LUZA Group | Navegantes | — | LinkedIn | 28/09 (5d) |
-| **53** | [Consultor SAP FI](https://br.linkedin.com/jobs/view/consultor-sap-fi-at-capitani-group-4474311044) | Capitani Group | Itajaí | — | LinkedIn | 01/10 (2d) |
-| **53** | [Cia Hering / Analista de SAP FI III (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-analista-de-sap-fi-iii-blumenau-sc-at-cia-hering-4466394487) | Cia. Hering | Blumenau | — | LinkedIn | 03/10 (hoje) |
-| **50** | [Executivo Técnico de Negócios III (ERP) - 11863](https://br.linkedin.com/jobs/view/executivo-t%C3%A9cnico-de-neg%C3%B3cios-iii-erp-11863-at-senior-sistemas-4471779461) | Senior Sistemas | Blumenau | — | LinkedIn | 29/09 (4d) |
-| **50** | [Analista de Suporte I (Suporte Premium ERP) - 11837](https://br.linkedin.com/jobs/view/analista-de-suporte-i-suporte-premium-erp-11837-at-senior-sistemas-4472639477) | Senior Sistemas | Blumenau | — | LinkedIn | 30/09 (3d) |
-| **50** | [ANALISTA DE SISTEMAS](https://br.linkedin.com/jobs/view/analista-de-sistemas-at-urbano-alimentos-4472839322) | Urbano Alimentos | Jaraguá do Sul | — | LinkedIn | 01/10 (2d) |
-| **44** | [Analista de Pricing PL](https://br.indeed.com/viewjob?jk=0e2099bac580dec3) | Grupo KMR | Itajaí | Pleno | Indeed | 01/10 (2d) |
-| **41** | [Analista Contábil](https://br.indeed.com/viewjob?jk=725e1c344f42f641) | Nidec Global Appliance (Brasil) | Joinville | — | Indeed | 02/10 (1d) |
-| **18** | [Analista de Sistemas Sr](https://br.linkedin.com/jobs/view/analista-de-sistemas-sr-at-governan%C3%A7abrasil-govbr-4472921243) | Governança Brasil | Blumenau | Sênior | LinkedIn | 01/10 (2d) |
-| **18** | [Especialista em Integração SAP (PI/PO, SAP Integration Suite)](https://br.linkedin.com/jobs/view/especialista-em-integra%C3%A7%C3%A3o-sap-pi-po-sap-integration-suite-at-bunge-4429190740) | Bunge | Gaspar | Sênior | LinkedIn | 02/10 (1d) |
-| **18** | [Analista Funcional Sênior / ERP & Aplicações Corporativas](https://br.linkedin.com/jobs/view/analista-funcional-s%C3%AAnior-erp-aplica%C3%A7%C3%B5es-corporativas-at-g5-it-4473131653) | G5 IT | Navegantes | Sênior | LinkedIn | 02/10 (1d) |
-| **3** | [Especialista Fiscal - Itajai SC](https://br.indeed.com/viewjob?jk=4984554e300d0e0b) | TECHRX RECRUITING | Itajaí | Sênior | Indeed | 02/10 (1d) |
+| **88** ★5/10 | [Desenvolvedor Full Stack java - Junior](https://br.indeed.com/viewjob?jk=5f1e6662ec9919c2) 🆕 | FCamara | Remoto | Júnior | Indeed | 07/10 (1d) |
+| | ↳ _A vaga valoriza muito o uso de IA no fluxo de desenvolvimento e interesse no mercado financeiro, pontos fortes do candidato. Contudo, o foco central do backend é Java/Spring Boot, tecnologia não presente no seu perfil. ⚠ Exige conhecimento de Java e Spring Boot, tecnologias que não constam no perfil do candidato._ | | | | | |
+| **79** | [Desenvolvedor SQL Jr (B)](https://br.indeed.com/viewjob?jk=de217670df9ed82d) 🆕 | I4PRO | Remoto | Júnior | Indeed | 06/10 (2d) |
+| **77** | [[Job-31991] Mid Level Java/Angular Developer FullStack, Brazil](https://br.indeed.com/viewjob?jk=df4f307c76bfe407) 🆕 | Ci&T | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **74** | [Software Engineer (Remote - US)](https://www.linkedin.com/jobs/view/software-engineer-remote-us-at-tixtrack-4475959299) 🆕 | TixTrack | Remoto | — | LinkedIn | 08/10 (hoje) |
+| **71** | [Locaweb / Desenvolvedor de Sistemas Pleno / Remoto](https://br.indeed.com/viewjob?jk=015a791e5e2ab414) 🆕 | LWSA | Remoto | Pleno | Indeed | 05/10 (3d) |
+| **71** | [Desenvolvedor Back-end Pleno - Integrações](https://br.indeed.com/viewjob?jk=bba5709bc6d49bac) 🆕 | Housi | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **68** | [Desenvolvedor(a) Back End I (Serviços Financeiro)](https://br.indeed.com/viewjob?jk=45d848fb9751c3a3) 🆕 | Omie | Remoto | — | Indeed | 06/10 (2d) |
+| **65** | [Desenvolvedor .NET PL/SQL Seguros](https://br.indeed.com/viewjob?jk=62b1468e97d900f2) 🆕 | NTT DATA | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **65** | [Desenvolvedor/a Full Stack (Experiência em VTEX)](https://br.indeed.com/viewjob?jk=708dba29c86824de) 🆕 | AVANTI / Digital Commerce Experts | Remoto | — | Indeed | 06/10 (2d) |
+| **65** | [Intermediate Java Developer](https://br.indeed.com/viewjob?jk=928a8a7f6839dd45) 🆕 | AB InBev Growth Group | Remoto | — | Indeed | 07/10 (1d) |
+| **65** | [Intermediate Java Developer](https://br.indeed.com/viewjob?jk=562251481d75cd39) 🆕 | Bees | Remoto | — | Indeed | 07/10 (1d) |
+| **62** | [ANALISTA DESENVOLVEDOR PL (Full Stack / WEB)](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjY5MDksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Pleno | Gupy | 06/10 (2d) |
+| **62** | [Desenvolvedor SQL Pleno (B)](https://br.indeed.com/viewjob?jk=025d0ed039c03d4b) 🆕 | I4PRO | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **62** | [Pessoa Desenvolvedora backend Java Pl (Remoto) - 2394](https://br.indeed.com/viewjob?jk=9aaebb08c2ec5a4f) 🆕 | Starian | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **62** | [Desenvolvedor Full Stack Pleno II](https://br.indeed.com/viewjob?jk=8727014c8f5a5732) 🆕 | VML | Remoto | Pleno | Indeed | 08/10 (hoje) |
+| **59** | [Desenvolvedor Full Stack](https://br.indeed.com/viewjob?jk=a71e9d590e533a6c) 🆕 | ICOMM GROUP | Remoto | — | Indeed | 06/10 (2d) |
+| **45** | [[Job - 31995] Senior Software Developer](https://br.indeed.com/viewjob?jk=5ae1a06418bc94c6) 🆕 | Ci&T | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **36** | [Desenvolvedor Fullstack Sr (B)](https://br.indeed.com/viewjob?jk=7fb26912834fb0c8) 🆕 | I4PRO | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **36** | [[Job-32136] Senior Frontend Developer, Brazil](https://br.indeed.com/viewjob?jk=8ee6ce46c9bacf6a) 🆕 | Ci&T | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **36** | [Senior Full Stack Engineer ID89122](https://br.indeed.com/viewjob?jk=790b581171bc8f18) 🆕 | AgileEngine | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **36** | [Lead Python Engineer (GitHub Enterprise Administration)](https://br.indeed.com/viewjob?jk=ad4c8df3dcb927fc) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **33** | [Fullstack Sr](https://br.indeed.com/viewjob?jk=ecc0c41f2a54371b) 🆕 | Addvisor | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **33** | [[Job 31898] - Tech Lead FullStack](https://br.indeed.com/viewjob?jk=013f8a1781d0ec7c) 🆕 | Ci&T | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **33** | [DESENVOLVEDOR(A) FULL STACK SÊNIOR](https://br.indeed.com/viewjob?jk=89657973bdc54673) 🆕 | Capital gráfica | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **33** | [Desenvolvedor Fullstack Senior](https://br.indeed.com/viewjob?jk=d2f7cb85f9859abc) 🆕 | Digisystem | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **33** | [Full Stack Tech Lead ID93307](https://br.indeed.com/viewjob?jk=f6e3fe0a74f1cc72) 🆕 | AgileEngine | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **30** | [Desenvolvedor Full Stack java - Sênior](https://fcamara.gupy.io/job/eyJqb2JJZCI6MTI2OTE3NTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | VENHA SER #SANGUELARANJA 🧡🚀 | Remoto | Sênior | Gupy | 07/10 (1d) |
+| **30** | [Sênior SQL/Python (4807)](https://keepsimple.gupy.io/job/eyJqb2JJZCI6MTI2ODc4MDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Keep Simple | Remoto | Sênior | Gupy | 07/10 (1d) |
+| **30** | [[Job 32173] Developer SRE / Platform Engineer Azure Sênior — AKS & APIM](https://br.indeed.com/viewjob?jk=347f13600f4be1e9) 🆕 | Ci&T | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **27** | [Desenvolvedor(a) Full Stack Sênior](https://br.indeed.com/viewjob?jk=5a94e2a2703b893e) 🆕 | NSTECH | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **24** | [Desenvolvedor .Net Sênior](https://br.indeed.com/viewjob?jk=fc86802bf30e8d7e) 🆕 | Evertec Brasil | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **24** | [Senior Fullstack Engineer (BR based only)](https://br.indeed.com/viewjob?jk=f73149b28089122f) 🆕 | Double | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **21** | [Desenvolvedor Fullstack .NET e React Sênior](https://br.indeed.com/viewjob?jk=1ab99876e7421ceb) 🆕 | Insi | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **21** | [Desenvolvedor Full Stack java - Sênior](https://br.indeed.com/viewjob?jk=e6750bac4ebd326f) 🆕 | FCamara | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **83** | [Pessoa Desenvolvedora Pleno – Foco em Desenvolvimento Agêntico](https://br.indeed.com/viewjob?jk=553f8391b52aafd9) | Nimbi | Remoto | Pleno | Indeed | 01/10 (7d) |
+| **71** | [Mid-level Full Stack Engineer ID92628](https://br.indeed.com/viewjob?jk=a8d4a02daaa76049) | AgileEngine | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **71** | [Profissional Desenvolvedor FullStack Pleno](https://br.indeed.com/viewjob?jk=b49cee650383d6a0) | Radix Engenharia e Software | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **68** | [.Net + Angular Fullstack / Research + Development - Remote Work](https://br.indeed.com/viewjob?jk=c2caeda631611e95) | BairesDev | Remoto | — | Indeed | 01/10 (7d) |
+| **68** | [Full Stack Developer](https://br.indeed.com/viewjob?jk=7f5ce60200297ab4) | EX Squared | Remoto | — | Indeed | 02/10 (6d) |
+| **68** | [Desenvolvedor/ Desenvolvedora Front End](https://br.indeed.com/viewjob?jk=ea48afec3ac32aef) | Capgemini | Remoto | — | Indeed | 02/10 (6d) |
+| **65** | [Desenvolvedor/ Desenvolvedora Fullstack JAVA](https://br.indeed.com/viewjob?jk=4a909b8fad762bc5) | Capgemini | Remoto | — | Indeed | 02/10 (6d) |
+| **62** | [Java Developer - Remote Work](https://br.indeed.com/viewjob?jk=98c1903ebff0c22c) | BairesDev | Remoto | — | Indeed | 01/10 (7d) |
+| **59** | [React Frontend Developer - Remote Work](https://br.indeed.com/viewjob?jk=db833cafc842ff0e) | BairesDev | Remoto | — | Indeed | 01/10 (7d) |
+| **59** | [R&D Commercial Full-Stack Developer - Remote Work](https://br.indeed.com/viewjob?jk=4a568ca0e7efb0fa) | BairesDev | Remoto | — | Indeed | 01/10 (7d) |
+| **59** | [Desenvolvedor Front End](https://br.indeed.com/viewjob?jk=4d0225cfb5c36887) | Beta Online | Remoto | — | Indeed | 02/10 (6d) |
+| **59** | [Desenvolvedor Back End](https://br.indeed.com/viewjob?jk=973bc668b9e69e10) | Beta Online | Remoto | — | Indeed | 02/10 (6d) |
+| **59** | [/ Fullstack Developer (Java + Angular/React) / Mid-level](https://br.indeed.com/viewjob?jk=209e600188e52239) | GX2 | Remoto | Pleno | Indeed | 02/10 (6d) |
+| **56** | [Pessoa Desenvolvedora Full Stack - Go (Golang e React)](https://br.indeed.com/viewjob?jk=7116bc202ef6ac66) | MK Solutions | Remoto | — | Indeed | 01/10 (7d) |
+| **48** | [Desenvolvedor(a) Fullstack Sênior](https://br.indeed.com/viewjob?jk=542986c0b77297a7) | 4Solution Group | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **39** | [Analista de Desenvolvimento de Sistemas Sênior / Backend Node.js](https://br.indeed.com/viewjob?jk=694b6b9d64c2d03d) | Finnet | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **36** | [Senior Sitecore Developer](https://br.indeed.com/viewjob?jk=60942e86aff5af96) | VARTEQ | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **36** | [Senior Software Engineer (Front-end)](https://br.indeed.com/viewjob?jk=7360c6e00e88f5da) | Hotmart | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **33** | [Desenvolvedor FullStack Python/React Sr](https://br.indeed.com/viewjob?jk=d899416300d4af66) | Insi | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **30** | [Desenvolvedor Fullstack Especialista ( Java,.Net, Python, Node/TS)](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2NjQ0NDIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Stefanini Group | Remoto | Sênior | Gupy | 01/10 (7d) |
+| **30** | [Profissional Desenvolvedor Full Stack Sênior](https://br.indeed.com/viewjob?jk=d5cf34f2f455404c) | Radix Engenharia e Software | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **30** | [[Job-32079] Senior Backend / Integration Engineer, Brazil](https://br.indeed.com/viewjob?jk=f611b7b46e85d473) | Ci&T | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **27** | [Desenvolvedor Full Stack Sênior](https://br.indeed.com/viewjob?jk=5c9a9124ca7e54ed) | Evertec Brasil | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **24** | [Contractor: Senior Software Engineer](https://br.indeed.com/viewjob?jk=2b1a1e12e97ffb5b) | Newsela | Remoto | Sênior | Indeed | 02/10 (6d) |
 
-### Remoto (23)
+## Sistemas e ERP (52)
 
-| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
-|---:|---|---|---|---|---|---|
-| **65** | [Banco de Talentos / SAP (Todos os Módulos e Senioridades)](https://mtpbrasil.gupy.io/job/eyJqb2JJZCI6MTI2MzIwMjAsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | MTP Métodos e Tecnologia – Brasil | Remoto | Júnior | Gupy | 29/09 (4d) |
-| **45** | [Analista de Sistemas](https://vemserunifique.gupy.io/job/eyJqb2JJZCI6MTI1MzA3NDcsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Unifique Telecomunicações | Remoto | — | Gupy | 30/09 (3d) |
-| **16** | [Analista de Sistemas Sênior (4801)](https://keepsimple.gupy.io/job/eyJqb2JJZCI6MTI2NTcxMjEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Keep Simple | Remoto | Sênior | Gupy | 01/10 (2d) |
-| **68** | [Analista de Sistemas JR](https://br.indeed.com/viewjob?jk=1e48e36217cac864) | Argos Global Partner Services | Remoto | Júnior | Indeed | 01/10 (2d) |
-| **57** | [SAP BTP DevOps Engineer](https://br.indeed.com/viewjob?jk=c144a9d5d8a8c06c) | EPAM Systems | Remoto | — | Indeed | 29/09 (4d) |
-| **51** | [Analista de sistemas de automação - DevOps - Pleno](https://vempralanlink.gupy.io/job/eyJqb2JJZCI6MTI1OTY3ODMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Lanlink Informática | Remoto | Pleno | Gupy | 28/09 (5d) |
-| **51** | [Business Analyst](https://br.indeed.com/viewjob?jk=9310aec2ab8791ef) | EX Squared | Remoto | — | Indeed | 01/10 (2d) |
-| **45** | [SAP BUSINESS ANALYST II](https://sourcehub.gupy.io/job/eyJqb2JJZCI6MTI2MTEyMTYsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | SourceHub | Remoto | — | Gupy | 28/09 (5d) |
-| **45** | [Consultor Técnico SAP FI-CA](https://br.indeed.com/viewjob?jk=b29e0c96d709d061) | Insi | Remoto | — | Indeed | 02/10 (1d) |
-| **22** | [Analista de Negócios Sr - Matriz](https://br.indeed.com/viewjob?jk=8cd624f04660caa5) | Porto | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **16** | [Analista de Negócios Sales Ops-Especialista / RD Station (Remoto)](https://br.linkedin.com/jobs/view/analista-de-neg%C3%B3cios-sales-ops-especialista-rd-station-remoto-at-totvs-4473339823) | TOTVS | Remoto | Sênior | LinkedIn | 02/10 (1d) |
-| **13** | [Senior Business Analyst](https://br.indeed.com/viewjob?jk=8a0cc1b980c88728) | EPAM Systems | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **10** | [Consultor SAP MM Sênior (AMS / Reforma Tributária)](https://br.indeed.com/viewjob?jk=8488b2ef9292588f) | Verus Brasil | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **10** | [Senior SAP MM Consultant (SAP Sourcing & Procurement - Brazil Localization)](https://br.indeed.com/viewjob?jk=1ff68ef6f81425f4) | CPP Digital | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Consultor SAP MM Sr. – Suporte / Sustentação](https://br.indeed.com/viewjob?jk=29b43521a37efafb) | Addvisor | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Senior SAP SD Consultant – Americas Localization Support](https://br.indeed.com/viewjob?jk=63871c39faadcbe3) | Cognizant | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Sr. Functional Business Analyst - SAP PP/PM (São José dos Campos/SP)](https://br.indeed.com/viewjob?jk=73d7c6c13d0994ec) | Ball Corporation | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Consultor SAP MM Pleno/Sênior (68465 / 208358-1)](https://br.indeed.com/viewjob?jk=085d85c947329bfc) | EVT | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Consultor SAP TM Sênior (68468/209337-1)](https://br.indeed.com/viewjob?jk=dd78225006e65500) | EVT | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Analista de Negócios / Product Owner - Sênior](https://br.indeed.com/viewjob?jk=d30edf841207213b) | Capgemini | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **10** | [Analista de negocios SR](https://br.indeed.com/viewjob?jk=763424a949cfd026) | Grupo SysMap | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **7** | [Analista de Sistemas Sênior](https://afya.gupy.io/job/eyJqb2JJZCI6MTI1ODc3NTksInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Afya | Remoto | Sênior | Gupy | 28/09 (5d) |
-| **7** | [Analista Funcional SR](https://br.indeed.com/viewjob?jk=ed0c1ee216836b40) | Grupo SysMap | Remoto | Sênior | Indeed | 02/10 (1d) |
-
-## DevOps e Automação (38)
-
-### Na região (11)
-
-| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
-|---:|---|---|---|---|---|---|
-| **74** | [Analista de Infraestrutura em TI Jr](https://br.linkedin.com/jobs/view/analista-de-infraestrutura-em-ti-jr-at-selbetti-tecnologia-4470876914) | Selbetti Tecnologia | Joinville | Júnior | LinkedIn | 28/09 (5d) |
-| **63** | [Analista de Infraestrutura Pl / Cloud](https://br.indeed.com/viewjob?jk=3676492cda487b42) | Governança Brasil | Blumenau | Pleno | Indeed | 02/10 (1d) |
-| **62** | [[Tech] Analista de Desenvolvimento de Software Júnior](https://br.indeed.com/viewjob?jk=fecffa3b155fed34) | TOTVS | Joinville | Júnior | Indeed | 28/09 (5d) |
-| **60** | [[Tech] Analisa de SRE - Pleno](https://br.linkedin.com/jobs/view/tech-analisa-de-sre-pleno-at-totvs-4472945953) | TOTVS | Joinville | Pleno | LinkedIn | 01/10 (2d) |
-| **57** | [DevSecOps Analyst II (SRE) - 11766](https://br.indeed.com/viewjob?jk=e65dc4d95db1a99c) | Senior Sistemas | Blumenau | — | Indeed | 28/09 (5d) |
-| **57** | [Analista de Automação](https://br.linkedin.com/jobs/view/analista-de-automa%C3%A7%C3%A3o-at-phinia-4471902322) | PHINIA | Brusque | — | LinkedIn | 29/09 (4d) |
-| **54** | [Analista de infraestrutura de TI](https://br.linkedin.com/jobs/view/analista-de-infraestrutura-de-ti-at-stronit-4471757517) | Stronit | Jaraguá do Sul | — | LinkedIn | 30/09 (3d) |
-| **28** | [Site Reliability Engineer Sênior (DevSecOps & Plataforma)](https://br.linkedin.com/jobs/view/site-reliability-engineer-s%C3%AAnior-devsecops-plataforma-at-lincros-4469744406) | LINCROS | Blumenau | Sênior | LinkedIn | 02/10 (1d) |
-| **10** | [Pessoa Arquiteta de Software Sênior (Híbrido em Blumenau/SC)](https://br.indeed.com/viewjob?jk=445ea7107cf6cb93) | AMcom | Blumenau (híbrido) | Sênior | Indeed | 29/09 (4d) |
-| **7** | [Gerente de Engenharia de Plataforma](https://br.indeed.com/viewjob?jk=d2e621781834e5bc) | Serasa | Blumenau | Sênior | Indeed | 29/09 (4d) |
-| **4** | [Arquiteto(a) de Software](https://br.indeed.com/viewjob?jk=ebc9a8a8b32a60cf) | Governança Brasil | Blumenau | Sênior | Indeed | 01/10 (2d) |
-
-### Remoto (27)
+### Na região (15)
 
 | Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
 |---:|---|---|---|---|---|---|
-| **52** | [DevOps Engineer](https://softdesign.gupy.io/job/eyJqb2JJZCI6MTI2NTAzMDgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | SoftDesign | Remoto | — | Gupy | 01/10 (2d) |
-| **69** | [Estagiário / Segurança da Informação](https://br.indeed.com/viewjob?jk=0304a1721d7698e1) | Henry Schein | Remoto | Júnior | Indeed | 03/10 (hoje) |
-| **61** | [GCP Cloud Engineer ID89421](https://br.indeed.com/viewjob?jk=0d816f1edaf70ddd) | AgileEngine | Remoto | — | Indeed | 29/09 (4d) |
-| **58** | [Analista DevOps](https://attus.gupy.io/job/eyJqb2JJZCI6MTI2MTQ3OTMsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Attus Procuradoria Digital | Remoto | — | Gupy | 28/09 (5d) |
-| **58** | [Site Reliability Engineer Engineer](https://br.indeed.com/viewjob?jk=0655c7aa0b784763) | Modus Create | Remoto | — | Indeed | 01/10 (2d) |
-| **49** | [Analista De Infraestrutura Cloud Pleno](https://br.indeed.com/viewjob?jk=2d96f03493d93aee) | DAREDE | Remoto | Pleno | Indeed | 29/09 (4d) |
-| **49** | [Analista de Segurança da Informação II (Cyber Security)](https://br.indeed.com/viewjob?jk=a2d52bd47f915663) | AdviceHealth | Remoto | — | Indeed | 02/10 (1d) |
-| **49** | [Chief AWS DevOps Engineer](https://br.indeed.com/viewjob?jk=827582ee25560e71) | EPAM Systems | Remoto | — | Indeed | 02/10 (1d) |
-| **46** | [Analista de Segurança da Informação III - Operações de Segurança (WAF & AppSec)](https://br.indeed.com/viewjob?jk=9f2403637980a750) | Central Ailos | Remoto | — | Indeed | 03/10 (hoje) |
-| **37** | [Cloud Architect](https://br.indeed.com/viewjob?jk=61a28b15d0862f75) | EPAM Systems | Remoto | — | Indeed | 02/10 (1d) |
-| **32** | [AWS Cloud Architect](https://br.indeed.com/viewjob?jk=2d8b0a253eaf7175) | ScaleUp | Remoto | — | Indeed | 23/09 (10d) |
-| **31** | [Software Development Engineer - .Net or RoR](https://br.indeed.com/viewjob?jk=878f130b22a65b62) | Avalara | Remoto | — | Indeed | 02/10 (1d) |
-| **28** | [Coordenação ITOps](https://br.indeed.com/viewjob?jk=b62aa483df4c1a9c) | Dot Digital Group | Remoto | — | Indeed | 30/09 (3d) |
-| **14** | [[Job-32080] Senior SRE / Cloud Engineer (Pessoa Engenheira de Plataforma), Brazil](https://br.indeed.com/viewjob?jk=e368d4f92e887653) | Ci&T | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **14** | [Lead AWS DevOps Engineer](https://br.indeed.com/viewjob?jk=d8f475ebc7b59692) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **14** | [Senior AWS DevOps Engineer](https://br.indeed.com/viewjob?jk=a4980a140e3a13be) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **14** | [DevOps Tech Lead - Trabalho Remoto](https://br.linkedin.com/jobs/view/devops-tech-lead-trabalho-remoto-at-bairesdev-4473336770) | BairesDev | Remoto | Sênior | LinkedIn | 02/10 (1d) |
-| **11** | [Engenheiro de Site Reliability Sênior - Remote Work](https://br.indeed.com/viewjob?jk=132777c51bc69705) | BairesDev | Remoto | Sênior | Indeed | 01/10 (2d) |
-| **11** | [Gerente SecOps (Diretoria Segurança da Informação)](https://br.indeed.com/viewjob?jk=c2ad9c2cc43d8e4a) | Grupo Boticário | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **11** | [Analista de Governança Segurança da Informação SR (GRC)](https://br.indeed.com/viewjob?jk=a681c161ac685b08) | Ipiranga | Remoto | Sênior | Indeed | 03/10 (hoje) |
-| **5** | [Analista de Testes Automatizados-Sênior](https://br.indeed.com/viewjob?jk=b507918a424eea1d) | Capgemini | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **2** | [12627550 - Engenheiro Kubernetes Sênior](https://br.indeed.com/viewjob?jk=3abbd8b1d29aa8ff) | MTP Métodos e Tecnologia – Brasil | Remoto | Sênior | Indeed | 29/09 (4d) |
-| **2** | [Analista de Testes Automatizados / Sistemas Sênior (4803)](https://br.indeed.com/viewjob?jk=077ebb5c07121b93) | Keep Simple | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **2** | [[Job - 32084]Tech Lead (.NET / Angular), Brazil](https://br.indeed.com/viewjob?jk=14b29b7416ce05ee) | Ci&T | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **2** | [Lead Functional Tester](https://br.indeed.com/viewjob?jk=a49bc661f66cceec) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **2** | [Senior Functional Tester](https://br.indeed.com/viewjob?jk=33bcb487ab0fc193) | EPAM Systems | Remoto | Sênior | Indeed | 02/10 (1d) |
-| **2** | [QA DE AUTOMAÇÃO SÊNIOR - RHA4140](https://br.indeed.com/viewjob?jk=cd8250ee0859817f) | Spread Tecnologia | Remoto | Sênior | Indeed | 03/10 (hoje) |
+| **70** | [Analista de Negócios Júnior](https://br.linkedin.com/jobs/view/analista-de-neg%C3%B3cios-j%C3%BAnior-at-jobbol-4477400089) 🆕 | Jobbol | Blumenau | Júnior | LinkedIn | 08/10 (hoje) |
+| **65** | [Analista de TI](https://br.indeed.com/viewjob?jk=395da9774a8ca4a5) 🆕 | Tear Escola de Negócios | Itajaí | — | Indeed | 05/10 (3d) |
+| **62** | [Analista de Sistemas Informações Gerenciais Pleno](https://br.indeed.com/viewjob?jk=82d3a88f92bb60e7) 🆕 | Schulze Recuperação de Crédito Ltda | Joinville | Pleno | Indeed | 06/10 (2d) |
+| **59** | [Analista de Processos / Presencial (Joinville)](https://br.indeed.com/viewjob?jk=4a74aa68a97943f6) 🆕 | PX AGENCIAMENTO DE SERVICOS LTDA | Joinville | — | Indeed | 07/10 (1d) |
+| **59** | [Analista de Processos / Presencial (Joinville)](https://br.linkedin.com/jobs/view/analista-de-processos-presencial-joinville-at-motorista-px-4475712532) 🆕 | Motorista PX | Joinville | — | LinkedIn | 07/10 (1d) |
+| **56** | [Analista de Sistemas III - Tribo Investimentos](https://centralailos.gupy.io/job/eyJqb2JJZCI6MTI2MzIzNjQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Central Ailos | Blumenau (presencial) | — | Gupy | 05/10 (3d) |
+| **9** | [Analista Contábil Sênior](https://br.indeed.com/viewjob?jk=2216d02284e9db1a) 🆕 | METAL GROUP SRL | Joinville | Sênior | Indeed | 07/10 (1d) |
+| **3** | [Analista Contábil SR](https://br.indeed.com/viewjob?jk=e4a1e306ef4aecf9) 🆕 | Grupo KMR | Itajaí | Sênior | Indeed | 06/10 (2d) |
+| **58** | [ASSISTENTE ADMINISTRATIVO - COMPRAS/SUPRIMENTOS](https://br.indeed.com/viewjob?jk=bc681ce333a002f6) | Emergent Cold LatAm | Itajaí | Júnior | Indeed | 02/10 (6d) |
+| **53** | [Cia Hering / Analista de SAP FI III (Blumenau/SC)](https://br.linkedin.com/jobs/view/cia-hering-analista-de-sap-fi-iii-blumenau-sc-at-cia-hering-4466394487) | Cia. Hering | Blumenau | — | LinkedIn | 03/10 (5d) |
+| **50** | [ANALISTA DE SISTEMAS](https://br.linkedin.com/jobs/view/analista-de-sistemas-at-urbano-alimentos-4472839322) | Urbano Alimentos | Jaraguá do Sul | — | LinkedIn | 01/10 (7d) |
+| **44** | [Analista de Pricing PL](https://br.indeed.com/viewjob?jk=0e2099bac580dec3) | Grupo KMR | Itajaí | Pleno | Indeed | 01/10 (7d) |
+| **41** | [Analista Contábil](https://br.indeed.com/viewjob?jk=725e1c344f42f641) | Nidec Global Appliance (Brasil) | Joinville | — | Indeed | 02/10 (6d) |
+| **18** | [Especialista em Integração SAP (PI/PO, SAP Integration Suite)](https://br.linkedin.com/jobs/view/especialista-em-integra%C3%A7%C3%A3o-sap-pi-po-sap-integration-suite-at-bunge-4429190740) | Bunge | Gaspar | Sênior | LinkedIn | 02/10 (6d) |
+| **18** | [Analista Funcional Sênior / ERP & Aplicações Corporativas](https://br.linkedin.com/jobs/view/analista-funcional-s%C3%AAnior-erp-aplica%C3%A7%C3%B5es-corporativas-at-g5-it-4473131653) | G5 IT | Navegantes | Sênior | LinkedIn | 02/10 (6d) |
+
+### Remoto (37)
+
+| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
+|---:|---|---|---|---|---|---|
+| **65** | [Analista de Negócios Júnior](https://br.indeed.com/viewjob?jk=d77b319533d5de4a) 🆕 | Extractta | Remoto | Júnior | Indeed | 07/10 (1d) |
+| **62** | [ANALISTA DE TECNOLOGIA JR](https://br.indeed.com/viewjob?jk=cd62abb028a8697a) 🆕 | SGA Tecnologia Inteligente | Remoto | Júnior | Indeed | 01/10 (7d) |
+| **54** | [ANALISTA DE SISTEMAS PLENO](https://br.indeed.com/viewjob?jk=77317958e80a4546) 🆕 | Funcional Health Tech | Remoto | Pleno | Indeed | 07/10 (1d) |
+| **51** | [Analista de Processos](https://br.indeed.com/viewjob?jk=5df8a2932a026f60) 🆕 | ITIX | Remoto | — | Indeed | 08/10 (hoje) |
+| **48** | [Business Analyst – Suporte a PFME e Brand Planning](https://br.indeed.com/viewjob?jk=ee79936f99a71098) 🆕 | TOPMIND | Remoto | — | Indeed | 05/10 (3d) |
+| **48** | [SAP SD Consultant](https://br.indeed.com/viewjob?jk=0dc40894ee20a976) 🆕 | AM53 Tech Recruitment | Remoto | — | Indeed | 07/10 (1d) |
+| **45** | [Consultor SAP SD/MM (Remoto)](https://br.indeed.com/viewjob?jk=b9e74d57a1aeb4c6) 🆕 | PLUS-IT CONSULTING | Remoto | — | Indeed | 01/10 (7d) |
+| **45** | [Consultor SAP FI - AMS / Reforma Tributária](https://br.indeed.com/viewjob?jk=c5d34e0276858bee) 🆕 | Verus Brasil | Remoto | — | Indeed | 02/10 (6d) |
+| **45** | [Consultor SAP SuccessFactors EC-Time (68446)](https://br.indeed.com/viewjob?jk=3494bfd217b8990c) 🆕 | EVT | Remoto | — | Indeed | 02/10 (6d) |
+| **45** | [Consultor Funcional SAP MM](https://br.indeed.com/viewjob?jk=159c70632df2f4ea) 🆕 | Addvisor | Remoto | — | Indeed | 05/10 (3d) |
+| **45** | [Consultor SAP Successfactors EC](https://br.indeed.com/viewjob?jk=74d84c2b9f598d2f) 🆕 | EcommIT | Remoto | — | Indeed | 07/10 (1d) |
+| **45** | [Consultor(a) SAP Successfactors EC](https://br.indeed.com/viewjob?jk=68fca486bfaee236) 🆕 | ITQuest Consultoria | Remoto | — | Indeed | 07/10 (1d) |
+| **33** | [PMO](https://br.indeed.com/viewjob?jk=9fed4430e76a0ff4) 🆕 | Capgemini | Remoto | — | Indeed | 07/10 (1d) |
+| **33** | [Engenheiro de Sistemas](https://br.indeed.com/viewjob?jk=f9adebbec44e2231) 🆕 | EPI-USE | Remoto | — | Indeed | 08/10 (hoje) |
+| **27** | [Product Owner](https://br.indeed.com/viewjob?jk=d7308312ce6302fc) 🆕 | Maitha Tech | Remoto | — | Indeed | 01/10 (7d) |
+| **27** | [Analista Fiscal/Tributário - RHA4132](https://br.indeed.com/viewjob?jk=c5c6d48d846be789) 🆕 | Spread Tecnologia | Remoto | — | Indeed | 07/10 (1d) |
+| **27** | [Analista de Requisitos](https://br.indeed.com/viewjob?jk=7d637f22d9b2e0f6) 🆕 | Montreal / Tecnologia e Inovação | Remoto | — | Indeed | 07/10 (1d) |
+| **24** | [Consultor(a) Funcional](https://br.indeed.com/viewjob?jk=7d68afc84e865e02) 🆕 | Vivo (Telefônica Brasil) | Remoto | — | Indeed | 07/10 (1d) |
+| **10** | [Consultor SAP SD Sênior (AMS / Reforma Tributária)](https://br.indeed.com/viewjob?jk=d1ed6f9bb9ddeccc) 🆕 | Verus Brasil | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **10** | [Consultor SAP MM/S2P Sênior (68510 / 209703-1)](https://br.indeed.com/viewjob?jk=c92674127cab5a4e) 🆕 | EVT | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **10** | [Consultor SAP FICO Sênior](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2ODY3ODUsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Gupy | 06/10 (2d) |
+| **10** | [Consultor SAP HCM PY Sênior](https://stefanini.gupy.io/job/eyJqb2JJZCI6MTI2ODY1NjgsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Stefanini Group | Remoto | Sênior | Gupy | 06/10 (2d) |
+| **10** | [Especialista I SAP EWM](https://br.indeed.com/viewjob?jk=a76fc18881f3f593) 🆕 | Grupo Boticário | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **10** | [Consultor(a) SAP HCM PY Sênior](https://vetta.gupy.io/job/eyJqb2JJZCI6MTI2ODMwMTEsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) 🆕 | Vetta Tecnologia | Remoto | Sênior | Gupy | 06/10 (2d) |
+| **10** | [550 - Consultor(a) SAP SD SR - Inglês Avançado](https://br.indeed.com/viewjob?jk=cc607389b5c05e84) 🆕 | SEIDOR | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **10** | [Consultor Funcional SAP MM Sênior](https://br.indeed.com/viewjob?jk=c19b2a23814f585d) 🆕 | Insi | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **10** | [SAP HCM PY SR - RHA4183](https://br.indeed.com/viewjob?jk=7f49ac112689ad38) 🆕 | Spread Tecnologia | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **68** | [Analista de Sistemas JR](https://br.indeed.com/viewjob?jk=1e48e36217cac864) | Argos Global Partner Services | Remoto | Júnior | Indeed | 02/10 (6d) |
+| **45** | [Consultor SAP FI](https://br.indeed.com/viewjob?jk=d974c3d82f49e7e3) | Insi | Remoto | — | Indeed | 08/10 (hoje) |
+| **22** | [Analista de Negócios Sr - Matriz](https://br.indeed.com/viewjob?jk=8cd624f04660caa5) | Porto | Remoto | Sênior | Indeed | 03/10 (5d) |
+| **16** | [Analista de Sistemas Sênior (4801)](https://br.indeed.com/viewjob?jk=9467522c5cd87a24) | Keep Simple | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **13** | [Analista Funcional SR](https://br.indeed.com/viewjob?jk=523246ad6a5300df) | Grupo SysMap | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **10** | [Senior SAP MM Consultant (SAP Sourcing & Procurement - Brazil Localization)](https://cppdigital.gupy.io/job/eyJqb2JJZCI6MTI2Njc3OTQsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | CPP Digital | Remoto | Sênior | Gupy | 02/10 (6d) |
+| **10** | [Consultor SAP MM Sênior (AMS / Reforma Tributária)](https://br.indeed.com/viewjob?jk=8488b2ef9292588f) | Verus Brasil | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **10** | [Sr. Functional Business Analyst - SAP PP/PM (São José dos Campos/SP)](https://br.indeed.com/viewjob?jk=73d7c6c13d0994ec) | Ball Corporation | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **10** | [Consultor SAP MM Pleno/Sênior (68465 / 208358-1)](https://br.indeed.com/viewjob?jk=085d85c947329bfc) | EVT | Remoto | Sênior | Indeed | 02/10 (6d) |
+| **10** | [Consultor SAP MM Sr. – Suporte / Sustentação](https://br.indeed.com/viewjob?jk=29b43521a37efafb) | Addvisor | Remoto | Sênior | Indeed | 03/10 (5d) |
+
+## DevOps e Automação (28)
+
+### Na região (6)
+
+| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
+|---:|---|---|---|---|---|---|
+| **57** | [Analista de Infraestrutura](https://br.linkedin.com/jobs/view/analista-de-infraestrutura-at-wk-4475708991) 🆕 | WK | Blumenau | — | LinkedIn | 08/10 (hoje) |
+| **42** | [SecOps Infrastructure Analyst II - 11886](https://br.indeed.com/viewjob?jk=b2480edafeb73d83) 🆕 | Senior Sistemas | Blumenau | — | Indeed | 05/10 (3d) |
+| **28** | [SRE Sênior - (DevSecOps & Plataforma)](https://br.linkedin.com/jobs/view/sre-s%C3%AAnior-devsecops-plataforma-at-lincros-4469744406) 🆕 | LINCROS | Blumenau | Sênior | LinkedIn | 02/10 (6d) |
+| **63** | [Analista de Infraestrutura Pl / Cloud](https://br.indeed.com/viewjob?jk=3676492cda487b42) | Governança Brasil | Blumenau | Pleno | Indeed | 02/10 (6d) |
+| **60** | [[Tech] Analisa de SRE - Pleno](https://br.linkedin.com/jobs/view/tech-analisa-de-sre-pleno-at-totvs-4472945953) | TOTVS | Joinville | Pleno | LinkedIn | 01/10 (7d) |
+| **34** | [Consultor (a) DevOps Sr - Banco de Talentos](https://br.linkedin.com/jobs/view/consultor-a-devops-sr-banco-de-talentos-at-ey-4417635848) | EY | Blumenau | Sênior | LinkedIn | 04/10 (4d) |
+
+### Remoto (22)
+
+| Score | Vaga | Empresa | Local | Nível | Fonte | Publicada |
+|---:|---|---|---|---|---|---|
+| **66** | [DEVOPS ENGINEER – JUNIOR / MID (REMOTE)](https://br.indeed.com/viewjob?jk=83c86b945986bca8) 🆕 | iTRTech Group | Remoto | Júnior | Indeed | 06/10 (2d) |
+| **55** | [DevOps/SRE](https://br.indeed.com/viewjob?jk=b87abef35dfd0ff2) 🆕 | Franq | Remoto | — | Indeed | 05/10 (3d) |
+| **52** | [[Instituição de Pagamento] Analista SRE Pleno](https://br.indeed.com/viewjob?jk=1b2ba44b0974d1d7) 🆕 | NDD - Tech | Remoto | Pleno | Indeed | 05/10 (3d) |
+| **52** | [DevOps Engineer (Azure)](https://br.indeed.com/viewjob?jk=b7a58732df5080ed) 🆕 | Auditdata | Remoto | — | Indeed | 06/10 (2d) |
+| **49** | [coordenação de cibersegurança](https://br.indeed.com/viewjob?jk=54d6ba02c8059358) 🆕 | grupo enjoei | Remoto | — | Indeed | 06/10 (2d) |
+| **46** | [Analista de SOC](https://br.indeed.com/viewjob?jk=5610fbc5f338c0b3) 🆕 | Unifique Telecomunicações | Remoto | — | Indeed | 06/10 (2d) |
+| **40** | [Analista de Qualidade (QA) Pleno](https://br.indeed.com/viewjob?jk=1fc8c5a8b3357d05) 🆕 | Agtech Soluções em Tecnologia | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **37** | [ANALISTA INFRAESTRUTURA CLOUD PLENO](https://br.indeed.com/viewjob?jk=eba374a37f0b803e) 🆕 | Funcional Health Tech | Remoto | Pleno | Indeed | 06/10 (2d) |
+| **37** | [Analista de testes/QA](https://br.indeed.com/viewjob?jk=2cf0cbde107622ba) 🆕 | FCamara | Remoto | — | Indeed | 07/10 (1d) |
+| **23** | [Senior Cloud/DevOps Engineer ID92208](https://br.indeed.com/viewjob?jk=4731219316c3f590) 🆕 | AgileEngine | Remoto | Sênior | Indeed | 05/10 (3d) |
+| **20** | [ESPECIALISTA DE SRE - SUSTENTAÇÃO](https://br.indeed.com/viewjob?jk=85f7520f3aa02458) 🆕 | BANCO ABC BRASIL | Remoto | Sênior | Indeed | 08/10 (hoje) |
+| **20** | [Pessoa Analista DevOps Especialista](https://br.indeed.com/viewjob?jk=e6797538ce517d23) 🆕 | Datum Software | Remoto | Sênior | Indeed | 08/10 (hoje) |
+| **17** | [Senior Security Cloud Engineer - GCP](https://br.indeed.com/viewjob?jk=91855f04f5fc3ae8) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **17** | [Lead Security Cloud Engineer - GCP](https://br.indeed.com/viewjob?jk=281d8f0731bd66f9) 🆕 | EPAM Systems | Remoto | Sênior | Indeed | 07/10 (1d) |
+| **14** | [Especialista em Segurança da Informação - Foco em SecOps e Cloud](https://br.indeed.com/viewjob?jk=d550de455f846112) 🆕 | Central Ailos | Remoto | Sênior | Indeed | 06/10 (2d) |
+| **69** | [Estagiário / Segurança da Informação](https://br.indeed.com/viewjob?jk=0304a1721d7698e1) | Henry Schein | Remoto | Júnior | Indeed | 03/10 (5d) |
+| **52** | [DevOps Engineer](https://br.indeed.com/viewjob?jk=7a4a0375a1b53060) | Softdesign | Remoto | — | Indeed | 01/10 (7d) |
+| **49** | [Analista de Segurança da Informação II (Cyber Security)](https://br.indeed.com/viewjob?jk=a2d52bd47f915663) | AdviceHealth | Remoto | — | Indeed | 02/10 (6d) |
+| **11** | [Engenheiro de Site Reliability Sênior - Remote Work](https://br.indeed.com/viewjob?jk=25b736b9c417e4cc) | BairesDev | Remoto | Sênior | Indeed | 01/10 (7d) |
+| **11** | [Gerente SecOps (Diretoria Segurança da Informação)](https://br.indeed.com/viewjob?jk=c2ad9c2cc43d8e4a) | Grupo Boticário | Remoto | Sênior | Indeed | 03/10 (5d) |
+| **2** | [Analista de Testes Automatizados / Sistemas Sênior (4803)](https://keepsimple.gupy.io/job/eyJqb2JJZCI6MTI2NjEzMjIsInNvdXJjZSI6Imd1cHlfcG9ydGFsIn0=) | Keep Simple | Remoto | Sênior | Gupy | 01/10 (7d) |
+| **2** | [QA DE AUTOMAÇÃO SÊNIOR - RHA4140](https://br.indeed.com/viewjob?jk=cd8250ee0859817f) | Spread Tecnologia | Remoto | Sênior | Indeed | 03/10 (5d) |
 
 ---
 
-Score = regras explícitas (categoria no título +30, júnior +25, cidade-alvo +20, remoto +12, skills do currículo até +18, sênior −30). 🆕 = não apareceu em rodadas anteriores.
+Score = regras explícitas (categoria no título +30, júnior +25, cidade-alvo +20, remoto +12, skills do currículo até +18, sênior −30). ★ = avaliação do Claude (0–10), aplicada às 8 melhores vagas novas de um total de 172. 🆕 = não apareceu em rodadas anteriores.
